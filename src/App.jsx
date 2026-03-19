@@ -17,6 +17,7 @@ const RoutingBasics = lazy(() => import('./chapters/Chapter9/RoutingBasics'));
 const ReduxCounter = lazy(() => import('./chapters/Chapter10_11/ReduxCounter'));
 const GraphQLDemo = lazy(() => import('./chapters/Chapter12/GraphQLDemo'));
 const DeploymentGuide = lazy(() => import('./chapters/Chapter13/DeploymentGuide'));
+const MSResearchReport = lazy(() => import('./chapters/Chapter14/MSResearchReport'));
 
 // Placeholder components until they are implemented
 const Placeholder = ({ id }) => <div className="p-8 text-center text-gray-500">Глава {id} находится в разработке.</div>;
@@ -35,6 +36,7 @@ const chapterComponents = {
   11: ReduxCounter,
   12: GraphQLDemo,
   13: DeploymentGuide,
+  14: MSResearchReport,
 };
 
 const Layout = ({ children }) => {
