@@ -1,4 +1,4 @@
-; syscalls.asm (Updated to include VMCALL)
+; syscalls.asm (Updated for Intel/AMD Multi-Vendor Support)
 .code
 
 InternalSyscall proc
@@ -15,11 +15,16 @@ InternalSyscall proc
     ret
 InternalSyscall endp
 
-; InternalVMCALL(key, code, arg1, arg2)
+; InternalVMCALL(key, code, arg1, arg2) - INTEL
 InternalVMCALL proc
-    ; ecx = key, edx = code, r8 = arg1, r9 = arg2
     vmcall
     ret
 InternalVMCALL endp
+
+; InternalVMMCALL(key, code, arg1, arg2) - AMD
+InternalVMMCALL proc
+    vmmcall
+    ret
+InternalVMMCALL endp
 
 end
