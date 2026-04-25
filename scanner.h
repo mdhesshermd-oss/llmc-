@@ -2,42 +2,45 @@
 #include <stdint.h>
 #include <vector>
 #include <string>
+#include <sstream>
 #include "driver_io.h"
 
 /**
- * Robust Signature Scanner (AOB)
- * Supports IDA-style patterns with wildcards.
+ * Functional Signature Scanner (AOB)
  */
 
 namespace Cheat {
     namespace Scanner {
 
-        inline uintptr_t FindPattern(uint32_t pid, uintptr_t base, size_t size, const char* pattern) {
-            // 1. Parse pattern string into bytes and masks
-            std::vector<int> sig;
-            const char* current = pattern;
-            while (*current) {
-                if (*current == ' ') { current++; continue; }
-                if (*current == '?') {
-                    sig.push_back(-1);
-                    current++;
-                    if (*current == '?') current++;
-                    continue;
+        /**
+         * Converts IDA-style pattern "48 8B 05 ? ? ? ?" to bytes and mask.
+         */
+        inline std::vector<int> ParsePattern(const std::string& pattern) {
+            std::vector<int> bytes;
+            std::stringstream ss(pattern);
+            std::string word;
+            while (ss >> word) {
+                if (word == "?" || word == "??") {
+                    bytes.push_back(-1);
+                } else {
+                    bytes.push_back(std::stoi(word, nullptr, 16));
                 }
-                sig.push_back(static_cast<int>(strtol(current, const_cast<char**>(&current), 16)));
             }
+            return bytes;
+        }
 
+        inline uintptr_t FindPattern(uint32_t pid, uintptr_t base, size_t size, const std::string& pattern) {
+            auto sig = ParsePattern(pattern);
             if (sig.empty()) return 0;
 
-            // 2. Read module memory into local buffer (Fast Scan)
-            std::vector<uint8_t> data(size);
-            if (!Driver::ReadRaw(pid, base, data.data(), size)) return 0;
+            // Read the entire region into local memory for speed
+            std::vector<uint8_t> buffer(size);
+            if (!Driver::ReadRaw(pid, base, buffer.data(), size)) return 0;
 
-            // 3. Scan for match
-            for (size_t i = 0; i < size - sig.size(); ++i) {
+            for (size_t i = 0; i <= size - sig.size(); ++i) {
                 bool found = true;
                 for (size_t j = 0; j < sig.size(); ++j) {
-                    if (sig[j] != -1 && data[i + j] != static_cast<uint8_t>(sig[j])) {
+                    if (sig[j] != -1 && buffer[i + j] != static_cast<uint8_t>(sig[j])) {
                         found = false;
                         break;
                     }
