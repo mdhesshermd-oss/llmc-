@@ -3,13 +3,13 @@
 #include <stdint.h>
 
 /**
- * C++ Driver Communication Interface
+ * Advanced Kernel Driver Interface with Raw Block Reading
  */
 
 namespace Cheat {
     namespace Driver {
 
-        #define IO_READ_REQUEST  CTL_CODE(FILE_DEVICE_UNKNOWN, 0x800, METHOD_BUFFERED, FILE_ANY_ACCESS)
+        #define IO_READ_RAW  CTL_CODE(FILE_DEVICE_UNKNOWN, 0x800, METHOD_BUFFERED, FILE_ANY_ACCESS)
 
         struct ReadRequest {
             uint32_t pid;
@@ -26,12 +26,22 @@ namespace Cheat {
             return (hDriver != INVALID_HANDLE_VALUE);
         }
 
+        /**
+         * Reads a raw block of memory of arbitrary size.
+         */
+        inline bool ReadRaw(uint32_t pid, uintptr_t address, void* buffer, size_t size) {
+            ReadRequest request = { pid, address, buffer, size };
+            DWORD returned;
+            return DeviceIoControl(hDriver, IO_READ_RAW, &request, sizeof(request), &request, sizeof(request), &returned, nullptr);
+        }
+
+        /**
+         * Template for reading specific types (e.g., struct, int).
+         */
         template <typename T>
         inline T Read(uint32_t pid, uintptr_t address) {
             T buffer{};
-            ReadRequest request = { pid, address, &buffer, sizeof(T) };
-            DWORD returned;
-            DeviceIoControl(hDriver, IO_READ_REQUEST, &request, sizeof(request), &request, sizeof(request), &returned, nullptr);
+            ReadRaw(pid, address, &buffer, sizeof(T));
             return buffer;
         }
     }

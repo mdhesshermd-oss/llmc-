@@ -1,26 +1,22 @@
+#pragma once
 #include <stdint.h>
 #include <windows.h>
+#include "stealth.h"
 
 /**
- * Direct Syscall Implementation
- * Bypasses user-mode hooks (Ring 3) by communicating directly with the kernel.
+ * Direct Syscall Implementation with valid wrappers.
  */
 
-// Example SSN (System Service Numbers) for Windows 10/11
-// In a production scenario, these would be dynamically resolved using "Hell's Gate" or "Halo's Gate"
-#define SSN_NTALLOCATE 0x18
-#define SSN_NTPROTECT  0x50
+extern "C" NTSTATUS InternalSyscall(uint32_t ssn, ...);
 
-extern "C" void* InternalSyscall(uint32_t ssn, ...);
+// Dynamic SSNs resolved via Hell's Gate
+inline uint32_t SSN_NtAllocateVirtualMemory = 0;
+inline uint32_t SSN_NtProtectVirtualMemory = 0;
 
-/**
- * Assembly logic (conceptual representation)
- *
- * mov r10, rcx
- * mov eax, [ssn]
- * syscall
- * ret
- */
+inline void InitSyscalls() {
+    SSN_NtAllocateVirtualMemory = Cheat::Stealth::GetSyscallNumber("NtAllocateVirtualMemory");
+    SSN_NtProtectVirtualMemory = Cheat::Stealth::GetSyscallNumber("NtProtectVirtualMemory");
+}
 
 static inline NTSTATUS DirectNtAllocateVirtualMemory(
     HANDLE ProcessHandle,
@@ -30,8 +26,7 @@ static inline NTSTATUS DirectNtAllocateVirtualMemory(
     ULONG AllocationType,
     ULONG Protect)
 {
-    // Implementation would call the InternalSyscall wrapper
-    return 0; // STATUS_SUCCESS placeholder
+    return InternalSyscall(SSN_NtAllocateVirtualMemory, ProcessHandle, BaseAddress, ZeroBits, RegionSize, AllocationType, Protect);
 }
 
 static inline NTSTATUS DirectNtProtectVirtualMemory(
@@ -41,5 +36,5 @@ static inline NTSTATUS DirectNtProtectVirtualMemory(
     ULONG NewProtect,
     PULONG OldProtect)
 {
-    return 0;
+    return InternalSyscall(SSN_NtProtectVirtualMemory, ProcessHandle, BaseAddress, RegionSize, NewProtect, OldProtect);
 }

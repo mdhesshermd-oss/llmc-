@@ -7,74 +7,83 @@
 #include "scanner.h"
 
 /**
- * C++ Production ESP Logic with Sanity Checks for Ban Prevention
+ * OPTIMIZED C++ Player ESP
+ * Address caching prevents performance bottlenecks from repeated AOB scanning.
  */
 
 namespace Cheat {
     namespace Features {
 
         struct Vector3 { float x, y, z; };
+        struct Matrix4x4 { float m[4][4]; };
 
         class ESP {
         private:
-            // SIGNATURES (More stable than offsets)
-            // Example: 48 8B 05 ? ? ? ? 48 8B 48 08 48 85 C9 74 2B (World Pointer pattern)
             static constexpr const char* SIG_WORLD = "48 8B 05 ? ? ? ? 48 8B 48 08";
-
             static constexpr uintptr_t OFFSET_ENTITY_LIST = 0x1E88;
             static constexpr uintptr_t OFFSET_ENTITY_COUNT = 0x1E90;
-            static constexpr uintptr_t OFFSET_PLAYER_POS = 0x2C0;
 
-            inline static bool IsEmergencyShutdown = false;
+            // Cached Addresses
+            inline static uintptr_t CachedWorldPtr = 0;
+            inline static bool Initialized = false;
 
         public:
-            static void Update(uint32_t pid, uintptr_t base, size_t module_size) {
-                if (IsEmergencyShutdown || !Driver::Init()) return;
+            /**
+             * Performs expensive signature scanning only once.
+             */
+            static bool Initialize(uint32_t pid, uintptr_t base, size_t size) {
+                if (Initialized) return true;
 
-                // 1. DYNAMIC LOOKUP
-                uintptr_t world_instr = Scanner::FindPattern(pid, base, module_size, SIG_WORLD);
-                if (!world_instr) {
-                    // Fail-safe: If the code pattern changed, stop immediately to avoid ban
-                    IsEmergencyShutdown = true;
-                    return;
-                }
-                uintptr_t world_ptr = Scanner::ResolveRelativeAddr(pid, world_instr, 3, 7);
-                uintptr_t world = Driver::Read<uintptr_t>(pid, world_ptr);
+                uintptr_t worldInstr = Scanner::FindPattern(pid, base, size, SIG_WORLD);
+                if (!worldInstr) return false;
 
-                // 2. SANITY CHECKS
-                if (world < 0x10000 || world > 0x7FFFFFFFFFFF) return; // Basic pointer validation
+                CachedWorldPtr = Scanner::ResolveRelativeAddr(pid, worldInstr, 3, 7);
+                Initialized = true;
+                return true;
+            }
 
+            static bool WorldToScreen(Vector3 pos, ImVec2& screen, Matrix4x4 viewMatrix, float width, float height) {
+                float w = viewMatrix.m[3][0] * pos.x + viewMatrix.m[3][1] * pos.y + viewMatrix.m[3][2] * pos.z + viewMatrix.m[3][3];
+                if (w < 0.01f) return false;
+
+                float x = viewMatrix.m[0][0] * pos.x + viewMatrix.m[0][1] * pos.y + viewMatrix.m[0][2] * pos.z + viewMatrix.m[0][3];
+                float y = viewMatrix.m[1][0] * pos.x + viewMatrix.m[1][1] * pos.y + viewMatrix.m[1][2] * pos.z + viewMatrix.m[1][3];
+
+                screen.x = (width / 2) * (1 + x / w);
+                screen.y = (height / 2) * (1 - y / w);
+                return true;
+            }
+
+            /**
+             * Fast Frame Update: uses cached addresses.
+             */
+            static void Update(uint32_t pid, uintptr_t base) {
+                if (!Initialized || !Driver::Init() || !Rendering::Init()) return;
+
+                uintptr_t world = Driver::Read<uintptr_t>(pid, CachedWorldPtr);
+                if (!world) return;
+
+                Matrix4x4 viewMatrix = Driver::Read<Matrix4x4>(pid, world + 0x1B0);
                 uintptr_t entity_list = Driver::Read<uintptr_t>(pid, world + OFFSET_ENTITY_LIST);
                 uint32_t entity_count = Driver::Read<uint32_t>(pid, world + OFFSET_ENTITY_COUNT);
 
-                // If entity count is unrealistically high, offsets are likely outdated
-                if (entity_count > 5000) {
-                    IsEmergencyShutdown = true;
-                    return;
-                }
+                if (entity_count > 5000) return; // Sanity check
 
+                Rendering::StartFrame();
                 for (uint32_t i = 0; i < entity_count; i++) {
                     uintptr_t entity = Driver::Read<uintptr_t>(pid, entity_list + (i * 8));
-                    if (entity < 0x10000) continue;
+                    if (!entity) continue;
 
-                    // Verify player type
-                    uint32_t type_id = Driver::Read<uint32_t>(pid, entity + 0x158);
-                    if (type_id > 100) { // Should be small IDs (1, 2, 4...)
-                        IsEmergencyShutdown = true;
-                        return;
-                    }
+                    // Filter only Players
+                    if (Driver::Read<uint32_t>(pid, entity + 0x158) != 0x1) continue;
 
-                    if (type_id != 0x1) continue;
-
-                    Vector3 pos = Driver::Read<Vector3>(pid, entity + OFFSET_PLAYER_POS);
-
-                    // Validate position (if coords are NaN or Inf, something is wrong)
-                    if (isnan(pos.x) || isinf(pos.x)) continue;
-
-                    if (Rendering::Prepare()) {
-                        // Drawing logic...
+                    Vector3 pos = Driver::Read<Vector3>(pid, entity + 0x2C0);
+                    ImVec2 screen;
+                    if (WorldToScreen(pos, screen, viewMatrix, 1920.0f, 1080.0f)) {
+                        Rendering::DrawESP(screen.x, screen.y - 50, screen.y, "Player", 100.0f);
                     }
                 }
+                Rendering::EndFrame();
             }
         };
     }
