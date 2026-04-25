@@ -1,86 +1,63 @@
 #pragma once
+#include <stdbool.h>
+#include <stdint.h>
 #include <windows.h>
-#include <d3d11.h>
-#include <dxgi.h>
 #include "obfuscation.h"
 
-// ImGui Headers
-#include "imgui/imgui.h"
-#include "imgui/imgui_impl_win32.h"
-#include "imgui/imgui_impl_dx11.h"
+/**
+ * Advanced Overlay Hijacking (Production Ready)
+ */
 
 namespace Cheat {
     namespace Rendering {
 
-        inline HWND hHijacked = nullptr;
-        inline ID3D11Device* pDevice = nullptr;
-        inline ID3D11DeviceContext* pContext = nullptr;
-        inline IDXGISwapChain* pSwapChain = nullptr;
-        inline ID3D11RenderTargetView* pRenderTarget = nullptr;
+        inline HWND hOverlay = nullptr;
+        inline HDC hDC = nullptr;
 
         /**
-         * Initializes DX11 on a hijacked trusted window (NVIDIA/AMD).
+         * Enhanced search for available trusted overlays.
          */
-        inline bool Init() {
-            // 1. Search and Hijack
-            char nv_class[] = {0x16, 0x10, 0x13, 0x78, 0x1a, 0x06, 0x16, 0x78, 0x02, 0x1c, 0x11, 0x12, 0x10, 0x01, 0x00};
-            hHijacked = FindWindowA(XOR_STR(nv_class), nullptr);
-            if (!hHijacked) return false;
+        inline bool Prepare() {
+            if (hDC) return true;
 
-            // Make window click-through and transparent
-            SetWindowLongPtr(hHijacked, GWL_EXSTYLE, WS_EX_TOPMOST | WS_EX_TRANSPARENT | WS_EX_LAYERED);
+            // Updated targets for latest Radeon and GeForce Experience versions
+            const char* nv_class = XOR_STR("\x16\x10\x13\x78\x1a\x06\x16\x78\x02\x1c\x11\x12\x10\x01"); // CEF-OSC-WIDGET
+            const char* amd_class = XOR_STR("\x14\x18\x11\x11\x03\x07\x1a\x1a\x13\x07\x19\x14\x1c\x0c\x02\x12\x11\x1b\x02"); // AMDDVROVERLAYWINDOW
 
-            // 2. DX11 Setup
-            DXGI_SWAP_CHAIN_DESC sd = { 0 };
-            sd.BufferCount = 2;
-            sd.BufferDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
-            sd.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT;
-            sd.OutputWindow = hHijacked;
-            sd.SampleDesc.Count = 1;
-            sd.Windowed = TRUE;
-            sd.SwapEffect = DXGI_SWAP_EFFECT_DISCARD;
+            hOverlay = FindWindowA(nv_class, nullptr);
+            if (!hOverlay) hOverlay = FindWindowA(amd_class, nullptr);
 
-            if (FAILED(D3D11CreateDeviceAndSwapChain(nullptr, D3D_DRIVER_TYPE_HARDWARE, nullptr, 0, nullptr, 0, D3D11_SDK_VERSION, &sd, &pSwapChain, &pDevice, nullptr, &pContext)))
-                return false;
+            if (hOverlay) {
+                // Ensure the window is visible and active
+                if (!IsWindowVisible(hOverlay)) return false;
 
-            ID3D11Texture2D* pBackBuffer;
-            pSwapChain->GetBuffer(0, IID_PPV_ARGS(&pBackBuffer));
-            pDevice->CreateRenderTargetView(pBackBuffer, nullptr, &pRenderTarget);
-            pBackBuffer->Release();
-
-            // 3. ImGui Init
-            IMGUI_CHECKVERSION();
-            ImGui::CreateContext();
-            ImGui_ImplWin32_Init(hHijacked);
-            ImGui_ImplDX11_Init(pDevice, pContext);
-
-            return true;
+                hDC = GetDC(hOverlay);
+                // Make transparent for input
+                SetWindowLongPtr(hOverlay, GWL_EXSTYLE, WS_EX_TOPMOST | WS_EX_TRANSPARENT | WS_EX_LAYERED);
+                return (hDC != nullptr);
+            }
+            return false;
         }
 
-        inline void StartFrame() {
-            ImGui_ImplDX11_NewFrame();
-            ImGui_ImplWin32_NewFrame();
-            ImGui::NewFrame();
+        inline void DrawBox(int x, int y, int w, int h, COLORREF color) {
+            if (!hDC) return;
+            HPEN hPen = CreatePen(PS_SOLID, 1, color);
+            auto old = SelectObject(hDC, hPen);
+            MoveToEx(hDC, x, y, NULL);
+            LineTo(hDC, x + w, y);
+            LineTo(hDC, x + w, y + h);
+            LineTo(hDC, x, y + h);
+            LineTo(hDC, x, y);
+            SelectObject(hDC, old);
+            DeleteObject(hPen);
         }
 
-        inline void EndFrame() {
-            ImGui::Render();
-            float clearColor[4] = { 0, 0, 0, 0 };
-            pContext->OMSetRenderTargets(1, &pRenderTarget, nullptr);
-            pContext->ClearRenderTargetView(pRenderTarget, clearColor);
-            ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
-            pSwapChain->Present(1, 0);
-        }
-
-        inline void DrawESP(float headX, float headY, float footY, const char* name, float dist) {
-            auto draw = ImGui::GetBackgroundDrawList();
-            float height = footY - headY;
-            float width = height / 2.0f;
-
-            draw->AddRect({ headX - width/2, headY }, { headX + width/2, footY }, ImColor(255, 0, 0));
-            char buf[64];
-            sprintf(buf, "%s [%.0fm]", name, dist);
-            draw->AddText({ headX - width/2, headY - 15 }, ImColor(255, 255, 255), buf);
+        inline void Release() {
+            if (hOverlay && hDC) {
+                ReleaseDC(hOverlay, hDC);
+                hDC = nullptr;
+                hOverlay = nullptr;
+            }
         }
     }
 }
