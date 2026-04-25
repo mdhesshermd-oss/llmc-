@@ -17,10 +17,15 @@ namespace Cheat {
 
         class ESP {
         private:
-            static constexpr uintptr_t OFFSET_WORLD = 0x413A238;
-            static constexpr uintptr_t OFFSET_ENTITY_LIST = 0x1E88;
-            static constexpr uintptr_t OFFSET_ENTITY_COUNT = 0x1E90;
-            static constexpr uintptr_t OFFSET_PLAYER_POS = 0x2C0;
+            // ==========================================
+            // MEMORY OFFSETS (Update these after game patches)
+            // ==========================================
+            static constexpr uintptr_t OFFSET_WORLD = 0x413A238;     // Pointer to the GameWorld
+            static constexpr uintptr_t OFFSET_ENTITY_LIST = 0x1E88;  // Entity array inside World
+            static constexpr uintptr_t OFFSET_ENTITY_COUNT = 0x1E90; // Number of entities in list
+            static constexpr uintptr_t OFFSET_PLAYER_POS = 0x2C0;    // Coordinates (Vector3) inside Entity
+            static constexpr uintptr_t OFFSET_TYPE_ID = 0x158;       // Entity type identifier
+            // ==========================================
 
         public:
             static void Update(uint32_t pid, uintptr_t base) {
@@ -34,15 +39,15 @@ namespace Cheat {
                     uintptr_t entity = Driver::Read<uintptr_t>(pid, entity_list + (i * 8));
                     if (!entity) continue;
 
-                    // Filter: Player Only
-                    uint32_t type_id = Driver::Read<uint32_t>(pid, entity + 0x158);
+                    // Filter: Player Only (type_id 1 is usually DayZPlayer)
+                    uint32_t type_id = Driver::Read<uint32_t>(pid, entity + OFFSET_TYPE_ID);
                     if (type_id != 0x1) continue;
 
                     Vector3 pos = Driver::Read<Vector3>(pid, entity + OFFSET_PLAYER_POS);
 
-                    // Rendering Logic
+                    // Rendering Logic using hijacked overlay
                     if (Rendering::Prepare()) {
-                        // Rendering::DrawBox(...)
+                        // Project positions and call Rendering::DrawBox here
                     }
                 }
             }
