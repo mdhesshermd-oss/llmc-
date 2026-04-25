@@ -1,35 +1,33 @@
-# Инструкция по сборке Single-File проекта
+# Инструкция по сборке в Visual Studio (C++)
 
-Этот процесс позволяет собрать лоадер и зашифрованную DLL в один исполняемый файл (`loader.exe`).
+Этот проект оптимизирован для компиляции в среде Microsoft Visual Studio 2019/2022.
 
-## Шаг 1: Сборка основной библиотеки
-```bash
-cl.exe /LD /O2 /arch:AVX2 refactored_logic.c /Fe:cheat_core.dll
-```
+## Настройка проекта
 
-## Шаг 2: Упаковка DLL в бинарный файл
-Скрипт сожмет DLL и добавит заголовок с размером оригинала.
-```bash
-python encrypt_and_pack.py cheat_core.dll packed_payload.bin
-```
+### 1. Создание решения
+1. Создайте новый проект **Empty Project (C++)**.
+2. Добавьте все `.cpp` и `.h` файлы в проект через Solution Explorer.
 
-## Шаг 3: Компиляция ресурсов
-Скомпилируйте файл ресурсов, который указывает на `packed_payload.bin`.
-```bash
-rc.exe resources.rc
-```
-Это создаст файл `resources.res`.
+### 2. Свойства проекта (Properties)
+Для корректной работы и защиты установите следующие настройки:
+- **Configuration:** Release
+- **Platform:** x64
+- **C++ Language Standard:** ISO C++17 Standard (`/std:c++17`)
+- **Optimization:** Maximize Speed (`/O2`)
+- **Instruction Set:** Advanced Vector Extensions 2 (`/arch:AVX2`) — критично для SIMD кода.
+- **Character Set:** Use Multi-Byte Character Set (для совместимости с `FindWindowA`).
 
-## Шаг 4: Сборка финального лоадера
-Соберите лоадер, прилинковав скомпилированные ресурсы.
-```bash
-cl.exe /O2 refactored_loader.c resources.res /link /OUT:loader.exe
-```
+### 3. Компиляция ресурсов
+Файл `resources.rc` должен быть включен в проект. Visual Studio автоматически вызовет `rc.exe` при сборке, если файл добавлен в раздел "Resource Files". Убедитесь, что `packed_payload.bin` находится в той же папке.
 
----
+## Процесс сборки (3 этапа)
 
-## Как это работает
-1.  **DLL** шифруется и сохраняется как **packed_payload.bin**.
-2.  **rc.exe** внедряет этот бинарный файл в секцию ресурсов будущего EXE.
-3.  При запуске **loader.exe** использует функции `FindResource` и `LoadResource` для чтения самого себя и извлечения зашифрованной DLL.
-4.  DLL расшифровывается в памяти (без сохранения на диск) и запускается.
+1. **Сборка DLL (Core):**
+   - Сначала скомпилируйте `refactored_logic.cpp` как динамическую библиотеку (`.dll`).
+2. **Упаковка:**
+   - Выполните `python encrypt_and_pack.py core.dll packed_payload.bin`.
+3. **Сборка EXE (Loader):**
+   - Скомпилируйте `refactored_loader.cpp` вместе с ресурсами для получения финального `loader.exe`.
+
+## Совет по разработке
+Используйте **Pre-compiled Headers** или разделите проект на два разных проекта в одном Solution: один для DLL, другой для Loader, чтобы автоматизировать процесс упаковки через "Post-Build Events".
