@@ -1,12 +1,11 @@
-import zlib
+import lzma
 import sys
 import os
 import struct
 
-def pack_dll(input_path, output_bin, key=0xAA):
+def pack_dll(input_path, output_bin):
     """
-    Compresses the input DLL using zlib and encrypts it with an XOR key.
-    Includes original size metadata at the beginning.
+    Compresses the input DLL using LZMA to match the original loader's logic.
     """
     try:
         if not os.path.exists(input_path):
@@ -18,22 +17,17 @@ def pack_dll(input_path, output_bin, key=0xAA):
 
         orig_size = len(data)
 
-        # 1. Compress
-        compressed = zlib.compress(data, level=9)
+        # Use LZMA compression (matches the Range Decoder logic in 'start')
+        # format=lzma.FORMAT_ALONE is the raw LZMA format used by legacy loaders
+        compressed = lzma.compress(data, format=lzma.FORMAT_ALONE)
 
-        # 2. Add header (Original Size) and XOR Encrypt
-        full_payload = struct.pack("<I", orig_size) + compressed
-
-        encrypted = bytearray()
-        for i in range(len(full_payload)):
-            encrypted.append(full_payload[i] ^ key)
-
-        # 3. Output Binary File
+        # The original code likely stores the compressed blob directly as a resource.
+        # We output it as a binary file.
         with open(output_bin, 'wb') as f:
-            f.write(encrypted)
+            f.write(compressed)
 
         print(f"Successfully packed {input_path} -> {output_bin}")
-        print(f"Original: {orig_size} bytes, Final Packed: {len(encrypted)} bytes")
+        print(f"Original: {orig_size} bytes, LZMA Compressed: {len(compressed)} bytes")
 
     except Exception as e:
         print(f"Error: {e}")
