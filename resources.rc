@@ -1,0 +1,3 @@
+#include "resource.h"
+
+IDR_PAYLOAD_BIN RCDATA "packed_payload.bin"
