@@ -1,22 +1,25 @@
-; syscalls.asm
-; MASM implementation for direct syscalls in x64
+; syscalls.asm (Updated to include VMCALL)
 .code
 
 InternalSyscall proc
-    mov eax, ecx          ; eax = SSN (System Service Number)
-    mov r10, rdx          ; r10 = 1st argument for syscall (originally 2nd for InternalSyscall)
-    mov rdx, r8           ; rdx = 2nd argument
-    mov r8, r9            ; r8 = 3rd argument
-    mov r9, [rsp + 40]    ; r9 = 4th argument
-
-    ; Shift remaining stack arguments if any (5th and 6th)
+    mov eax, ecx
+    mov r10, rdx
+    mov rdx, r8
+    mov r8, r9
+    mov r9, [rsp + 40]
     mov rax, [rsp + 48]
     mov [rsp + 40], rax
     mov rax, [rsp + 56]
     mov [rsp + 48], rax
-
-    syscall               ; Invoke the kernel
+    syscall
     ret
 InternalSyscall endp
+
+; InternalVMCALL(key, code, arg1, arg2)
+InternalVMCALL proc
+    ; ecx = key, edx = code, r8 = arg1, r9 = arg2
+    vmcall
+    ret
+InternalVMCALL endp
 
 end
