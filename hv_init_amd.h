@@ -1,102 +1,90 @@
 #pragma once
 #include <stdint.h>
-#include <windows.h>
-#include <intrin.h>
-#include "hv_core_amd.h"
+#include <ntddk.h>
+#include "hv_core.h"
 
 /**
  * AMD SVM Initialization (Production Grade)
- * Implements Identity Mapping (1:1 Guest->Host) via NPT Huge Pages.
+ * Uses kernel-mode memory allocation (MmAllocateContiguousMemory).
  */
 
 namespace Cheat {
     namespace Hv {
         namespace AMD {
 
-            extern "C" void SvmLaunch(void* vmcb_pa);
+            extern "C" void SvmLaunch(uint64_t vmcb_pa, uint64_t hsave_pa, void* context);
 
-            // Helpers for physical memory management in Ring 0
             inline void* AllocatePhys(size_t size) {
-                // In a driver, use MmAllocateContiguousMemory
-                return _aligned_malloc(size, 4096);
+                PHYSICAL_ADDRESS high;
+                high.QuadPart = 0xFFFFFFFFFFFFFFFFULL;
+                return MmAllocateContiguousMemory(size, high);
             }
 
             inline uint64_t GetPhys(void* va) {
-                // In a driver, use MmGetPhysicalAddress
-                return (uintptr_t)va; // Placeholder
+                return MmGetPhysicalAddress(va).QuadPart;
             }
 
-            /**
-             * Sets up 1:1 Identity Mapping for the first 16GB of RAM.
-             * Uses 2MB Huge Pages in the NPT (Nested Page Tables).
-             */
             inline uint64_t SetupIdentityNPT() {
                 NptEntry* pml4 = (NptEntry*)AllocatePhys(4096);
                 NptEntry* pdpt = (NptEntry*)AllocatePhys(4096);
-                memset(pml4, 0, 4096);
-                memset(pdpt, 0, 4096);
+                if (!pml4 || !pdpt) return 0;
 
-                // PML4[0] points to PDPT
+                RtlZeroMemory(pml4, 4096);
+                RtlZeroMemory(pdpt, 4096);
+
                 pml4[0].bits.pfn = GetPhys(pdpt) >> 12;
                 pml4[0].bits.present = 1;
                 pml4[0].bits.write = 1;
-                pml4[0].bits.user = 1;
 
-                // Map 16 entries in PDPT (16 GB total)
                 for (int i = 0; i < 16; i++) {
                     NptEntry* pd = (NptEntry*)AllocatePhys(4096);
-                    memset(pd, 0, 4096);
+                    if (!pd) break;
+                    RtlZeroMemory(pd, 4096);
 
                     pdpt[i].bits.pfn = GetPhys(pd) >> 12;
                     pdpt[i].bits.present = 1;
                     pdpt[i].bits.write = 1;
 
-                    // Map 512 entries in each PD (512 * 2MB = 1GB per PD)
                     for (int j = 0; j < 512; j++) {
                         pd[j].raw = 0;
-                        // Calculate physical address for this 2MB block
                         pd[j].bits.pfn = (uint64_t)((i * 512) + j) * (2048 * 1024) >> 12;
                         pd[j].bits.present = 1;
                         pd[j].bits.write = 1;
-                        pd[j].bits.pat = 1; // Bit 7 set for 2MB page size in NPT
+                        pd[j].bits.pat = 1;
                     }
                 }
                 return GetPhys(pml4);
             }
 
-            /**
-             * Initializes SVM for the current core.
-             */
-            inline bool InitializeSVM() {
-                // 1. Check support
+            inline bool InitializeSVM(PerCoreData* ctx) {
                 int cpuInfo[4];
                 __cpuid(cpuInfo, 0x80000001);
                 if (!(cpuInfo[2] & (1 << 2))) return false;
 
-                // 2. Enable SVM in EFER
                 uint64_t efer = __readmsr(0xC0000080);
                 __writemsr(0xC0000080, efer | (1ULL << 12));
 
-                // 3. Setup VMCB and Host State
                 void* vmcb = AllocatePhys(4096);
                 void* hostState = AllocatePhys(4096);
-                memset(vmcb, 0, 4096);
-                __writemsr(0xC0000101, GetPhys(hostState)); // VM_HSAVE_PA
+                if (!vmcb || !hostState) return false;
 
-                // 4. Setup Nested Paging (Identity 1:1)
+                RtlZeroMemory(vmcb, 4096);
+                ctx->vmcb_pa = GetPhys(vmcb);
+                ctx->hsave_pa = GetPhys(hostState);
+                __writemsr(0xC0000101, ctx->hsave_pa);
+
                 uint64_t npt_cr3 = SetupIdentityNPT();
-                *(uint64_t*)((uintptr_t)vmcb + 0xB0) = npt_cr3; // n_cr3
-                *(uint64_t*)((uintptr_t)vmcb + 0x90) |= (1ULL << 0); // NP_ENABLE
+                *(uint64_t*)((uintptr_t)vmcb + 0xB0) = npt_cr3;
+                *(uint64_t*)((uintptr_t)vmcb + 0x90) |= (1ULL << 0);
 
-                // 5. Setup Intercepts and Handler
                 extern void* SvmVmExitHandler;
                 *(uint64_t*)((uintptr_t)vmcb + 0x400 + 0x1E8) = (uintptr_t)&SvmVmExitHandler;
 
                 uint32_t* intercepts = (uint32_t*)((uintptr_t)vmcb + 0x0C);
-                *intercepts |= (1 << 18); // Intercept CPUID
+                *intercepts |= (1 << 18); // CPUID
+                *intercepts |= (1 << 0);  // VMMCALL
 
-                // 6. Launch
-                // SvmLaunch(vmcb);
+                // SvmLaunch(ctx->vmcb_pa, ctx->hsave_pa, ctx);
 
                 return true;
             }

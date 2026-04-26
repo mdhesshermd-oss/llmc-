@@ -1,59 +1,48 @@
 #pragma once
-#include <stdint.h>
+#include <ntddk.h>
 
 /**
- * HyperBone-based EPT (Extended Page Tables) Management
- * Implements memory cloaking and stealth hooks.
+ * Hypervisor Core Contexts and NPT Structures
+ * Defines the Ring -1 data structures for multi-core management.
  */
 
-namespace Cheat {
-    namespace Hv {
+namespace Cheat { namespace Hv {
+    // Secret authorization key for hypercalls
+    constexpr uint64_t HV_SECRET_KEY = 0x5A4F524F5F444159;
 
-        // EPT Page Table Entry Bits
-        constexpr uint64_t EPT_READ = (1ULL << 0);
-        constexpr uint64_t EPT_WRITE = (1ULL << 1);
-        constexpr uint64_t EPT_EXECUTE = (1ULL << 2);
-        constexpr uint64_t EPT_MEMORY_TYPE_WB = (6ULL << 3);
+    #pragma pack(push, 1)
+    union NptEntry {
+        uint64_t raw;
+        struct {
+            uint64_t present : 1;
+            uint64_t write : 1;
+            uint64_t user : 1;
+            uint64_t pwt : 1;
+            uint64_t pcd : 1;
+            uint64_t accessed : 1;
+            uint64_t dirty : 1;
+            uint64_t pat : 1;      // Bit 7: 1 for 2MB Huge Page, 0 for pointer to next level
+            uint64_t global : 1;
+            uint64_t avl : 3;
+            uint64_t pfn : 40;     // Physical Frame Number
+            uint64_t reserved : 11;
+            uint64_t nx : 1;       // No-Execute bit
+        } bits;
+    };
 
-        /**
-         * EPT Entry structure (64-bit)
-         */
-        union EptEntry {
-            uint64_t value;
-            struct {
-                uint64_t read : 1;
-                uint64_t write : 1;
-                uint64_t execute : 1;
-                uint64_t memory_type : 3;
-                uint64_t ignore_pat : 1;
-                uint64_t ip_executable : 1;
-                uint64_t reserved_1 : 3;
-                uint64_t accessed : 1;
-                uint64_t dirty : 1;
-                uint64_t reserved_2 : 1;
-                uint64_t pfn : 40;
-                uint64_t reserved_3 : 10;
-            } bits;
-        };
+    struct PerCoreData {
+        uint64_t vmcb_pa;
+        uint64_t hsave_pa;
+        uint64_t npt_root_pa;
+        PerCoreData* self_va; // Pointer for GS-relative access in Ring -1
+        volatile long lifecycle_state; // 0:Off, 1:Running, 2:Unload
+        volatile long is_processing;   // Recursion protection
+        uint64_t exit_count;
+        uint64_t tsc_total_latency;
+    };
+    #pragma pack(pop)
 
-        /**
-         * Stealth Hook: Redirects execution to a shadowed page.
-         * Concept: EPT TLB Splitting.
-         */
-        inline void CloakMemoryPage(uint64_t guest_phys, uint64_t shadow_phys) {
-            // Hypervisor logic:
-            // 1. Find EPT entry for guest_phys.
-            // 2. Clear EXECUTE bit for the original page.
-            // 3. Handle EPT Violation:
-            //    - If access is EXECUTE, swap to shadow_phys.
-            //    - If access is READ/WRITE, swap back to guest_phys.
-        }
-
-        /**
-         * MSR Hook: Intercept syscalls by hijacking LSTAR.
-         */
-        inline void HijackSyscalls(uint64_t new_handler) {
-            // __writemsr(0xC0000082 /* MSR_LSTAR */, new_handler);
-        }
-    }
-}
+    struct GuestRegisters {
+        uint64_t rax, rcx, rdx, rbx, rsp, rbp, rsi, rdi, r8, r9, r10, r11, r12, r13, r14, r15;
+    };
+}}
