@@ -10,19 +10,31 @@ extern HandleVmExit : proc
 ; SvmLaunch(uint64_t vmcb_pa, uint64_t hsave_pa, void* context)
 ; RCX = VMCB_PA, RDX = HSAVE_PA, R8 = Context VA
 SvmLaunch proc
-    mov r10, rcx        ; Save VMCB_PA
-    mov r11, rdx        ; Save HSAVE_PA
+    ; Save non-volatile registers
+    push rbx
+    push rbp
+    push rdi
+    push rsi
+    push r12
+    push r13
+    push r14
+    push r15
+
+    ; Use non-volatile registers for persistent data across Guest execution
+    mov r12, r8         ; r12 = Context (PerCoreData*)
+    mov r13, rcx        ; r13 = VMCB_PA
+    mov r14, rdx        ; r14 = HSAVE_PA
 
     ; Setup Host GS Base for fast context access in Ring -1
     mov ecx, 0C0000102h ; MSR_KERNEL_GS_BASE
-    mov rax, r8         ; Context VA (low 32)
-    mov rdx, r8
-    shr rdx, 32         ; Context VA (high 32)
+    mov rax, r12
+    mov rdx, r12
+    shr rdx, 32
     wrmsr
 
 svm_loop:
-    mov rax, r11        ; HSAVE_PA for vmsave/vmload
-    vmsave rax
+    mov rax, r14
+    vmsave rax          ; Save Host State
 
     ; Save extended processor state (AVX/SSE)
     sub rsp, 4096
@@ -33,12 +45,13 @@ svm_loop:
     xsave [rsp]
 
     ; --- ENTER GUEST MODE ---
-    mov rax, r10
+    mov rax, r13
     vmrun rax
 
     ; --- VMEXIT JUMPS HERE (Host RIP in VMCB) ---
 SvmVmExitHandler label qword
-    vmload r11          ; Restore host state
+    mov rax, r14
+    vmload rax          ; Restore Host State
 
     ; Save Guest GPRs to stack (matches GuestRegisters struct)
     push r15
@@ -57,7 +70,7 @@ SvmVmExitHandler label qword
     push rcx
     push rax
 
-    mov rcx, r10        ; Param 1: VMCB_PA
+    mov rcx, r13        ; Param 1: VMCB_PA
     mov rdx, rsp        ; Param 2: GuestRegisters*
 
     sub rsp, 32
@@ -90,10 +103,19 @@ SvmVmExitHandler label qword
     jmp svm_loop
 
 svm_exit_final:
-    ; Cleanup and return to caller
-    add rsp, 120        ; Discard pushed registers
-    xrstor [rsp]
+    ; Cleanup stack and restore non-volatile registers
+    add rsp, 128        ; Discard Guest GPRs
+    xrstor [rsp]        ; This matches the last push before exit
     add rsp, 4096
+
+    pop r15
+    pop r14
+    pop r13
+    pop r12
+    pop rsi
+    pop rdi
+    pop rbp
+    pop rbx
     ret
 SvmLaunch endp
 

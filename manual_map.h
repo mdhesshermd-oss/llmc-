@@ -15,9 +15,6 @@ namespace Cheat {
             bool Success;
         };
 
-        /**
-         * Шеллкод: вызывает EntryPoint DLL и возвращается на оригинальный RIP игры.
-         */
         static inline uint8_t hijack_shellcode[] = {
             0x48, 0x83, 0xEC, 0x28,                                     // 0: sub rsp, 28h
             0x48, 0xB8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // 4: mov rax, <EntryPoint>
@@ -27,9 +24,6 @@ namespace Cheat {
             0xFF, 0xE0                                                  // 30: jmp rax
         };
 
-        /**
-         * Перехватывает поток игры для выполнения внедренного кода.
-         */
         static bool Hijack(uint32_t pid, uint64_t cr3, uintptr_t entryPoint) {
             HANDLE hSnap = CreateToolhelp32Snapshot(TH32CS_SNAPTHREAD, 0);
             THREADENTRY32 te = { sizeof(te) };
@@ -44,14 +38,12 @@ namespace Cheat {
                     CONTEXT ctx = { CONTEXT_CONTROL };
                     GetThreadContext(hThread, &ctx);
 
-                    // 1. Область для шеллкода (в идеале выделенная через гипервизор)
-                    uintptr_t shellcodeAddr = 0x140010000;
+                    uintptr_t shellcodeAddr = Hv::AllocateRemoteMemory(cr3, 4096);
+                    if (!shellcodeAddr) { CloseHandle(hThread); continue; }
 
-                    // 2. Патчим шеллкод адресом входа и адресом возврата
                     *(uint64_t*)(hijack_shellcode + 6) = entryPoint;
                     *(uint64_t*)(hijack_shellcode + 22) = ctx.Rip;
 
-                    // 3. Записываем шеллкод и перенаправляем поток
                     Hv::WriteRaw(cr3, shellcodeAddr, hijack_shellcode, sizeof(hijack_shellcode));
 
                     ctx.Rip = shellcodeAddr;
@@ -67,37 +59,39 @@ namespace Cheat {
             return true;
         }
 
-        /**
-         * Маппинг PE-образа в процесс через гипервизор.
-         */
         static MappingData MapImage(uint64_t cr3, const std::vector<uint8_t>& rawData) {
-            MappingData result = { 0, 0, false };
+            MappingData res = { 0, 0, false };
+            PIMAGE_DOS_HEADER dos = (PIMAGE_DOS_HEADER)rawData.data();
+            PIMAGE_NT_HEADERS nt = (PIMAGE_NT_HEADERS)(rawData.data() + dos->e_lfanew);
 
-            PIMAGE_DOS_HEADER pDos = (PIMAGE_DOS_HEADER)rawData.data();
-            PIMAGE_NT_HEADERS pNt = (PIMAGE_NT_HEADERS)(rawData.data() + pDos->e_lfanew);
+            // 1. Allocate memory through hypervisor
+            uintptr_t remoteBase = Hv::AllocateRemoteMemory(cr3, nt->OptionalHeader.SizeOfImage);
+            if (!remoteBase) return res;
 
-            uintptr_t remoteBase = 0x140000000 + pNt->OptionalHeader.SizeOfImage;
+            // 2. Map Headers
+            Hv::WriteRaw(cr3, remoteBase, (void*)rawData.data(), nt->OptionalHeader.SizeOfHeaders);
 
-            Hv::WriteRaw(cr3, remoteBase, (void*)rawData.data(), pNt->OptionalHeader.SizeOfHeaders);
-
-            PIMAGE_SECTION_HEADER pSection = IMAGE_FIRST_SECTION(pNt);
-            for (int i = 0; i < pNt->FileHeader.NumberOfSections; ++i) {
-                if (pSection[i].SizeOfRawData > 0) {
-                    Hv::WriteRaw(cr3, remoteBase + pSection[i].VirtualAddress,
-                                 (void*)(rawData.data() + pSection[i].PointerToRawData),
-                                 pSection[i].SizeOfRawData);
+            // 3. Map Sections
+            PIMAGE_SECTION_HEADER sect = IMAGE_FIRST_SECTION(nt);
+            for (int i = 0; i < nt->FileHeader.NumberOfSections; i++) {
+                if (sect[i].SizeOfRawData > 0) {
+                    Hv::WriteRaw(cr3, remoteBase + sect[i].VirtualAddress,
+                                 (void*)(rawData.data() + sect[i].PointerToRawData),
+                                 sect[i].SizeOfRawData);
                 }
             }
 
-            uintptr_t delta = remoteBase - pNt->OptionalHeader.ImageBase;
-            if (!Pe::ApplyRelocations(cr3, (void*)remoteBase, pNt, delta)) return result;
-            if (!Pe::ResolveImports(cr3, (void*)remoteBase, pNt)) return result;
+            // 4. Apply Relocations
+            uintptr_t delta = remoteBase - nt->OptionalHeader.ImageBase;
+            if (!Pe::ApplyRelocations(cr3, (void*)remoteBase, nt, delta)) return res;
 
-            result.ImageBase = remoteBase;
-            result.EntryPoint = remoteBase + pNt->OptionalHeader.AddressOfEntryPoint;
-            result.Success = true;
+            // 5. Resolve Imports
+            if (!Pe::ResolveImports(cr3, (void*)remoteBase, nt)) return res;
 
-            return result;
+            res.ImageBase = remoteBase;
+            res.EntryPoint = remoteBase + nt->OptionalHeader.AddressOfEntryPoint;
+            res.Success = true;
+            return res;
         }
     };
 }

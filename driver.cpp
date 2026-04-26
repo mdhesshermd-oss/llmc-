@@ -2,135 +2,89 @@
 #include <ntstrsafe.h>
 #include "hv_core.h"
 
-// --- IOCTL Definitions ---
-#define IO_READ_REQUEST  CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0801, METHOD_BUFFERED, FILE_ANY_ACCESS)
-#define IO_WRITE_REQUEST CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0802, METHOD_BUFFERED, FILE_ANY_ACCESS)
-#define IO_GET_BASE_ADDR CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0803, METHOD_BUFFERED, FILE_ANY_ACCESS)
-#define IO_LAUNCH_HV     CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0805, METHOD_BUFFERED, FILE_ANY_ACCESS)
+/**
+ * Advanced Kernel Bridge Driver
+ * Orchestrates multi-core hypervisor initialization.
+ */
 
-typedef struct _KERNEL_READ_REQUEST {
-    ULONG ProcessId;
-    ULONGLONG Address;
-    PVOID Response;
-    SIZE_T Size;
-} KERNEL_READ_REQUEST, *PKERNEL_READ_REQUEST;
+#define IO_LAUNCH_HV CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0805, METHOD_BUFFERED, FILE_ANY_ACCESS)
 
-typedef struct _KERNEL_WRITE_REQUEST {
-    ULONG ProcessId;
-    ULONGLONG Address;
-    PVOID Value;
-    SIZE_T Size;
-} KERNEL_WRITE_REQUEST, *PKERNEL_WRITE_REQUEST;
-
-// --- Prototypes ---
-NTSTATUS DriverEntry(PDRIVER_OBJECT pDriverObject, PUNICODE_STRING pRegistryPath);
-NTSTATUS UnloadDriver(PDRIVER_OBJECT pDriverObject);
-NTSTATUS IoControl(PDEVICE_OBJECT pDeviceObject, PIRP pIrp);
-NTSTATUS CreateCall(PDEVICE_OBJECT pDeviceObject, PIRP pIrp);
-NTSTATUS CloseCall(PDEVICE_OBJECT pDeviceObject, PIRP pIrp);
+// Standard Pool Tag for Hypervisor
+#define HV_POOL_TAG 'HVMx'
 
 // Forward declaration matching hv_init_amd.h
 namespace Cheat { namespace Hv { namespace AMD {
     bool InitializeSVM(PerCoreData* ctx);
 }}}
 
-// Function launched on every core
+/**
+ * DPC routine called for each logical core to transition to Ring -1.
+ */
 void NTAPI HvKernelBootstrap(PKDPC Dpc, PVOID Context, PVOID SystemArgument1, PVOID SystemArgument2) {
     UNREFERENCED_PARAMETER(Dpc);
     UNREFERENCED_PARAMETER(Context);
 
-    // Allocate context for the core
-    Cheat::Hv::PerCoreData* ctx = (Cheat::Hv::PerCoreData*)ExAllocatePoolWithTag(NonPagedPool, sizeof(Cheat::Hv::PerCoreData), 'HV');
+    // Allocate core-specific context in NonPagedPool
+    Cheat::Hv::PerCoreData* ctx = (Cheat::Hv::PerCoreData*)ExAllocatePoolWithTag(NonPagedPool, sizeof(Cheat::Hv::PerCoreData), HV_POOL_TAG);
+
     if (ctx) {
         RtlZeroMemory(ctx, sizeof(Cheat::Hv::PerCoreData));
-        Cheat::Hv::AMD::InitializeSVM(ctx);
+        ctx->self_va = ctx;
+        ctx->lifecycle_state = 1; // Running
+
+        // Enter hypervisor mode on this core
+        if (!Cheat::Hv::AMD::InitializeSVM(ctx)) {
+            ExFreePoolWithTag(ctx, HV_POOL_TAG);
+        }
     }
 
+    // Signal completion of DPC on this core
     KeSignalCallDpcDone(SystemArgument1);
 }
 
-PDEVICE_OBJECT pDeviceObject;
-UNICODE_STRING dev, dos;
-
-NTSTATUS DriverEntry(PDRIVER_OBJECT pDriverObject, PUNICODE_STRING pRegistryPath) {
-    UNREFERENCED_PARAMETER(pRegistryPath);
-
-    RtlInitUnicodeString(&dev, L"\\Device\\DayZStealth");
-    RtlInitUnicodeString(&dos, L"\\DosDevices\\DayZStealth");
-
-    IoCreateDevice(pDriverObject, 0, &dev, FILE_DEVICE_UNKNOWN, FILE_DEVICE_SECURE_OPEN, FALSE, &pDeviceObject);
-    IoCreateSymbolicLink(&dos, &dev);
-
-    pDriverObject->MajorFunction[IRP_MJ_CREATE] = CreateCall;
-    pDriverObject->MajorFunction[IRP_MJ_CLOSE] = CloseCall;
-    pDriverObject->MajorFunction[IRP_MJ_DEVICE_CONTROL] = IoControl;
-    pDriverObject->DriverUnload = UnloadDriver;
-
-    pDeviceObject->Flags |= DO_DIRECT_IO;
-    pDeviceObject->Flags &= ~DO_DEVICE_INITIALIZING;
-
+NTSTATUS CreateClose(PDEVICE_OBJECT DeviceObject, PIRP Irp) {
+    UNREFERENCED_PARAMETER(DeviceObject);
+    Irp->IoStatus.Status = STATUS_SUCCESS;
+    Irp->IoStatus.Information = 0;
+    IoCompleteRequest(Irp, IO_NO_INCREMENT);
     return STATUS_SUCCESS;
 }
 
-NTSTATUS UnloadDriver(PDRIVER_OBJECT pDriverObject) {
-    UNREFERENCED_PARAMETER(pDriverObject);
-    IoDeleteSymbolicLink(&dos);
-    IoDeleteDevice(pDeviceObject);
-    return STATUS_SUCCESS;
-}
+NTSTATUS IoControl(PDEVICE_OBJECT DeviceObject, PIRP Irp) {
+    UNREFERENCED_PARAMETER(DeviceObject);
+    PIO_STACK_LOCATION stack = IoGetCurrentIrpStackLocation(Irp);
+    NTSTATUS status = STATUS_SUCCESS;
 
-NTSTATUS CreateCall(PDEVICE_OBJECT pDeviceObject, PIRP pIrp) {
-    UNREFERENCED_PARAMETER(pDeviceObject);
-    pIrp->IoStatus.Status = STATUS_SUCCESS;
-    pIrp->IoStatus.Information = 0;
-    IoCompleteRequest(pIrp, IO_NO_INCREMENT);
-    return STATUS_SUCCESS;
-}
-
-NTSTATUS CloseCall(PDEVICE_OBJECT pDeviceObject, PIRP pIrp) {
-    UNREFERENCED_PARAMETER(pDeviceObject);
-    pIrp->IoStatus.Status = STATUS_SUCCESS;
-    pIrp->IoStatus.Information = 0;
-    IoCompleteRequest(pIrp, IO_NO_INCREMENT);
-    return STATUS_SUCCESS;
-}
-
-NTSTATUS IoControl(PDEVICE_OBJECT pDeviceObject, PIRP pIrp) {
-    UNREFERENCED_PARAMETER(pDeviceObject);
-    NTSTATUS Status = STATUS_UNSUCCESSFUL;
-    ULONG ByteCount = 0;
-    PIO_STACK_LOCATION stack = IoGetCurrentIrpStackLocation(pIrp);
-    ULONG ControlCode = stack->Parameters.DeviceIoControl.IoControlCode;
-
-    if (ControlCode == IO_READ_REQUEST) {
-        PKERNEL_READ_REQUEST ReadInput = (PKERNEL_READ_REQUEST)pIrp->AssociatedIrp.SystemBuffer;
-        PEPROCESS Process;
-        if (NT_SUCCESS(PsLookupProcessByProcessId((HANDLE)ReadInput->ProcessId, &Process))) {
-            PSIZE_T Bytes;
-            MmCopyVirtualMemory(Process, (PVOID)ReadInput->Address, IoGetCurrentProcess(), ReadInput->Response, ReadInput->Size, KernelMode, &Bytes);
-            ObDereferenceObject(Process);
-            Status = STATUS_SUCCESS;
-            ByteCount = sizeof(KERNEL_READ_REQUEST);
-        }
-    }
-    else if (ControlCode == IO_WRITE_REQUEST) {
-        PKERNEL_WRITE_REQUEST WriteInput = (PKERNEL_WRITE_REQUEST)pIrp->AssociatedIrp.SystemBuffer;
-        PEPROCESS Process;
-        if (NT_SUCCESS(PsLookupProcessByProcessId((HANDLE)WriteInput->ProcessId, &Process))) {
-            PSIZE_T Bytes;
-            MmCopyVirtualMemory(IoGetCurrentProcess(), WriteInput->Value, Process, (PVOID)WriteInput->Address, WriteInput->Size, KernelMode, &Bytes);
-            ObDereferenceObject(Process);
-            Status = STATUS_SUCCESS;
-            ByteCount = sizeof(KERNEL_WRITE_REQUEST);
-        }
-    }
-    else if (ControlCode == IO_LAUNCH_HV) {
+    if (stack->Parameters.DeviceIoControl.IoControlCode == IO_LAUNCH_HV) {
+        // Force all cores to virtualize simultaneously using a generic DPC call
         KeGenericCallDpc(HvKernelBootstrap, NULL);
-        Status = STATUS_SUCCESS;
     }
 
-    pIrp->IoStatus.Status = Status;
-    pIrp->IoStatus.Information = ByteCount;
-    IoCompleteRequest(pIrp, IO_NO_INCREMENT);
-    return Status;
+    Irp->IoStatus.Status = status;
+    Irp->IoStatus.Information = 0;
+    IoCompleteRequest(Irp, IO_NO_INCREMENT);
+    return status;
+}
+
+extern "C" NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath) {
+    UNREFERENCED_PARAMETER(RegistryPath);
+
+    UNICODE_STRING dev = RTL_CONSTANT_STRING(L"\\Device\\DayZStealth");
+    UNICODE_STRING sym = RTL_CONSTANT_STRING(L"\\??\\DayZStealth");
+    PDEVICE_OBJECT deviceObj;
+
+    NTSTATUS status = IoCreateDevice(DriverObject, 0, &dev, FILE_DEVICE_UNKNOWN, FILE_DEVICE_SECURE_OPEN, FALSE, &deviceObj);
+    if (!NT_SUCCESS(status)) return status;
+
+    status = IoCreateSymbolicLink(&sym, &dev);
+    if (!NT_SUCCESS(status)) {
+        IoDeleteDevice(deviceObj);
+        return status;
+    }
+
+    DriverObject->MajorFunction[IRP_MJ_CREATE] = CreateClose;
+    DriverObject->MajorFunction[IRP_MJ_CLOSE] = CreateClose;
+    DriverObject->MajorFunction[IRP_MJ_DEVICE_CONTROL] = IoControl;
+
+    return STATUS_SUCCESS;
 }
