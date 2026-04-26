@@ -1,22 +1,24 @@
-# Руководство по сборке Hypervisor-проекта (HyperBone Edition)
+# Инструкция по сборке в Visual Studio (C++)
 
-Этот проект требует дополнительных инструментов для компиляции низкоуровневых компонентов VMM.
+Этот проект оптимизирован для компиляции в среде Microsoft Visual Studio 2019/2022.
 
-## Дополнительные требования
-1. **Windows Driver Kit (WDK)** — необходим для сборки драйверной части гипервизора.
-2. **NASM / MASM** — для компиляции ассемблерных вставок (`syscalls.asm`).
-3. **Intel CPU** с поддержкой VT-x и EPT.
+## Настройка проекта
 
-## Настройка Visual Studio
-1. Установите **WDK Extensions** для Visual Studio.
-2. В Solution Explorer убедитесь, что файлы гипервизора (`hv_*.h`) включены в проект лоадера.
-3. Настройте MASM (как описано в предыдущих частях `BUILD.md`).
+### 1. Поддержка Ассемблера (ВАЖНО)
+Для корректной работы системных вызовов необходимо настроить файл `syscalls.asm`.
+**Обязательно следуйте шагам в файле [ASM_GUIDE.md](ASM_GUIDE.md)** перед началом сборки.
+
+### 2. Свойства проекта (Properties)
+- **Configuration:** Release
+- **Platform:** x64
+- **C++ Standard:** C++17 or C++20
+- **Optimizations:** /O2 (Maximize Speed)
+- **Instruction Set:** /arch:AVX2
+
+### 3. Компиляция ресурсов
+Убедитесь, что `resources.rc` включен в проект. Он автоматически вшьет зашифрованную DLL в ваш EXE.
 
 ## Процесс сборки
-1. **Сборка VMM:** Скомпилируйте `refactored_loader.cpp` вместе с `hv_init.h` и `hv_core.h`.
-2. **Сборка DLL:** Скомпилируйте `refactored_logic.cpp` (ESP Core).
-3. **Упаковка:** Используйте `encrypt_and_pack.py` для создания `packed_payload.bin`.
-4. **Финальный EXE:** Результирующий `loader.exe` теперь содержит в себе и гипервизор, и зашифрованную DLL.
-
-## Предупреждение
-Неправильная настройка VMM может привести к BSOD (синему экрану смерти). Тестируйте только в безопасной среде, следуя **`DEBUGGING.md`**.
+1. Скомпилируйте `refactored_logic.cpp` как DLL.
+2. Запакуйте: `python encrypt_and_pack.py core.dll packed_payload.bin`.
+3. Соберите `refactored_loader.cpp` + `syscalls.asm` + `resources.rc` в итоговый `loader.exe`.
