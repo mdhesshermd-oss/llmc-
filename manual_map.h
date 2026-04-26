@@ -1,5 +1,6 @@
 #pragma once
 #include <windows.h>
+#include <vector>
 #include <tlhelp32.h>
 #include "hypervisor_io.h"
 #include "pe_reloc.h"
@@ -9,27 +10,27 @@ namespace Cheat {
     class ManualMapper {
     public:
         struct MappingData {
-            void* ImageBase;
-            void* EntryPoint;
+            uintptr_t ImageBase;
+            uintptr_t EntryPoint;
             bool Success;
         };
 
-        // Shellcode: calls LoadLibraryA, calls EntryPoint, then jumps back to original RIP
+        /**
+         * Шеллкод: вызывает EntryPoint DLL и возвращается на оригинальный RIP игры.
+         */
         static inline uint8_t hijack_shellcode[] = {
-            0x48, 0x83, 0xEC, 0x28,                                     // sub rsp, 28h
-            0x48, 0xB9, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // mov rcx, <DLL_PATH_ADDR>
-            0x48, 0xB8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // mov rax, <LoadLibraryA_ADDR>
-            0xFF, 0xD0,                                                 // call rax
-            0x48, 0x83, 0xC4, 0x28,                                     // add rsp, 28h
-            0x48, 0xB8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // mov rax, <Original_RIP>
-            0xFF, 0xE0                                                  // jmp rax
+            0x48, 0x83, 0xEC, 0x28,                                     // 0: sub rsp, 28h
+            0x48, 0xB8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // 4: mov rax, <EntryPoint>
+            0xFF, 0xD0,                                                 // 14: call rax
+            0x48, 0x83, 0xC4, 0x28,                                     // 16: add rsp, 28h
+            0x48, 0xB8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // 20: mov rax, <Original_RIP>
+            0xFF, 0xE0                                                  // 30: jmp rax
         };
 
         /**
-         * Hijacks an existing game thread to execute the shellcode.
-         * Bypasses 'CreateRemoteThread' detection by using the game's own context.
+         * Перехватывает поток игры для выполнения внедренного кода.
          */
-        static bool Hijack(uint32_t pid, uint64_t cr3, uintptr_t remoteShellcodeAddr) {
+        static bool Hijack(uint32_t pid, uint64_t cr3, uintptr_t entryPoint) {
             HANDLE hSnap = CreateToolhelp32Snapshot(TH32CS_SNAPTHREAD, 0);
             THREADENTRY32 te = { sizeof(te) };
             if (!Thread32First(hSnap, &te)) return false;
@@ -40,18 +41,20 @@ namespace Cheat {
                     if (!hThread) continue;
 
                     SuspendThread(hThread);
-
                     CONTEXT ctx = { CONTEXT_CONTROL };
                     GetThreadContext(hThread, &ctx);
 
-                    // Patch shellcode with the thread's original return address
-                    *(uint64_t*)(hijack_shellcode + 28) = ctx.Rip;
+                    // 1. Область для шеллкода (в идеале выделенная через гипервизор)
+                    uintptr_t shellcodeAddr = 0x140010000;
 
-                    // Write shellcode to the target process via Hypercall
-                    Hv::WriteRaw(cr3, remoteShellcodeAddr, hijack_shellcode, sizeof(hijack_shellcode));
+                    // 2. Патчим шеллкод адресом входа и адресом возврата
+                    *(uint64_t*)(hijack_shellcode + 6) = entryPoint;
+                    *(uint64_t*)(hijack_shellcode + 22) = ctx.Rip;
 
-                    // Redirect the thread to the shellcode
-                    ctx.Rip = remoteShellcodeAddr;
+                    // 3. Записываем шеллкод и перенаправляем поток
+                    Hv::WriteRaw(cr3, shellcodeAddr, hijack_shellcode, sizeof(hijack_shellcode));
+
+                    ctx.Rip = shellcodeAddr;
                     SetThreadContext(hThread, &ctx);
 
                     ResumeThread(hThread);
@@ -64,20 +67,34 @@ namespace Cheat {
             return true;
         }
 
+        /**
+         * Маппинг PE-образа в процесс через гипервизор.
+         */
         static MappingData MapImage(uint64_t cr3, const std::vector<uint8_t>& rawData) {
-            MappingData result = { nullptr, nullptr, false };
+            MappingData result = { 0, 0, false };
 
             PIMAGE_DOS_HEADER pDos = (PIMAGE_DOS_HEADER)rawData.data();
             PIMAGE_NT_HEADERS pNt = (PIMAGE_NT_HEADERS)(rawData.data() + pDos->e_lfanew);
 
-            // Manual mapping logic (Headers -> Sections -> Relocs -> Imports)
-            // Simplified for this architectural overview
-            void* pRemoteImage = (void*)0x140000000;
+            uintptr_t remoteBase = 0x140000000 + pNt->OptionalHeader.SizeOfImage;
 
-            Hv::WriteRaw(cr3, (uintptr_t)pRemoteImage, (void*)rawData.data(), pNt->OptionalHeader.SizeOfHeaders);
+            Hv::WriteRaw(cr3, remoteBase, (void*)rawData.data(), pNt->OptionalHeader.SizeOfHeaders);
 
-            result.ImageBase = pRemoteImage;
-            result.EntryPoint = (void*)((uintptr_t)pRemoteImage + pNt->OptionalHeader.AddressOfEntryPoint);
+            PIMAGE_SECTION_HEADER pSection = IMAGE_FIRST_SECTION(pNt);
+            for (int i = 0; i < pNt->FileHeader.NumberOfSections; ++i) {
+                if (pSection[i].SizeOfRawData > 0) {
+                    Hv::WriteRaw(cr3, remoteBase + pSection[i].VirtualAddress,
+                                 (void*)(rawData.data() + pSection[i].PointerToRawData),
+                                 pSection[i].SizeOfRawData);
+                }
+            }
+
+            uintptr_t delta = remoteBase - pNt->OptionalHeader.ImageBase;
+            if (!Pe::ApplyRelocations(cr3, (void*)remoteBase, pNt, delta)) return result;
+            if (!Pe::ResolveImports(cr3, (void*)remoteBase, pNt)) return result;
+
+            result.ImageBase = remoteBase;
+            result.EntryPoint = remoteBase + pNt->OptionalHeader.AddressOfEntryPoint;
             result.Success = true;
 
             return result;

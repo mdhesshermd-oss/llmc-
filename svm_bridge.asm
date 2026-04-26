@@ -35,8 +35,9 @@ svm_loop:
     ; --- ENTER GUEST MODE ---
     mov rax, r10
     vmrun rax
-    ; --- VMEXIT OCCURRED ---
 
+    ; --- VMEXIT JUMPS HERE (Host RIP in VMCB) ---
+SvmVmExitHandler label qword
     vmload r11          ; Restore host state
 
     ; Save Guest GPRs to stack (matches GuestRegisters struct)
@@ -95,5 +96,8 @@ svm_exit_final:
     add rsp, 4096
     ret
 SvmLaunch endp
+
+; Export the label for use in C++ (VMCB setup)
+public SvmVmExitHandler
 
 end

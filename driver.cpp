@@ -1,5 +1,6 @@
 #include <ntddk.h>
 #include <ntstrsafe.h>
+#include "hv_core.h"
 
 // --- IOCTL Definitions ---
 #define IO_READ_REQUEST  CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0801, METHOD_BUFFERED, FILE_ANY_ACCESS)
@@ -28,17 +29,22 @@ NTSTATUS IoControl(PDEVICE_OBJECT pDeviceObject, PIRP pIrp);
 NTSTATUS CreateCall(PDEVICE_OBJECT pDeviceObject, PIRP pIrp);
 NTSTATUS CloseCall(PDEVICE_OBJECT pDeviceObject, PIRP pIrp);
 
-// Note: In a real build, InitializeSVM would be an extern C function or
-// this file would be compiled as C++.
-extern void InitializeSVM();
+// Forward declaration matching hv_init_amd.h
+namespace Cheat { namespace Hv { namespace AMD {
+    bool InitializeSVM(PerCoreData* ctx);
+}}}
 
 // Function launched on every core
 void NTAPI HvKernelBootstrap(PKDPC Dpc, PVOID Context, PVOID SystemArgument1, PVOID SystemArgument2) {
     UNREFERENCED_PARAMETER(Dpc);
     UNREFERENCED_PARAMETER(Context);
 
-    // Launch hypervisor on current core
-    InitializeSVM();
+    // Allocate context for the core
+    Cheat::Hv::PerCoreData* ctx = (Cheat::Hv::PerCoreData*)ExAllocatePoolWithTag(NonPagedPool, sizeof(Cheat::Hv::PerCoreData), 'HV');
+    if (ctx) {
+        RtlZeroMemory(ctx, sizeof(Cheat::Hv::PerCoreData));
+        Cheat::Hv::AMD::InitializeSVM(ctx);
+    }
 
     KeSignalCallDpcDone(SystemArgument1);
 }
@@ -119,7 +125,6 @@ NTSTATUS IoControl(PDEVICE_OBJECT pDeviceObject, PIRP pIrp) {
         }
     }
     else if (ControlCode == IO_LAUNCH_HV) {
-        // Trigger multi-core bootstrap
         KeGenericCallDpc(HvKernelBootstrap, NULL);
         Status = STATUS_SUCCESS;
     }
