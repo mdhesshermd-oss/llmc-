@@ -3,47 +3,80 @@
 #include <intrin.h>
 
 /**
- * Universal Hypervisor (Ring -1) Communication Interface
- * Supports both VMCALL (Intel) and VMMCALL (AMD).
+ * Unified Hypercall Interface (Ring -1)
+ * Replaces the Kernel Driver with direct Ring -1 communication via VMMCALL.
  */
 
 namespace Cheat {
     namespace Hv {
+        // Secret key for hypercall authorization
+        constexpr uint64_t HV_SECRET_KEY = 0x5A4F524F5F444159; // "ZORO_DAY"
 
-        constexpr uint64_t HV_SECRET_KEY = 0xDEADBEEFCAFEBABE;
-        constexpr uint64_t HV_IO_READ_VIRTUAL = 0x103;
-        constexpr uint64_t HV_IO_GET_CR3 = 0x102;
+        enum class Command : uint64_t {
+            GetVersion = 0x1,
+            GetProcessCr3 = 0x2,
+            ReadVirtualMemory = 0x3,
+            WriteVirtualMemory = 0x4,
+            CloakPage = 0x5
+        };
 
-        extern "C" uint64_t InternalVMCALL(uint64_t key, uint64_t code, uint64_t arg1, uint64_t arg2);
-        extern "C" uint64_t InternalVMMCALL(uint64_t key, uint64_t code, uint64_t arg1, uint64_t arg2);
+        // Operation status codes
+        enum class HvStatus : uint64_t {
+            Success = 0,
+            InvalidKey = 1,
+            InvalidCommand = 2,
+            MemoryFault = 3
+        };
 
-        inline bool IsAmd() {
-            int cpuInfo[4];
-            __cpuid(cpuInfo, 0);
-            return (cpuInfo[1] == 0x68747541); // "Auth" in "AuthenticAMD"
-        }
+        struct ReadWriteArgs {
+            uint64_t cr3;
+            uint64_t address;
+            void* buffer;
+            uint64_t size;
+        };
+
+        struct CloakArgs {
+            uint64_t guest_va;
+            void* shadow_buffer;
+        };
+
+        // External assembly procedure to trigger VMMCALL/VMCALL
+        extern "C" uint64_t _hv_call(uint64_t key, Command cmd, void* args);
 
         /**
-         * Generic hypercall wrapper that selects the correct instruction for the CPU.
+         * Safe memory reading via Hypervisor.
          */
-        inline uint64_t Hypercall(uint64_t code, uint64_t arg1, uint64_t arg2) {
-            if (IsAmd()) {
-                return InternalVMMCALL(HV_SECRET_KEY, code, arg1, arg2);
-            } else {
-                return InternalVMCALL(HV_SECRET_KEY, code, arg1, arg2);
-            }
-        }
-
         template <typename T>
-        inline T ReadVirtual(uint32_t pid, uint64_t virtual_addr) {
+        inline T Read(uint64_t cr3, uint64_t address) {
             T buffer{};
-            // The hypervisor handles address translation and memory access
-            Hypercall(HV_IO_READ_VIRTUAL, virtual_addr, reinterpret_cast<uint64_t>(&buffer));
+            ReadWriteArgs args = { cr3, address, &buffer, sizeof(T) };
+            _hv_call(HV_SECRET_KEY, Command::ReadVirtualMemory, &args);
             return buffer;
         }
 
-        inline uint64_t GetProcessCR3(uint32_t pid) {
-            return Hypercall(HV_IO_GET_CR3, static_cast<uint64_t>(pid), 0);
+        /**
+         * Resolves DirectoryTableBase (CR3) for a specific PID.
+         */
+        inline uint64_t GetCr3(uint32_t pid) {
+            // Note: In the VMM handler, RAX will be populated with the CR3
+            return _hv_call(HV_SECRET_KEY, Command::GetProcessCr3, (void*)(uintptr_t)pid);
+        }
+
+        /**
+         * Requests the hypervisor to cloak a page (Shadow Pages).
+         */
+        inline bool CloakPage(uint64_t target_va, void* payload_buffer) {
+            // Allocate a dedicated page for the shadow copy
+            void* shadow_page = VirtualAlloc(nullptr, 4096, MEM_COMMIT, PAGE_READWRITE);
+            if (!shadow_page) return false;
+
+            memcpy(shadow_page, payload_buffer, 4096);
+
+            CloakArgs args;
+            args.guest_va = target_va;
+            args.shadow_buffer = shadow_page;
+
+            return _hv_call(HV_SECRET_KEY, Command::CloakPage, &args) == (uint64_t)HvStatus::Success;
         }
     }
 }

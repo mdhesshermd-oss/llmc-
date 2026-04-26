@@ -1,17 +1,17 @@
 ; --- svm_launch.asm ---
-; Low-level AMD SVM (AMD-V) execution and exit handling for Ring -1.
+; Low-level AMD SVM execution, exit handling, and Ring -1 exception safety.
 ; Targets MASM (ml64.exe) for Visual Studio 2022.
 
 .code
 
-; External C++ handler defined in hv_vmm.cpp
+; External C++ handlers defined in hv_vmm.cpp
 extern HandleVmExit : proc
+extern HvPanicHandler : proc
 
 ; --- SvmLaunch ---
 ; Prototype: extern "C" void SvmLaunch(void* vmcb_pa);
 ; RCX = Physical address of the VMCB
 SvmLaunch proc
-    ; Save host state that isn't saved by VMCB
     push rbx
     push rbp
     push rdi
@@ -21,14 +21,10 @@ SvmLaunch proc
     push r14
     push r15
 
-    ; The VMCB physical address is in RCX.
-    ; AMD requires the VMCB address in RAX for VMRUN.
     mov rax, rcx
-
-    ; Enter Guest Mode
     vmrun rax
 
-    ; --- VMEXIT OCCURRED HERE ---
+    ; --- VMEXIT OCCURRED ---
     pop r15
     pop r14
     pop r13
@@ -41,9 +37,8 @@ SvmLaunch proc
 SvmLaunch endp
 
 ; --- SvmVmExitHandler ---
-; This is the entry point from the VMCB's Host State RIP.
+; Entry point from VMCB Host RIP.
 SvmVmExitHandler proc
-    ; 1. Save all Guest registers
     push r15
     push r14
     push r13
@@ -60,14 +55,13 @@ SvmVmExitHandler proc
     push rcx
     push rax
 
-    ; 2. Prepare arguments for the C++ handler:
-    mov rcx, rsp        ; GuestRegisters*
+    mov rcx, rax        ; VMCB physical address (passed in RAX by CPU/Launch)
+    mov rdx, rsp        ; GuestRegisters*
 
     sub rsp, 32
     call HandleVmExit
     add rsp, 32
 
-    ; 4. Restore Guest registers
     pop rax
     pop rcx
     pop rdx
@@ -84,9 +78,29 @@ SvmVmExitHandler proc
     pop r14
     pop r15
 
-    ; 5. Re-run the guest (RAX should contain VMCB PA)
     vmrun rax
     jmp SvmVmExitHandler
 SvmVmExitHandler endp
+
+; --- hv_exception_stub ---
+; Catch-all for hypervisor host-mode exceptions.
+hv_exception_stub proc
+    cli
+    pushfq
+    push rax
+    push rcx
+    push rdx
+
+    sub rsp, 32
+    call HvPanicHandler
+    add rsp, 32
+
+    pop rdx
+    pop rcx
+    pop rax
+    popfq
+    sti
+    iretq
+hv_exception_stub endp
 
 end

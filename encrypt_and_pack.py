@@ -1,39 +1,38 @@
-import lzma
-import sys
 import os
-import struct
+from Crypto.Cipher import AES
+from Crypto.Util import Padding
 
-def pack_dll(input_path, output_bin):
-    """
-    Compresses the input DLL using LZMA to match the original loader's logic.
-    """
-    try:
-        if not os.path.exists(input_path):
-            print(f"Error: {input_path} not found.")
-            return
+# --- AES-128 CBC Encryption Script ---
+# Matches the decryption logic in refactored_loader.cpp
 
-        with open(input_path, 'rb') as f:
-            data = f.read()
+def encrypt_payload(input_dll, output_bin, key_hex):
+    # Key must be 16 bytes for AES-128
+    key = bytes.fromhex(key_hex)
 
-        orig_size = len(data)
+    if not os.path.exists(input_dll):
+        print(f"[-] Error: {input_dll} not found.")
+        return
 
-        # Use LZMA compression (matches the Range Decoder logic in 'start')
-        # format=lzma.FORMAT_ALONE is the raw LZMA format used by legacy loaders
-        compressed = lzma.compress(data, format=lzma.FORMAT_ALONE)
+    with open(input_dll, 'rb') as f:
+        data = f.read()
 
-        # The original code likely stores the compressed blob directly as a resource.
-        # We output it as a binary file.
-        with open(output_bin, 'wb') as f:
-            f.write(compressed)
+    # Use AES-CBC
+    cipher = AES.new(key, AES.MODE_CBC)
+    iv = cipher.iv
 
-        print(f"Successfully packed {input_path} -> {output_bin}")
-        print(f"Original: {orig_size} bytes, LZMA Compressed: {len(compressed)} bytes")
+    # Pad data to block size (16 bytes)
+    padded_data = Padding.pad(data, AES.block_size)
+    encrypted_data = cipher.encrypt(padded_data)
 
-    except Exception as e:
-        print(f"Error: {e}")
+    with open(output_bin, 'wb') as f:
+        # Prepend IV to the file for the loader to read
+        f.write(iv + encrypted_data)
+
+    print(f"[+] Encrypted with AES-128 CBC. Output: {output_bin}")
+    print(f"[+] Key: {key_hex}")
+    print(f"[+] Size: {len(iv) + len(encrypted_data)} bytes")
 
 if __name__ == "__main__":
-    if len(sys.argv) < 3:
-        print("Usage: python encrypt_and_pack.py <input.dll> <output.bin>")
-    else:
-        pack_dll(sys.argv[1], sys.argv[2])
+    # Secret Key matching HV_SECRET_KEY logic (ZORO_DAYZORO_DAY)
+    SECRET_KEY = "5A4F524F5F4441595A4F524F5F444159"
+    encrypt_payload("core.dll", "packed_payload.bin", SECRET_KEY)
