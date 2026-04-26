@@ -104,8 +104,8 @@ SvmVmExitHandler label qword
     jmp svm_loop
 
 svm_exit_final:
-    ; Cleanup and return to caller
-    add rsp, 120        ; Discard Guest GPRs (15 * 8)
+    ; Cleanup stack and restore non-volatile registers
+    add rsp, 120        ; Discard Guest GPRs
     xrstor [rsp]
     mov rsp, rbp
 

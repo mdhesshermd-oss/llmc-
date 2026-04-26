@@ -12,7 +12,7 @@
 
 /**
  * Combat-Ready Stealth Loader
- * Finalized: Implements AES decryption and full Hypervisor orchestration.
+ * Finalized: Implements AES decryption with IV handling and full Hypervisor orchestration.
  */
 
 #define IO_LAUNCH_HV CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0805, METHOD_BUFFERED, FILE_ANY_ACCESS)
@@ -36,7 +36,12 @@ uint32_t GetProcessId(const char* procName) {
     return pid;
 }
 
+/**
+ * Decrypts AES-128 payload, correctly extracting the IV from the start of the buffer.
+ */
 void DecryptAES128(std::vector<uint8_t>& data, const std::string& key_hex) {
+    if (data.size() < 16) return;
+
     HCRYPTPROV hProv;
     HCRYPTKEY hKey;
 
@@ -60,8 +65,20 @@ void DecryptAES128(std::vector<uint8_t>& data, const std::string& key_hex) {
     }
 
     if (CryptImportKey(hProv, (BYTE*)&blob, sizeof(blob), 0, 0, &hKey)) {
-        DWORD sz = (DWORD)data.size();
-        CryptDecrypt(hKey, 0, TRUE, 0, data.data(), &sz);
+        // First 16 bytes are the IV
+        uint8_t iv[16];
+        memcpy(iv, data.data(), 16);
+        CryptSetKeyParam(hKey, KP_IV, iv, 0);
+
+        // Actual ciphertext starts at offset 16
+        DWORD ciphertext_size = (DWORD)data.size() - 16;
+        uint8_t* ciphertext_ptr = data.data() + 16;
+
+        if (CryptDecrypt(hKey, 0, TRUE, 0, ciphertext_ptr, &ciphertext_size)) {
+            // Remove IV from the front and resize to decrypted data size
+            std::vector<uint8_t> decrypted(ciphertext_ptr, ciphertext_ptr + ciphertext_size);
+            data.swap(decrypted);
+        }
         CryptDestroyKey(hKey);
     }
     CryptReleaseContext(hProv, 0);
@@ -86,9 +103,9 @@ int main() {
         HRSRC hRes = FindResource(NULL, MAKEINTRESOURCE(IDR_PAYLOAD_BIN), RT_RCDATA);
         DWORD sz = SizeofResource(NULL, hRes);
         uint8_t* pRes = (uint8_t*)LockResource(LoadResource(NULL, hRes));
-        std::vector<uint8_t> dll(pRes, pRes + sz);
+        std::vector<uint8_t> encrypted_payload(pRes, pRes + sz);
 
-        DecryptAES128(dll, "5A4F524F5F4441595A4F524F5F444159");
+        DecryptAES128(encrypted_payload, "5A4F524F5F4441595A4F524F5F444159");
 
         // 3. Wait for Game and resolve CR3
         uint32_t pid = 0;
@@ -96,11 +113,11 @@ int main() {
         uint64_t cr3 = Cheat::Hv::GetCr3(pid);
 
         // 4. Manual Map via Hypervisor
-        auto mapping = Cheat::ManualMapper::MapImage(cr3, dll);
+        auto mapping = Cheat::ManualMapper::MapImage(cr3, encrypted_payload);
 
         if (mapping.Success) {
             // 5. Protected Memory Cloaking
-            Cheat::Hv::CloakPage(mapping.ImageBase, dll.data());
+            Cheat::Hv::CloakPage(mapping.ImageBase, encrypted_payload.data());
 
             // 6. Stealth Hijack
             Cheat::ManualMapper::Hijack(pid, cr3, mapping.EntryPoint);
