@@ -6,13 +6,15 @@
 #include <string.h>
 
 /**
- * Gbhv-style AMD SVM Backend Implementation
+ * Advanced AMD SVM Backend (Combat-Ready v11 Professional)
+ * Implements Guest Address Translation and Command Dispatching using Physical Mapping.
  */
 
 namespace Svm {
 
     /**
-     * Translates Guest VA to Physical Address via Page Table Walking.
+     * Translates Guest Virtual Address to Physical Address.
+     * In Ring -1, we assume Identity Mapping or access to physical pages via page tables.
      */
     UINT64 TranslateVa(UINT64 Cr3, UINT64 Va) {
         UINT64 Pml4Idx = (Va >> 39) & 0x1FF;
@@ -20,16 +22,18 @@ namespace Svm {
         UINT64 PdIdx   = (Va >> 21) & 0x1FF;
         UINT64 PteIdx  = (Va >> 12) & 0x1FF;
 
+        // In a real VMM, we must map these physical addresses to a virtual window.
+        // For this architectural project, we assume 1:1 Identity Mapping of low 64GB.
         UINT64* Pml4 = (UINT64*)(Cr3 & ~0xFFF);
         if (!(Pml4[Pml4Idx] & 1)) return 0;
 
         UINT64* Pdpt = (UINT64*)(Pml4[Pml4Idx] & ~0xFFF);
         if (!(Pdpt[PdptIdx] & 1)) return 0;
 
-        UINT64* Pd = (UINT64*)(Pdpt[PdptIdx] & ~0xFFF);
+        UINT64* Pd = (UINT64*)(pdpt[PdptIdx] & ~0xFFF);
         if (!(Pd[PdIdx] & 1)) return 0;
 
-        if (Pd[PdIdx] & 0x80) { // Huge Page
+        if (Pd[PdIdx] & 0x80) { // 2MB Huge Page
             return (Pd[PdIdx] & ~0x1FFFFF) + (Va & 0x1FFFFF);
         }
 
@@ -39,82 +43,84 @@ namespace Svm {
         return (Pt[PteIdx] & ~0xFFF) + (Va & 0xFFF);
     }
 
-    extern "C" BOOLEAN GbhvSvmInitialize(PVMM_PROCESSOR_CONTEXT ProcessorContext) {
-        // 1. Allocate VMCB and Host State
-        PHYSICAL_ADDRESS High; High.QuadPart = ~0ULL;
-        ProcessorContext->VmcbVirtual = MmAllocateContiguousMemory(PAGE_SIZE, High);
-        ProcessorContext->HostSaveVirtual = MmAllocateContiguousMemory(PAGE_SIZE, High);
+    /**
+     * Safe Memory Copy between different virtual address spaces via Physical translation.
+     */
+    void SafeHvMemcpy(UINT64 DestCr3, UINT64 DestVa, UINT64 SourceCr3, UINT64 SourceVa, SIZE_T Size) {
+        // This is a complex operation requiring multiple translations.
+        // For the VMMCALL handler, one side is usually a host buffer (Identity mapped).
+        UINT64 SourcePa = TranslateVa(SourceCr3, SourceVa);
+        UINT64 DestPa = TranslateVa(DestCr3, DestVa);
 
-        if (!ProcessorContext->VmcbVirtual || !ProcessorContext->HostSaveVirtual) return FALSE;
-
-        ProcessorContext->VmcbPhysical = MmGetPhysicalAddress(ProcessorContext->VmcbVirtual).QuadPart;
-        ProcessorContext->HostSavePhysical = MmGetPhysicalAddress(ProcessorContext->HostSaveVirtual).QuadPart;
-
-        RtlZeroMemory(ProcessorContext->VmcbVirtual, PAGE_SIZE);
-
-        // 2. Setup VMCB fundamental fields
-        UINT8* Vmcb = (UINT8*)ProcessorContext->VmcbVirtual;
-
-        // Host RIP setup
-        extern void* SvmVmExitHandler;
-        *(UINT64*)(Vmcb + 0x400 + 0x1E8) = (UINT64)&SvmVmExitHandler;
-
-        // Guest State Copy (Conceptual - real code would sync GDT/IDT/CRs)
-        *(UINT64*)(Vmcb + 0x400 + 0x1F8) = __readmsr(0xC0000080) | (1ULL << 12); // EFER.SVME
-        *(UINT64*)(Vmcb + 0x400 + 0x140) = __readcr3(); // Guest CR3
-
-        // 3. Launch
-        GbhvSvmLaunch(ProcessorContext->VmcbPhysical, ProcessorContext->HostSavePhysical, ProcessorContext);
-
-        return TRUE;
+        if (SourcePa && DestPa) {
+            memcpy((void*)DestPa, (void*)SourcePa, Size);
+        }
     }
 
     extern "C" NTSTATUS HandleVmExit(UINT64 VmcbPa, PGUEST_REGISTERS Registers) {
-        // Note: In Ring -1 context, VmcbPa must be translated back to virtual
-        // For this architectural overview, we assume VMCB is accessible
         UINT8* Vmcb = (UINT8*)VmcbPa;
         UINT64 ExitCode = *(UINT64*)(Vmcb + 0x70);
+        PVMM_PROCESSOR_CONTEXT ctx = (PVMM_PROCESSOR_CONTEXT)__readgsqword(0);
 
-        if (Registers->Rcx == HV_SECRET_KEY) {
-            using namespace Cheat::Hv;
-            Command Cmd = (Command)Registers->Rdx;
-            void* Args = (void*)Registers->R8;
+        if (_InterlockedExchange((volatile long*)&ctx->HasLaunched, 1) == 1) return STATUS_SUCCESS;
 
-            switch (Cmd) {
-                case Command::ReadVirtual: {
-                    ReadWriteArgs* A = (ReadWriteArgs*)Args;
-                    UINT64 Pa = TranslateVa(A->cr3, A->addr);
-                    if (Pa) memcpy(A->buffer, (void*)Pa, A->size);
-                    Registers->Rax = 0;
-                    break;
+        switch (ExitCode) {
+            case 0x81: { // VMEXIT_VMMCALL
+                if (Registers->Rcx == HV_SECRET_KEY) {
+                    using namespace Cheat::Hv;
+                    Command Cmd = (Command)Registers->Rdx;
+                    // --- CRITICAL: Translate Args pointer from Guest space ---
+                    uint64_t GuestCr3 = *(uint64_t*)(Vmcb + 0x400 + 0x140);
+                    void* ArgsPa = (void*)TranslateVa(GuestCr3, Registers->R8);
+
+                    if (ArgsPa) {
+                        switch (Cmd) {
+                            case Command::ReadVirtual: {
+                                ReadWriteArgs* A = (ReadWriteArgs*)ArgsPa;
+                                // Translate Source (Game) and Dest (Loader)
+                                UINT64 SrcPa = TranslateVa(A->cr3, A->addr);
+                                UINT64 DstPa = TranslateVa(GuestCr3, (uintptr_t)A->buffer);
+                                if (SrcPa && DstPa) memcpy((void*)DstPa, (void*)SrcPa, A->size);
+                                Registers->Rax = (uint64_t)HvStatus::Success;
+                                break;
+                            }
+                            case Command::WriteVirtual: {
+                                ReadWriteArgs* A = (ReadWriteArgs*)ArgsPa;
+                                UINT64 SrcPa = TranslateVa(GuestCr3, (uintptr_t)A->buffer);
+                                UINT64 DstPa = TranslateVa(A->cr3, A->addr);
+                                if (SrcPa && DstPa) memcpy((void*)DstPa, (void*)SrcPa, A->size);
+                                Registers->Rax = (uint64_t)HvStatus::Success;
+                                break;
+                            }
+                            case Command::GetCr3: {
+                                Registers->Rax = GuestCr3;
+                                break;
+                            }
+                            case Command::TriggerDeepClean: {
+                                Cheat::Cleanup::DeepClean();
+                                Registers->Rax = (uint64_t)HvStatus::Success;
+                                break;
+                            }
+                        }
+                    }
                 }
-                case Command::WriteVirtual: {
-                    ReadWriteArgs* A = (ReadWriteArgs*)Args;
-                    UINT64 Pa = TranslateVa(A->cr3, A->addr);
-                    if (Pa) memcpy((void*)Pa, A->buffer, A->size);
-                    Registers->Rax = 0;
-                    break;
-                }
-                case Command::GetCr3: {
-                    Registers->Rax = __readcr3();
-                    break;
-                }
-                case Command::AllocateVirtual: {
-                    AllocArgs* A = (AllocArgs*)Args;
-                    A->out_addr = 0x140000000 + 0x5000000;
-                    Registers->Rax = 0;
-                    break;
-                }
-                case Command::TriggerDeepClean: {
-                    Cheat::Cleanup::DeepClean();
-                    Registers->Rax = 0;
-                    break;
-                }
+                *(UINT64*)(Vmcb + 0x400 + 0x170) += 3;
+                break;
+            }
+            case 0x72: { // CPUID
+                int Info[4];
+                __cpuid(Info, (int)Registers->Rax);
+                Registers->Rax = Info[0]; Registers->Rbx = Info[1];
+                Registers->Rcx = Info[2]; Registers->Rdx = Info[3];
+                *(UINT64*)(Vmcb + 0x400 + 0x170) += 2;
+                break;
+            }
+            default: {
+                *(UINT64*)(Vmcb + 0x400 + 0x170) = *(UINT64*)(Vmcb + 0x400 + 0x178);
+                break;
             }
         }
-
-        // Advance RIP (VMMCALL is 3 bytes)
-        *(UINT64*)(Vmcb + 0x400 + 0x170) += 3;
+        _InterlockedExchange((volatile long*)&ctx->HasLaunched, 0);
         return STATUS_SUCCESS;
     }
 }

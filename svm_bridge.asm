@@ -1,5 +1,5 @@
 ; --- svm_bridge.asm ---
-; Gbhv-style low-level SVM transition logic.
+; Gbhv-style low-level SVM transition logic (Final Combat-Ready).
 ; Targets MASM (ml64.exe) for Visual Studio 2022.
 
 .code
@@ -19,7 +19,7 @@ GbhvSvmLaunch proc
     push r15
 
     ; Persistent storage in non-volatile registers
-    mov r12, r8         ; GbhvContext (PVMM_PROCESSOR_CONTEXT)
+    mov r12, r8         ; GbhvContext
     mov r13, rcx        ; VmcbPhysical
     mov r14, rdx        ; HostSavePhysical
 
@@ -35,6 +35,15 @@ svm_loop:
     mov rax, r14
     vmsave rax          ; Save current host state to HSAVE
 
+    ; --- Extended State Preservation (AVX/SSE) ---
+    mov rbp, rsp        ; Save stack pointer for alignment
+    sub rsp, 4096       ; Buffer for xsave
+    and rsp, -64        ; 64-byte alignment requirement
+    xor rax, rax
+    mov rcx, 0
+    xgetbv
+    xsave [rsp]
+
     mov rax, r13
     vmrun rax           ; --- RUN GUEST ---
 
@@ -43,7 +52,7 @@ svm_loop:
     vmload rax          ; Restore host state from HSAVE
 
 SvmVmExitHandler label qword
-    ; 4. Save Guest state (15 registers = 120 bytes)
+    ; 4. Save Guest GPRs (15 registers = 120 bytes)
     push r15
     push r14
     push r13
@@ -83,6 +92,9 @@ SvmVmExitHandler label qword
     pop r13
     pop r14
     pop r15
+
+    xrstor [rsp]        ; Restore AVX/SSE
+    mov rsp, rbp        ; Restore stack pointer
 
     jmp svm_loop
 GbhvSvmLaunch endp
