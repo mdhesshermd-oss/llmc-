@@ -1,5 +1,6 @@
 #include "hv_core_amd.h"
 #include "hypervisor_io.h"
+#include "stealth_cleanup.h"
 #include <intrin.h>
 #include <string.h>
 
@@ -13,63 +14,68 @@ namespace Cheat {
         namespace Amd {
 
             /**
+             * Переводит гостевой Виртуальный адрес в Физический, используя CR3 процесса.
+             */
+            uint64_t HvTranslateVa(uint64_t guest_cr3, uint64_t va) {
+                uint64_t pml4e_idx = (va >> 39) & 0x1FF;
+                uint64_t pdpte_idx = (va >> 30) & 0x1FF;
+                uint64_t pde_idx   = (va >> 21) & 0x1FF;
+                uint64_t pte_idx   = (va >> 12) & 0x1FF;
+
+                // Note: Physical addresses must be accessed via a 1:1 mapping or
+                // by temporarily mapping them. In this simplified HV, we assume
+                // physical memory is accessible or use a identity-mapped region.
+
+                NptEntry* pml4 = (NptEntry*)(guest_cr3 & ~0xFFF);
+                if (!pml4[pml4e_idx].bits.present) return 0;
+
+                NptEntry* pdpt = (NptEntry*)(pml4[pml4e_idx].bits.pfn << 12);
+                if (!pdpt[pdpte_idx].bits.present) return 0;
+
+                NptEntry* pd = (NptEntry*)(pdpt[pdpte_idx].bits.pfn << 12);
+                if (!pd[pde_idx].bits.present) return 0;
+
+                NptEntry* pt = (NptEntry*)(pd[pde_idx].bits.pfn << 12);
+                if (!pt[pte_idx].bits.present) return 0;
+
+                return (pt[pte_idx].bits.pfn << 12) | (va & 0xFFF);
+            }
+
+            /**
              * Handles Nested Page Faults (Exit Code 0x400).
-             * Implements the "Shadow Pages" mechanism to hide cheat memory.
              */
             void HandleNestedPageFault(void* vmcb, GuestRegisters* regs) {
                 uint8_t* pVmcb = (uint8_t*)vmcb;
-
-                // Physical address that caused the fault
                 uint64_t fault_pa = *(uint64_t*)(pVmcb + 0x80); // VMCB_EXITINFO2
                 uint64_t error_code = *(uint64_t*)(pVmcb + 0x78); // VMCB_EXITINFO1
+                uint64_t npt_pml4 = *(uint64_t*)(pVmcb + 0xB0); // n_cr3
 
-                bool is_id_fetch = (error_code & (1ULL << 4)); // ID bit (Instruction Fetch)
+                bool is_id_fetch = (error_code & (1ULL << 4));
 
                 for (uint32_t i = 0; i < g_CloakedCount; i++) {
                     if ((fault_pa & ~0xFFF) == g_CloakedPages[i].guest_pa) {
-                        NptEntry* entry = GetNptEntry(fault_pa);
+                        NptEntry* entry = GetNptEntry(npt_pml4, fault_pa);
                         if (!entry) return;
 
                         if (is_id_fetch) {
-                            // EXECUTION mode -> Redirect to Shadow page (Cheat code)
                             entry->bits.pfn = g_CloakedPages[i].shadow_pa >> 12;
-                            entry->bits.nx = 0; // Allow execute
+                            entry->bits.nx = 0;
                             g_CloakedPages[i].is_executing = true;
                         } else {
-                            // READ/WRITE mode -> Redirect to Original page (Clean code)
                             entry->bits.pfn = g_CloakedPages[i].original_pa >> 12;
-                            entry->bits.nx = 1; // Disallow execute to catch next run
+                            entry->bits.nx = 1;
                             g_CloakedPages[i].is_executing = false;
                         }
 
-                        // Flush TLB to apply changes
-                        *(uint32_t*)(pVmcb + 0x58) = 1; // TLB_CONTROL_FLUSH_ALL_ASID
+                        *(uint32_t*)(pVmcb + 0x58) = 1;
                         return;
                     }
                 }
             }
 
-            /**
-             * Emergency shutdown if the hypervisor crashes.
-             */
             extern "C" void HvPanicHandler() {
                 uint64_t efer = __readmsr(0xC0000080);
-                __writemsr(0xC0000080, efer & ~(1ULL << 12)); // Disable SVM
-                // Attempt to return to guest or hang to avoid Triple Fault
-            }
-
-            void SetupHostExceptionHandling(void* vmcb) {
-                extern void* hv_exception_stub;
-                uintptr_t handler = (uintptr_t)&hv_exception_stub;
-
-                for (int i = 0; i < 32; i++) {
-                    g_HostIdt[i].low_offset = (uint16_t)handler;
-                    g_HostIdt[i].mid_offset = (uint16_t)(handler >> 16);
-                    g_HostIdt[i].high_offset = (uint32_t)(handler >> 32);
-                    g_HostIdt[i].selector = 0x10;
-                    g_HostIdt[i].flags = 0x8E00;
-                }
-                // Host IDT would be loaded into the VMCB's Host State Area here.
+                __writemsr(0xC0000080, efer & ~(1ULL << 12));
             }
 
             extern "C" void HandleVmExit(void* vmcb, GuestRegisters* regs) {
@@ -87,13 +93,16 @@ namespace Cheat {
                             switch (cmd) {
                                 case Command::ReadVirtualMemory: {
                                     ReadWriteArgs* rw = (ReadWriteArgs*)args;
-                                    // Direct copy bypassing all Ring 0 hooks
-                                    memcpy(rw->buffer, (void*)rw->address, rw->size);
-                                    regs->rax = (uint64_t)HvStatus::Success;
+                                    uint64_t pa = HvTranslateVa(rw->cr3, rw->address);
+                                    if (pa) {
+                                        memcpy(rw->buffer, (void*)pa, rw->size);
+                                        regs->rax = (uint64_t)HvStatus::Success;
+                                    } else {
+                                        regs->rax = (uint64_t)HvStatus::MemoryFault;
+                                    }
                                     break;
                                 }
                                 case Command::GetProcessCr3: {
-                                    // Simplified: in real implementation, find EPROCESS by PID
                                     regs->rax = __readcr3();
                                     break;
                                 }
@@ -108,9 +117,14 @@ namespace Cheat {
                                     }
                                     break;
                                 }
+                                case Command::TriggerDeepClean: {
+                                    Cheat::Cleanup::DeepClean();
+                                    regs->rax = (uint64_t)HvStatus::Success;
+                                    break;
+                                }
                             }
                         }
-                        *(uint64_t*)(pVmcb + 0x570) += 3; // Skip VMMCALL
+                        *(uint64_t*)(pVmcb + 0x570) += 3;
                         break;
 
                     case 0x400: // VMEXIT_NPF
@@ -118,12 +132,11 @@ namespace Cheat {
                         break;
 
                     case 0x72: // VMEXIT_CPUID
-                        if (regs->rax == 0x40000000) regs->rax = 0; // Hide HV presence
-                        *(uint64_t*)(pVmcb + 0x570) += 2; // Skip CPUID
+                        if (regs->rax == 0x40000000) regs->rax = 0;
+                        *(uint64_t*)(pVmcb + 0x570) += 2;
                         break;
 
                     default:
-                        // Step over instructions that caused generic exits
                         *(uint64_t*)(pVmcb + 0x570) = *(uint64_t*)(pVmcb + 0x578);
                         break;
                 }

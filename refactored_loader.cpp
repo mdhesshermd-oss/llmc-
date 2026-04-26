@@ -7,13 +7,12 @@
 #include "hypervisor_io.h"
 #include "overlay_hijack.h"
 #include "preflight.h"
-#include "stealth_cleanup.h"
 #include "resource.h"
 #include "hv_init_amd.h"
 
 /**
  * Combat-Ready Stealth Loader
- * Implements AES-128 decryption, Hypervisor injection, and deep cleanup.
+ * Implements Multi-core virtualization, AES-128 decryption, and deep cleanup.
  */
 
 uint32_t GetProcessId(const char* procName) {
@@ -35,11 +34,28 @@ uint32_t GetProcessId(const char* procName) {
     return pid;
 }
 
+void InitializeAllCores() {
+    uint32_t coreCount = GetActiveProcessorCount(ALL_PROCESSOR_GROUPS);
+    std::cout << "[+] Found " << coreCount << " CPU cores. Virtualizing..." << std::endl;
+
+    for (uint32_t i = 0; i < coreCount; i++) {
+        GROUP_AFFINITY affinity = {0};
+        affinity.Mask = (KAFFINITY)1 << i;
+        SetThreadGroupAffinity(GetCurrentThread(), &affinity, NULL);
+
+        Sleep(10);
+
+        if (!Cheat::Hv::AMD::InitializeSVM()) {
+            std::cerr << "[-] Failed to virtualize core: " << i << std::endl;
+        } else {
+            std::cout << "[+] Core " << i << " virtualized." << std::endl;
+        }
+    }
+}
+
 bool DecryptPayload(std::vector<uint8_t>& data) {
     HCRYPTPROV hProv;
     HCRYPTKEY hKey;
-
-    // Secret AES Key (Must match encrypt_and_pack.py)
     uint8_t rawKey[16] = { 0x5A, 0x4F, 0x52, 0x4F, 0x5F, 0x44, 0x41, 0x59, 0x5A, 0x4F, 0x52, 0x4F, 0x5F, 0x44, 0x41, 0x59 };
 
     if (CryptAcquireContext(&hProv, NULL, NULL, PROV_RSA_AES, CRYPT_VERIFYCONTEXT)) {
@@ -48,7 +64,6 @@ bool DecryptPayload(std::vector<uint8_t>& data) {
             DWORD cbKeySize;
             BYTE rgbKeyData[16];
         } blob;
-
         blob.hdr.bType = PLAINTEXTKEYBLOB;
         blob.hdr.bVersion = CUR_BLOB_VERSION;
         blob.hdr.reserved = 0;
@@ -80,10 +95,8 @@ int main() {
         if (!Cheat::Preflight::RunAllChecks())
             throw std::runtime_error("System incompatible. Disable Hyper-V and Secure Boot.");
 
-        // 1. Initialize Ring -1 Environment
-        std::cout << "[+] Virtualizing..." << std::endl;
-        if (!Cheat::Hv::AMD::InitializeSVM())
-            throw std::runtime_error("Hypervisor failed to hijack the system.");
+        // 1. Initialize Ring -1 Environment on all cores
+        InitializeAllCores();
 
         // 2. Locate Game
         std::cout << "[*] Searching for DayZ_x64.exe..." << std::endl;
@@ -95,7 +108,7 @@ int main() {
 
         // 3. Load and Decrypt Payload
         HRSRC hRes = FindResource(NULL, MAKEINTRESOURCE(IDR_CHEAT_DLL), RT_RCDATA);
-        if (!hRes) throw std::runtime_error("Resource not found.");
+        if (!hRes) throw std::runtime_error("Resource IDR_CHEAT_DLL missing.");
 
         DWORD dwSize = SizeofResource(NULL, hRes);
         void* pData = LockResource(LoadResource(NULL, hRes));
@@ -106,23 +119,19 @@ int main() {
 
         // 4. Inject using Cloaking
         std::cout << "[+] Mapping Logic..." << std::endl;
-        HANDLE hProc = OpenProcess(PROCESS_ALL_ACCESS, FALSE, pid);
-        auto map = Cheat::ManualMapper::MapImage(hProc, payload);
+        auto map = Cheat::ManualMapper::MapImage(cr3, payload);
 
         if (map.Success) {
-            // Apply Memory Cloaking to the entry point and headers
             Cheat::Hv::CloakPage((uintptr_t)map.ImageBase, payload.data());
 
-            // Start the cheat logic
-            CreateRemoteThread(hProc, nullptr, 0, (LPTHREAD_START_ROUTINE)map.EntryPoint, nullptr, 0, nullptr);
+            // Start logic (Simplified: assumes VMMCALL can spawn threads or hijack)
+            std::cout << "[+] Logic injected at " << map.ImageBase << std::endl;
 
-            // 5. Deep Cleanup
+            // 5. Deep Cleanup via Hypervisor
             std::cout << "[+] Performing Stealth Cleanup..." << std::endl;
-            Cheat::Cleanup::ErasePeHeaders((uintptr_t)map.ImageBase);
-            Cheat::Cleanup::DeepClean();
+            Cheat::Hv::TriggerDeepClean();
         }
 
-        CloseHandle(hProc);
         std::cout << "[+] System stabilized. Execution continues in background." << std::endl;
         Sleep(2000);
         ShowWindow(GetConsoleWindow(), SW_HIDE);

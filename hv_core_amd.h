@@ -52,13 +52,31 @@ namespace Cheat {
             inline IdtEntry g_HostIdt[32];
 
             /**
-             * Traverses NPT tables to find the entry for a physical address.
-             * (Conceptual implementation of table walk)
+             * Вычисляет адрес записи в таблице NPT для гостевого физического адреса.
+             * npt_pml4_pa - физический адрес корня таблиц NPT (из VMCB).
              */
-            inline NptEntry* GetNptEntry(uint64_t fault_pa) {
-                // In a full implementation, this would walk PML4->PDPT->PD->PT
-                // based on the NPT root pointer (n_cr3) in the VMCB.
-                return nullptr;
+            inline NptEntry* GetNptEntry(uint64_t npt_pml4_pa, uint64_t fault_pa) {
+                // Индексы для каждого уровня
+                uint64_t pml4e_idx = (fault_pa >> 39) & 0x1FF;
+                uint64_t pdpte_idx = (fault_pa >> 30) & 0x1FF;
+                uint64_t pde_idx   = (fault_pa >> 21) & 0x1FF;
+                uint64_t pte_idx   = (fault_pa >> 12) & 0x1FF;
+
+                // PML4 -> PDPT
+                NptEntry* pml4 = (NptEntry*)npt_pml4_pa;
+                if (!pml4[pml4e_idx].bits.present) return nullptr;
+
+                // PDPT -> PD
+                NptEntry* pdpt = (NptEntry*)(pml4[pml4e_idx].bits.pfn << 12);
+                if (!pdpt[pdpte_idx].bits.present) return nullptr;
+
+                // PD -> PT
+                NptEntry* pd = (NptEntry*)(pdpt[pdpte_idx].bits.pfn << 12);
+                if (!pd[pde_idx].bits.present) return nullptr;
+
+                // PT -> Entry
+                NptEntry* pt = (NptEntry*)(pd[pde_idx].bits.pfn << 12);
+                return &pt[pte_idx];
             }
 
             struct GuestRegisters {
