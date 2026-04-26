@@ -7,23 +7,18 @@
 
 /**
  * Advanced AMD SVM VM-Exit Handler (Full Combat Ready)
- * Implements Page Table Walking and Command Dispatching.
+ * Implements Page Table Walking and Command Dispatching using intrinsics.
  */
 
 namespace Cheat { namespace Hv {
 
-    /**
-     * Translates a Guest Virtual Address to a Physical Address.
-     * Manually traverses the 4-level page table hierarchy.
-     */
+    // Internal Page Table Traversal
     uint64_t HvTranslateVa(uint64_t guest_cr3, uint64_t va) {
         uint64_t pml4_idx = (va >> 39) & 0x1FF;
         uint64_t pdpt_idx = (va >> 30) & 0x1FF;
         uint64_t pd_idx   = (va >> 21) & 0x1FF;
         uint64_t pte_idx  = (va >> 12) & 0x1FF;
 
-        // In Ring -1, physical memory must be accessed via identity mapping
-        // or a physical-to-virtual offset provided during initialization.
         uint64_t* pml4 = (uint64_t*)(guest_cr3 & ~0xFFF);
         if (!(pml4[pml4_idx] & 1)) return 0;
 
@@ -33,8 +28,7 @@ namespace Cheat { namespace Hv {
         uint64_t* pd = (uint64_t*)(pdpt[pdpt_idx] & ~0xFFF);
         if (!(pd[pd_idx] & 1)) return 0;
 
-        // 2MB Huge Page Support
-        if (pd[pd_idx] & 0x80) {
+        if (pd[pd_idx] & 0x80) { // 2MB Huge Page
             return (pd[pd_idx] & ~0x1FFFFF) + (va & 0x1FFFFF);
         }
 
@@ -48,10 +42,10 @@ namespace Cheat { namespace Hv {
         PerCoreData* ctx = (PerCoreData*)__readgsqword(0);
         uint8_t* pVmcb = (uint8_t*)vmcb_va;
 
-        // Offset 0x70 in VMCB is Exit Code
         uint64_t exit_code = *(uint64_t*)(pVmcb + 0x70);
 
-        if (InterlockedExchange(&ctx->is_processing, 1) == 1) return STATUS_SUCCESS;
+        // Use compiler intrinsics for Ring -1 synchronization
+        if (_InterlockedExchange(&ctx->is_processing, 1) == 1) return STATUS_SUCCESS;
 
         switch (exit_code) {
             case 0x72: { // VMEXIT_CPUID
@@ -59,7 +53,6 @@ namespace Cheat { namespace Hv {
                 __cpuid(info, (int)regs->rax);
                 regs->rax = info[0]; regs->rbx = info[1];
                 regs->rcx = info[2]; regs->rdx = info[3];
-                // Increment Guest RIP (CPUID is 2 bytes)
                 *(uint64_t*)(pVmcb + 0x400 + 0x170) += 2;
                 break;
             }
@@ -85,13 +78,12 @@ namespace Cheat { namespace Hv {
                             break;
                         }
                         case Command::GetCr3: {
-                            // Returns the current system paging base
                             regs->rax = __readcr3();
                             break;
                         }
                         case Command::AllocateVirtual: {
                             AllocArgs* a = (AllocArgs*)args;
-                            // Search for available space in a common memory hole
+                            // Production build: Walk VADs. This PoC uses a safe game memory hole.
                             a->out_addr = 0x140000000 + 0x4000000;
                             regs->rax = (uint64_t)HvStatus::Success;
                             break;
@@ -103,20 +95,18 @@ namespace Cheat { namespace Hv {
                         }
                     }
                 }
-                // Increment Guest RIP (VMMCALL is 3 bytes)
                 *(uint64_t*)(pVmcb + 0x400 + 0x170) += 3;
                 break;
             }
 
             default: {
-                // Resume guest on unhandled exits
                 uint64_t nrip = *(uint64_t*)(pVmcb + 0x400 + 0x178);
                 *(uint64_t*)(pVmcb + 0x400 + 0x170) = nrip;
                 break;
             }
         }
 
-        InterlockedExchange(&ctx->is_processing, 0);
+        _InterlockedExchange(&ctx->is_processing, 0);
         return ctx->lifecycle_state == 2 ? (NTSTATUS)0xC0000600 : STATUS_SUCCESS;
     }
 }}

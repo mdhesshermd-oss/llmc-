@@ -36,9 +36,10 @@ svm_loop:
     mov rax, r14
     vmsave rax          ; Save Host State
 
-    ; Save extended processor state (AVX/SSE)
-    sub rsp, 4096
-    and rsp, -64
+    ; Save extended processor state (AVX/SSE) with proper alignment
+    mov rbp, rsp        ; Save stack pointer for alignment
+    sub rsp, 4096       ; Buffer for xsave
+    and rsp, -64        ; 64-byte alignment requirement
     xor rax, rax
     mov rcx, 0
     xgetbv
@@ -53,7 +54,7 @@ SvmVmExitHandler label qword
     mov rax, r14
     vmload rax          ; Restore Host State
 
-    ; Save Guest GPRs to stack (matches GuestRegisters struct)
+    ; Save Guest GPRs to stack (15 registers = 120 bytes)
     push r15
     push r14
     push r13
@@ -73,7 +74,7 @@ SvmVmExitHandler label qword
     mov rcx, r13        ; Param 1: VMCB_PA
     mov rdx, rsp        ; Param 2: GuestRegisters*
 
-    sub rsp, 32
+    sub rsp, 32         ; Shadow space
     call HandleVmExit
     add rsp, 32
 
@@ -98,15 +99,15 @@ SvmVmExitHandler label qword
     pop r14
     pop r15
 
-    xrstor [rsp]
-    add rsp, 4096
+    xrstor [rsp]        ; Restore AVX/SSE state
+    mov rsp, rbp        ; Restore original stack pointer
     jmp svm_loop
 
 svm_exit_final:
-    ; Cleanup stack and restore non-volatile registers
-    add rsp, 128        ; Discard Guest GPRs
-    xrstor [rsp]        ; This matches the last push before exit
-    add rsp, 4096
+    ; Cleanup and return to caller
+    add rsp, 120        ; Discard Guest GPRs (15 * 8)
+    xrstor [rsp]
+    mov rsp, rbp
 
     pop r15
     pop r14
