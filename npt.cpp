@@ -6,6 +6,7 @@
  */
 
 namespace Npt {
+    UINT64 GbhvNptInitializeIdentity();
 
     typedef union _NPT_ENTRY {
         UINT64 Raw;

@@ -79,8 +79,11 @@ namespace Cheat {
                 uintptr_t world = Hv::Read<uintptr_t>(cr3, CachedWorldPtr);
                 if (!world) return;
 
-                // 2. Extract View Matrix
+                // 2. Extract View Matrix and Local Camera Pos
                 Matrix4x4 viewMatrix = Hv::Read<Matrix4x4>(cr3, world + OFFSET_VIEW_MATRIX);
+
+                // Camera position for distance calculation (approximation for DayZ engine)
+                Vector3 cameraPos = Hv::Read<Vector3>(cr3, world + 0x28);
 
                 // 3. Access the Entity Table
                 uintptr_t entityList = Hv::Read<uintptr_t>(cr3, world + OFFSET_ENTITY_LIST);
@@ -98,10 +101,16 @@ namespace Cheat {
                     if (Hv::Read<uint32_t>(cr3, entity + OFFSET_PLAYER_TYPE) != 0x1) continue;
 
                     Vector3 pos = Hv::Read<Vector3>(cr3, entity + OFFSET_COORDINATES);
-                    Vector2 screen;
 
+                    // Distance calculation
+                    float dx = pos.x - cameraPos.x;
+                    float dy = pos.y - cameraPos.y;
+                    float dz = pos.z - cameraPos.z;
+                    float dist = sqrtf(dx*dx + dy*dy + dz*dz);
+
+                    Vector2 screen;
                     if (WorldToScreen(pos, screen, viewMatrix, 1920.0f, 1080.0f)) {
-                        Rendering::DrawESP(screen.x, screen.y - 40.0f, screen.y, "Survivor", 0.0f);
+                        Rendering::DrawESP(screen.x, screen.y - 40.0f, screen.y, "Survivor", dist);
                     }
                 }
                 Rendering::EndFrame();

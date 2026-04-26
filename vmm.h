@@ -10,6 +10,9 @@ typedef struct _GUEST_REGISTERS {
 } GUEST_REGISTERS, *PGUEST_REGISTERS;
 
 typedef struct _VMM_PROCESSOR_CONTEXT {
+    UINT64 GuestRip;
+    UINT64 GuestRsp;
+    UINT64 GuestRflags;
     UINT64 VmcbPhysical;
     PVOID VmcbVirtual;
     UINT64 HostSavePhysical;
@@ -17,11 +20,12 @@ typedef struct _VMM_PROCESSOR_CONTEXT {
     UINT64 NptRootPhysical;
     PVOID NptRootVirtual;
     struct _VMM_CONTEXT* GlobalContext;
-    BOOLEAN HasLaunched;
+    volatile LONG HasLaunched;
 } VMM_PROCESSOR_CONTEXT, *PVMM_PROCESSOR_CONTEXT;
 
 typedef struct _VMM_CONTEXT {
     UINT32 ProcessorCount;
+    volatile LONG SuccessfulInitializationsCount;
     PVMM_PROCESSOR_CONTEXT* ProcessorContexts;
     UINT64 SystemDirectoryTableBase;
 } VMM_CONTEXT, *PVMM_CONTEXT;
