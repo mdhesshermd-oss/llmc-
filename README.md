@@ -1,35 +1,35 @@
-# DayZ Stealth Project (Refactored from Memory Dump)
+# Проект DayZ Stealth (Рефакторинг из Дампа Памяти)
 
-This repository contains a full-stack refactor and implementation of a DayZ stealth cheat, originally extracted from a memory dump of a Tauri-based Rust application.
+Этот репозиторий содержит полную реализацию и рефакторинг бесшумного чита для DayZ, изначально извлеченного из дампа памяти приложения Rust на базе Tauri.
 
-## 🚀 Key Features
+## 🚀 Ключевые Особенности
 
-- **Ring -1 Hypervisor (AMD SVM)**: Professional-grade virtualization for stealth and bypassing Ring 0/Ring 3 hooks.
-- **Driverless Operation**: Uses a kernel bridge only for initialization, then transitions all logic to the hypervisor.
-- **NPT Cloaking (Shadow Pages)**: Swaps physical frames to hide cheat memory from anti-cheat scanners.
-- **Thread Hijacking Injection**: Injects logic by redirecting existing game threads instead of creating new ones.
-- **AES-128 CBC Security**: Encrypted logic payload with just-in-time in-memory decryption.
-- **Survivor-Only ESP**: Refactored logic specifically filtering for Human Players with optimized Enfusion Engine math.
-- **Overlay Hijacking**: Renders ESP via trusted overlays (AMD Radeon, NVIDIA, Discord) to evade visual detection.
+- **Гипервизор Ring -1 (AMD SVM)**: Виртуализация профессионального уровня для скрытности и обхода хуков Ring 0/Ring 3.
+- **Бесдрайверная работа**: Использует ядерный мост только для инициализации, затем переносит всю логику в гипервизор.
+- **NPT Cloaking (Shadow Pages)**: Подменяет физические фреймы для скрытия памяти чита от сканеров античита.
+- **Инъекция через Thread Hijacking**: Внедряет логику путем перенаправления существующих игровых потоков вместо создания новых.
+- **Безопасность AES-128 CBC**: Зашифрованная полезная нагрузка с дешифрованием в памяти непосредственно перед использованием.
+- **ESP только для выживших**: Очищенная логика, специально фильтрующая только игроков-людей с оптимизированной математикой движка Enfusion.
+- **Overlay Hijacking**: Отрисовка ESP через доверенные оверлеи (AMD Radeon, NVIDIA, Discord) для обхода визуального обнаружения.
 
-## 📁 Project Structure
+## 📁 Структура Проекта
 
-- `refactored_logic.cpp`: Core DayZ ESP logic (Entity iteration, WorldToScreen).
-- `hv_vmm.cpp`: The VM-Exit handler and hypercall dispatcher.
-- `manual_map.h`: Stealthy PE mapper with thread hijacking.
-- `driver.c`: Kernel bridge for multi-core hypervisor initialization.
-- `hypervisor_io.h`: Unified Ring 3 to Ring -1 communication interface.
-- `stealth_cleanup.h`: Kernel trace removal and PE header wiping.
+- `refactored_logic.cpp`: Основная логика ESP DayZ (Итерация сущностей, WorldToScreen).
+- `hv_vmm.cpp`: Обработчик VM-Exit и диспетчер гипервызовов.
+- `manual_map.h`: Скрытный PE-маппер с использованием Thread Hijacking.
+- `driver.c`: Ядерный мост для многоядерной инициализации гипервизора.
+- `hypervisor_io.h`: Унифицированный интерфейс связи Ring 3 -> Ring -1.
+- `stealth_cleanup.h`: Удаление следов в ядре и затирка PE-заголовков.
 
-## 🛠️ Build & Usage
+## 🛠️ Сборка и Использование
 
-1. **Compilation**: Use Visual Studio 2022 with MASM (ml64.exe). See `BUILD.md` for project settings.
-2. **Payload**: Encrypt your DLL using `encrypt_and_pack.py` and embed it as a resource (IDR_CHEAT_DLL).
-3. **Execution**: Load the driver using a manual mapper (KDMapper) then run `refactored_loader.exe`.
+1. **Компиляция**: Используйте Visual Studio 2022 с MASM (ml64.exe). См. `BUILD.md` для настроек проекта.
+2. **Payload**: Зашифруйте вашу DLL с помощью `encrypt_and_pack.py` и встройте её как ресурс (IDR_CHEAT_DLL).
+3. **Запуск**: Загрузите драйвер с помощью маппера (например, KDMapper), затем запустите `refactored_loader.exe`.
 
-## 📜 Documentation
+## 📜 Документация
 
-- `ANALYSIS.md`: Detailed breakdown of the "Combat-Ready" architecture.
-- `BUILD.md`: Step-by-step build instructions.
-- `OFFSETS.md`: Reference for maintaining engine offsets.
-- `DEBUGGING.md`: Guidelines for safe testing.
+- `ANALYSIS.md`: Подробный разбор архитектуры "боевого" уровня.
+- `BUILD.md`: Пошаговые инструкции по сборке.
+- `OFFSETS.md`: Справочник по обновлению офсетов движка.
+- `DEBUGGING.md`: Руководство по безопасному тестированию.

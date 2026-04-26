@@ -1,24 +1,31 @@
-# Инструкция по сборке в Visual Studio (C++)
+# Инструкция по сборке (Visual Studio C++)
 
-Этот проект оптимизирован для компиляции в среде Microsoft Visual Studio 2019/2022.
+Этот проект оптимизирован для компиляции в среде Microsoft Visual Studio 2022.
 
 ## Настройка проекта
 
-### 1. Поддержка Ассемблера (ВАЖНО)
-Для корректной работы системных вызовов необходимо настроить файл `syscalls.asm`.
-**Обязательно следуйте шагам в файле [ASM_GUIDE.md](ASM_GUIDE.md)** перед началом сборки.
+### 1. Поддержка Ассемблера (КРИТИЧНО)
+Проект содержит файлы `.asm` (`syscalls.asm` и `svm_launch.asm`), которые реализуют системные вызовы и вход в режим гипервизора.
+**Обязательно следуйте шагам в [ASM_GUIDE.md](ASM_GUIDE.md)**, чтобы включить поддержку MASM в Visual Studio.
 
-### 2. Свойства проекта (Properties)
-- **Configuration:** Release
-- **Platform:** x64
-- **C++ Standard:** C++17 or C++20
-- **Optimizations:** /O2 (Maximize Speed)
-- **Instruction Set:** /arch:AVX2
+### 2. Свойства проекта (x64 Release)
+- **C++ Standard**: ISO C++17 или C++20.
+- **Optimization**: /O2 (Maximize Speed).
+- **Runtime Library**: Multi-threaded (/MT) — для работы без зависимостей от DLL студии.
+- **Security Check**: Disable Security Check (/GS-) — важно для шеллкодов и драйверного кода.
+- **Linker Input**: Добавьте `ntoskrnl.lib` для сборки драйвера и `Crypt32.lib` для лоадера.
 
-### 3. Компиляция ресурсов
-Убедитесь, что `resources.rc` включен в проект. Он автоматически вшьет зашифрованную DLL в ваш EXE.
+### 3. Сборка Драйвера
+Драйвер `driver.c` должен собираться с использованием **Windows Driver Kit (WDK)**. Он служит "мостиком" для запуска гипервизора на всех ядрах.
 
 ## Процесс сборки
-1. Скомпилируйте `refactored_logic.cpp` как DLL.
-2. Запакуйте: `python encrypt_and_pack.py core.dll packed_payload.bin`.
-3. Соберите `refactored_loader.cpp` + `syscalls.asm` + `resources.rc` в итоговый `loader.exe`.
+1. Скомпилируйте `refactored_logic.cpp` как DLL (это ядро чита).
+2. Зашифруйте DLL: `python encrypt_and_pack.py core.dll packed_payload.bin`.
+3. Убедитесь, что `packed_payload.bin` прописан в `resources.rc`.
+4. Соберите итоговый `refactored_loader.exe` (включая все .asm и .cpp файлы).
+5. Соберите `driver.sys`.
+
+## Использование
+1. Загрузите `driver.sys` через KDMapper или аналогичный маппер.
+2. Запустите `refactored_loader.exe`.
+3. Дождитесь запуска DayZ.

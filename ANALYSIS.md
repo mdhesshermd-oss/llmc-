@@ -1,29 +1,29 @@
-# DayZ Stealth Cheat: "Combat-Ready" Architecture Analysis
+# DayZ Stealth Cheat: Анализ "Боевой" Архитектуры
 
-This document details the transition to the finalized, production-grade driverless hypervisor architecture.
+Этот документ подробно описывает переход к финальной, бесдрайверной архитектуре гипервизора промышленного уровня.
 
-## 1. Multi-Core Virtualization (Ring 0 -> Ring -1)
-The cheat now utilizes a kernel-mode bridge (`driver.c`) to initialize the hypervisor on all CPU cores simultaneously via `KeGenericCallDpc`.
-- **The Process**: The loader sends the `IO_LAUNCH_HV` command. The driver then executes the SVM/VT-x bootstrap on every core, virtualizing the entire system.
-- **Independence**: Once initialized, the hypervisor operates independently of the driver, allowing the `.sys` file to be unloaded to reduce the detection surface.
+## 1. Многоядерная Виртуализация (Ring 0 -> Ring -1)
+Чит теперь использует мост в режиме ядра (`driver.c`) для одновременной инициализации гипервизора на всех ядрах процессора через `KeGenericCallDpc`.
+- **Процесс**: Лоадер отправляет команду `IO_LAUNCH_HV`. Драйвер выполняет загрузку SVM/VT-x на каждом ядре, виртуализируя всю систему.
+- **Независимость**: После инициализации гипервизор работает независимо от драйвера, что позволяет выгрузить `.sys` файл для уменьшения векторов обнаружения.
 
-## 2. Advanced Injection: Thread Hijacking
-To avoid the heavily monitored `CreateRemoteThread` API, the injector now uses **Thread Hijacking**:
-- **Suspension**: An existing game thread (e.g., the rendering thread) is suspended.
-- **Redirection**: The thread's `RIP` (Instruction Pointer) is redirected to a stealthy shellcode area mapped by the hypervisor.
-- **Execution**: The shellcode calls `LoadLibrary` (to resolve imports) and the cheat's entry point, then jumps back to the original `RIP` to resume normal game execution.
+## 2. Продвинутая Инъекция: Thread Hijacking
+Чтобы избежать использования отслеживаемого API `CreateRemoteThread`, инжектор теперь использует **Thread Hijacking**:
+- **Приостановка**: Существующий игровой поток (например, поток отрисовки) приостанавливается.
+- **Перенаправление**: регистр `RIP` (указатель инструкций) потока перенаправляется на область скрытого шеллкода, размещенную гипервизором.
+- **Исполнение**: Шеллкод вызывает `LoadLibrary` (для разрешения импортов) и точку входа чита, после чего возвращается на оригинальный `RIP` для продолжения нормальной работы игры.
 
-## 3. Memory Cloaking & Identity Mapping
-The hypervisor implements **1:1 Identity Mapping** for guest physical memory using **2MB Huge Pages** in the Nested Page Tables (NPT).
-- This ensures that the hypervisor can access any part of the game's RAM without expensive or detectable address translations.
-- **Cloaking**: NPT Shadowing is used to hide the cheat's code. Scanners see original game bytes, while the CPU executes the modified logic.
+## 3. Memory Cloaking и Identity Mapping
+Гипервизор реализует **1:1 Identity Mapping** для физической памяти гостя с использованием **Huge Pages по 2 МБ** в таблицах вложенных страниц (NPT).
+- Это гарантирует, что гипервизор может получить доступ к любой части оперативной памяти игры без дорогостоящих или обнаруживаемых трансляций адресов.
+- **Cloaking**: NPT Shadowing используется для скрытия кода чита. Сканеры видят оригинальные байты игры, в то время как процессор исполняет модифицированную логику.
 
-## 4. Deep Kernel Sanitization
-All traces of the loader and driver are wiped from the Ring -1 context:
-- **MmUnloadedDrivers**: Cleared via hypercall to prevent BattlEye from finding traces of the manual-mapped driver.
-- **Pool Tags**: Suspicious memory allocations are renamed or hidden.
-- **PE Headers**: The "MZ" signatures of the injected logic are erased immediately after injection.
+## 4. Глубокая Очистка Ядра
+Все следы лоадера и драйвера стираются из контекста Ring -1:
+- **MmUnloadedDrivers**: Очищается через гипервызов, чтобы предотвратить обнаружение BattlEye следов мануально загруженного драйвера.
+- **Pool Tags**: Подозрительные выделения памяти переименовываются или скрываются.
+- **PE Headers**: Сигнатуры "MZ" внедренной логики стираются сразу после инъекции.
 
-## 5. Security & Parity
-- **AES-128 CBC**: The logic payload is encrypted with a secret key matching the hypercall authorization key.
-- **ESP Logic**: The core refactored DayZ logic (`refactored_logic.cpp`) remains 100% faithful to the original dump, providing "Survivor-only" ESP via optimized Enfusion Engine math.
+## 5. Безопасность и Соответствие
+- **AES-128 CBC**: Полезная нагрузка зашифрована секретным ключом, соответствующим ключу авторизации гипервызовов.
+- **Логика ESP**: Основная отрефакторенная логика DayZ (`refactored_logic.cpp`) на 100% соответствует оригинальному дампу, обеспечивая ESP только для игроков ("Survivor") с использованием оптимизированной математики движка Enfusion.
