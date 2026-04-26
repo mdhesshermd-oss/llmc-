@@ -1,16 +1,14 @@
 ; --- svm_bridge.asm ---
-; Low-level SVM bridge for AMD virtualization transitions.
+; Gbhv-style low-level SVM transition logic.
 ; Targets MASM (ml64.exe) for Visual Studio 2022.
 
 .code
 
-; External C++ handler defined in hv_vmm.cpp
 extern HandleVmExit : proc
 
-; SvmLaunch(uint64_t vmcb_pa, uint64_t hsave_pa, void* context)
-; RCX = VMCB_PA, RDX = HSAVE_PA, R8 = Context VA
-SvmLaunch proc
-    ; Save non-volatile registers
+; GbhvSvmLaunch(uint64_t VmcbPa, uint64_t HsavePa, void* Context)
+GbhvSvmLaunch proc
+    ; 1. Save host context
     push rbx
     push rbp
     push rdi
@@ -20,12 +18,12 @@ SvmLaunch proc
     push r14
     push r15
 
-    ; Use non-volatile registers for persistent data across Guest execution
-    mov r12, r8         ; r12 = Context (PerCoreData*)
-    mov r13, rcx        ; r13 = VMCB_PA
-    mov r14, rdx        ; r14 = HSAVE_PA
+    ; Persistent storage in non-volatile registers
+    mov r12, r8         ; GbhvContext (PVMM_PROCESSOR_CONTEXT)
+    mov r13, rcx        ; VmcbPhysical
+    mov r14, rdx        ; HostSavePhysical
 
-    ; Setup Host GS Base for fast context access in Ring -1
+    ; 2. Setup Host GS Base for fast access to context
     mov ecx, 0C0000102h ; MSR_KERNEL_GS_BASE
     mov rax, r12
     mov rdx, r12
@@ -33,28 +31,19 @@ SvmLaunch proc
     wrmsr
 
 svm_loop:
+    ; 3. Transition to Guest Mode
     mov rax, r14
-    vmsave rax          ; Save Host State
+    vmsave rax          ; Save current host state to HSAVE
 
-    ; Save extended processor state (AVX/SSE) with proper alignment
-    mov rbp, rsp        ; Save stack pointer for alignment
-    sub rsp, 4096       ; Buffer for xsave
-    and rsp, -64        ; 64-byte alignment requirement
-    xor rax, rax
-    mov rcx, 0
-    xgetbv
-    xsave [rsp]
-
-    ; --- ENTER GUEST MODE ---
     mov rax, r13
-    vmrun rax
+    vmrun rax           ; --- RUN GUEST ---
 
-    ; --- VMEXIT JUMPS HERE (Host RIP in VMCB) ---
-SvmVmExitHandler label qword
+    ; --- VMEXIT OCCURRED ---
     mov rax, r14
-    vmload rax          ; Restore Host State
+    vmload rax          ; Restore host state from HSAVE
 
-    ; Save Guest GPRs to stack (15 registers = 120 bytes)
+SvmVmExitHandler label qword
+    ; 4. Save Guest state (15 registers = 120 bytes)
     push r15
     push r14
     push r13
@@ -71,18 +60,14 @@ SvmVmExitHandler label qword
     push rcx
     push rax
 
-    mov rcx, r13        ; Param 1: VMCB_PA
-    mov rdx, rsp        ; Param 2: GuestRegisters*
-
-    sub rsp, 32         ; Shadow space
+    ; 5. Call C++ handler: HandleVmExit(VmcbPa, Registers)
+    mov rcx, r13
+    mov rdx, rsp
+    sub rsp, 32
     call HandleVmExit
     add rsp, 32
 
-    ; Check for Unload Status (0xC0000600)
-    cmp eax, 0C0000600h
-    je svm_exit_final
-
-    ; Restore Guest GPRs
+    ; 6. Return to Guest
     pop rax
     pop rcx
     pop rdx
@@ -99,28 +84,9 @@ SvmVmExitHandler label qword
     pop r14
     pop r15
 
-    xrstor [rsp]        ; Restore AVX/SSE state
-    mov rsp, rbp        ; Restore original stack pointer
     jmp svm_loop
+GbhvSvmLaunch endp
 
-svm_exit_final:
-    ; Cleanup stack and restore non-volatile registers
-    add rsp, 120        ; Discard Guest GPRs
-    xrstor [rsp]
-    mov rsp, rbp
-
-    pop r15
-    pop r14
-    pop r13
-    pop r12
-    pop rsi
-    pop rdi
-    pop rbp
-    pop rbx
-    ret
-SvmLaunch endp
-
-; Export the label for use in C++ (VMCB setup)
 public SvmVmExitHandler
 
 end

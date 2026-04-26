@@ -1,46 +1,18 @@
 #include <ntddk.h>
 #include <ntstrsafe.h>
-#include "hv_core.h"
+#include "vmm.h"
+#include "svm.h"
 
 /**
- * Advanced Kernel Bridge Driver
+ * Advanced Kernel Bridge Driver (Gbhv Style)
  * Orchestrates multi-core hypervisor initialization.
  */
 
 #define IO_LAUNCH_HV CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0805, METHOD_BUFFERED, FILE_ANY_ACCESS)
 
-// Standard Pool Tag for Hypervisor
-#define HV_POOL_TAG 'HVMx'
-
-// Forward declaration matching hv_init_amd.h
-namespace Cheat { namespace Hv { namespace AMD {
-    bool InitializeSVM(PerCoreData* ctx);
-}}}
-
-/**
- * DPC routine called for each logical core to transition to Ring -1.
- */
-void NTAPI HvKernelBootstrap(PKDPC Dpc, PVOID Context, PVOID SystemArgument1, PVOID SystemArgument2) {
-    UNREFERENCED_PARAMETER(Dpc);
-    UNREFERENCED_PARAMETER(Context);
-
-    // Allocate core-specific context in NonPagedPool
-    Cheat::Hv::PerCoreData* ctx = (Cheat::Hv::PerCoreData*)ExAllocatePoolWithTag(NonPagedPool, sizeof(Cheat::Hv::PerCoreData), HV_POOL_TAG);
-
-    if (ctx) {
-        RtlZeroMemory(ctx, sizeof(Cheat::Hv::PerCoreData));
-        ctx->self_va = ctx;
-        ctx->lifecycle_state = 1; // Running
-
-        // Enter hypervisor mode on this core
-        if (!Cheat::Hv::AMD::InitializeSVM(ctx)) {
-            ExFreePoolWithTag(ctx, HV_POOL_TAG);
-        }
-    }
-
-    // Signal completion of DPC on this core
-    KeSignalCallDpcDone(SystemArgument1);
-}
+// External VMM allocators
+extern "C" PVMM_CONTEXT GbhvAllocateVmmContext();
+extern "C" VOID GbhvInitializeAllProcessors(PVMM_CONTEXT GlobalContext);
 
 NTSTATUS CreateClose(PDEVICE_OBJECT DeviceObject, PIRP Irp) {
     UNREFERENCED_PARAMETER(DeviceObject);
@@ -56,8 +28,15 @@ NTSTATUS IoControl(PDEVICE_OBJECT DeviceObject, PIRP Irp) {
     NTSTATUS status = STATUS_SUCCESS;
 
     if (stack->Parameters.DeviceIoControl.IoControlCode == IO_LAUNCH_HV) {
-        // Force all cores to virtualize simultaneously using a generic DPC call
-        KeGenericCallDpc(HvKernelBootstrap, NULL);
+        // 1. Allocate the Global VMM Context
+        PVMM_CONTEXT GlobalContext = GbhvAllocateVmmContext();
+        if (GlobalContext) {
+            // 2. Broadcast initialization to all logical cores
+            GbhvInitializeAllProcessors(GlobalContext);
+            DbgPrint("[+] DayZStealth: Hypervisor launched on all cores.\n");
+        } else {
+            status = STATUS_INSUFFICIENT_RESOURCES;
+        }
     }
 
     Irp->IoStatus.Status = status;
@@ -86,5 +65,6 @@ extern "C" NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING Reg
     DriverObject->MajorFunction[IRP_MJ_CLOSE] = CreateClose;
     DriverObject->MajorFunction[IRP_MJ_DEVICE_CONTROL] = IoControl;
 
+    DbgPrint("[+] DayZStealth: Bridge Driver Loaded.\n");
     return STATUS_SUCCESS;
 }

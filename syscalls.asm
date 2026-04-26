@@ -14,18 +14,16 @@ _hv_call endp
 
 ; --- InternalSyscall ---
 ; Prototype: extern "C" NTSTATUS InternalSyscall(uint32_t ssdt_id, ...);
-; Supports up to 6 arguments with proper stack management.
+; Correctly handles 4+ arguments by managing the stack spill space.
 InternalSyscall proc
-    mov eax, ecx            ; Syscall ID
-    mov r10, rdx            ; First arg (RCX for syscall)
+    mov eax, ecx            ; Set Syscall ID
+    mov r10, rdx            ; Set 1st arg (RCX)
+    mov rdx, r8             ; Set 2nd arg (RDX)
+    mov r8, r9              ; Set 3rd arg (R8)
+    mov r9, [rsp + 40]      ; Set 4th arg (R9) from stack
 
-    ; Setup args 2, 3, 4
-    mov rdx, r8             ; RDX
-    mov r8, r9              ; R8
-    mov r9, [rsp + 40]      ; R9 (was pushed by caller as 5th arg)
-
-    ; Shadow space is handled by the caller.
-    ; If more than 4 args, they are already on stack above shadow space.
+    ; Note: If the syscall has 5th or 6th args, they must be at [rsp+48] and [rsp+56].
+    ; However, the 'syscall' instruction only expects 4 GPR args; the rest remain on stack.
 
     syscall
     ret
