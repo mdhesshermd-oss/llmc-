@@ -2,10 +2,10 @@
 #include <ntstrsafe.h>
 
 // --- IOCTL Definitions ---
-// Must match driver_io.h in the user-mode application
 #define IO_READ_REQUEST  CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0801, METHOD_BUFFERED, FILE_ANY_ACCESS)
 #define IO_WRITE_REQUEST CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0802, METHOD_BUFFERED, FILE_ANY_ACCESS)
 #define IO_GET_BASE_ADDR CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0803, METHOD_BUFFERED, FILE_ANY_ACCESS)
+#define IO_LAUNCH_HV     CTL_CODE(FILE_DEVICE_UNKNOWN, 0x0805, METHOD_BUFFERED, FILE_ANY_ACCESS)
 
 typedef struct _KERNEL_READ_REQUEST {
     ULONG ProcessId;
@@ -28,15 +28,19 @@ NTSTATUS IoControl(PDEVICE_OBJECT pDeviceObject, PIRP pIrp);
 NTSTATUS CreateCall(PDEVICE_OBJECT pDeviceObject, PIRP pIrp);
 NTSTATUS CloseCall(PDEVICE_OBJECT pDeviceObject, PIRP pIrp);
 
-// Helper for memory operations
-NTSTATUS KeReadVirtualMemory(PEPROCESS Process, PVOID SourceAddress, PVOID TargetAddress, SIZE_T Size) {
-    PSIZE_T Bytes;
-    return MmCopyVirtualMemory(Process, SourceAddress, IoGetCurrentProcess(), TargetAddress, Size, KernelMode, &Bytes);
-}
+// Note: In a real build, InitializeSVM would be an extern C function or
+// this file would be compiled as C++.
+extern void InitializeSVM();
 
-NTSTATUS KeWriteVirtualMemory(PEPROCESS Process, PVOID SourceAddress, PVOID TargetAddress, SIZE_T Size) {
-    PSIZE_T Bytes;
-    return MmCopyVirtualMemory(IoGetCurrentProcess(), SourceAddress, Process, TargetAddress, Size, KernelMode, &Bytes);
+// Function launched on every core
+void NTAPI HvKernelBootstrap(PKDPC Dpc, PVOID Context, PVOID SystemArgument1, PVOID SystemArgument2) {
+    UNREFERENCED_PARAMETER(Dpc);
+    UNREFERENCED_PARAMETER(Context);
+
+    // Launch hypervisor on current core
+    InitializeSVM();
+
+    KeSignalCallDpcDone(SystemArgument1);
 }
 
 PDEVICE_OBJECT pDeviceObject;
@@ -96,7 +100,8 @@ NTSTATUS IoControl(PDEVICE_OBJECT pDeviceObject, PIRP pIrp) {
         PKERNEL_READ_REQUEST ReadInput = (PKERNEL_READ_REQUEST)pIrp->AssociatedIrp.SystemBuffer;
         PEPROCESS Process;
         if (NT_SUCCESS(PsLookupProcessByProcessId((HANDLE)ReadInput->ProcessId, &Process))) {
-            KeReadVirtualMemory(Process, (PVOID)ReadInput->Address, ReadInput->Response, ReadInput->Size);
+            PSIZE_T Bytes;
+            MmCopyVirtualMemory(Process, (PVOID)ReadInput->Address, IoGetCurrentProcess(), ReadInput->Response, ReadInput->Size, KernelMode, &Bytes);
             ObDereferenceObject(Process);
             Status = STATUS_SUCCESS;
             ByteCount = sizeof(KERNEL_READ_REQUEST);
@@ -106,11 +111,17 @@ NTSTATUS IoControl(PDEVICE_OBJECT pDeviceObject, PIRP pIrp) {
         PKERNEL_WRITE_REQUEST WriteInput = (PKERNEL_WRITE_REQUEST)pIrp->AssociatedIrp.SystemBuffer;
         PEPROCESS Process;
         if (NT_SUCCESS(PsLookupProcessByProcessId((HANDLE)WriteInput->ProcessId, &Process))) {
-            KeWriteVirtualMemory(Process, WriteInput->Value, (PVOID)WriteInput->Address, WriteInput->Size);
+            PSIZE_T Bytes;
+            MmCopyVirtualMemory(IoGetCurrentProcess(), WriteInput->Value, Process, (PVOID)WriteInput->Address, WriteInput->Size, KernelMode, &Bytes);
             ObDereferenceObject(Process);
             Status = STATUS_SUCCESS;
             ByteCount = sizeof(KERNEL_WRITE_REQUEST);
         }
+    }
+    else if (ControlCode == IO_LAUNCH_HV) {
+        // Trigger multi-core bootstrap
+        KeGenericCallDpc(HvKernelBootstrap, NULL);
+        Status = STATUS_SUCCESS;
     }
 
     pIrp->IoStatus.Status = Status;

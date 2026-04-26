@@ -1,38 +1,29 @@
 # DayZ Stealth Cheat: "Combat-Ready" Architecture Analysis
 
-This document details the transition from the initial refactored "skeleton" to the production-grade, driverless hypervisor architecture.
+This document details the transition to the finalized, production-grade driverless hypervisor architecture.
 
-## 1. Evolution: From Driver (Ring 0) to Hypervisor (Ring -1)
-The initial implementation used a kernel driver (`driver.c`) for memory access. While stealthier than user-mode APIs, drivers leave traces (e.g., `MmUnloadedDrivers`, Pool Tags) that modern anti-cheats (BattlEye) scan for.
+## 1. Multi-Core Virtualization (Ring 0 -> Ring -1)
+The cheat now utilizes a kernel-mode bridge (`driver.c`) to initialize the hypervisor on all CPU cores simultaneously via `KeGenericCallDpc`.
+- **The Process**: The loader sends the `IO_LAUNCH_HV` command. The driver then executes the SVM/VT-x bootstrap on every core, virtualizing the entire system.
+- **Independence**: Once initialized, the hypervisor operates independently of the driver, allowing the `.sys` file to be unloaded to reduce the detection surface.
 
-The "Combat-Ready" version is **driverless**. All memory operations are performed directly by the hypervisor at Ring -1. Communication is handled via `VMMCALL` (AMD) or `VMCALL` (Intel) using a 64-bit secret key (`0x5A4F524F5F444159`) to prevent accidental discovery by the OS or anti-cheat.
+## 2. Advanced Injection: Thread Hijacking
+To avoid the heavily monitored `CreateRemoteThread` API, the injector now uses **Thread Hijacking**:
+- **Suspension**: An existing game thread (e.g., the rendering thread) is suspended.
+- **Redirection**: The thread's `RIP` (Instruction Pointer) is redirected to a stealthy shellcode area mapped by the hypervisor.
+- **Execution**: The shellcode calls `LoadLibrary` (to resolve imports) and the cheat's entry point, then jumps back to the original `RIP` to resume normal game execution.
 
-## 2. Advanced Stealth: NPT Cloaking (Shadow Pages)
-We have implemented **Nested Page Table (NPT) Cloaking** in `hv_vmm.cpp`. This is the most advanced form of memory hiding available:
-- **Redirection**: The hypervisor maintains two physical copies of the cheat's memory: an **Original Page** (clean) and a **Shadow Page** (infected).
-- **TLB Splitting**:
-  - When the anti-cheat reads the memory (Data Access), the hypervisor directs it to the **Original Page**.
-  - When the processor executes the code (Instruction Fetch), the hypervisor swaps the mapping to the **Shadow Page**.
-- **The Result**: Scanners see clean game code, but the cheat logic actually executes.
+## 3. Memory Cloaking & Identity Mapping
+The hypervisor implements **1:1 Identity Mapping** for guest physical memory using **2MB Huge Pages** in the Nested Page Tables (NPT).
+- This ensures that the hypervisor can access any part of the game's RAM without expensive or detectable address translations.
+- **Cloaking**: NPT Shadowing is used to hide the cheat's code. Scanners see original game bytes, while the CPU executes the modified logic.
 
-## 3. Deep Kernel Cleanup
-The `stealth_cleanup.h` module performs aggressive trace removal:
-- **MmUnloadedDrivers Wiping**: Automatically locates the hidden kernel list by scanning memory starting from `MSR_LSTAR` and zeroes it out.
-- **PE Header Erasing**: Destroys the "MZ/PE" signature of the mapped cheat logic in the game's memory.
-- **Pool Tag Replacement**: Identifies and replaces suspicious memory tags left by the loader.
+## 4. Deep Kernel Sanitization
+All traces of the loader and driver are wiped from the Ring -1 context:
+- **MmUnloadedDrivers**: Cleared via hypercall to prevent BattlEye from finding traces of the manual-mapped driver.
+- **Pool Tags**: Suspicious memory allocations are renamed or hidden.
+- **PE Headers**: The "MZ" signatures of the injected logic are erased immediately after injection.
 
-## 4. Safety & Robustness
-Hypervisor errors usually result in a "Triple Fault" and an instant system reboot. Our architecture prevents this:
-- **Host IDT**: The hypervisor now has its own Interrupt Descriptor Table to catch internal exceptions.
-- **Panic Handler**: If a critical error occurs in Ring -1, the `HvPanicHandler` safely disables virtualization and returns control to the guest OS instead of crashing.
-
-## 5. Payload Security
-The cheat payload is now encrypted with **AES-128 CBC**.
-- It is only decrypted in-memory by the loader just before injection.
-- The AES key is immediately wiped (`SecureZeroMemory`) after use to prevent it from being found in memory dumps.
-
-## 6. Logic Parity
-Despite these architectural upgrades, the core DayZ logic remains faithful to the original dump:
-- **Entity Iteration**: Efficiently loops through the `GameWorld` entity list.
-- **Player Filtering**: Specifically targets `DayZPlayer` entities at offset `0x158`.
-- **WorldToScreen**: High-precision coordinate transformation for GDI-based rendering via hijacked overlays.
+## 5. Security & Parity
+- **AES-128 CBC**: The logic payload is encrypted with a secret key matching the hypercall authorization key.
+- **ESP Logic**: The core refactored DayZ logic (`refactored_logic.cpp`) remains 100% faithful to the original dump, providing "Survivor-only" ESP via optimized Enfusion Engine math.
