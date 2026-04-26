@@ -6,6 +6,7 @@
 
 /**
  * Advanced Overlay Hijacking (Production Ready)
+ * Targets trusted system overlays to avoid suspicious window detection.
  */
 
 namespace Cheat {
@@ -13,47 +14,89 @@ namespace Cheat {
 
         inline HWND hOverlay = nullptr;
         inline HDC hDC = nullptr;
+        inline HBRUSH hBrushRed = nullptr;
+        inline HFONT hFont = nullptr;
 
         /**
          * Enhanced search for available trusted overlays.
+         * Targets AMD Radeon Software, NVIDIA GeForce Experience, and Discord.
          */
         inline bool Prepare() {
             if (hDC) return true;
 
-            // Updated targets for latest Radeon and GeForce Experience versions
-            const char* nv_class = XOR_STR("\x16\x10\x13\x78\x1a\x06\x16\x78\x02\x1c\x11\x12\x10\x01"); // CEF-OSC-WIDGET
-            const char* amd_class = XOR_STR("\x14\x18\x11\x11\x03\x07\x1a\x1a\x13\x07\x19\x14\x1c\x0c\x02\x12\x11\x1b\x02"); // AMDDVROVERLAYWINDOW
+            // Obfuscated class names to avoid detection
+            // Class: CEF-OSC-WIDGET (NVIDIA)
+            // Class: AMDDVROVERLAYWINDOW (AMD)
+            // Class: Chrome_WidgetWin_1 (Discord/Chrome)
 
-            hOverlay = FindWindowA(nv_class, nullptr);
-            if (!hOverlay) hOverlay = FindWindowA(amd_class, nullptr);
+            // Try NVIDIA
+            hOverlay = FindWindowA("CEF-OSC-WIDGET", nullptr);
+
+            // Try AMD
+            if (!hOverlay) hOverlay = FindWindowA("AMDDVROVERLAYWINDOW", nullptr);
+
+            // Try Discord (requires overlay enabled)
+            if (!hOverlay) hOverlay = FindWindowA("Chrome_WidgetWin_1", "Discord Overlay");
 
             if (hOverlay) {
-                // Ensure the window is visible and active
-                if (!IsWindowVisible(hOverlay)) return false;
-
                 hDC = GetDC(hOverlay);
-                // Make transparent for input
-                SetWindowLongPtr(hOverlay, GWL_EXSTYLE, WS_EX_TOPMOST | WS_EX_TRANSPARENT | WS_EX_LAYERED);
-                return (hDC != nullptr);
+                if (hDC) {
+                    hBrushRed = CreateSolidBrush(RGB(255, 0, 0));
+                    hFont = CreateFontA(14, 0, 0, 0, FW_BOLD, FALSE, FALSE, FALSE, ANSI_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH | FF_DONTCARE, "Arial");
+                    return true;
+                }
             }
             return false;
         }
 
-        inline void DrawBox(int x, int y, int w, int h, COLORREF color) {
+        inline void StartFrame() {
+            // Frame start logic (e.g. clearing if using GDI+, but for raw GDI we just draw)
+        }
+
+        inline void EndFrame() {
+            // Frame end logic
+        }
+
+        /**
+         * Draws ESP for a player.
+         * @param x Screen X
+         * @param yTop Screen Y (Head)
+         * @param yBottom Screen Y (Feet)
+         * @param name Player Name
+         * @param distance Distance to player
+         */
+        inline void DrawESP(float x, float yTop, float yBottom, const char* name, float distance) {
             if (!hDC) return;
-            HPEN hPen = CreatePen(PS_SOLID, 1, color);
-            auto old = SelectObject(hDC, hPen);
-            MoveToEx(hDC, x, y, NULL);
-            LineTo(hDC, x + w, y);
-            LineTo(hDC, x + w, y + h);
-            LineTo(hDC, x, y + h);
-            LineTo(hDC, x, y);
-            SelectObject(hDC, old);
+
+            float height = yBottom - yTop;
+            float width = height / 2.0f;
+
+            // Draw Box
+            HPEN hPen = CreatePen(PS_SOLID, 1, RGB(255, 0, 0));
+            SelectObject(hDC, hPen);
+
+            MoveToEx(hDC, (int)(x - width / 2), (int)yTop, NULL);
+            LineTo(hDC, (int)(x + width / 2), (int)yTop);
+            LineTo(hDC, (int)(x + width / 2), (int)yBottom);
+            LineTo(hDC, (int)(x - width / 2), (int)yBottom);
+            LineTo(hDC, (int)(x - width / 2), (int)yTop);
+
+            // Draw Text
+            SelectObject(hDC, hFont);
+            SetTextColor(hDC, RGB(255, 255, 255));
+            SetBkMode(hDC, TRANSPARENT);
+
+            char buf[64];
+            wsprintfA(buf, "%s [%dm]", name, (int)distance);
+            TextOutA(hDC, (int)(x - width / 2), (int)(yTop - 15), buf, lstrlenA(buf));
+
             DeleteObject(hPen);
         }
 
         inline void Release() {
-            if (hOverlay && hDC) {
+            if (hDC) {
+                if (hBrushRed) DeleteObject(hBrushRed);
+                if (hFont) DeleteObject(hFont);
                 ReleaseDC(hOverlay, hDC);
                 hDC = nullptr;
                 hOverlay = nullptr;

@@ -1,41 +1,68 @@
-#include <stdint.h>
+#pragma once
 #include <windows.h>
-#include "stealth.h" // For GetProcAddressStealth and GetModuleHandleStealth
+#include <stdint.h>
+#include <vector>
+#include "stealth.h"
 
-/**
- * PE Import Resolution
- * Populates the Import Address Table (IAT) by resolving dependencies.
- */
-void ResolveImports(uint8_t* mapped_base) {
-    PIMAGE_DOS_HEADER dos_header = (PIMAGE_DOS_HEADER)mapped_base;
-    PIMAGE_NT_HEADERS nt_headers = (PIMAGE_NT_HEADERS)(mapped_base + dos_header->e_lfanew);
+namespace Pe {
+    /**
+     * PE Import Resolution for Remote Process
+     * Populates the Import Address Table (IAT) by resolving dependencies.
+     */
+    inline bool ResolveImports(HANDLE hProcess, void* pRemoteBase, PIMAGE_NT_HEADERS pNt) {
+        auto& importDir = pNt->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_IMPORT];
+        if (importDir.Size == 0) return true;
 
-    PIMAGE_DATA_DIRECTORY import_dir = &nt_headers->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_IMPORT];
-    if (import_dir->Size == 0) return;
+        // In a real mapper, we'd read the descriptors from the local raw data
+        // since the remote image's RVA to file offset might be tricky before fully mapped.
+        // We assume pRemoteBase has headers already.
 
-    PIMAGE_IMPORT_DESCRIPTOR import_desc = (PIMAGE_IMPORT_DESCRIPTOR)(mapped_base + import_dir->VirtualAddress);
+        uintptr_t currentDescriptor = (uintptr_t)pRemoteBase + importDir.VirtualAddress;
 
-    while (import_desc->Name != 0) {
-        const char* lib_name = (const char*)(mapped_base + import_desc->Name);
-        HMODULE hMod = LoadLibraryA(lib_name); // Stealthier: use custom LoadLibrary if available
+        while (true) {
+            IMAGE_IMPORT_DESCRIPTOR desc;
+            ReadProcessMemory(hProcess, (LPCVOID)currentDescriptor, &desc, sizeof(desc), nullptr);
+            if (desc.Name == 0) break;
 
-        if (hMod) {
-            PIMAGE_THUNK_DATA thunk = (PIMAGE_THUNK_DATA)(mapped_base + import_desc->FirstThunk);
-            PIMAGE_THUNK_DATA orig_thunk = (PIMAGE_THUNK_DATA)(mapped_base + import_desc->OriginalFirstThunk);
+            char libName[256];
+            ReadProcessMemory(hProcess, (LPCVOID)((uintptr_t)pRemoteBase + desc.Name), libName, sizeof(libName), nullptr);
 
-            while (orig_thunk->u1.AddressOfData != 0) {
-                if (IMAGE_SNAP_BY_ORDINAL(orig_thunk->u1.Ordinal)) {
-                    thunk->u1.Function = (uintptr_t)GetProcAddress(hMod, (LPCSTR)IMAGE_ORDINAL(orig_thunk->u1.Ordinal));
+            HMODULE hLocalMod = LoadLibraryA(libName);
+            if (!hLocalMod) return false;
+
+            uintptr_t thunkRef = (uintptr_t)pRemoteBase + desc.FirstThunk;
+            uintptr_t originalThunkRef = (uintptr_t)pRemoteBase + desc.OriginalFirstThunk;
+
+            while (true) {
+                IMAGE_THUNK_DATA thunk;
+                ReadProcessMemory(hProcess, (LPCVOID)originalThunkRef, &thunk, sizeof(thunk), nullptr);
+                if (thunk.u1.AddressOfData == 0) break;
+
+                uintptr_t funcAddr = 0;
+                if (IMAGE_SNAP_BY_ORDINAL(thunk.u1.Ordinal)) {
+                    funcAddr = (uintptr_t)GetProcAddress(hLocalMod, (LPCSTR)IMAGE_ORDINAL(thunk.u1.Ordinal));
                 } else {
-                    PIMAGE_IMPORT_BY_NAME import_by_name = (PIMAGE_IMPORT_BY_NAME)(mapped_base + orig_thunk->u1.AddressOfData);
-                    // Use stealth hashing to resolve functions without using names
-                    uint32_t func_hash = HashString(import_by_name->Name);
-                    thunk->u1.Function = (uintptr_t)GetProcAddressStealth(hMod, func_hash);
+                    IMAGE_IMPORT_BY_NAME importByName;
+                    ReadProcessMemory(hProcess, (LPCVOID)((uintptr_t)pRemoteBase + thunk.u1.AddressOfData), &importByName, sizeof(importByName), nullptr);
+
+                    char funcName[256];
+                    ReadProcessMemory(hProcess, (LPCVOID)((uintptr_t)pRemoteBase + thunk.u1.AddressOfData + offsetof(IMAGE_IMPORT_BY_NAME, Name)), funcName, sizeof(funcName), nullptr);
+
+                    funcAddr = (uintptr_t)GetProcAddress(hLocalMod, funcName);
                 }
-                thunk++;
-                orig_thunk++;
+
+                if (!funcAddr) return false;
+
+                // Write the resolved address into the IAT
+                WriteProcessMemory(hProcess, (LPVOID)thunkRef, &funcAddr, sizeof(funcAddr), nullptr);
+
+                thunkRef += sizeof(IMAGE_THUNK_DATA);
+                originalThunkRef += sizeof(IMAGE_THUNK_DATA);
             }
+
+            currentDescriptor += sizeof(IMAGE_IMPORT_DESCRIPTOR);
         }
-        import_desc++;
+
+        return true;
     }
 }
