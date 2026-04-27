@@ -1,3 +1,4 @@
+#define _USER_MODE
 #include <windows.h>
 #include <wincrypt.h>
 #include <iostream>
@@ -7,6 +8,7 @@
 #include "manual_map.h"
 #include "hypervisor_io.h"
 #include "preflight.h"
+#include "stealth_cleanup.h"
 
 #pragma comment(lib, "crypt32.lib")
 
@@ -128,9 +130,10 @@ int main() {
             Cheat::Hv::CloakPage(mapping.ImageBase, payload.data());
 
             // 6. Stealth Hijack
-            Cheat::ManualMapper::Hijack(pid, cr3, mapping.EntryPoint);
+            Cheat::ManualMapper::Hijack(pid, cr3, mapping.ImageBase, mapping.EntryPoint);
 
-            // 7. Cleanup
+            // 7. Cleanup & Header Stripping
+            Cheat::Cleanup::ErasePeHeaders(cr3, mapping.ImageBase);
             Cheat::Hv::TriggerDeepClean();
         }
 

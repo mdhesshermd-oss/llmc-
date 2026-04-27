@@ -16,6 +16,14 @@ namespace Npt {
 
 namespace Svm {
 
+    /**
+     * Safe physical to virtual mapping for hypervisor context.
+     */
+    inline void* GetVirtualAddress(UINT64 Pa, SIZE_T Size = PAGE_SIZE) {
+        PHYSICAL_ADDRESS Phys; Phys.QuadPart = Pa;
+        return MmMapIoSpace(Phys, Size, MmNonCached);
+    }
+
     // Global storage for cloaked pages (Sync across cores)
     typedef struct _CLOAKED_PAGE {
         UINT64 GuestPa;
@@ -27,46 +35,50 @@ namespace Svm {
     volatile LONG g_CloakedCount = 0;
 
     /**
-     * Traverses AMD NPT tables to find the entry for a physical address.
+     * Traverses AMD NPT tables to find the PHYSICAL address of the entry for a physical address.
      */
-    UINT64* GetNptEntry(UINT64 NptPml4Pa, UINT64 FaultPa) {
+    UINT64 GetNptEntryPa(UINT64 NptPml4Pa, UINT64 FaultPa) {
         UINT64 Pml4Idx = (FaultPa >> 39) & 0x1FF;
         UINT64 PdptIdx = (FaultPa >> 30) & 0x1FF;
         UINT64 PdIdx   = (FaultPa >> 21) & 0x1FF;
         UINT64 PteIdx  = (FaultPa >> 12) & 0x1FF;
 
-        UINT64* Pml4 = (UINT64*)(NptPml4Pa & ~0xFFF);
-        if (!(Pml4[Pml4Idx] & 1)) return nullptr;
+        UINT64* Pml4 = (UINT64*)GetVirtualAddress(NptPml4Pa);
+        if (!Pml4 || !(Pml4[Pml4Idx] & 1)) { if(Pml4) MmUnmapIoSpace(Pml4, PAGE_SIZE); return 0; }
+        UINT64 PdptPa = Pml4[Pml4Idx] & ~0xFFF;
+        MmUnmapIoSpace(Pml4, PAGE_SIZE);
 
-        UINT64* Pdpt = (UINT64*)(Pml4[Pml4Idx] & ~0xFFF);
-        if (!(Pdpt[PdptIdx] & 1)) return nullptr;
+        UINT64* Pdpt = (UINT64*)GetVirtualAddress(PdptPa);
+        if (!Pdpt || !(Pdpt[PdptIdx] & 1)) { if(Pdpt) MmUnmapIoSpace(Pdpt, PAGE_SIZE); return 0; }
+        UINT64 PdPa = Pdpt[PdptIdx] & ~0xFFF;
+        MmUnmapIoSpace(Pdpt, PAGE_SIZE);
 
-        UINT64* Pd = (UINT64*)(Pdpt[PdptIdx] & ~0xFFF);
-        if (!(Pd[PdIdx] & 1)) return nullptr;
+        UINT64* Pd = (UINT64*)GetVirtualAddress(PdPa);
+        if (!Pd || !(Pd[PdIdx] & 1)) { if(Pd) MmUnmapIoSpace(Pd, PAGE_SIZE); return 0; }
+        if (Pd[PdIdx] & 0x80) { MmUnmapIoSpace(Pd, PAGE_SIZE); return 0; }
+        UINT64 PtPa = Pd[PdIdx] & ~0xFFF;
+        MmUnmapIoSpace(Pd, PAGE_SIZE);
 
-        // Skip Huge Pages for cloaking (assume 4KB for simplicity)
-        if (Pd[PdIdx] & 0x80) return nullptr;
-
-        UINT64* Pt = (UINT64*)(Pd[PdIdx] & ~0xFFF);
-        return &Pt[PteIdx];
+        return PtPa + (PteIdx * 8);
     }
 
     /**
      * Finds a cave of null-filled memory in the guest process (Code Cave).
-     * Uses MmMapIoSpace for safe physical memory access.
+     * Uses safe mapping. Limited scan range to improve performance during VM-Exit.
      */
     UINT64 FindGuestCodeCave(UINT64 Cr3, UINT64 StartVa, SIZE_T Size) {
-        for (UINT64 Current = StartVa; Current < StartVa + 0x10000000; Current += 0x1000) {
+        // Reduced scan range for performance (1MB instead of 256MB)
+        for (UINT64 Current = StartVa; Current < StartVa + 0x100000; Current += 0x1000) {
             UINT64 Pa = TranslateVa(Cr3, Current);
             if (!Pa) continue;
 
-            PHYSICAL_ADDRESS Phys; Phys.QuadPart = Pa;
-            PVOID Mapped = MmMapIoSpace(Phys, Size, MmNonCached);
+            PVOID Mapped = GetVirtualAddress(Pa, Size);
             if (!Mapped) continue;
 
             BOOLEAN IsCave = TRUE;
             UINT8* Buffer = (UINT8*)Mapped;
-            for (SIZE_T i = 0; i < Size; i++) {
+            // Check first 128 bytes only as a heuristic for efficiency
+            for (SIZE_T i = 0; i < (Size < 128 ? Size : 128); i++) {
                 if (Buffer[i] != 0x00 && Buffer[i] != 0xCC) {
                     IsCave = FALSE;
                     break;
@@ -88,16 +100,30 @@ namespace Svm {
         UINT64 PdIdx   = (Va >> 21) & 0x1FF;
         UINT64 PteIdx  = (Va >> 12) & 0x1FF;
 
-        UINT64* Pml4 = (UINT64*)(Cr3 & ~0xFFF);
-        if (!(Pml4[Pml4Idx] & 1)) return 0;
-        UINT64* Pdpt = (UINT64*)(Pml4[Pml4Idx] & ~0xFFF);
-        if (!(Pdpt[PdptIdx] & 1)) return 0;
-        UINT64* Pd = (UINT64*)(Pdpt[PdptIdx] & ~0xFFF);
-        if (!(Pd[PdIdx] & 1)) return 0;
-        if (Pd[PdIdx] & 0x80) return (Pd[PdIdx] & ~0x1FFFFF) + (Va & 0x1FFFFF);
-        UINT64* Pt = (UINT64*)(Pd[PdIdx] & ~0xFFF);
-        if (!(Pt[PteIdx] & 1)) return 0;
-        return (Pt[PteIdx] & ~0xFFF) + (Va & 0xFFF);
+        UINT64* Pml4 = (UINT64*)GetVirtualAddress(Cr3);
+        if (!Pml4 || !(Pml4[Pml4Idx] & 1)) { if(Pml4) MmUnmapIoSpace(Pml4, PAGE_SIZE); return 0; }
+
+        UINT64* Pdpt = (UINT64*)GetVirtualAddress(Pml4[Pml4Idx] & ~0xFFF);
+        MmUnmapIoSpace(Pml4, PAGE_SIZE);
+        if (!Pdpt || !(Pdpt[PdptIdx] & 1)) { if(Pdpt) MmUnmapIoSpace(Pdpt, PAGE_SIZE); return 0; }
+
+        UINT64* Pd = (UINT64*)GetVirtualAddress(Pdpt[PdptIdx] & ~0xFFF);
+        MmUnmapIoSpace(Pdpt, PAGE_SIZE);
+        if (!Pd || !(Pd[PdIdx] & 1)) { if(Pd) MmUnmapIoSpace(Pd, PAGE_SIZE); return 0; }
+
+        if (Pd[PdIdx] & 0x80) {
+            UINT64 res = (Pd[PdIdx] & ~0x1FFFFF) + (Va & 0x1FFFFF);
+            MmUnmapIoSpace(Pd, PAGE_SIZE);
+            return res;
+        }
+
+        UINT64* Pt = (UINT64*)GetVirtualAddress(Pd[PdIdx] & ~0xFFF);
+        MmUnmapIoSpace(Pd, PAGE_SIZE);
+        if (!Pt || !(Pt[PteIdx] & 1)) { if(Pt) MmUnmapIoSpace(Pt, PAGE_SIZE); return 0; }
+
+        UINT64 res = (Pt[PteIdx] & ~0xFFF) + (Va & 0xFFF);
+        MmUnmapIoSpace(Pt, PAGE_SIZE);
+        return res;
     }
 
     /**
@@ -113,8 +139,13 @@ namespace Svm {
 
         for (int i = 0; i < g_CloakedCount; i++) {
             if ((FaultPa & ~0xFFF) == g_CloakedPages[i].GuestPa) {
-                UINT64* Entry = GetNptEntry(NptRoot, FaultPa);
-                if (!Entry) return;
+                UINT64 EntryPa = GetNptEntryPa(NptRoot, FaultPa);
+                if (!EntryPa) return;
+
+                UINT64* PageBase = (UINT64*)GetVirtualAddress(EntryPa & ~0xFFF);
+                if (!PageBase) return;
+
+                UINT64* Entry = &PageBase[(EntryPa & 0xFFF) / 8];
 
                 if (IsExec) {
                     // CPU execution -> Point to Shadow (Infected)
@@ -125,6 +156,8 @@ namespace Svm {
                     *Entry = (g_CloakedPages[i].OriginalPa & ~0xFFF) | (*Entry & 0xFFF);
                     *Entry |= (1ULL << 63); // Set NX to catch next execution
                 }
+
+                MmUnmapIoSpace(PageBase, PAGE_SIZE);
 
                 // Invalidate TLB for this address
                 __svm_invlpga(FaultPa, 0);
@@ -205,11 +238,16 @@ namespace Svm {
 
     extern "C" NTSTATUS GbhvHandleVmExit(UINT64 VmcbPa, PVOID RegistersVoid) {
         PGUEST_REGISTERS Registers = (PGUEST_REGISTERS)RegistersVoid;
-        UINT8* Vmcb = (UINT8*)VmcbPa;
+        UINT8* Vmcb = (UINT8*)GetVirtualAddress(VmcbPa);
+        if (!Vmcb) return STATUS_UNSUCCESSFUL;
+
         UINT64 ExitCode = *(UINT64*)(Vmcb + 0x70);
         PVMM_PROCESSOR_CONTEXT ctx = (PVMM_PROCESSOR_CONTEXT)__readgsqword(0);
 
-        if (_InterlockedExchange((volatile long*)&ctx->HasLaunched, 1) == 1) return STATUS_SUCCESS;
+        if (_InterlockedExchange((volatile long*)&ctx->HasLaunched, 1) == 1) {
+            MmUnmapIoSpace(Vmcb, PAGE_SIZE);
+            return STATUS_SUCCESS;
+        }
 
         switch (ExitCode) {
             case 0x400: // VMEXIT_NPF
@@ -237,10 +275,8 @@ namespace Svm {
                 *(UINT64*)(Vmcb + 0x400 + 0x170) += 2;
 
                 // Timing Protection: Hide hypervisor processing time
-                // By subtracting the elapsed host cycles from the TSC_OFFSET,
-                // the guest's RDTSC remains consistent.
                 UINT64 Latency = __rdtsc() - StartTsc;
-                *(UINT64*)(Vmcb + 0x38) -= (Latency + 100); // 100 is an estimated fixed overhead for VM-Exit/Entry
+                *(UINT64*)(Vmcb + 0x38) -= (Latency + 100);
                 break;
             }
 
@@ -249,46 +285,76 @@ namespace Svm {
                     using namespace Cheat::Hv;
                     Command Cmd = (Command)Registers->Rdx;
                     uint64_t GuestCr3 = *(uint64_t*)(Vmcb + 0x400 + 0x140);
-                    void* ArgsPa = (void*)TranslateVa(GuestCr3, Registers->R8);
+                    UINT64 ArgsPa = TranslateVa(GuestCr3, Registers->R8);
 
-                    if (ArgsPa) {
+                    if (ArgsPa || Cmd == Command::GetCr3) {
                         switch (Cmd) {
-                            case Command::ReadVirtual: {
-                                ReadWriteArgs* A = (ReadWriteArgs*)ArgsPa;
-                                UINT64 SrcPa = TranslateVa(A->cr3, A->addr);
-                                UINT64 DstPa = TranslateVa(GuestCr3, (uintptr_t)A->buffer);
-
-                                if (SrcPa && DstPa) {
-                                    PHYSICAL_ADDRESS P1; P1.QuadPart = SrcPa;
-                                    PHYSICAL_ADDRESS P2; P2.QuadPart = DstPa;
-                                    PVOID V1 = MmMapIoSpace(P1, A->size, MmNonCached);
-                                    PVOID V2 = MmMapIoSpace(P2, A->size, MmNonCached);
-
-                                    if (V1 && V2) {
-                                        memcpy(V2, V1, A->size);
+                            case Command::GetCr3: {
+                                Registers->Rax = GuestCr3;
+                                break;
+                            }
+                            case Command::ReadVirtual:
+                            case Command::WriteVirtual: {
+                                ReadWriteArgs* A = (ReadWriteArgs*)GetVirtualAddress(ArgsPa, sizeof(ReadWriteArgs));
+                                if (A) {
+                                    // Safety: Limit transfer size to 16MB
+                                    if (A->size > 0x1000000) {
+                                        Registers->Rax = 1;
+                                        MmUnmapIoSpace(A, sizeof(ReadWriteArgs));
+                                        break;
                                     }
 
-                                    if (V1) MmUnmapIoSpace(V1, A->size);
-                                    if (V2) MmUnmapIoSpace(V2, A->size);
+                                    UINT64 SrcPa, DstPa;
+                                    if (Cmd == Command::ReadVirtual) {
+                                        SrcPa = TranslateVa(A->cr3, A->addr);
+                                        DstPa = TranslateVa(GuestCr3, (uintptr_t)A->buffer);
+                                    } else {
+                                        SrcPa = TranslateVa(GuestCr3, (uintptr_t)A->buffer);
+                                        DstPa = TranslateVa(A->cr3, A->addr);
+                                    }
+
+                                    if (SrcPa && DstPa) {
+                                        PVOID V1 = GetVirtualAddress(SrcPa, A->size);
+                                        PVOID V2 = GetVirtualAddress(DstPa, A->size);
+                                        if (V1 && V2) memcpy(V2, V1, A->size);
+                                        if (V1) MmUnmapIoSpace(V1, A->size);
+                                        if (V2) MmUnmapIoSpace(V2, A->size);
+                                    }
+                                    MmUnmapIoSpace(A, sizeof(ReadWriteArgs));
                                 }
                                 Registers->Rax = 0;
                                 break;
                             }
                             case Command::AllocateVirtual: {
-                                AllocArgs* A = (AllocArgs*)ArgsPa;
-                                // Search for a 4KB code cave starting from the base of the game
-                                A->out_addr = FindGuestCodeCave(GuestCr3, 0x140000000, 0x1000);
-                                Registers->Rax = (A->out_addr != 0) ? 0 : 1;
+                                AllocArgs* A = (AllocArgs*)GetVirtualAddress(ArgsPa, sizeof(AllocArgs));
+                                if (A) {
+                                    A->out_addr = FindGuestCodeCave(GuestCr3, 0x140000000, 0x1000);
+                                    Registers->Rax = (A->out_addr != 0) ? 0 : 1;
+                                    MmUnmapIoSpace(A, sizeof(AllocArgs));
+                                }
+                                break;
+                            }
+                            case Command::TriggerDeepClean: {
+                                Cheat::Cleanup::DeepClean();
+                                Registers->Rax = 0;
                                 break;
                             }
                             case Command::CloakPage: {
-                                CloakArgs* A = (CloakArgs*)ArgsPa;
+                                CloakArgs* A = (CloakArgs*)GetVirtualAddress(ArgsPa, sizeof(CloakArgs));
+                                if (!A) { Registers->Rax = 1; break; }
+
                                 if (g_CloakedCount < 64) {
-                                    g_CloakedPages[g_CloakedCount].GuestPa = A->guest_va & ~0xFFF;
-                                    g_CloakedPages[g_CloakedCount].OriginalPa = A->guest_va & ~0xFFF;
-                                    g_CloakedPages[g_CloakedCount].ShadowPa = TranslateVa(GuestCr3, (uintptr_t)A->shadow_buffer);
-                                    g_CloakedCount++;
-                                    Registers->Rax = 0;
+                                    UINT64 GuestPa = TranslateVa(GuestCr3, A->guest_va);
+                                    if (GuestPa) {
+                                        g_CloakedPages[g_CloakedCount].GuestPa = GuestPa & ~0xFFF;
+                                        g_CloakedPages[g_CloakedCount].OriginalPa = GuestPa & ~0xFFF;
+                                        g_CloakedPages[g_CloakedCount].ShadowPa = TranslateVa(GuestCr3, (uintptr_t)A->shadow_buffer);
+                                        g_CloakedCount++;
+                                        Registers->Rax = 0;
+                                    } else {
+                                        Registers->Rax = 1;
+                                    }
+                                    MmUnmapIoSpace(A, sizeof(CloakArgs));
                                 }
                                 break;
                             }
@@ -304,6 +370,8 @@ namespace Svm {
                 break;
             }
         }
+
+        MmUnmapIoSpace(Vmcb, PAGE_SIZE);
 
         _InterlockedExchange((volatile long*)&ctx->HasLaunched, 0);
         return STATUS_SUCCESS;

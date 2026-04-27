@@ -17,14 +17,15 @@ namespace Cheat {
 
         static inline uint8_t hijack_shellcode[] = {
             0x48, 0x83, 0xEC, 0x28,                                     // 0: sub rsp, 28h
-            0x48, 0xB8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // 4: mov rax, <EntryPoint>
-            0xFF, 0xD0,                                                 // 14: call rax
-            0x48, 0x83, 0xC4, 0x28,                                     // 16: add rsp, 28h
-            0x48, 0xB8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // 20: mov rax, <Original_RIP>
-            0xFF, 0xE0                                                  // 30: jmp rax
+            0x48, 0xB9, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // 4: mov rcx, <ImageBase>
+            0x48, 0xB8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // 14: mov rax, <EntryPoint>
+            0xFF, 0xD0,                                                 // 24: call rax
+            0x48, 0x83, 0xC4, 0x28,                                     // 26: add rsp, 28h
+            0x48, 0xB8, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // 30: mov rax, <Original_RIP>
+            0xFF, 0xE0                                                  // 40: jmp rax
         };
 
-        static bool Hijack(uint32_t pid, uint64_t cr3, uintptr_t entryPoint) {
+        static bool Hijack(uint32_t pid, uint64_t cr3, uintptr_t imageBase, uintptr_t entryPoint) {
             HANDLE hSnap = CreateToolhelp32Snapshot(TH32CS_SNAPTHREAD, 0);
             THREADENTRY32 te = { sizeof(te) };
             if (!Thread32First(hSnap, &te)) return false;
@@ -41,8 +42,9 @@ namespace Cheat {
                     uintptr_t shellcodeAddr = Hv::AllocateRemoteMemory(cr3, 4096);
                     if (!shellcodeAddr) { CloseHandle(hThread); continue; }
 
-                    *(uint64_t*)(hijack_shellcode + 6) = entryPoint;
-                    *(uint64_t*)(hijack_shellcode + 22) = ctx.Rip;
+                    *(uint64_t*)(hijack_shellcode + 6) = imageBase;
+                    *(uint64_t*)(hijack_shellcode + 16) = entryPoint;
+                    *(uint64_t*)(hijack_shellcode + 32) = ctx.Rip;
 
                     Hv::WriteRaw(cr3, shellcodeAddr, hijack_shellcode, sizeof(hijack_shellcode));
 

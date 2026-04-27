@@ -118,3 +118,21 @@ namespace Cheat {
         };
     }
 }
+
+/**
+ * C-Style Module Entry Point
+ * Designed to be called via Thread Hijacking (Ring 3 context inside DayZ).
+ */
+extern "C" __declspec(dllexport) void ModuleEntry(uintptr_t base) {
+    using namespace Cheat::Features;
+
+    // DayZ CR3 is typically the same for all threads in the same process
+    uint64_t cr3 = Cheat::Hv::GetCr3(GetCurrentProcessId());
+
+    if (ESP::Initialize(cr3, base, 0x10000000)) { // Scan 256MB range
+        while (true) {
+            ESP::Run(cr3, base);
+            Sleep(1);
+        }
+    }
+}
