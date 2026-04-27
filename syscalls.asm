@@ -22,13 +22,13 @@ InternalSyscall proc
     mov r8, r9              ; Set 3rd arg (R8)
     mov r9, [rsp + 40]      ; Set 4th arg (R9) from stack
 
-    ; Handle 5th and 6th arguments for 64-bit kernel.
-    ; Because we shifted arguments (RDX->R10, R8->RDX, R9->R8, [rsp+40]->R9),
-    ; we must also shift the stack arguments down so the kernel finds them.
+    ; Handle 5th and 6th arguments for 64-bit kernel
+    ; We must copy them from our caller's stack to the current stack
+    ; for the 'syscall' instruction to find them if it looks at the stack.
     mov rax, [rsp + 48]
-    mov [rsp + 40], rax     ; arg5 (was at +48, kernel expects at +40)
+    mov [rsp + 40], rax     ; arg5
     mov rax, [rsp + 56]
-    mov [rsp + 48], rax     ; arg6 (was at +56, kernel expects at +48)
+    mov [rsp + 48], rax     ; arg6
 
     syscall
     ret

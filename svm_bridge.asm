@@ -1,5 +1,5 @@
 ; --- svm_bridge.asm ---
-; Gbhv-style low-level SVM transition logic (Final Combat-Ready).
+; Gbhv-style low-level SVM transition logic.
 ; Targets MASM (ml64.exe) for Visual Studio 2022.
 
 .code
@@ -8,14 +8,6 @@ extern GbhvHandleVmExit : proc
 
 ; GbhvSvmLaunch(uint64_t VmcbPa, uint64_t HsavePa, void* Context)
 GbhvSvmLaunch proc
-    ; Capture Guest State for continuation
-    mov rax, [rsp]          ; Return RIP
-    mov [r8], rax           ; Context->GuestRip
-    mov [r8 + 8], rsp       ; Context->GuestRsp
-    pushfq
-    pop rax
-    mov [r8 + 16], rax      ; Context->GuestRflags
-
     ; 1. Save host context
     push rbx
     push rbp
@@ -77,7 +69,7 @@ SvmVmExitHandler label qword
     push rcx
     push rax
 
-    ; 5. Call C++ handler: GbhvHandleVmExit(VmcbPa, Registers)
+    ; 5. Call C++ handler: HandleVmExit(VmcbPa, Registers)
     mov rcx, r13
     mov rdx, rsp
     sub rsp, 32

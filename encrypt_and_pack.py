@@ -34,5 +34,6 @@ def encrypt_payload(input_dll, output_bin, key_hex):
 
 if __name__ == "__main__":
     # Secret Key matching HV_SECRET_KEY logic (ZORO_DAYZORO_DAY)
+    # Key must be 16 bytes (32 hex characters) for AES-128
     SECRET_KEY = "5A4F524F5F4441595A4F524F5F444159"
     encrypt_payload("core.dll", "packed_payload.bin", SECRET_KEY)
