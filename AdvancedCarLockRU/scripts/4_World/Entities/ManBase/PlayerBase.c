@@ -105,7 +105,21 @@ modded class PlayerBase
 		if (!item)
 			return false;
 
+		if (item.IsKindOf("Lockpick")) return true;
+		if (item.IsKindOf("Screwdriver")) return true;
+
 		return item.IsKindOf(carUnlockToolType);
+	}
+
+	float GetLockpickSuccessChance()
+	{
+		EntityAI item = GetItemInHands();
+		if (!item) return 0.0;
+
+		if (item.IsKindOf("Lockpick")) return 0.7; // 70%
+		if (item.IsKindOf("Screwdriver")) return 0.3; // 30%
+
+		return 0.5; // Default for modded tools
 	}
 
 	override void OnRPC(PlayerIdentity sender, int rpc_type, ParamsReadContext ctx)
@@ -129,6 +143,17 @@ modded class PlayerBase
 				Param1<int> pinData;
 				if (!ctx.Read(pinData)) return;
 				GetGame().GetMission().OnEvent(ChatMessageEventTypeID, new ChatMessageEventParams(CCDirect, "", "Пинкод автомобиля: " + pinData.param1, ""));
+			}
+			else if (rpc_type == -3999354) // Receive Pin Verification Result
+			{
+				Param1<bool> successData;
+				if (!ctx.Read(successData)) return;
+
+				CarLockUI lockUI = CarLockUI.Cast(GetGame().GetUIManager().GetMenu());
+				if (lockUI)
+				{
+					lockUI.OnPinVerified(successData.param1);
+				}
 			}
 		}
 	}

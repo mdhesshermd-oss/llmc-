@@ -86,6 +86,21 @@ class CarLockUI : UIScriptedMenu
 		editbox.SetText(current + char);
 	}
 
+	void OnPinVerified(bool success)
+	{
+		if (success)
+		{
+			player.SetCurrentCar(currentCar);
+			currentCar.LogIn();
+			GetGame().GetMission().OnEvent(ChatMessageEventTypeID, new ChatMessageEventParams(CCDirect, "", "Доступ разрешен", ""));
+		}
+		else
+		{
+			GetGame().GetMission().OnEvent(ChatMessageEventTypeID, new ChatMessageEventParams(CCDirect, "", "Доступ запрещен", ""));
+		}
+		Close();
+	}
+
 	void TryEnter()
 	{
 		string code = editbox.GetText();
@@ -118,16 +133,7 @@ class CarLockUI : UIScriptedMenu
 			}
 			else
 			{
-				if (currentCar.GetPinCode() == intCode)
-				{
-					player.SetCurrentCar(currentCar);
-					currentCar.LogIn();
-					GetGame().GetMission().OnEvent(ChatMessageEventTypeID, new ChatMessageEventParams(CCDirect, "", "Доступ разрешен", ""));
-				}
-				else
-					GetGame().GetMission().OnEvent(ChatMessageEventTypeID, new ChatMessageEventParams(CCDirect, "", "Доступ запрещен", ""));
-
-				Close();
+				currentCar.RPCSingleParam(-3999353, new Param1<int>(intCode), true);
 			}
 		}
 		else

@@ -7,6 +7,8 @@ modded class CarScript
 
 	protected EffectSound signalAlarm;
 
+	private bool m_HeadlightsState;
+
 	private ref array<string> doorSlots;
 
 	private const string DOOR_SLOTS_RELATIVE_PATH = "CfgVehicles %1 GUIInventoryAttachmentsProps Body attachmentSlots";
@@ -63,31 +65,10 @@ modded class CarScript
 				SetSynchDirty();
 				break;
 			}
-			case -3999347: // Toggle Lock
+			case -3999347: // Toggle Lock (Remote)
 			{
 				isLocked = !isLocked;
 				SetSynchDirty();
-				break;
-			}
-			case -3999348: // Alarm Control (Internal usage by actions)
-			{
-				Param1<bool> alarmData;
-				if (!ctx.Read(alarmData)) return;
-				isSteal = alarmData.param1;
-				SetSynchDirty();
-				break;
-			}
-			case -3999349: // Unlock and Reset (Success Lockpick or Admin Reset)
-			{
-				// Only allow if player is in vehicle or admin
-				if (player.GetCurrentCar() == this || player.IsImmobilizerAdmin())
-				{
-					isLocked = false;
-					pinCode = 0;
-					isLogged = false;
-					isSteal = false;
-					SetSynchDirty();
-				}
 				break;
 			}
 			case -3999350: // Admin Request Pin
@@ -96,6 +77,15 @@ modded class CarScript
 				{
 					player.RPCSingleParam(-3999351, new Param1<int>(pinCode), true, sender);
 				}
+				break;
+			}
+			case -3999353: // Verify Pin (from UI)
+			{
+				Param1<int> pinData;
+				if (!ctx.Read(pinData)) return;
+
+				bool success = (pinData.param1 == pinCode);
+				player.RPCSingleParam(-3999354, new Param1<bool>(success), true, sender);
 				break;
 			}
 		}
@@ -136,6 +126,27 @@ modded class CarScript
 		if (GetGame().IsServer())
 		{
 			isSteal = state;
+			SetSynchDirty();
+		}
+	}
+
+	void ResetLock()
+	{
+		if (GetGame().IsServer())
+		{
+			isLocked = false;
+			pinCode = 0;
+			isLogged = false;
+			isSteal = false;
+			SetSynchDirty();
+		}
+	}
+
+	void ToggleLock()
+	{
+		if (GetGame().IsServer())
+		{
+			isLocked = !isLocked;
 			SetSynchDirty();
 		}
 	}
@@ -253,10 +264,46 @@ modded class CarScript
 		if (isSteal)
 		{
 			PlayAlarm();
+			StartFlashingLights();
 		}
 		else
 		{
 			StopAlarm();
+			StopFlashingLights();
+		}
+	}
+
+	void StartFlashingLights()
+	{
+		if (GetGame().IsServer()) return;
+		if (!GetGame().GetCallQueue(CALL_CATEGORY_GAMEPLAY).IsRunning(this, "ToggleHeadlights"))
+		{
+			GetGame().GetCallQueue(CALL_CATEGORY_GAMEPLAY).CallLater(ToggleHeadlights, 500, true);
+		}
+	}
+
+	void StopFlashingLights()
+	{
+		if (GetGame().IsServer()) return;
+		GetGame().GetCallQueue(CALL_CATEGORY_GAMEPLAY).Remove(this, "ToggleHeadlights");
+		SetHeadlightsState(false);
+	}
+
+	void ToggleHeadlights()
+	{
+		m_HeadlightsState = !m_HeadlightsState;
+		SetHeadlightsState(m_HeadlightsState);
+	}
+
+	void SetHeadlightsState(bool state)
+	{
+		if (state)
+		{
+			ForceFarLightOn();
+		}
+		else
+		{
+			ForceFarLightOff();
 		}
 	}
 
@@ -284,8 +331,12 @@ modded class CarScript
 
 	void StopAlarm()
 	{
-		isSteal = false;
-		SetSynchDirty();
+		if (GetGame().IsServer())
+		{
+			isSteal = false;
+			SetSynchDirty();
+		}
+
 		if (signalAlarm && signalAlarm.IsSoundPlaying())
 			signalAlarm.Stop();
 	}

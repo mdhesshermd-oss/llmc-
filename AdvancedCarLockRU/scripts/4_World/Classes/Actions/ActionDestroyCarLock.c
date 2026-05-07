@@ -17,7 +17,7 @@ class ActionDestroyCarLock : ActionContinuousBase
 	void ActionDestroyCarLock()
 	{
 		m_CallbackClass = ActionDestroyCarLockCB;
-		m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_INTERACT;
+		m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_PICKLOCK;
 		m_FullBody = true;
 		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT;
 
@@ -55,17 +55,32 @@ class ActionDestroyCarLock : ActionContinuousBase
 		CarScript car = CarScript.Cast(action_data.m_Target.GetParent());
 		if (car)
 		{
-			car.RPCSingleParam(-3999348, new Param1<bool>(true), true); // Start Alarm
+			car.SetAlarmState(true);
 		}
 	}
 
 	override void OnFinishProgressServer( ActionData action_data )
 	{
 		CarScript car = CarScript.Cast(action_data.m_Target.GetParent());
-		if (car)
+		PlayerBase player = action_data.m_Player;
+
+		if (car && player)
 		{
-			car.RPCSingleParam(-3999348, new Param1<bool>(false), true); // Stop Alarm
-			car.RPCSingleParam(-3999349, null, true); // Unlock and reset
+			float chance = player.GetLockpickSuccessChance();
+			float roll = Math.RandomFloat01();
+
+			bool success = (roll <= chance);
+
+			if (success)
+			{
+				car.ResetLock();
+				MissionServer.LogLockpick(player.GetIdentity().GetName(), car.GetType(), true);
+			}
+			else
+			{
+				car.SetAlarmState(true);
+				MissionServer.LogLockpick(player.GetIdentity().GetName(), car.GetType(), false);
+			}
 		}
 
 		if (action_data.m_MainItem)
@@ -79,9 +94,12 @@ class ActionDestroyCarLock : ActionContinuousBase
 		if (action_data.m_Callback && action_data.m_Callback.GetState() != ACTION_STATE_FINISHED)
 		{
 			CarScript car = CarScript.Cast(action_data.m_Target.GetParent());
+			PlayerBase player = action_data.m_Player;
 			if (car)
 			{
-				car.RPCSingleParam(-3999348, new Param1<bool>(true), true); // Keep/Restart Alarm
+				car.SetAlarmState(true);
+				if (player)
+					MissionServer.LogLockpick(player.GetIdentity().GetName(), car.GetType(), false);
 			}
 
 			if (action_data.m_MainItem)

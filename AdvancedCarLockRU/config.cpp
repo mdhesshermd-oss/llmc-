@@ -11,6 +11,83 @@ class CfgPatches
 		};
 	};
 };
+class CfgSoundShaders
+{
+	class CARLOCK_SoundShader_Base
+	{
+		range = 100;
+	};
+	class CARLOCK_Open_SoundShader: CARLOCK_SoundShader_Base
+	{
+		samples[] =
+		{
+
+			{
+				"AdvancedCarLockRU\assets\sounds\OpenCar",
+				1
+			}
+		};
+		volume = 1;
+	};
+	class CARLOCK_Close_SoundShader: CARLOCK_SoundShader_Base
+	{
+		samples[] =
+		{
+
+			{
+				"AdvancedCarLockRU\assets\sounds\CloseCar",
+				1
+			}
+		};
+		volume = 1;
+	};
+	class CARLOCK_Signal_SoundShader: CARLOCK_SoundShader_Base
+	{
+		samples[] =
+		{
+
+			{
+				"AdvancedCarLockRU\assets\sounds\Signal",
+				1
+			}
+		};
+		volume = 1;
+	};
+};
+class CfgSoundSets
+{
+	class CARLOCK_SoundSet_Base
+	{
+		sound3DProcessingType = "Vehicle_Ext_3DProcessingType";
+		distanceFilter = "softVehiclesDistanceFilter";
+		volumeCurve = "inverseSquare2Curve";
+		spatial = 1;
+		doppler = 0;
+		loop = 0;
+	};
+	class CARLOCK_Open_SoundSet: CARLOCK_SoundSet_Base
+	{
+		soundShaders[] =
+		{
+			"CARLOCK_Open_SoundShader"
+		};
+	};
+	class CARLOCK_Close_SoundSet: CARLOCK_SoundSet_Base
+	{
+		soundShaders[] =
+		{
+			"CARLOCK_Close_SoundShader"
+		};
+	};
+	class CARLOCK_Signal_SoundSet: CARLOCK_SoundSet_Base
+	{
+		loop = 1;
+		soundShaders[] =
+		{
+			"CARLOCK_Signal_SoundShader"
+		};
+	};
+};
 class CfgMods
 {
 	class AdvancedCarLockRU

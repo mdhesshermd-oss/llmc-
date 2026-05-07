@@ -49,7 +49,7 @@ class ActionAdminResetCarLockCode : ActionInteractBase
 		CarScript car = CarScript.Cast(action_data.m_Target.GetParent());
 		if (car)
 		{
-			car.RPCSingleParam(-3999349, null, true);
+			car.ResetLock();
 		}
 	}
 
