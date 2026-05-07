@@ -1,6 +1,7 @@
 modded class CarScript
 {
 	private bool isLocked, isLogged, isSteal;
+	private bool m_HasPinCode;
 	private int pinCode;
 
 	private bool prevLockState;
@@ -17,6 +18,7 @@ modded class CarScript
 	{
 		RegisterNetSyncVariableBool("isLocked");
 		RegisterNetSyncVariableBool("isSteal");
+		RegisterNetSyncVariableBool("m_HasPinCode");
 		// pinCode is NOT synced for security
 
 		prevLockState = isLocked;
@@ -42,6 +44,8 @@ modded class CarScript
 		if (!ctx.Read(pinCode))
 			return false;
 
+		m_HasPinCode = (pinCode > 999);
+
 		return true;
 	}
 
@@ -61,6 +65,7 @@ modded class CarScript
 				Param1<int> data;
 				if (!ctx.Read(data)) return;
 				pinCode = data.param1;
+				m_HasPinCode = (pinCode > 999);
 				isLocked = true;
 				SetSynchDirty();
 				break;
@@ -108,6 +113,9 @@ modded class CarScript
 
 	bool HasCode()
 	{
+		if (GetGame().IsClient())
+			return m_HasPinCode;
+
 		return pinCode > 999;
 	}
 
@@ -136,6 +144,7 @@ modded class CarScript
 		{
 			isLocked = false;
 			pinCode = 0;
+			m_HasPinCode = false;
 			isLogged = false;
 			isSteal = false;
 			SetSynchDirty();

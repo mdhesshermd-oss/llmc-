@@ -4,8 +4,6 @@ class ActionInteractWithLockOnCarDoor : ActionCarDoorsOutside
 	private const string ENTER_CODE = "Ввести код";
 	private string actionText;
 
-	private ref CarLockUI lockui;
-
 	override string GetText()
 	{
 		return actionText;
@@ -53,15 +51,15 @@ class ActionInteractWithLockOnCarDoor : ActionCarDoorsOutside
 		int type;
 		car = CarScript.Cast(action_data.m_Target.GetParent());
 
-		if (GetGame().GetUIManager().GetMenu() || lockui)
+		if (GetGame().GetUIManager().GetMenu())
 		return;
 		if (!car)
 			return;
 
 		type = GetActionType(actionText);
 
-		lockui = new CarLockUI(type, car);
-		GetGame().GetUIManager().ShowScriptedMenu( lockui, NULL );
+		CarLockUI lockui_new = new CarLockUI(type, car);
+		GetGame().GetUIManager().ShowScriptedMenu( lockui_new, NULL );
 	}
 
 	int GetActionType(string action)
