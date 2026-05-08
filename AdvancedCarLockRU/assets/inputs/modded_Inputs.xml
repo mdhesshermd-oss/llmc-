@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modded_inputs>
+
+	<!-- declarations -->
+	<inputs>
+
+		<actions>
+			<input name="CARCODELOCKTOGGLE" loc="Lock/Unlock car" />
+		</actions>
+
+	</inputs>
+
+	<!-- preset -->
+	<preset>
+
+		<input name="CARCODELOCKTOGGLE">
+			<btn name="kU" />
+		</input>
+	</preset>
+
+</modded_inputs>
