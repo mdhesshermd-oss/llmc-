@@ -1,0 +1,551 @@
+PanelWidgetClass rootFrame {
+ color 0 0 0 0.8627
+ size 260 400
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ style rover_sim_colorable
+ {
+  GridSpacerWidgetClass num_wrapper {
+   ignorepointer 1
+   position 0 10
+   size 240 320
+   halign center_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   Padding 10
+   Margin 0
+   Rows 4
+   {
+    PanelWidgetClass numWrap1 {
+     ignorepointer 1
+     color 0 0 0 0.7059
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass num_1 {
+       color 1 1 1 0.0196
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "no focus" 1
+       {
+        TextWidgetClass num1_title {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "1"
+         font "gui/fonts/etelkatextpro"
+         text_proportion 0.4
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass numWrap2 {
+     ignorepointer 1
+     color 0 0 0 0.7059
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass num_2 {
+       color 1 1 1 0.0196
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "no focus" 1
+       {
+        TextWidgetClass num2_title {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "2"
+         font "gui/fonts/etelkatextpro"
+         text_proportion 0.4
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass numWrap3 {
+     ignorepointer 1
+     color 0 0 0 0.7059
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass num_3 {
+       color 1 1 1 0.0196
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "no focus" 1
+       {
+        TextWidgetClass num3_title {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "3"
+         font "gui/fonts/etelkatextpro"
+         text_proportion 0.4
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass numWrap4 {
+     ignorepointer 1
+     color 0 0 0 0.7059
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass num_4 {
+       color 1 1 1 0.0196
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "no focus" 1
+       {
+        TextWidgetClass num4_title {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "4"
+         font "gui/fonts/etelkatextpro"
+         text_proportion 0.4
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass numWrap5 {
+     ignorepointer 1
+     color 0 0 0 0.7059
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass num_5 {
+       color 1 1 1 0.0196
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "no focus" 1
+       {
+        TextWidgetClass num5_title {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "5"
+         font "gui/fonts/etelkatextpro"
+         text_proportion 0.4
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass numWrap6 {
+     ignorepointer 1
+     color 0 0 0 0.7059
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass num_6 {
+       color 1 1 1 0.0196
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "no focus" 1
+       {
+        TextWidgetClass num6_title {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "6"
+         font "gui/fonts/etelkatextpro"
+         text_proportion 0.4
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass numWrap7 {
+     ignorepointer 1
+     color 0 0 0 0.7059
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass num_7 {
+       color 1 1 1 0.0196
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "no focus" 1
+       {
+        TextWidgetClass num7_title {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "7"
+         font "gui/fonts/etelkatextpro"
+         text_proportion 0.4
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass numWrap8 {
+     ignorepointer 1
+     color 0 0 0 0.7059
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass num_8 {
+       color 1 1 1 0.0196
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "no focus" 1
+       {
+        TextWidgetClass num8_title {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "8"
+         font "gui/fonts/etelkatextpro"
+         text_proportion 0.4
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass numWrap9 {
+     ignorepointer 1
+     color 0 0 0 0.7059
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass num_9 {
+       color 1 1 1 0.0196
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "no focus" 1
+       {
+        TextWidgetClass num9_title {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "9"
+         font "gui/fonts/etelkatextpro"
+         text_proportion 0.4
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass btnEnterWrap {
+     ignorepointer 1
+     color 0 0 0 0.7059
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass btnEnter {
+       color 1 1 1 0.0196
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "no focus" 1
+       {
+        TextWidgetClass btnEnter_title {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "<"
+         font "gui/fonts/etelkatextpro"
+         text_proportion 0.4
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass numWrap0 {
+     ignorepointer 1
+     color 0 0 0 0.7059
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass num_0 {
+       color 1 1 1 0.0196
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "no focus" 1
+       {
+        TextWidgetClass num_0_title {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "0"
+         font "gui/fonts/etelkatextpro"
+         text_proportion 0.4
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass btnClearWrap {
+     ignorepointer 1
+     color 0 0 0 0.7059
+     position 10 10
+     size 48 48
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass btnClear {
+       color 1 1 1 0.0196
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       "no focus" 1
+       {
+        TextWidgetClass btnClear_title {
+         ignorepointer 1
+         size 1 1
+         halign center_ref
+         valign center_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "C"
+         font "gui/fonts/etelkatextpro"
+         text_proportion 0.4
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  PanelWidgetClass editbox_wrap {
+   ignorepointer 1
+   color 1 1 1 0.0392
+   position 0 10
+   size 240 50
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style rover_sim_colorable
+   {
+    EditBoxWidgetClass editbox {
+     ignorepointer 0
+     size 220 38
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style ServerBrowser
+     "no focus" 0
+     "limit visible" 0
+     "Use default text" 0
+     "exact text" 0
+     font "gui/fonts/MetronLight58"
+    }
+   }
+  }
+ }
+}
