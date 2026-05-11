@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<randompresets>
+    <!-- PvP Medical Loot -->
+    <cargo name="CargoPVP_Medical">
+        <item name="Psix_Bandage_Improved" weight="0.20" />
+        <item name="Psix_Bandage_Advanced" weight="0.15" />
+        <item name="Psix_Bandage_Specional" weight="0.05" />
+        <item name="PsiX_Aspirin" weight="0.10" />
+        <item name="Psix_Paracetamol" weight="0.10" />
+        <item name="Psix_StimPack20HP" weight="0.10" />
+        <item name="Psix_StimPack40HP" weight="0.08" />
+        <item name="Psix_StimPack60HP" weight="0.05" />
+        <item name="Psix_StimPack80HP" weight="0.03" />
+        <item name="Psix_StimPack100HP" weight="0.02" />
+        <item name="Psix_StimPackFull" weight="0.01" />
+        <item name="PsiX_MedKit_Black" weight="0.05" />
+        <item name="Psix_VitaminXanax" weight="0.03" />
+        <item name="Psix_Nutrivital" weight="0.03" />
+    </cargo>
+
+    <!-- PvP Food Loot -->
+    <cargo name="CargoPVP_Food">
+        <item name="Psix_Food_Tyshenka1" weight="0.10" />
+        <item name="Psix_Food_Goroshek" weight="0.10" />
+        <item name="Psix_Food_Kykyryza" weight="0.10" />
+        <item name="Psix_Food_Tyshenka1_Opened" weight="0.05" />
+        <item name="Psix_Food_Tyshenka2_Opened" weight="0.05" />
+        <item name="Psix_Cola" weight="0.10" />
+        <item name="Psix_PepsiDrink" weight="0.10" />
+        <item name="Psix_DriveEnegry" weight="0.08" />
+        <item name="Psix_Stalker_Energy" weight="0.08" />
+        <item name="Psix_Baltika" weight="0.05" />
+        <item name="Psix_Barnoe_Beer" weight="0.05" />
+        <item name="Psix_Heineken_Beer" weight="0.04" />
+        <item name="Psix_Amsterdam_Beer" weight="0.04" />
+        <item name="Psix_Drink_JackDaniels" weight="0.02" />
+        <item name="Psix_Mochakovo" weight="0.04" />
+    </cargo>
+
+    <!-- PvP Military Basic Gear -->
+    <cargo name="CargoPVP_MilitaryBasic">
+        <item name="OH_pouch_belt_black" weight="0.15" />
+        <item name="OH_pouch_belt_camo" weight="0.10" />
+        <item name="OH_ifak_pouches_Black" weight="0.15" />
+        <item name="OH_ifak_pouches_Green" weight="0.10" />
+        <item name="OH_Tactical_gloves_half_finger_Black" weight="0.20" />
+        <item name="OH_face_balaklava_black" weight="0.15" />
+        <item name="OH_face_balaklava_MC" weight="0.05" />
+        <item name="OH_buff_black" weight="0.05" />
+        <item name="OH_buff_pixel" weight="0.05" />
+    </cargo>
+
+    <!-- PvP Ammo Loot (Common) -->
+    <cargo name="CargoPVP_AmmoCommon">
+        <item name="Ammo_9x19" weight="0.25" />
+        <item name="Ammo_380" weight="0.25" />
+        <item name="Ammo_45ACP" weight="0.15" />
+        <item name="Ammo_12gaSlug" weight="0.15" />
+        <item name="Ammo_762x39" weight="0.10" />
+        <item name="Ammo_556x45" weight="0.10" />
+    </cargo>
+</randompresets>
