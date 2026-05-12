@@ -1,0 +1,154 @@
+18:22:40.549 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37BD260> ExplosionTest:19102 at <5690.61, 212.51, 1682.77> EXPLOSION range 4 dropoff 1
+18:22:40.560 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37C1550> ExplosionTest:19101 at <5416.11, 213.31, 1677.3> EXPLOSION range 4 dropoff 1
+18:22:40.577 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37C0230> ExplosionTest:19100 at <5632.76, 209.08, 1806.98> EXPLOSION range 4 dropoff 1
+18:22:40.587 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37C3B90> ExplosionTest:19099 at <6323.7, 233.05, 1773.16> EXPLOSION range 4 dropoff 1
+18:22:40.594 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37BC8D0> ExplosionTest:19098 at <5749.66, 202.61, 2606.26> EXPLOSION range 4 dropoff 1
+18:22:40.597 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37C3200> ExplosionTest:19097 at <7749.81, 211.62, 2002.37> EXPLOSION range 4 dropoff 1
+18:22:40.604 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37BF8A0> ExplosionTest:19096 at <4764.94, 190.17, 543.9> EXPLOSION range 4 dropoff 1
+18:22:40.610 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37BEF10> ExplosionTest:19095 at <5785.2, 214.76, 1432.83> EXPLOSION range 4 dropoff 1
+18:22:40.620 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37C1EE0> ExplosionTest:19094 at <5826.09, 222.44, 2435.62> EXPLOSION range 4 dropoff 1
+18:22:40.633 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37BBF40> ExplosionTest:19093 at <6080.28, 218.37, 1720.46> EXPLOSION range 4 dropoff 1
+18:22:40.654 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37C0BC0> ExplosionTest:19092 at <6285.61, 237.63, 2170.77> EXPLOSION range 4 dropoff 1
+18:22:40.671 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37C2870> ExplosionTest:19091 at <5897.07, 222.48, 2559.59> EXPLOSION range 4 dropoff 1
+18:22:40.683 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37BA290> ExplosionTest:19090 at <1798.34, 220.16, 2405.69> EXPLOSION range 4 dropoff 1
+18:22:40.695 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B9900> ExplosionTest:19089 at <5842.22, 204.4, 878.26> EXPLOSION range 4 dropoff 1
+18:22:40.701 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B8F70> ExplosionTest:19088 at <6282.87, 216.56, 1864.74> EXPLOSION range 4 dropoff 1
+18:22:40.708 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B85E0> ExplosionTest:19087 at <6318.28, 227.99, 2001.87> EXPLOSION range 4 dropoff 1
+18:22:40.713 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B7C50> ExplosionTest:19086 at <5789.99, 196.41, 1979.95> EXPLOSION range 4 dropoff 1
+18:22:40.723 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B72C0> ExplosionTest:19085 at <5875.52, 215.53, 2571.5> EXPLOSION range 4 dropoff 1
+18:22:40.723 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37BB5B0> ExplosionTest:19084 at <5572.86, 194.28, 807.86> EXPLOSION range 4 dropoff 1
+18:22:40.724 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B6930> ExplosionTest:19083 at <5170.18, 199.63, 403.41> EXPLOSION range 4 dropoff 1
+18:22:40.728 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B42F0> ExplosionTest:19082 at <6163.55, 213.54, 2031.3> EXPLOSION range 4 dropoff 1
+18:22:40.741 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B5FA0> ExplosionTest:19081 at <6293.48, 222.41, 1663.33> EXPLOSION range 4 dropoff 1
+18:22:40.745 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37BAC20> ExplosionTest:19080 at <977.69, 225.56, 879.72> EXPLOSION range 4 dropoff 1
+18:22:40.749 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B3960> ExplosionTest:19079 at <5646.96, 203.1, 1774.4> EXPLOSION range 4 dropoff 1
+18:22:40.749 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B5610> ExplosionTest:19078 at <5937.75, 212.39, 2343.49> EXPLOSION range 4 dropoff 1
+18:22:40.757 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B4C80> ExplosionTest:19077 at <6425.59, 202.53, 2579.4> EXPLOSION range 4 dropoff 1
+18:22:40.765 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37AC6A0> ExplosionTest:19076 at <271.48, 281.23, 150.62> EXPLOSION range 4 dropoff 1
+18:22:40.765 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B2FD0> ExplosionTest:19075 at <5430.52, 197.04, 1662.28> EXPLOSION range 4 dropoff 1
+18:22:40.765 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B1CB0> ExplosionTest:19074 at <6098.83, 216.43, 1698.54> EXPLOSION range 4 dropoff 1
+18:22:40.834 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B1320> ExplosionTest:19073 at <5832.38, 205.69, 1396.74> EXPLOSION range 4 dropoff 1
+18:22:40.842 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B0990> ExplosionTest:19072 at <6010.34, 215.45, 2399.19> EXPLOSION range 4 dropoff 1
+18:22:40.847 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B0000> ExplosionTest:19071 at <6287.64, 232.01, 1807.89> EXPLOSION range 4 dropoff 1
+18:22:40.847 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37AF670> ExplosionTest:19070 at <5928.12, 218.75, 1626.7> EXPLOSION range 4 dropoff 1
+18:22:40.861 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37AE350> ExplosionTest:19069 at <5693.99, 221.44, 2926.22> EXPLOSION range 4 dropoff 1
+18:22:40.864 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37B2640> ExplosionTest:19068 at <6130.6, 229.79, 1799.45> EXPLOSION range 4 dropoff 1
+18:22:40.877 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37AD9C0> ExplosionTest:19067 at <5418.25, 196.11, 1684.94> EXPLOSION range 4 dropoff 1
+18:22:40.877 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37AECE0> ExplosionTest:19066 at <5618.07, 196.87, 1722.52> EXPLOSION range 4 dropoff 1
+18:22:40.878 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37AD030> ExplosionTest:19065 at <5674.45, 208.93, 1706.54> EXPLOSION range 4 dropoff 1
+18:22:40.879 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37A53E0> ExplosionTest:19064 at <5861.39, 215.18, 2579.92> EXPLOSION range 4 dropoff 1
+18:22:40.879 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37ABD10> ExplosionTest:19063 at <6123.18, 215.98, 2384.78> EXPLOSION range 4 dropoff 1
+18:22:40.885 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37A4A50> ExplosionTest:19062 at <5979.09, 229.32, 2315.93> EXPLOSION range 4 dropoff 1
+18:22:40.888 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37AB380> ExplosionTest:19061 at <6024.92, 232.11, 1768.06> EXPLOSION range 4 dropoff 1
+18:22:40.891 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37AA9F0> ExplosionTest:19060 at <5954.04, 232.37, 2269.48> EXPLOSION range 4 dropoff 1
+18:22:40.898 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37AA060> ExplosionTest:19059 at <5381.51, 232.14, 2831.65> EXPLOSION range 4 dropoff 1
+18:22:40.911 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37A96D0> ExplosionTest:19058 at <6278.02, 222.42, 1657.62> EXPLOSION range 4 dropoff 1
+18:22:40.911 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37A8D40> ExplosionTest:19057 at <5933.72, 218.14, 1534.72> EXPLOSION range 4 dropoff 1
+18:22:40.938 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37A83B0> ExplosionTest:19056 at <6885.25, 211.47, 1616.42> EXPLOSION range 4 dropoff 1
+18:22:40.939 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37A7A20> ExplosionTest:19055 at <5656.15, 198.09, 2667.62> EXPLOSION range 4 dropoff 1
+18:22:40.946 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37A0760> ExplosionTest:19054 at <6608.53, 216.98, 1334.91> EXPLOSION range 4 dropoff 1
+18:22:40.946 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37A40C0> ExplosionTest:19053 at <5318.81, 208.48, 2836.33> EXPLOSION range 4 dropoff 1
+18:22:40.952 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37A5D70> ExplosionTest:19052 at <6358.36, 234.08, 1644.12> EXPLOSION range 4 dropoff 1
+18:22:40.957 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37A2DA0> ExplosionTest:19051 at <10015, 263.5, 1707.81> EXPLOSION range 4 dropoff 1
+18:22:40.963 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37A2410> ExplosionTest:19050 at <13044.9, 308.51, 445.18> EXPLOSION range 4 dropoff 1
+18:22:40.964 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37A3730> ExplosionTest:19049 at <5687.09, 208.95, 1693.44> EXPLOSION range 4 dropoff 1
+18:22:40.964 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000017BC37A7090> ExplosionTest:19048 at <6397.27, 221.51, 1631.29> EXPLOSION range 4 dropoff 1
+18:28:02.872 [Expansion Quests] Initialize quest system on the connected client with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+18:28:02.887 [Expansion Quests] Loaded existing player quest data for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+18:28:02.888 [Expansion Quests] Check quest initialization for quest with ID=8 | State=STARTED | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+18:28:02.889 [Expansion Quests] Create new quest instance for quest with ID=8 | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+18:28:02.892 [Expansion Quests] Check quest initialization for quest with ID=9 | State=STARTED | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+18:28:02.893 [Expansion Quests] Create new quest instance for quest with ID=9 | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+18:28:02.893 [Expansion Quests] Check quest initialization for quest with ID=11 | State=STARTED | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+18:28:02.893 [Expansion Quests] Create new quest instance for quest with ID=11 | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+18:28:02.894 [Expansion Quests] Check quest initialization for quest with ID=14 | State=COMPLETED | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+18:28:02.895 [Expansion Quests] Sending MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= quest configs to client for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+18:28:02.899 [Expansion Quests] Sending player quest data for 4 quests to player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+18:28:32.412 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Ford_Mustang_Shelby_GT500_DarkBlue (id=CDA34737514FD74083844EA7352E7C36 pos=<3868.88, 192.93, 215.44>) as driver
+18:28:33.636 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) started vehicle Ford_Mustang_Shelby_GT500_DarkBlue (id=CDA34737514FD74083844EA7352E7C36 pos=<3868.88, 192.93, 215.44>)
+18:28:35.915 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Ford_Mustang_Shelby_GT500_DarkBlue (id=CDA34737514FD74083844EA7352E7C36 pos=<3868.88, 192.93, 215.44>) as driver
+18:28:45.311 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Ford_Mustang_Shelby_GT500_DarkBlue (id=CDA34737514FD74083844EA7352E7C36 pos=<3868.88, 192.93, 215.44>) as driver
+18:28:52.882 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Ford_Mustang_Shelby_GT500_DarkBlue (id=CDA34737514FD74083844EA7352E7C36 pos=<3868.88, 192.93, 215.44>) as driver
+18:30:06.645 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Ford_Mustang_Shelby_GT500_DarkBlue (id=CDA34737514FD74083844EA7352E7C36 pos=<3868.88, 192.93, 215.44>) as driver
+18:30:25.748 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Ford_Mustang_Shelby_GT500_DarkBlue (id=CDA34737514FD74083844EA7352E7C36 pos=<3865.68, 192.98, 219.38>)
+18:30:26.081 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Ford_Mustang_Shelby_GT500_DarkBlue (id=CDA34737514FD74083844EA7352E7C36 pos=<3865.68, 192.98, 219.38>) as driver
+18:30:32.245 [Expansion Quests] Initialize quest system on the connected client with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+18:30:32.249 [Expansion Quests] Created new persistent player quest data for player UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+18:30:32.250 [Expansion Quests] Create new achievement/auto-start quest for quest ID=8 for player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+18:30:32.251 [Expansion Quests] Added new objective data for type=TARGET | Key= | ID=3
+18:30:32.251 [Expansion Quests] Updated and saved persistent player quest data for player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= | Quest ID=8
+18:30:32.251 [Expansion Quests] Create new achievement/auto-start quest for quest ID=9 for player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+18:30:32.252 [Expansion Quests] Added new objective data for type=TARGET | Key= | ID=2
+18:30:32.252 [Expansion Quests] Updated and saved persistent player quest data for player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= | Quest ID=9
+18:30:32.252 [Expansion Quests] Create new achievement/auto-start quest for quest ID=11 for player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+18:30:32.252 [Expansion Quests] Added new objective data for type=ACTION | Key= | ID=1
+18:30:32.253 [Expansion Quests] Updated and saved persistent player quest data for player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= | Quest ID=11
+18:30:32.253 [Expansion Quests] Create new achievement/auto-start quest for quest ID=14 for player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+18:30:32.260 [Expansion Quests] Added new objective data for type=TRAVEL | Key= | ID=3
+18:30:32.260 [Expansion Quests] Updated and saved persistent player quest data for player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= | Quest ID=14
+18:30:32.261 [Expansion Quests] Sending 1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= quest configs to client for player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+18:30:32.262 [Expansion Quests] Sending player quest data for 4 quests to player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+18:30:32.266 [Expansion Quests] Added new objective data for type=TRAVEL | Key= | ID=3
+18:30:32.267 [Expansion Quests] Updated and saved persistent player quest data for player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= | Quest ID=14
+18:30:32.268 [Expansion Quests] Player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= has completed quest with ID=14
+18:30:32.270 [Expansion Quests] Updated and saved persistent player quest data for player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= | Quest ID=14
+18:31:22.464 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Mh-6 Little Bird (id=1973FCD9FB4F98A8CEBB4A926EEA9908 pos=<3846.38, 193.17, 235.99>) as pilot
+18:31:26.954 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) started vehicle Mh-6 Little Bird (id=1973FCD9FB4F98A8CEBB4A926EEA9908 pos=<3846.38, 193.16, 235.92>)
+18:31:47.718 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle UH-1H (id=58F82BE91F40597DAF0551A676AD6586 pos=<7294.51, 235.61, 1166.27>) as pilot
+18:31:50.579 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle UH-1H (id=58F82BE91F40597DAF0551A676AD6586 pos=<7294.51, 235.61, 1166.28>)
+18:32:30.704 [AI Object Patrol 00007] Spawning 2 West bots at <6069.859863, 213.869156, 1669.500000>
+18:32:30.811 [AI Object Patrol 00007] Global patrol count: 1
+18:32:30.812 [AI Object Patrol 00007] Global Expansion AI count: 2 alive, 0 deceased
+18:32:30.812 [AI Object Patrol 00007] MilitaryRoaming category patrol count: 1
+18:33:13.247 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Mh-6 Little Bird (id=1973FCD9FB4F98A8CEBB4A926EEA9908 pos=<3692.38, 240.99, 1826.61>)
+18:33:13.248 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Mh-6 Little Bird (id=1973FCD9FB4F98A8CEBB4A926EEA9908 pos=<3692.38, 240.99, 1826.61>) as pilot
+18:33:15.240 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) stopped vehicle UH-1H (id=58F82BE91F40597DAF0551A676AD6586 pos=<6511.12, 454.21, 2352.63>)
+18:33:57.416 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle UH-1H (id=58F82BE91F40597DAF0551A676AD6586 pos=<6511.29, 224.84, 2329.82>) as pilot
+18:34:31.052 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle UH-1H (id=58F82BE91F40597DAF0551A676AD6586 pos=<6511.29, 224.84, 2329.82>) as pilot
+18:34:32.949 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle UH-1H (id=58F82BE91F40597DAF0551A676AD6586 pos=<6511.29, 224.84, 2329.82>)
+18:34:38.368 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) stopped vehicle UH-1H (id=58F82BE91F40597DAF0551A676AD6586 pos=<6511.29, 224.84, 2329.82>)
+18:34:42.276 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle UH-1H (id=58F82BE91F40597DAF0551A676AD6586 pos=<6511.29, 224.84, 2329.82>) as pilot
+18:36:40.059 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Mercedes-AMG G 63 '19  (id=0F82ACA94440426D8F403D8BB7170474 pos=<6504.54, 224.61, 2326.14>) as driver
+18:36:42.761 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Mercedes-AMG G 63 '19  (id=0F82ACA94440426D8F403D8BB7170474 pos=<6504.54, 224.61, 2326.14>)
+18:36:49.329 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Mercedes-AMG G 63 '19  (id=0F82ACA94440426D8F403D8BB7170474 pos=<6494.87, 224.5, 2341.1>)
+18:36:49.357 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Mercedes-AMG G 63 '19  (id=0F82ACA94440426D8F403D8BB7170474 pos=<6494.87, 224.5, 2341.1>) as driver
+18:37:15.017 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Gunter 2 (id=43B954D2AE4C1CE09295708899DA2B89 pos=<6490.66, 224.4, 2343.14>) as driver
+18:37:17.438 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Gunter 2 (id=43B954D2AE4C1CE09295708899DA2B89 pos=<6490.66, 224.4, 2343.14>)
+18:37:27.827 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Gunter 2 (id=43B954D2AE4C1CE09295708899DA2B89 pos=<6485.24, 224.22, 2328.61>)
+18:37:28.118 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Gunter 2 (id=43B954D2AE4C1CE09295708899DA2B89 pos=<6485.24, 224.22, 2328.61>) as driver
+18:38:13.544 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Gunter 2 (id=43B954D2AE4C1CE09295708899DA2B89 pos=<6485.24, 224.22, 2328.61>) as driver
+18:38:15.211 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Gunter 2 (id=43B954D2AE4C1CE09295708899DA2B89 pos=<6485.24, 224.22, 2328.61>)
+18:38:19.420 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Gunter 2 (id=43B954D2AE4C1CE09295708899DA2B89 pos=<6488.52, 224.21, 2326.06>)
+18:38:19.729 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Gunter 2 (id=43B954D2AE4C1CE09295708899DA2B89 pos=<6488.52, 224.21, 2326.06>) as driver
+18:39:55.210 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Gunter 2 (id=43B954D2AE4C1CE09295708899DA2B89 pos=<6488.5, 224.21, 2326.06>) as driver
+18:39:56.786 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Gunter 2 (id=43B954D2AE4C1CE09295708899DA2B89 pos=<6488.47, 224.21, 2326.06>)
+18:40:42.312 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Gunter 2 (id=43B954D2AE4C1CE09295708899DA2B89 pos=<6489.39, 224.16, 2323.14>)
+18:40:42.620 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Gunter 2 (id=43B954D2AE4C1CE09295708899DA2B89 pos=<6489.39, 224.16, 2323.14>) as driver
+18:41:37.518 [Expansion Quests] Deleted quest with ID=8 is a of player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=.
+18:41:37.518 [Expansion Quests] Deleted quest with ID=9 is a of player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=.
+18:41:37.518 [Expansion Quests] Deleted quest with ID=11 is a of player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=.
+18:42:31.834 [VehicleDeleted] Hatchback_02 (id=43B954D2AE4C1CE09295708899DA2B89 pos=<6489.39, 224.16, 2323.14> lifetime=-1)
+18:51:03.472 [AI Object Patrol 00007] Despawning 2 West bots (spawn position <6069.859863, 213.869156, 1669.500000>, 0/2 deceased)
+18:51:03.472 [AI Object Patrol 00007] Global patrol count: 0
+18:51:03.473 [AI Object Patrol 00007] Global Expansion AI count: 1 alive, 0 deceased
+18:51:03.473 [AI Object Patrol 00007] MilitaryRoaming category patrol count: 0
+18:53:07.576 [BaseRaiding] ExpansionWall6x3 (<4110.879395, 263.240479, 10160.683594>) Code set by "player "Hessher" (ID = "MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=" at <4110.372559, 263.264832, 10161.588867>)" and the code is 5381
+18:54:02.711 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x0000017CC509FBE0> Expansion_C4_Explos at <4110.69, 263.24, 10160.8> EXPLOSION range 5 dropoff 2.5
+18:54:02.715 [ExplosionDamageSystem] Queued Expansion_C4_Explosion<0x0000017CC509FBE0> Expansion_C4_Explos ExpansionC4_Ammo for ExpansionWallBase<0x0000017CA2F05560> ExpansionWall6x3:31199 - count: 1
+18:54:02.725 [Killfeed] Hessher умер от взрыва Заряд взрывчатки.
+18:54:02.726 [ExplosionDamageSystem] Dequeued Expansion_C4_Explosion<0x0000017CC509FBE0> Expansion_C4_Explos ExpansionC4_Ammo for ExpansionWallBase<0x0000017CA2F05560> ExpansionWall6x3:31199 - count: 0
+18:54:02.726 [BaseBuildingRaiding] BaseRaiding: ExpansionWallBase<0x0000017CA2F05560> ExpansionWall6x3:31199 at <4110.879395, 263.240479, 10160.683594> has been hit by explosive Expansion_C4_Explosion<0x0000017CC509FBE0> Expansion_C4_Explos
+18:54:02.727 [ExplosionDamageSystem] Overriding Expansion_C4_Explosion<0x0000017CC509FBE0> Expansion_C4_Explos damage dealt to ExpansionWallBase<0x0000017CA2F05560> ExpansionWall6x3:31199 at <4110.879395, 263.240479, 10160.683594> 543.291 -> 600
+18:54:02.727 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+18:54:02.728 [BaseBuildingRaiding] A player damaged ExpansionWall6x3 at <4110.88, 263.24, 10160.7>
+18:54:02.728 [BaseBuildingRaiding] They dealt 600 * 50 = 30000 damage with ExpansionC4_Ammo from Expansion_C4_Explosion
+18:54:02.728 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 30000 to 0
+18:54:02.729 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+18:54:02.729 [BaseBuildingRaiding] BaseRaiding: ExpansionWallBase<0x0000017CA2EFC4A0> ExpansionWall6x3:31177 at <4112.854004, 263.240021, 10164.438477> has been hit by explosive Expansion_C4_Explosion<0x0000017CC509FBE0> Expansion_C4_Explos
+18:54:02.730 [ExplosionDamageSystem] Overriding Expansion_C4_Explosion<0x0000017CC509FBE0> Expansion_C4_Explos damage dealt to ExpansionWallBase<0x0000017CA2EFC4A0> ExpansionWall6x3:31177 at <4112.854004, 263.240021, 10164.438477> 101.077 -> 193.799
+18:54:02.730 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+18:54:02.730 [BaseBuildingRaiding] A player damaged ExpansionWall6x3 at <4112.85, 263.24, 10164.4>
+18:54:02.730 [BaseBuildingRaiding] They dealt 193.799 * 50 = 9689.95 damage with ExpansionC4_Ammo from Expansion_C4_Explosion
+18:54:02.730 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 30000 to 20310.1
+18:54:02.730 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+18:58:14.804 [VehicleDeleted] Ford_Mustang_Shelby_GT500_DarkBlue (id=CDA34737514FD74083844EA7352E7C36 pos=<3865.68, 192.98, 219.38> lifetime=-1)

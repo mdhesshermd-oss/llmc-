@@ -1,0 +1,359 @@
+{
+    "m_Version": 12,
+    "DisplayName": "KOD Weapons & Gear",
+    "Icon": "Deliver",
+    "Color": "FF0000FF",
+    "IsExchange": 0,
+    "InitStockPercent": 75.0,
+    "Items": [
+        {
+            "ClassName": "KOD_AX50_Black",
+            "MaxPriceThreshold": 15000,
+            "MinPriceThreshold": 10000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 10,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_AX50_5rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_KSVK",
+            "MaxPriceThreshold": 18000,
+            "MinPriceThreshold": 12000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 10,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_KSVK_5rnd",
+                "KOD_KSVK_Bipod"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_Alligator",
+            "MaxPriceThreshold": 25000,
+            "MinPriceThreshold": 15000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_Alligator_5rnd",
+                "KOD_Alligator_Bipod"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_M82A2_Black",
+            "MaxPriceThreshold": 20000,
+            "MinPriceThreshold": 13000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_M82A2_10rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_AR50A1",
+            "MaxPriceThreshold": 14000,
+            "MinPriceThreshold": 9000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 10,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_DVL10",
+            "MaxPriceThreshold": 12000,
+            "MinPriceThreshold": 8000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 10,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_DVL10_5rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_M200_Black",
+            "MaxPriceThreshold": 16000,
+            "MinPriceThreshold": 11000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 10,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_M200_7rnd",
+                "KOD_M200_Bipod_Black"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_SV98_Green",
+            "MaxPriceThreshold": 10000,
+            "MinPriceThreshold": 7000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 15,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_SV98_10rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_Kivaari_Black",
+            "MaxPriceThreshold": 13000,
+            "MinPriceThreshold": 8500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 10,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_Kivaari_10rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_AWM",
+            "MaxPriceThreshold": 11000,
+            "MinPriceThreshold": 7500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 15,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_AWM_5rnd",
+                "KOD_AWM_Scope"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_RSASS_Black",
+            "MaxPriceThreshold": 14000,
+            "MinPriceThreshold": 9500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 10,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_RSASS_20rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_SCARH",
+            "MaxPriceThreshold": 9000,
+            "MinPriceThreshold": 6000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 20,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_SCARH_20rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_PKP",
+            "MaxPriceThreshold": 15000,
+            "MinPriceThreshold": 10000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 10,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_PKP_150rnd",
+                "KOD_PKP_Bipod"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_RPK16",
+            "MaxPriceThreshold": 8000,
+            "MinPriceThreshold": 5500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 15,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_RPK16_96rnd"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_Vector",
+            "MaxPriceThreshold": 5000,
+            "MinPriceThreshold": 3500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 20,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_Vector_30rnd",
+                "KOD_Vector_Buttstock"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_Glock17_Custom_Black",
+            "MaxPriceThreshold": 1500,
+            "MinPriceThreshold": 900,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 30,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [
+                "Mag_KOD_Glock17_Black_16rnd"
+            ],
+            "Variants": [
+                "KOD_Glock17_Custom_Tan",
+                "KOD_Glock17_Standard_Black"
+            ]
+        },
+        {
+            "ClassName": "KOD_Ammo_20mm",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 300,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 500,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_Ammo_50BMG",
+            "MaxPriceThreshold": 400,
+            "MinPriceThreshold": 250,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 500,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_Ammo_338",
+            "MaxPriceThreshold": 200,
+            "MinPriceThreshold": 120,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 500,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_Ammo_127x108",
+            "MaxPriceThreshold": 450,
+            "MinPriceThreshold": 280,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 500,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_ACOG_RMR_Black",
+            "MaxPriceThreshold": 2500,
+            "MinPriceThreshold": 1500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 50,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": [
+                "KOD_ACOG_RMR_FDE"
+            ]
+        },
+        {
+            "ClassName": "KOD_ReapIR",
+            "MaxPriceThreshold": 15000,
+            "MinPriceThreshold": 10000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_XSight",
+            "MaxPriceThreshold": 3000,
+            "MinPriceThreshold": 2000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 20,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_AKMount",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 300,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 100,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_MosinMount",
+            "MaxPriceThreshold": 500,
+            "MinPriceThreshold": 300,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 100,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "Mag_KOD_PKP_150rnd",
+            "MaxPriceThreshold": 1500,
+            "MinPriceThreshold": 1000,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 50,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "Mag_KOD_RPK16_96rnd",
+            "MaxPriceThreshold": 1200,
+            "MinPriceThreshold": 800,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 50,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        },
+        {
+            "ClassName": "KOD_Grip_RK2_Black",
+            "MaxPriceThreshold": 800,
+            "MinPriceThreshold": 500,
+            "SellPricePercent": -1.0,
+            "MaxStockThreshold": 100,
+            "MinStockThreshold": 1,
+            "QuantityPercent": -1,
+            "SpawnAttachments": [],
+            "Variants": []
+        }
+    ]
+}

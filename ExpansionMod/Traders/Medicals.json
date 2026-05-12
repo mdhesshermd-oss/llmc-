@@ -1,0 +1,20 @@
+{
+    "m_Version": 13,
+    "DisplayName": "Медик",
+    "MinRequiredReputation": 0,
+    "MaxRequiredReputation": 2147483647,
+    "RequiredFaction": "",
+    "RequiredCompletedQuestID": -1,
+    "TraderIcon": "Medic Box",
+    "Currencies": [
+        "expansionbanknotehryvnia"
+    ],
+    "DisplayCurrencyValue": 1,
+    "DisplayCurrencyName": "",
+    "UseCategoryOrder": 0,
+    "Categories": [
+        "Medical",
+        "Psix_Items"
+    ],
+    "Items": {}
+}

@@ -1,0 +1,4 @@
+23:27:15.107 [MissionAirdrop] An airdrop is heading towards "Omastina" (pos=<14202.318359, 0.000000, 6578.103516> type=Random_Omastina) with a ExpansionAirdropContainer_Medical
+23:44:26.799 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001F7A13FB350> ExplosionTest:30614 at <5756.82, 212.59, 2517.5> EXPLOSION range 4 dropoff 1
+23:44:29.986 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Mh-6 Little Bird (id=D54B316F9245FA298F629C9FBC5489C0 pos=<4457.76, 190.09, 162.46>) as pilot
+23:44:32.810 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Mh-6 Little Bird (id=D54B316F9245FA298F629C9FBC5489C0 pos=<4457.76, 190.09, 162.42>)

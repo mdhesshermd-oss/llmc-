@@ -1,0 +1,110 @@
+20:35:40.053 [AI Object Patrol] Generating default object patrols for "banov"
+20:35:40.053 [AI Patrol] Generating default patrols for "banov"
+20:35:40.077 [AI Patrol] WARNING: No spawn points found for "banov"
+20:36:39.143 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DFA820> ExplosionTest:19136 at <6041.11, 214.99, 1852.39> EXPLOSION range 4 dropoff 1
+20:36:39.189 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF2240> ExplosionTest:19135 at <6569.83, 205.54, 1540.58> EXPLOSION range 4 dropoff 1
+20:36:39.193 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF8B70> ExplosionTest:19134 at <6440.7, 208.44, 1505.94> EXPLOSION range 4 dropoff 1
+20:36:39.217 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF81E0> ExplosionTest:19133 at <5885.89, 200.46, 2263.95> EXPLOSION range 4 dropoff 1
+20:36:39.230 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF3560> ExplosionTest:19132 at <5827.94, 215.89, 1405.5> EXPLOSION range 4 dropoff 1
+20:36:39.245 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF0F20> ExplosionTest:19131 at <5643.07, 214.41, 2742.08> EXPLOSION range 4 dropoff 1
+20:36:39.259 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF5210> ExplosionTest:19130 at <5413.67, 209.71, 1625.15> EXPLOSION range 4 dropoff 1
+20:36:39.266 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF3EF0> ExplosionTest:19129 at <9801.31, 265.96, 1545.07> EXPLOSION range 4 dropoff 1
+20:36:39.273 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF18B0> ExplosionTest:19128 at <5687.78, 212.17, 2916.72> EXPLOSION range 4 dropoff 1
+20:36:39.280 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF4880> ExplosionTest:19127 at <7393.08, 241.46, 1562.29> EXPLOSION range 4 dropoff 1
+20:36:39.284 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF5BA0> ExplosionTest:19126 at <6069.04, 222.18, 1356.32> EXPLOSION range 4 dropoff 1
+20:36:39.293 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF7850> ExplosionTest:19125 at <6233.94, 217.59, 1746.15> EXPLOSION range 4 dropoff 1
+20:36:39.303 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF6EC0> ExplosionTest:19124 at <6535.61, 216.01, 1579.98> EXPLOSION range 4 dropoff 1
+20:36:39.306 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF6530> ExplosionTest:19123 at <5496.17, 212.73, 2921.69> EXPLOSION range 4 dropoff 1
+20:36:39.329 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF2BD0> ExplosionTest:19122 at <6416.14, 227.98, 1337.49> EXPLOSION range 4 dropoff 1
+20:36:39.344 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE9C60> ExplosionTest:19121 at <6182.56, 229.71, 1674.68> EXPLOSION range 4 dropoff 1
+20:36:39.349 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DF0590> ExplosionTest:19120 at <5617.3, 209.8, 1850.06> EXPLOSION range 4 dropoff 1
+20:36:39.359 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE92D0> ExplosionTest:19119 at <5844.63, 198.44, 2331.22> EXPLOSION range 4 dropoff 1
+20:36:39.369 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DEFC00> ExplosionTest:19118 at <5718.44, 210.1, 1639.88> EXPLOSION range 4 dropoff 1
+20:36:39.380 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DEF270> ExplosionTest:19117 at <5812.57, 215.91, 1413.78> EXPLOSION range 4 dropoff 1
+20:36:39.385 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DEE8E0> ExplosionTest:19116 at <5710.03, 215.58, 2795.19> EXPLOSION range 4 dropoff 1
+20:36:39.397 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE8940> ExplosionTest:19115 at <5833.11, 241.88, 2431.55> EXPLOSION range 4 dropoff 1
+20:36:39.414 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DEDF50> ExplosionTest:19114 at <6583.86, 207.33, 1527.4> EXPLOSION range 4 dropoff 1
+20:36:39.422 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DED5C0> ExplosionTest:19113 at <6209.14, 224.67, 2300.41> EXPLOSION range 4 dropoff 1
+20:36:39.442 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DECC30> ExplosionTest:19112 at <5741.19, 200.15, 2538.54> EXPLOSION range 4 dropoff 1
+20:36:39.446 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DEC2A0> ExplosionTest:19111 at <5488.76, 197.84, 2891.1> EXPLOSION range 4 dropoff 1
+20:36:39.454 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE5970> ExplosionTest:19110 at <6309.77, 229.75, 2259.43> EXPLOSION range 4 dropoff 1
+20:36:39.463 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE6C90> ExplosionTest:19109 at <6361.14, 220.45, 1738.23> EXPLOSION range 4 dropoff 1
+20:36:39.486 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DEB910> ExplosionTest:19108 at <5590.8, 197.41, 2578.74> EXPLOSION range 4 dropoff 1
+20:36:39.489 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DEA5F0> ExplosionTest:19107 at <5695.81, 207.35, 2678.33> EXPLOSION range 4 dropoff 1
+20:36:39.495 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE7FB0> ExplosionTest:19106 at <6052.95, 219.25, 1752.92> EXPLOSION range 4 dropoff 1
+20:36:39.507 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE6300> ExplosionTest:19105 at <5531.99, 212.49, 2663.93> EXPLOSION range 4 dropoff 1
+20:36:39.516 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DEAF80> ExplosionTest:19104 at <6174.26, 215.63, 2157.77> EXPLOSION range 4 dropoff 1
+20:36:39.521 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE7620> ExplosionTest:19103 at <10165.3, 289.48, 2363.72> EXPLOSION range 4 dropoff 1
+20:36:39.522 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DDE6B0> ExplosionTest:19102 at <5993.72, 219.18, 1483.27> EXPLOSION range 4 dropoff 1
+20:36:39.557 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE4FE0> ExplosionTest:19101 at <5964.55, 224.6, 2564.47> EXPLOSION range 4 dropoff 1
+20:36:39.566 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE4650> ExplosionTest:19100 at <5776.08, 212.59, 2492.55> EXPLOSION range 4 dropoff 1
+20:36:39.567 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE3CC0> ExplosionTest:19099 at <5781.99, 214.76, 1436.69> EXPLOSION range 4 dropoff 1
+20:36:39.570 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE3330> ExplosionTest:19098 at <5659.72, 202, 2743.27> EXPLOSION range 4 dropoff 1
+20:36:39.571 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE29A0> ExplosionTest:19097 at <6390.12, 228.97, 2153.35> EXPLOSION range 4 dropoff 1
+20:36:39.578 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE2010> ExplosionTest:19096 at <6092.11, 223.3, 1488> EXPLOSION range 4 dropoff 1
+20:36:39.590 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE0CF0> ExplosionTest:19095 at <6080.56, 225.55, 1828.55> EXPLOSION range 4 dropoff 1
+20:36:39.591 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE0360> ExplosionTest:19094 at <6294.96, 237.79, 2171.02> EXPLOSION range 4 dropoff 1
+20:36:39.607 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DDF9D0> ExplosionTest:19093 at <5431.05, 211.76, 2769.48> EXPLOSION range 4 dropoff 1
+20:36:39.616 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DDC070> ExplosionTest:19092 at <5637.46, 198.87, 1775.8> EXPLOSION range 4 dropoff 1
+20:36:39.627 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DDD390> ExplosionTest:19091 at <5643.5, 212.48, 1790.89> EXPLOSION range 4 dropoff 1
+20:36:39.627 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DDF040> ExplosionTest:19090 at <6205.26, 223.49, 2128.62> EXPLOSION range 4 dropoff 1
+20:36:39.633 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DDCA00> ExplosionTest:19089 at <6253.29, 221.54, 1774.13> EXPLOSION range 4 dropoff 1
+20:36:39.639 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DDDD20> ExplosionTest:19088 at <6314.74, 226.35, 2264.96> EXPLOSION range 4 dropoff 1
+20:36:39.639 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B147DE1680> ExplosionTest:19087 at <5791.28, 207.96, 1433.5> EXPLOSION range 4 dropoff 1
+20:36:39.639 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B13E785B40> ExplosionTest:19086 at <9804.78, 262.56, 1495.27> EXPLOSION range 4 dropoff 1
+20:36:39.640 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B13E78BAE0> ExplosionTest:19085 at <5538.61, 215.13, 2899.79> EXPLOSION range 4 dropoff 1
+20:36:39.641 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B13E78B150> ExplosionTest:19084 at <5593.26, 197.1, 2338.67> EXPLOSION range 4 dropoff 1
+20:36:39.646 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B13E783E90> ExplosionTest:19083 at <5922.76, 218.25, 1628.76> EXPLOSION range 4 dropoff 1
+20:36:39.649 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001B13E78A7C0> ExplosionTest:19082 at <5843.23, 202.58, 2318.87> EXPLOSION range 4 dropoff 1
+20:39:06.755 [Expansion Quests] Initialize quest system on the connected client with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+20:39:06.770 [Expansion Quests] Loaded existing player quest data for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+20:39:06.771 [Expansion Quests] Check quest initialization for quest with ID=8 | State=STARTED | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+20:39:06.774 [Expansion Quests] Create new quest instance for quest with ID=8 | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+20:39:06.778 [Expansion Quests] Check quest initialization for quest with ID=9 | State=STARTED | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+20:39:06.778 [Expansion Quests] Create new quest instance for quest with ID=9 | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+20:39:06.779 [Expansion Quests] Check quest initialization for quest with ID=11 | State=STARTED | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+20:39:06.779 [Expansion Quests] Create new quest instance for quest with ID=11 | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+20:39:06.780 [Expansion Quests] Check quest initialization for quest with ID=14 | State=COMPLETED | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+20:39:06.782 [Expansion Quests] Sending MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= quest configs to client for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+20:39:06.786 [Expansion Quests] Sending player quest data for 4 quests to player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+20:41:39.606 [MissionAirdrop] An airdrop is heading towards "Ruskovce" (pos=<1450.307129, 0.000000, 4046.354736> type=Random_Ruskovce) with a ExpansionAirdropContainer_Military
+20:52:34.669 [AI Object Patrol 00004] Spawning 1 West bots at <8357.706055, 552.526855, 9947.546875>
+20:52:35.023 [AI Object Patrol 00004] Global patrol count: 1
+20:52:35.023 [AI Object Patrol 00004] Global Expansion AI count: 1 alive, 0 deceased
+20:52:35.023 [AI Object Patrol 00004] MilitaryStatic category patrol count: 1
+20:52:35.023 [AI Object Patrol 00003] Spawning 1 West bots at <8341.291016, 552.526855, 9932.127930>
+20:52:35.102 [AI Object Patrol 00003] Global patrol count: 2
+20:52:35.103 [AI Object Patrol 00003] Global Expansion AI count: 2 alive, 0 deceased
+20:52:35.103 [AI Object Patrol 00003] MilitaryStatic category patrol count: 2
+20:52:35.103 [AI Object Patrol 00016] Spawning 3 West bots at <8195.550781, 547.538513, 9909.982422>
+20:52:35.175 [AI Object Patrol 00016] Global patrol count: 3
+20:52:35.176 [AI Object Patrol 00016] Global Expansion AI count: 3 alive, 0 deceased
+20:52:35.176 [AI Object Patrol 00016] MilitaryRoaming category patrol count: 1
+20:52:35.176 [AI Object Patrol 00014] Spawning 1 West bots at <8153.000000, 547.186279, 9976.370117>
+20:52:35.233 [AI Object Patrol 00014] Global patrol count: 4
+20:52:35.233 [AI Object Patrol 00014] Global Expansion AI count: 4 alive, 0 deceased
+20:52:35.233 [AI Object Patrol 00014] MilitaryRoaming category patrol count: 2
+20:52:35.233 [AI Object Patrol 00015] Spawning 1 West bots at <8162.000000, 547.289978, 9951.040039>
+20:52:35.287 [AI Object Patrol 00015] Global patrol count: 5
+20:52:35.287 [AI Object Patrol 00015] Global Expansion AI count: 5 alive, 0 deceased
+20:52:35.287 [AI Object Patrol 00015] MilitaryRoaming category patrol count: 3
+21:04:50.403 [AI Object Patrol 00004] Despawning 1 West bots (spawn position <8357.706055, 552.526855, 9947.546875>, 0/1 deceased)
+21:04:50.405 [AI Object Patrol 00004] Global patrol count: 4
+21:04:50.405 [AI Object Patrol 00004] Global Expansion AI count: 6 alive, 0 deceased
+21:04:50.405 [AI Object Patrol 00004] MilitaryStatic category patrol count: 1
+21:04:51.145 [AI Object Patrol 00003] Despawning 1 West bots (spawn position <8341.291016, 552.526855, 9932.127930>, 0/1 deceased)
+21:04:51.146 [AI Object Patrol 00003] Global patrol count: 3
+21:04:51.146 [AI Object Patrol 00003] Global Expansion AI count: 5 alive, 0 deceased
+21:04:51.146 [AI Object Patrol 00003] MilitaryStatic category patrol count: 0
+21:04:51.384 [AI Object Patrol 00016] Despawning 3 West bots (spawn position <8195.550781, 547.538513, 9909.982422>, 0/3 deceased)
+21:04:51.385 [AI Object Patrol 00016] Global patrol count: 2
+21:04:51.385 [AI Object Patrol 00016] Global Expansion AI count: 2 alive, 0 deceased
+21:04:51.385 [AI Object Patrol 00016] MilitaryRoaming category patrol count: 2
+21:04:51.687 [AI Object Patrol 00014] Despawning 1 West bots (spawn position <8153.000000, 547.186279, 9976.370117>, 0/1 deceased)
+21:04:51.688 [AI Object Patrol 00014] Global patrol count: 1
+21:04:51.688 [AI Object Patrol 00014] Global Expansion AI count: 1 alive, 0 deceased
+21:04:51.688 [AI Object Patrol 00014] MilitaryRoaming category patrol count: 1
+21:04:51.731 [AI Object Patrol 00015] Despawning 1 West bots (spawn position <8162.000000, 547.289978, 9951.040039>, 0/1 deceased)
+21:04:51.731 [AI Object Patrol 00015] Global patrol count: 0
+21:04:51.731 [AI Object Patrol 00015] Global Expansion AI count: 0 alive, 0 deceased
+21:04:51.731 [AI Object Patrol 00015] MilitaryRoaming category patrol count: 0
