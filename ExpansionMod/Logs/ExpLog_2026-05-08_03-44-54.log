@@ -1,0 +1,108 @@
+03:45:37.454 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46823E90> ExplosionTest:19151 at <5762.11, 205.47, 1443.51> EXPLOSION range 4 dropoff 1
+03:45:37.460 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46825B40> ExplosionTest:19150 at <5545.06, 204.27, 2655.62> EXPLOSION range 4 dropoff 1
+03:45:37.472 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE468264D0> ExplosionTest:19149 at <6183.61, 220.5, 1675.3> EXPLOSION range 4 dropoff 1
+03:45:37.485 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4681CBD0> ExplosionTest:19148 at <6254.27, 221.54, 1771.28> EXPLOSION range 4 dropoff 1
+03:45:37.542 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46823500> ExplosionTest:19147 at <5716.98, 209.16, 1634.82> EXPLOSION range 4 dropoff 1
+03:45:37.550 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46820530> ExplosionTest:19146 at <9789.15, 262.56, 1540.9> EXPLOSION range 4 dropoff 1
+03:45:37.555 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4681F210> ExplosionTest:19145 at <9800.87, 266.12, 1502.84> EXPLOSION range 4 dropoff 1
+03:45:37.556 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46822B70> ExplosionTest:19144 at <6072.03, 209.43, 1370.77> EXPLOSION range 4 dropoff 1
+03:45:37.565 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4681C240> ExplosionTest:19143 at <6056.8, 215.8, 1838.06> EXPLOSION range 4 dropoff 1
+03:45:37.595 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE468221E0> ExplosionTest:19142 at <5843.34, 201.83, 2576.11> EXPLOSION range 4 dropoff 1
+03:45:37.601 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4681DEF0> ExplosionTest:19141 at <6416.87, 214.37, 1236.26> EXPLOSION range 4 dropoff 1
+03:45:37.606 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4681D560> ExplosionTest:19140 at <6279.57, 227.41, 2152.91> EXPLOSION range 4 dropoff 1
+03:45:37.616 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46821850> ExplosionTest:19139 at <8607.03, 223.23, 2859.48> EXPLOSION range 4 dropoff 1
+03:45:37.618 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4681FBA0> ExplosionTest:19138 at <5871.77, 217.61, 2294.57> EXPLOSION range 4 dropoff 1
+03:45:37.629 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4681A590> ExplosionTest:19137 at <6215.33, 228.97, 2239.03> EXPLOSION range 4 dropoff 1
+03:45:37.640 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4681E880> ExplosionTest:19136 at <5835.05, 201.77, 2558.8> EXPLOSION range 4 dropoff 1
+03:45:37.641 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46820EC0> ExplosionTest:19135 at <6221.28, 212.32, 1015.26> EXPLOSION range 4 dropoff 1
+03:45:37.647 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4681AF20> ExplosionTest:19134 at <13038.9, 318.71, 437.64> EXPLOSION range 4 dropoff 1
+03:45:37.648 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4681B8B0> ExplosionTest:19133 at <5559.58, 215.31, 2884.51> EXPLOSION range 4 dropoff 1
+03:45:37.655 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE468132D0> ExplosionTest:19132 at <6054.86, 205.42, 923.53> EXPLOSION range 4 dropoff 1
+03:45:37.663 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46819C00> ExplosionTest:19131 at <5925.53, 216.99, 2606.81> EXPLOSION range 4 dropoff 1
+03:45:37.669 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46819270> ExplosionTest:19130 at <7125.91, 232.54, 1476.82> EXPLOSION range 4 dropoff 1
+03:45:37.672 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46811FB0> ExplosionTest:19129 at <5392.79, 218.54, 2832.14> EXPLOSION range 4 dropoff 1
+03:45:37.680 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE468188E0> ExplosionTest:19128 at <6209.58, 222.61, 1823.24> EXPLOSION range 4 dropoff 1
+03:45:37.681 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46816C30> ExplosionTest:19127 at <5554.36, 198.09, 2556.82> EXPLOSION range 4 dropoff 1
+03:45:37.686 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46817F50> ExplosionTest:19126 at <5711.26, 218.04, 2898.36> EXPLOSION range 4 dropoff 1
+03:45:37.693 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE468162A0> ExplosionTest:19125 at <5964.74, 214.05, 1716.42> EXPLOSION range 4 dropoff 1
+03:45:37.712 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46815910> ExplosionTest:19124 at <5708.98, 205.95, 1510.09> EXPLOSION range 4 dropoff 1
+03:45:37.717 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE468175C0> ExplosionTest:19123 at <6251.88, 225.82, 2083.07> EXPLOSION range 4 dropoff 1
+03:45:37.724 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4680E650> ExplosionTest:19122 at <11360.8, 241.77, 3867.21> EXPLOSION range 4 dropoff 1
+03:45:37.728 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46812940> ExplosionTest:19121 at <6035.27, 228.71, 1773.18> EXPLOSION range 4 dropoff 1
+03:45:37.735 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46814F80> ExplosionTest:19120 at <6388.33, 210.24, 1528.18> EXPLOSION range 4 dropoff 1
+03:45:37.743 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46810C90> ExplosionTest:19119 at <6073.72, 218.78, 1366.66> EXPLOSION range 4 dropoff 1
+03:45:37.743 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46810300> ExplosionTest:19118 at <6163.15, 217.81, 1610.31> EXPLOSION range 4 dropoff 1
+03:45:37.747 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4680F970> ExplosionTest:19117 at <5473.51, 199.13, 2879.74> EXPLOSION range 4 dropoff 1
+03:45:37.754 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46811620> ExplosionTest:19116 at <5626.25, 205.64, 1810.42> EXPLOSION range 4 dropoff 1
+03:45:37.765 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4680EFE0> ExplosionTest:19115 at <5700.78, 196.83, 2354.59> EXPLOSION range 4 dropoff 1
+03:45:37.767 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46813C60> ExplosionTest:19114 at <6113.95, 224.2, 2384.23> EXPLOSION range 4 dropoff 1
+03:45:37.780 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE468145F0> ExplosionTest:19113 at <5397.39, 202.91, 1684> EXPLOSION range 4 dropoff 1
+03:45:37.792 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46807390> ExplosionTest:19112 at <6134.55, 226.23, 1809.17> EXPLOSION range 4 dropoff 1
+03:45:37.839 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4680DCC0> ExplosionTest:19111 at <1798.33, 219.8, 2404.84> EXPLOSION range 4 dropoff 1
+03:45:37.846 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46806A00> ExplosionTest:19110 at <5809.26, 215.91, 1415.51> EXPLOSION range 4 dropoff 1
+03:45:37.851 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4680D330> ExplosionTest:19109 at <6329.47, 219.33, 1859.29> EXPLOSION range 4 dropoff 1
+03:45:37.856 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE468086B0> ExplosionTest:19108 at <5800.34, 201.24, 2485.83> EXPLOSION range 4 dropoff 1
+03:45:37.871 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46807D20> ExplosionTest:19107 at <5639.17, 209.08, 1804.47> EXPLOSION range 4 dropoff 1
+03:45:37.872 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4680C010> ExplosionTest:19106 at <5760.42, 214.68, 1447.09> EXPLOSION range 4 dropoff 1
+03:45:37.872 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4680ACF0> ExplosionTest:19105 at <5745.36, 208.22, 2820.63> EXPLOSION range 4 dropoff 1
+03:45:37.875 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE468099D0> ExplosionTest:19104 at <5758.77, 202.74, 1611.29> EXPLOSION range 4 dropoff 1
+03:45:37.885 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4680A360> ExplosionTest:19103 at <6068.75, 219.26, 1736.98> EXPLOSION range 4 dropoff 1
+03:45:37.890 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4680C9A0> ExplosionTest:19102 at <6148.31, 212.64, 2383.26> EXPLOSION range 4 dropoff 1
+03:45:37.890 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46809040> ExplosionTest:19101 at <5557.05, 211.94, 2745> EXPLOSION range 4 dropoff 1
+03:45:37.902 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE46806070> ExplosionTest:19100 at <6441.88, 217.62, 1211.23> EXPLOSION range 4 dropoff 1
+03:45:37.908 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE4680B680> ExplosionTest:19099 at <5750.25, 216.57, 1598.63> EXPLOSION range 4 dropoff 1
+03:45:37.908 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE3A0CA810> ExplosionTest:19098 at <6199.16, 216.95, 2208.28> EXPLOSION range 4 dropoff 1
+03:45:37.911 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001CE3A0CEB00> ExplosionTest:19097 at <5601.17, 197.29, 2328.86> EXPLOSION range 4 dropoff 1
+03:55:29.619 [Expansion Quests] Initialize quest system on the connected client with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+03:55:29.623 [Expansion Quests] Created new persistent player quest data for player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+03:55:29.623 [Expansion Quests] Create new achievement/auto-start quest for quest ID=8 for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+03:55:29.624 [Expansion Quests] Added new objective data for type=TARGET | Key= | ID=3
+03:55:29.624 [Expansion Quests] Updated and saved persistent player quest data for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= | Quest ID=8
+03:55:29.624 [Expansion Quests] Create new achievement/auto-start quest for quest ID=9 for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+03:55:29.624 [Expansion Quests] Added new objective data for type=TARGET | Key= | ID=2
+03:55:29.624 [Expansion Quests] Updated and saved persistent player quest data for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= | Quest ID=9
+03:55:29.624 [Expansion Quests] Create new achievement/auto-start quest for quest ID=11 for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+03:55:29.625 [Expansion Quests] Added new objective data for type=ACTION | Key= | ID=1
+03:55:29.625 [Expansion Quests] Updated and saved persistent player quest data for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= | Quest ID=11
+03:55:29.625 [Expansion Quests] Create new achievement/auto-start quest for quest ID=14 for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+03:55:29.625 [Expansion Quests] Added new objective data for type=TRAVEL | Key= | ID=3
+03:55:29.625 [Expansion Quests] Updated and saved persistent player quest data for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= | Quest ID=14
+03:55:29.626 [Expansion Quests] Sending MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= quest configs to client for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+03:55:29.626 [Expansion Quests] Sending player quest data for 4 quests to player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+03:55:29.628 [Expansion Quests] Added new objective data for type=TRAVEL | Key= | ID=3
+03:55:29.629 [Expansion Quests] Updated and saved persistent player quest data for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= | Quest ID=14
+03:55:29.629 [Expansion Quests] Player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= has completed quest with ID=14
+03:55:29.630 [Expansion Quests] Updated and saved persistent player quest data for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= | Quest ID=14
+03:55:47.826 [Chat - Global]("Hessher"(id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=)): dgdg
+04:00:01.509 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Ford_Mustang_Shelby_GT500_Blue (id=F5197CF975488578DC94C49A941EA0FD pos=<7490.85, 227.3, 1336.2>) as driver
+04:00:04.154 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) started vehicle Ford_Mustang_Shelby_GT500_Blue (id=F5197CF975488578DC94C49A941EA0FD pos=<7490.85, 227.3, 1336.19>)
+04:00:06.800 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Ford_Mustang_Shelby_GT500_Blue (id=F5197CF975488578DC94C49A941EA0FD pos=<7490.85, 227.3, 1336.19>) as driver
+04:01:53.105 [Expansion Quests] Initialize quest system on the connected client with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=
+04:01:53.110 [Expansion Quests] Created new persistent player quest data for player UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=
+04:01:53.110 [Expansion Quests] Create new achievement/auto-start quest for quest ID=8 for player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=
+04:01:53.111 [Expansion Quests] Added new objective data for type=TARGET | Key= | ID=3
+04:01:53.111 [Expansion Quests] Updated and saved persistent player quest data for player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= | Quest ID=8
+04:01:53.111 [Expansion Quests] Create new achievement/auto-start quest for quest ID=9 for player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=
+04:01:53.111 [Expansion Quests] Added new objective data for type=TARGET | Key= | ID=2
+04:01:53.111 [Expansion Quests] Updated and saved persistent player quest data for player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= | Quest ID=9
+04:01:53.111 [Expansion Quests] Create new achievement/auto-start quest for quest ID=11 for player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=
+04:01:53.112 [Expansion Quests] Added new objective data for type=ACTION | Key= | ID=1
+04:01:53.112 [Expansion Quests] Updated and saved persistent player quest data for player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= | Quest ID=11
+04:01:53.112 [Expansion Quests] Create new achievement/auto-start quest for quest ID=14 for player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=
+04:01:53.113 [Expansion Quests] Added new objective data for type=TRAVEL | Key= | ID=3
+04:01:53.113 [Expansion Quests] Updated and saved persistent player quest data for player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= | Quest ID=14
+04:01:53.115 [Expansion Quests] Sending E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= quest configs to client for player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=
+04:01:53.115 [Expansion Quests] Sending player quest data for 4 quests to player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=
+04:01:53.118 [Expansion Quests] Added new objective data for type=TRAVEL | Key= | ID=3
+04:01:53.120 [Expansion Quests] Updated and saved persistent player quest data for player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= | Quest ID=14
+04:01:53.121 [Expansion Quests] Player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= has completed quest with ID=14
+04:01:53.122 [Expansion Quests] Updated and saved persistent player quest data for player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= | Quest ID=14
+04:03:23.820 [Expansion Quests] Deleted quest with ID=8 is a of player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=.
+04:03:23.821 [Expansion Quests] Deleted quest with ID=9 is a of player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=.
+04:03:23.821 [Expansion Quests] Deleted quest with ID=11 is a of player with UID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=.
+04:03:27.439 [Expansion Quests] Added new objective data for type=TARGET | Key= | ID=3
+04:03:27.444 [Expansion Quests] Updated and saved persistent player quest data for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= | Quest ID=8
+04:03:27.444 [Expansion Quests] Added new objective data for type=TARGET | Key= | ID=2
+04:03:27.445 [Expansion Quests] Updated and saved persistent player quest data for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= | Quest ID=9
+04:03:27.446 [Expansion Quests] Added new objective data for type=ACTION | Key= | ID=1
+04:03:27.447 [Expansion Quests] Updated and saved persistent player quest data for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= | Quest ID=11

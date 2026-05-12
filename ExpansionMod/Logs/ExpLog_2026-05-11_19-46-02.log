@@ -1,0 +1,77 @@
+19:49:02.925 [AI Object Patrol 00000] Spawning 2 East bots at <6420.349609, 185.525253, 11069.552734>
+19:49:02.958 [AI Object Patrol 00000] Global patrol count: 1
+19:49:02.958 [AI Object Patrol 00000] Global Expansion AI count: 2 alive, 0 deceased
+19:49:02.958 [AI Object Patrol 00000] HelicopterWreck category patrol count: 1
+19:50:57.342 [AI Object Patrol 00000] Despawning 2 East bots (spawn position <6420.349609, 185.525253, 11069.552734>, 0/2 deceased)
+19:50:57.342 [AI Object Patrol 00000] Global patrol count: 0
+19:50:57.342 [AI Object Patrol 00000] Global Expansion AI count: 1 alive, 0 deceased
+19:50:57.342 [AI Object Patrol 00000] HelicopterWreck category patrol count: 0
+19:53:33.430 [MissionAirdrop] An airdrop is heading towards "Alica" (pos=<4882.939941, 0.000000, 4713.546875> type=Random_Alicia) with a ExpansionAirdropContainer_Military
+19:54:59.264 [AI Object Patrol 00005] Spawning 1 Guards bots at <7132.696777, 8.319283, 5455.793457>
+19:54:59.349 [AI Object Patrol 00005] Global patrol count: 1
+19:54:59.349 [AI Object Patrol 00005] Global Expansion AI count: 2 alive, 0 deceased
+19:54:59.349 [AI Object Patrol 00005] ObjectPatrol category patrol count: 1
+19:59:03.625 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Mercedes-AMG G 63 '19 50x50 (id=F0885AB1D347A9565B3FEC8878E15114 pos=<6239.73, 5.05, 9594.28>) as driver
+19:59:07.292 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Mercedes-AMG G 63 '19 50x50 (id=F0885AB1D347A9565B3FEC8878E15114 pos=<6239.73, 5.05, 9594.28>)
+20:00:41.051 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Mercedes-AMG G 63 '19 50x50 (id=F0885AB1D347A9565B3FEC8878E15114 pos=<5623.22, 5.02, 9265.04>)
+20:00:41.099 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Mercedes-AMG G 63 '19 50x50 (id=F0885AB1D347A9565B3FEC8878E15114 pos=<5623.22, 5.02, 9265.04>) as driver
+20:00:43.993 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000001BC5293C720> ExplosionTest:44772 at <6818.64, 4.45, 1493.83> EXPLOSION range 4 dropoff 1
+20:00:49.151 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle ATV (id=AED08ED1CB41CA26AD2CC796DC313A7B pos=<5633.11, 4.97, 9275.43>) as driver
+20:00:59.435 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle ATV (id=AED08ED1CB41CA26AD2CC796DC313A7B pos=<5633.11, 4.97, 9275.43>) as driver
+20:01:21.292 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Mercedes-AMG G 63 '19 50x50 (id=F0885AB1D347A9565B3FEC8878E15114 pos=<5623.22, 5.02, 9265.04>) as driver
+20:01:24.162 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Mercedes-AMG G 63 '19 50x50 (id=F0885AB1D347A9565B3FEC8878E15114 pos=<5623.22, 5.02, 9265.04>)
+20:02:48.442 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Mercedes-AMG G 63 '19 50x50 (id=F0885AB1D347A9565B3FEC8878E15114 pos=<4775.23, 22.01, 8379.22>)
+20:02:48.493 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Mercedes-AMG G 63 '19 50x50 (id=F0885AB1D347A9565B3FEC8878E15114 pos=<4775.23, 22.01, 8379.22>) as driver
+20:03:07.435 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<4773.19, 21.98, 8370.97>) as pilot
+20:03:10.790 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<4773.19, 21.98, 8370.97>)
+20:05:17.733 [AI Object Patrol 00013] Spawning 1 West bots at <4661.898438, 20.505754, 7158.722656>
+20:05:17.913 [AI Object Patrol 00013] Global patrol count: 2
+20:05:17.913 [AI Object Patrol 00013] Global Expansion AI count: 3 alive, 0 deceased
+20:05:17.913 [AI Object Patrol 00013] MilitaryStatic category patrol count: 1
+20:05:57.570 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<4267.27, 20.52, 7306.56>)
+20:05:57.570 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<4267.27, 20.52, 7306.56>) as pilot
+20:07:00.802 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<4268.12, 20.52, 7306.51>) as pilot
+20:07:03.342 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<4268.17, 20.52, 7306.51>)
+20:07:15.401 [VehicleDeleted] ExpansionUh1h_Uber (id=E642B304E143C9FAA0347A83F1C98227 pos=<2520.33, 21.65, 3722.91> lifetime=-1)
+20:07:29.907 [AI Object Patrol 00005] Despawning 1 Guards bots (spawn position <7132.696777, 8.319283, 5455.793457>, 0/1 deceased)
+20:07:29.908 [AI Object Patrol 00005] Global patrol count: 1
+20:07:29.908 [AI Object Patrol 00005] Global Expansion AI count: 2 alive, 0 deceased
+20:07:29.908 [AI Object Patrol 00005] ObjectPatrol category patrol count: 0
+20:07:53.672 [AI Object Patrol 00012] Spawning 1 West bots at <4459.170410, 20.505754, 7237.672363>
+20:07:53.752 [AI Object Patrol 00012] Global patrol count: 2
+20:07:53.752 [AI Object Patrol 00012] Global Expansion AI count: 3 alive, 0 deceased
+20:07:53.753 [AI Object Patrol 00012] MilitaryStatic category patrol count: 2
+20:09:47.997 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) stopped vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<3005.42, 9.38, 7874.1>)
+20:09:54.953 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<3005.42, 9.4, 7874.24>) as pilot
+20:11:02.308 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<3004.72, 9.41, 7874.59>) as pilot
+20:11:06.484 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<3004.67, 9.41, 7874.57>)
+20:13:48.342 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<4695.95, 11.4, 4666.98>)
+20:13:48.342 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<4695.95, 11.4, 4666.98>) as pilot
+20:14:18.846 [ExplosionDamageSystem] About to explode M67Grenade_Ammo from M67Grenade<0x000001BC7FA86810> M67Grenade:45063 at <4776.66, 14.58, 4722.12> EXPLOSION range 20 dropoff 5
+20:14:28.593 [ExplosionDamageSystem] About to explode RGD5Grenade_Ammo from RGD5Grenade<0x000001BC7FA813A0> RGD5Grenade:45043 at <4778.9, 14.9, 4720.84> EXPLOSION range 12 dropoff 3
+20:17:53.694 [AI Object Patrol 00012] Despawning 1 West bots (spawn position <4459.170410, 20.505754, 7237.672363>, 0/1 deceased)
+20:17:53.695 [AI Object Patrol 00012] Global patrol count: 1
+20:17:53.696 [AI Object Patrol 00012] Global Expansion AI count: 2 alive, 0 deceased
+20:17:53.696 [AI Object Patrol 00012] MilitaryStatic category patrol count: 1
+20:17:53.783 [AI Object Patrol 00013] Despawning 1 West bots (spawn position <4661.898438, 20.505754, 7158.722656>, 0/1 deceased)
+20:17:53.783 [AI Object Patrol 00013] Global patrol count: 0
+20:17:53.784 [AI Object Patrol 00013] Global Expansion AI count: 1 alive, 0 deceased
+20:17:53.784 [AI Object Patrol 00013] MilitaryStatic category patrol count: 0
+20:18:38.281 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<4695.91, 11.4, 4666.71>) as pilot
+20:18:41.013 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<4695.91, 11.4, 4666.71>)
+20:20:26.059 [AI Object Patrol 00016] Spawning 1 West bots at <5308.035645, 74.384369, 3232.503662>
+20:20:26.300 [AI Object Patrol 00016] Global patrol count: 1
+20:20:26.300 [AI Object Patrol 00016] Global Expansion AI count: 2 alive, 0 deceased
+20:20:26.301 [AI Object Patrol 00016] MilitaryRoaming category patrol count: 1
+20:20:27.018 [AI Object Patrol 00020] Spawning 1 West bots at <5523.208984, 74.536377, 3584.895264>
+20:20:27.094 [AI Object Patrol 00020] Global patrol count: 2
+20:20:27.095 [AI Object Patrol 00020] Global Expansion AI count: 3 alive, 0 deceased
+20:20:27.095 [AI Object Patrol 00020] MilitaryRoaming category patrol count: 2
+20:20:40.987 [AI Object Patrol 00022] Spawning 1 West bots at <6008.852539, 78.736465, 3844.034668>
+20:20:41.057 [AI Object Patrol 00022] Global patrol count: 3
+20:20:41.058 [AI Object Patrol 00022] Global Expansion AI count: 4 alive, 0 deceased
+20:20:41.058 [AI Object Patrol 00022] MilitaryStatic category patrol count: 1
+20:22:07.182 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<4351.38, 18.43, 3888.12>)
+20:22:07.183 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Mh-6 Little Bird (id=780B764FB048187F6CDE63AA058C3F25 pos=<4351.38, 18.43, 3888.12>) as pilot
+20:22:14.317 [VehicleDestroyed] ExpansionMh6_Elliptical (id=780B764FB048187F6CDE63AA058C3F25 pos=<4351.37, 18.43, 3888.13>)
+20:22:26.891 [VehicleDeleted] ExpansionMh6_Elliptical (id=780B764FB048187F6CDE63AA058C3F25 pos=<0, 0, 0> lifetime=330)

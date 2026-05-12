@@ -1,0 +1,616 @@
+00:17:04.470 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45D3EF0> ExplosionTest:18953 at <9799.85, 262.56, 1536.73> EXPLOSION range 4 dropoff 1
+00:17:04.476 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45D0F20> ExplosionTest:18952 at <5694.2, 215.95, 1678.94> EXPLOSION range 4 dropoff 1
+00:17:04.492 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C6C90> ExplosionTest:18951 at <6261.6, 231.56, 2140.96> EXPLOSION range 4 dropoff 1
+00:17:04.502 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45CD5C0> ExplosionTest:18950 at <5928.26, 205.03, 1730.57> EXPLOSION range 4 dropoff 1
+00:17:04.518 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C6300> ExplosionTest:18949 at <6427.75, 237.38, 1671.45> EXPLOSION range 4 dropoff 1
+00:17:04.529 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45CCC30> ExplosionTest:18948 at <6391.46, 222.53, 1843.45> EXPLOSION range 4 dropoff 1
+00:17:04.537 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C7FB0> ExplosionTest:18947 at <6196.98, 217.85, 2200.88> EXPLOSION range 4 dropoff 1
+00:17:04.546 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C8940> ExplosionTest:18946 at <5746.24, 198.99, 2515.9> EXPLOSION range 4 dropoff 1
+00:17:04.556 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C5970> ExplosionTest:18945 at <5911.36, 207.85, 1101.2> EXPLOSION range 4 dropoff 1
+00:17:04.558 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C9C60> ExplosionTest:18944 at <6290.82, 207.82, 1413.99> EXPLOSION range 4 dropoff 1
+00:17:04.561 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45CC2A0> ExplosionTest:18943 at <5670.48, 212.99, 2753.72> EXPLOSION range 4 dropoff 1
+00:17:04.563 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C92D0> ExplosionTest:18942 at <5509.43, 212.2, 2703.68> EXPLOSION range 4 dropoff 1
+00:17:04.575 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45CB910> ExplosionTest:18941 at <5975.4, 212.12, 2314> EXPLOSION range 4 dropoff 1
+00:17:04.583 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C4FE0> ExplosionTest:18940 at <13037.8, 322.27, 450.08> EXPLOSION range 4 dropoff 1
+00:17:04.583 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45CA5F0> ExplosionTest:18939 at <5830.21, 215.23, 2567.73> EXPLOSION range 4 dropoff 1
+00:17:04.590 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C7620> ExplosionTest:18938 at <6241, 220.78, 2271.38> EXPLOSION range 4 dropoff 1
+00:17:04.599 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45CAF80> ExplosionTest:18937 at <9977.82, 252.51, 1612.42> EXPLOSION range 4 dropoff 1
+00:17:04.604 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45BDD20> ExplosionTest:18936 at <5617.84, 199.78, 1866.7> EXPLOSION range 4 dropoff 1
+00:17:04.610 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C3330> ExplosionTest:18935 at <6387.66, 217.9, 1583.78> EXPLOSION range 4 dropoff 1
+00:17:04.671 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C1680> ExplosionTest:18934 at <5411.68, 197.1, 1641.22> EXPLOSION range 4 dropoff 1
+00:17:04.671 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C0CF0> ExplosionTest:18933 at <5718.9, 200.03, 1614.72> EXPLOSION range 4 dropoff 1
+00:17:04.679 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C29A0> ExplosionTest:18932 at <5703.98, 206.48, 2586.5> EXPLOSION range 4 dropoff 1
+00:17:04.683 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C3CC0> ExplosionTest:18931 at <5587.27, 215.18, 2610.32> EXPLOSION range 4 dropoff 1
+00:17:04.685 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C0360> ExplosionTest:18930 at <5570.18, 205.97, 2741.36> EXPLOSION range 4 dropoff 1
+00:17:04.694 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45BE6B0> ExplosionTest:18929 at <5617.55, 206.11, 1854.02> EXPLOSION range 4 dropoff 1
+00:17:04.694 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45BF040> ExplosionTest:18928 at <6081.74, 219.3, 1711.38> EXPLOSION range 4 dropoff 1
+00:17:04.711 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C2010> ExplosionTest:18927 at <6026.65, 226, 1776.17> EXPLOSION range 4 dropoff 1
+00:17:04.714 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45BF9D0> ExplosionTest:18926 at <8620.23, 210.45, 2813.58> EXPLOSION range 4 dropoff 1
+00:17:04.717 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45C4650> ExplosionTest:18925 at <6223.35, 216.09, 1828.06> EXPLOSION range 4 dropoff 1
+00:17:04.722 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F8640> ExplosionTest:18924 at <6275.56, 229.39, 1803.18> EXPLOSION range 4 dropoff 1
+00:17:04.725 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F7320> ExplosionTest:18923 at <5668.03, 196.98, 1932.37> EXPLOSION range 4 dropoff 1
+00:17:04.728 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F6990> ExplosionTest:18922 at <5688.13, 206.45, 1449.81> EXPLOSION range 4 dropoff 1
+00:17:04.739 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45FB610> ExplosionTest:18921 at <6614.93, 215.29, 1310.9> EXPLOSION range 4 dropoff 1
+00:17:04.741 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45FAC80> ExplosionTest:18920 at <8639.12, 224.54, 2782.55> EXPLOSION range 4 dropoff 1
+00:17:04.743 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45FC930> ExplosionTest:18919 at <9311.25, 252.95, 1675.56> EXPLOSION range 4 dropoff 1
+00:17:04.746 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45FD2C0> ExplosionTest:18918 at <6115.24, 213.86, 2302.41> EXPLOSION range 4 dropoff 1
+00:17:04.753 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45FA2F0> ExplosionTest:18917 at <6058.96, 221.67, 1738.46> EXPLOSION range 4 dropoff 1
+00:17:04.753 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F9960> ExplosionTest:18916 at <6250.24, 226.98, 2076.64> EXPLOSION range 4 dropoff 1
+00:17:04.755 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F8FD0> ExplosionTest:18915 at <5720.23, 210.38, 1698.37> EXPLOSION range 4 dropoff 1
+00:17:04.755 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F7CB0> ExplosionTest:18914 at <5716.84, 212.23, 2889.17> EXPLOSION range 4 dropoff 1
+00:17:04.764 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F6000> ExplosionTest:18913 at <5720.4, 214.64, 2794.54> EXPLOSION range 4 dropoff 1
+00:17:04.766 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45FBFA0> ExplosionTest:18912 at <5922.39, 218.8, 1630.76> EXPLOSION range 4 dropoff 1
+00:17:04.776 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45EED40> ExplosionTest:18911 at <6076.58, 235.57, 1719.26> EXPLOSION range 4 dropoff 1
+00:17:04.777 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F5670> ExplosionTest:18910 at <6195.31, 219.92, 1710.2> EXPLOSION range 4 dropoff 1
+00:17:04.778 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45EE3B0> ExplosionTest:18909 at <6400.44, 220.52, 1635.58> EXPLOSION range 4 dropoff 1
+00:17:04.782 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F26A0> ExplosionTest:18908 at <6014.24, 229.25, 2391.64> EXPLOSION range 4 dropoff 1
+00:17:04.784 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F1D10> ExplosionTest:18907 at <6234.05, 232.6, 2318.33> EXPLOSION range 4 dropoff 1
+00:17:04.789 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F09F0> ExplosionTest:18906 at <6239.05, 218.26, 1744.19> EXPLOSION range 4 dropoff 1
+00:17:04.789 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45EF6D0> ExplosionTest:18905 at <5399.59, 208.69, 2552.08> EXPLOSION range 4 dropoff 1
+00:17:04.791 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F1380> ExplosionTest:18904 at <6608.03, 216.98, 1330.73> EXPLOSION range 4 dropoff 1
+00:17:04.791 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F4CE0> ExplosionTest:18903 at <5541.87, 197, 2552.52> EXPLOSION range 4 dropoff 1
+00:17:04.794 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F4350> ExplosionTest:18902 at <6136.03, 215.02, 1921.49> EXPLOSION range 4 dropoff 1
+00:17:04.825 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F3030> ExplosionTest:18901 at <6416.28, 215.59, 1245.45> EXPLOSION range 4 dropoff 1
+00:17:04.826 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F39C0> ExplosionTest:18900 at <5721.97, 200.12, 1632.02> EXPLOSION range 4 dropoff 1
+00:17:04.827 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B0E45F0060> ExplosionTest:18899 at <6208.52, 215.24, 1846.36> EXPLOSION range 4 dropoff 1
+00:22:03.572 [MissionAirdrop] An airdrop is heading towards "Omastina" (pos=<14202.318359, 0.000000, 6578.103516> type=Random_Omastina) with a ExpansionAirdropContainer_Military
+00:25:38.557 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Ford_Mustang_Shelby_GT500_Orange (id=D9BB6074CE4E8EBC7D3A43BA27323379 pos=<7424.16, 234.94, 5021.53>) as driver
+00:25:39.844 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) started vehicle Ford_Mustang_Shelby_GT500_Orange (id=D9BB6074CE4E8EBC7D3A43BA27323379 pos=<7424.16, 234.94, 5021.53>)
+00:27:23.964 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Ford_Mustang_Shelby_GT500_Orange (id=D9BB6074CE4E8EBC7D3A43BA27323379 pos=<7619.15, 237.2, 5234.41>)
+00:27:24.267 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Ford_Mustang_Shelby_GT500_Orange (id=D9BB6074CE4E8EBC7D3A43BA27323379 pos=<7619.15, 237.2, 5234.41>) as driver
+00:27:34.731 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Jeep_GladiatorF9_Orange (id=46E503564B4CDB019012D8A2A276BAA9 pos=<7607.56, 237.22, 5228.2>) as driver
+00:27:36.068 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) started vehicle Jeep_GladiatorF9_Orange (id=46E503564B4CDB019012D8A2A276BAA9 pos=<7607.56, 237.22, 5228.2>)
+00:27:53.131 [Killfeed] Hessher умер от Kl9Usa из КСВК.  с расстояния 20 м.
+00:27:53.137 [VehicleDestroyed] Jeep_GladiatorF9_BOSS_Orange (id=46E503564B4CDB019012D8A2A276BAA9 pos=<7608.4, 237.66, 5234.97>)
+00:27:53.137 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) stopped vehicle Jeep_GladiatorF9_Orange (id=46E503564B4CDB019012D8A2A276BAA9 pos=<7608.4, 237.66, 5234.97>)
+00:29:06.155 [VehicleDestroyed] Ford_Mustang_Shelby_GT500_Orange (id=D9BB6074CE4E8EBC7D3A43BA27323379 pos=<7619.15, 237.2, 5234.41>)
+00:29:50.414 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Mh-6 Little Bird (id=14C88857AE422689D5B637BCAF006346 pos=<7621.95, 238.7, 5255.66>) as pilot
+00:29:53.309 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Mh-6 Little Bird (id=14C88857AE422689D5B637BCAF006346 pos=<7621.95, 238.7, 5255.61>)
+00:29:53.408 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Mh-6 Little Bird (id=14C88857AE422689D5B637BCAF006346 pos=<7621.95, 238.7, 5255.6>) as passenger
+00:29:56.657 [VehicleEnter] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) entered vehicle Mh-6 Little Bird (id=14C88857AE422689D5B637BCAF006346 pos=<7621.95, 238.7, 5255.54>) as passenger
+00:31:27.044 [AI Object Patrol 00009] Spawning 1 West bots at <10012.945313, 394.477295, 8752.583008>
+00:31:27.132 [AI Object Patrol 00009] Global patrol count: 1
+00:31:27.132 [AI Object Patrol 00009] Global Expansion AI count: 2 alive, 0 deceased
+00:31:27.132 [AI Object Patrol 00009] MilitaryStatic category patrol count: 1
+00:34:35.198 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Mh-6 Little Bird (id=14C88857AE422689D5B637BCAF006346 pos=<14203.5, 525.59, 6748.14>) as passenger
+00:35:04.019 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) stopped vehicle Mh-6 Little Bird (id=14C88857AE422689D5B637BCAF006346 pos=<14252, 328.25, 6635.71>)
+00:35:08.989 [VehicleDeleted] Ford_Mustang_Shelby_GT500_Orange (id=D9BB6074CE4E8EBC7D3A43BA27323379 pos=<7619.15, 237.2, 5234.4> lifetime=-1)
+00:35:10.816 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Mh-6 Little Bird (id=14C88857AE422689D5B637BCAF006346 pos=<14260.2, 311.76, 6632.77>) as pilot
+00:35:15.812 [VehicleLeave] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) left vehicle Mh-6 Little Bird (id=14C88857AE422689D5B637BCAF006346 pos=<14256.7, 310.94, 6640.25>) as passenger
+00:39:34.363 [VehicleAttachments] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) detached Land Cruiser 200'16 Hood White (type=TLC20016_kapot_White) from vehicle Toyota Land Cruiser 200'16 White (id=CF085DB35044CCDB61571D88DA250A8E pos=<14353.4, 323.52, 6580.61>)
+00:39:54.763 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Toyota Land Cruiser 200'16 White (id=E0A33A5DAF46C8D3AC27C3A949F90C0C pos=<14341.8, 321.9, 6586.36>) as driver
+00:40:15.231 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Toyota Land Cruiser 200'16 White (id=E0A33A5DAF46C8D3AC27C3A949F90C0C pos=<14341.8, 321.9, 6586.36>) as driver
+00:40:27.765 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Toyota Land Cruiser 200'16 White (id=E0A33A5DAF46C8D3AC27C3A949F90C0C pos=<14341.8, 321.9, 6586.36>) as driver
+00:40:46.814 [ExplosionDamageSystem] About to explode ExpansionRocket_Ammo from Expansion_RPG_Explosion<0x000002B149E9A5C0> Expansion_RPG_Expl at <14341.3, 323.22, 6587.36> EXPLOSION range 12 dropoff 3
+00:40:58.677 [Killfeed] Kl9Usa умер от BugiMen из CheyTac M200.  с расстояния 5 м.
+00:41:29.307 [ExplosionDamageSystem] About to explode ExpansionRocket_Ammo from Expansion_RPG_Explosion<0x000002B149E94FB0> Expansion_RPG_Expl at <14348.6, 323.09, 6584.68> EXPLOSION range 12 dropoff 3
+00:41:29.312 [VehicleDestroyed] ToyotaRunner_camowhite (id=C4E53D7D7A40286B542FAC9608EDDBB0 pos=<14348.4, 322.36, 6585.59>)
+00:41:49.996 [ExplosionDamageSystem] About to explode ExpansionRocket_Ammo from Expansion_RPG_Explosion<0x000002B149E9CC00> Expansion_RPG_Expl at <14340.7, 322.79, 6587.19> EXPLOSION range 12 dropoff 3
+00:41:49.998 [Killfeed] Kl9Usa умер от взрыва РПГ-7.
+00:42:01.560 [ExplosionDamageSystem] About to explode ExpansionRocket_Ammo from Expansion_RPG_Explosion<0x000002B149E9FBD0> Expansion_RPG_Expl at <14334.9, 321.77, 6592.42> EXPLOSION range 12 dropoff 3
+00:42:08.669 [AI Object Patrol 00009] Despawning 1 West bots (spawn position <10012.945313, 394.477295, 8752.583008>, 0/1 deceased)
+00:42:08.669 [AI Object Patrol 00009] Global patrol count: 0
+00:42:08.669 [AI Object Patrol 00009] Global Expansion AI count: 1 alive, 0 deceased
+00:42:08.669 [AI Object Patrol 00009] MilitaryStatic category patrol count: 0
+00:42:43.698 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Insurgent SUV (id=8422E5670243F4BDE84673AB7E293555 pos=<14332.1, 320.05, 6594.41>) as driver
+00:43:01.395 [Killfeed] Kl9Usa умер от BugiMen из CheyTac M200.  с расстояния 8 м.
+00:43:36.486 [VehicleCarKey] PPlayer "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= pos=<14320.8, 318.49, 6599.66>) paired ExpansionCarKey to Jeep_GladiatorF9_BOSS_Red (id=DAF869C7DD4DC866DF457B9627AD7874 pos=<14322.5, 318.67, 6599.11>)
+00:43:45.938 [VehicleCarKey] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= pos=<14320.8, 318.53, 6599.43>) used ExpansionCarKey to lock Jeep_GladiatorF9_BOSS_Red (id=DAF869C7DD4DC866DF457B9627AD7874 pos=<14322.5, 318.67, 6599.11>)
+00:45:01.805 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Insurgent SUV (id=A2F8798FBB4EB7D2D9C0A8A58E6A7F41 pos=<14336.5, 318.42, 6608.2>) as driver
+00:45:06.068 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Insurgent SUV (id=A2F8798FBB4EB7D2D9C0A8A58E6A7F41 pos=<14336.5, 318.42, 6608.2>)
+00:45:19.844 [Killfeed] Kl9Usa умер от Hessher из КСВК.  с расстояния 10 м.
+00:45:19.978 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) stopped vehicle Insurgent SUV (id=A2F8798FBB4EB7D2D9C0A8A58E6A7F41 pos=<14337, 319.19, 6602.77>)
+00:46:25.301 [VehicleLockPick] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14320, 318.3, 6600.7>) is attempting to pick lock on Jeep_GladiatorF9_BOSS_Red (id=DAF869C7DD4DC866DF457B9627AD7874 pos=<14322.5, 318.67, 6599.11>) with Lockpick
+00:46:45.064 [VehicleDestroyed] CrSk_Insurgent_SUV (id=A2F8798FBB4EB7D2D9C0A8A58E6A7F41 pos=<14337, 319.19, 6602.77>)
+00:47:31.911 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Insurgent SUV (id=3CCE7326524189D36A016696C92515A0 pos=<14309.9, 316.76, 6607.97>) as driver
+00:47:57.006 [Killfeed] Kl9Usa умер от Hessher из Снайпекс Аллигатор.  с расстояния 9 м.
+00:49:01.051 [VehicleLockPick] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14320.2, 318.42, 6599.93>) is attempting to pick lock on Jeep_GladiatorF9_BOSS_Red (id=DAF869C7DD4DC866DF457B9627AD7874 pos=<14322.5, 318.67, 6599.11>) with Lockpick
+00:50:42.675 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14313.1, 320.36, 6582.9> EXPLOSION range 20 dropoff 5
+00:50:42.837 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14327.3, 322.79, 6572.36> EXPLOSION range 20 dropoff 5
+00:50:43.292 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14316.1, 317.67, 6603.34> EXPLOSION range 20 dropoff 5
+00:50:43.714 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14321.2, 318.8, 6597.5> EXPLOSION range 20 dropoff 5
+00:50:44.093 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14322.6, 320.04, 6600.43> EXPLOSION range 20 dropoff 5
+00:50:44.568 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14323.5, 320.72, 6585.31> EXPLOSION range 20 dropoff 5
+00:50:51.815 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14314.4, 321.71, 6573.64> EXPLOSION range 20 dropoff 5
+00:50:51.887 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14318.6, 322.43, 6570.4> EXPLOSION range 20 dropoff 5
+00:50:52.352 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14322.1, 320.64, 6585.19> EXPLOSION range 20 dropoff 5
+00:50:53.237 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14307.6, 320.73, 6577.37> EXPLOSION range 20 dropoff 5
+00:50:53.388 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14311.8, 318.94, 6592.28> EXPLOSION range 20 dropoff 5
+00:50:53.696 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14318.5, 321.48, 6577.58> EXPLOSION range 20 dropoff 5
+00:51:01.288 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14322.1, 320.67, 6585.02> EXPLOSION range 20 dropoff 5
+00:51:01.589 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14319.5, 332.84, 6563.32> EXPLOSION range 20 dropoff 5
+00:51:01.854 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14313.1, 318.25, 6597.75> EXPLOSION range 20 dropoff 5
+00:51:02.409 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14311.3, 320.3, 6582.43> EXPLOSION range 20 dropoff 5
+00:51:02.648 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14311.6, 321.12, 6576.55> EXPLOSION range 20 dropoff 5
+00:51:02.967 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14326.5, 322.15, 6576.74> EXPLOSION range 20 dropoff 5
+00:51:10.338 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14303.7, 319.24, 6586.35> EXPLOSION range 20 dropoff 5
+00:51:10.378 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14303.4, 319.89, 6581.42> EXPLOSION range 20 dropoff 5
+00:51:10.569 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14309.1, 318.81, 6591.93> EXPLOSION range 20 dropoff 5
+00:51:10.910 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14319.6, 319.49, 6591.95> EXPLOSION range 20 dropoff 5
+00:51:11.305 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14308.9, 320.51, 6597.65> EXPLOSION range 20 dropoff 5
+00:51:11.812 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14307.7, 319.49, 6586.52> EXPLOSION range 20 dropoff 5
+00:51:12.212 [VehicleLockPick] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14320.7, 318.46, 6599.82>) is attempting to pick lock on Jeep_GladiatorF9_BOSS_Red (id=DAF869C7DD4DC866DF457B9627AD7874 pos=<14322.5, 318.67, 6599.11>) with Lockpick
+00:51:18.624 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14321.3, 319.79, 6590.65> EXPLOSION range 20 dropoff 5
+00:51:18.999 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14333.8, 322.41, 6578.51> EXPLOSION range 20 dropoff 5
+00:51:19.429 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14323.6, 319.28, 6595.24> EXPLOSION range 20 dropoff 5
+00:51:19.884 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14310, 319.62, 6586.58> EXPLOSION range 20 dropoff 5
+00:51:20.259 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14310.2, 320.28, 6581.98> EXPLOSION range 20 dropoff 5
+00:51:20.496 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14317, 319.32, 6591.96> EXPLOSION range 20 dropoff 5
+00:51:27.460 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14351, 320.99, 6596.78> EXPLOSION range 20 dropoff 5
+00:51:27.859 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14348.1, 319.64, 6604.74> EXPLOSION range 20 dropoff 5
+00:51:28.177 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14353.5, 321.33, 6595.81> EXPLOSION range 20 dropoff 5
+00:51:28.540 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14341.6, 320.81, 6593.27> EXPLOSION range 20 dropoff 5
+00:51:28.867 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14339, 321.81, 6601.33> EXPLOSION range 20 dropoff 5
+00:51:29.248 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14359.3, 322.48, 6590.87> EXPLOSION range 20 dropoff 5
+00:51:45.490 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14329.9, 319.12, 6599.28> EXPLOSION range 20 dropoff 5
+00:51:45.798 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14317.8, 320.73, 6582.55> EXPLOSION range 20 dropoff 5
+00:51:45.997 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14325.5, 323.15, 6568.67> EXPLOSION range 20 dropoff 5
+00:51:46.377 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14329, 321.59, 6581.9> EXPLOSION range 20 dropoff 5
+00:51:46.759 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14330.1, 321.44, 6583.45> EXPLOSION range 20 dropoff 5
+00:51:47.273 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14314.8, 320.02, 6586.09> EXPLOSION range 20 dropoff 5
+00:51:47.610 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14511.7, 316.3, 6351.06> EXPLOSION range 20 dropoff 5
+00:51:54.110 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14332.3, 322.56, 6576.72> EXPLOSION range 20 dropoff 5
+00:51:54.563 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14334, 321.76, 6583.07> EXPLOSION range 20 dropoff 5
+00:51:54.810 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14336.5, 321.63, 6585.21> EXPLOSION range 20 dropoff 5
+00:51:55.273 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14341.2, 322.22, 6583.42> EXPLOSION range 20 dropoff 5
+00:51:55.652 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14329, 321.41, 6583.14> EXPLOSION range 20 dropoff 5
+00:52:03.917 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14334.3, 318.14, 6608.54> EXPLOSION range 20 dropoff 5
+00:52:04.267 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14308.9, 315.38, 6618.7> EXPLOSION range 20 dropoff 5
+00:52:04.654 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14336.9, 316.77, 6621.16> EXPLOSION range 20 dropoff 5
+00:52:04.959 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14318, 319.61, 6590.41> EXPLOSION range 20 dropoff 5
+00:52:05.304 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14319.3, 318.55, 6598.39> EXPLOSION range 20 dropoff 5
+00:52:05.815 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14324.3, 321.01, 6583.72> EXPLOSION range 20 dropoff 5
+00:52:12.298 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14248, 307.59, 6685.5> EXPLOSION range 20 dropoff 5
+00:52:12.823 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14319.5, 317.21, 6608.24> EXPLOSION range 20 dropoff 5
+00:52:12.824 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14244.4, 307.25, 6687> EXPLOSION range 20 dropoff 5
+00:52:13.121 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14306.3, 316.77, 6605.67> EXPLOSION range 20 dropoff 5
+00:52:13.156 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14264.4, 309.08, 6674.83> EXPLOSION range 20 dropoff 5
+00:52:13.367 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14319.3, 318.49, 6598.84> EXPLOSION range 20 dropoff 5
+00:52:13.368 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14230.4, 305.57, 6697.28> EXPLOSION range 20 dropoff 5
+00:52:13.462 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14264.6, 309.13, 6674.17> EXPLOSION range 20 dropoff 5
+00:52:13.769 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14318.1, 319.9, 6588.43> EXPLOSION range 20 dropoff 5
+00:52:14.041 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14320.6, 318.9, 6596.59> EXPLOSION range 20 dropoff 5
+00:52:14.292 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14241.6, 306.86, 6691.74> EXPLOSION range 20 dropoff 5
+00:52:14.438 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14322.3, 321.19, 6599.13> EXPLOSION range 20 dropoff 5
+00:52:20.573 [ExplosionDamageSystem] About to explode Explosion_40mm_Ammo from KOD_M32_Black<0x000002B123DBF610> KOD_M32_Black:32257 at <14310.8, 313.81, 6640.13> EXPLOSION range 20 dropoff 5
+00:52:20.578 [Killfeed] Kl9Usa умер от Kl9Usa из Милкор М32.  с расстояния 0 м.
+00:53:09.853 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE6A0F0> Expansion_C4_Explos at <14305.4, 316.24, 6609.5> EXPLOSION range 5 dropoff 2.5
+00:53:10.024 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE6BDA0> Expansion_C4_Explos at <14305.4, 316.24, 6609.5> EXPLOSION range 5 dropoff 2.5
+00:53:10.165 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE67AB0> Expansion_C4_Explos at <14304.8, 316.19, 6609.6> EXPLOSION range 5 dropoff 2.5
+00:53:10.687 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE6F700> Expansion_C4_Explos at <14305.3, 316.24, 6609.43> EXPLOSION range 5 dropoff 2.5
+00:53:10.878 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE68DD0> Expansion_C4_Explos at <14305.4, 316.24, 6609.5> EXPLOSION range 5 dropoff 2.5
+00:53:11.033 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE69760> Expansion_C4_Explos at <14304.9, 316.25, 6609.13> EXPLOSION range 5 dropoff 2.5
+00:53:11.232 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE76030> Expansion_C4_Explos at <14304.5, 316.26, 6608.91> EXPLOSION range 5 dropoff 2.5
+00:53:11.396 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE739F0> Expansion_C4_Explos at <14305.7, 316.23, 6609.74> EXPLOSION range 5 dropoff 2.5
+00:53:12.256 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE769C0> Expansion_C4_Explos at <14305.4, 316.24, 6609.5> EXPLOSION range 5 dropoff 2.5
+00:53:12.409 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE713B0> Expansion_C4_Explos at <14305.4, 316.24, 6609.5> EXPLOSION range 5 dropoff 2.5
+00:53:12.595 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE70090> Expansion_C4_Explos at <14304.6, 316.26, 6608.93> EXPLOSION range 5 dropoff 2.5
+00:53:12.750 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE73060> Expansion_C4_Explos at <14305, 316.25, 6609.21> EXPLOSION range 5 dropoff 2.5
+00:53:13.476 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE74380> Expansion_C4_Explos at <14305.4, 316.24, 6609.49> EXPLOSION range 5 dropoff 2.5
+00:53:13.667 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE70A20> Expansion_C4_Explos at <14305.4, 316.24, 6609.5> EXPLOSION range 5 dropoff 2.5
+00:53:14.414 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE74D10> Expansion_C4_Explos at <14305.4, 316.24, 6609.5> EXPLOSION range 5 dropoff 2.5
+00:53:14.568 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE77CE0> Expansion_C4_Explos at <14305.4, 316.24, 6609.5> EXPLOSION range 5 dropoff 2.5
+00:53:14.755 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE71D40> Expansion_C4_Explos at <14305, 316.25, 6609.22> EXPLOSION range 5 dropoff 2.5
+00:53:14.995 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE7D2F0> Expansion_C4_Explos at <14304.4, 316.27, 6608.78> EXPLOSION range 5 dropoff 2.5
+00:53:15.142 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE7C960> Expansion_C4_Explos at <14305.1, 316.25, 6609.29> EXPLOSION range 5 dropoff 2.5
+00:53:15.497 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE7BFD0> Expansion_C4_Explos at <14305.6, 316.24, 6609.63> EXPLOSION range 5 dropoff 2.5
+00:53:15.611 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE7EFA0> Expansion_C4_Explos at <14305.4, 316.24, 6609.5> EXPLOSION range 5 dropoff 2.5
+00:53:15.891 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE78670> Expansion_C4_Explos at <14304.6, 316.26, 6608.98> EXPLOSION range 5 dropoff 2.5
+00:53:16.454 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE7A320> Expansion_C4_Explos at <14305.3, 316.24, 6609.47> EXPLOSION range 5 dropoff 2.5
+00:53:16.631 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE79990> Expansion_C4_Explos at <14304.9, 316.25, 6609.16> EXPLOSION range 5 dropoff 2.5
+00:53:17.213 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE79000> Expansion_C4_Explos at <14305.3, 316.24, 6609.43> EXPLOSION range 5 dropoff 2.5
+00:53:17.402 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE7B640> Expansion_C4_Explos at <14304.8, 316.26, 6609.1> EXPLOSION range 5 dropoff 2.5
+00:53:19.091 [VehicleLockPick] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14321, 318.48, 6599.86>) is attempting to pick lock on Jeep_GladiatorF9_BOSS_Red (id=DAF869C7DD4DC866DF457B9627AD7874 pos=<14322.5, 318.67, 6599.11>) with Lockpick
+00:53:22.121 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE7ACB0> Expansion_C4_Explos at <14308.9, 316.69, 6607.49> EXPLOSION range 5 dropoff 2.5
+00:53:22.123 [VehicleDestroyed] CrSk_Insurgent_SUV (id=3CCE7326524189D36A016696C92515A0 pos=<14309.9, 316.76, 6607.97>)
+00:53:22.312 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE7DC80> Expansion_C4_Explos at <14308.9, 316.69, 6607.49> EXPLOSION range 5 dropoff 2.5
+00:53:22.484 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE7E610> Expansion_C4_Explos at <14308.8, 316.62, 6607.99> EXPLOSION range 5 dropoff 2.5
+00:53:22.636 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE61180> Expansion_C4_Explos at <14308.8, 316.66, 6607.63> EXPLOSION range 5 dropoff 2.5
+00:53:22.856 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE5B1E0> Expansion_C4_Explos at <14308.8, 316.64, 6607.8> EXPLOSION range 5 dropoff 2.5
+00:53:23.180 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE637C0> Expansion_C4_Explos at <14308.8, 316.68, 6607.47> EXPLOSION range 5 dropoff 2.5
+00:53:23.522 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE64150> Expansion_C4_Explos at <14309.3, 316.7, 6607.59> EXPLOSION range 5 dropoff 2.5
+00:53:23.727 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B0FDE64AE0> Expansion_C4_Explos at <14308.8, 316.67, 6607.54> EXPLOSION range 5 dropoff 2.5
+00:53:23.932 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA3310> Expansion_C4_Explos at <14308.8, 316.66, 6607.69> EXPLOSION range 5 dropoff 2.5
+00:53:24.103 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA0340> Expansion_C4_Explos at <14308.8, 316.68, 6607.46> EXPLOSION range 5 dropoff 2.5
+00:53:24.265 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA4630> Expansion_C4_Explos at <14309, 316.69, 6607.52> EXPLOSION range 5 dropoff 2.5
+00:53:24.478 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA2980> Expansion_C4_Explos at <14312.4, 316.6, 6609.69> EXPLOSION range 5 dropoff 2.5
+00:53:24.666 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA0CD0> Expansion_C4_Explos at <14309.2, 316.69, 6607.57> EXPLOSION range 5 dropoff 2.5
+00:53:24.865 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA4FC0> Expansion_C4_Explos at <14308.8, 316.67, 6607.61> EXPLOSION range 5 dropoff 2.5
+00:53:25.025 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA6C70> Expansion_C4_Explos at <14308.8, 316.67, 6607.62> EXPLOSION range 5 dropoff 2.5
+00:53:25.225 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA5950> Expansion_C4_Explos at <14308.8, 316.67, 6607.57> EXPLOSION range 5 dropoff 2.5
+00:53:25.456 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA1660> Expansion_C4_Explos at <14308.8, 316.66, 6607.7> EXPLOSION range 5 dropoff 2.5
+00:53:25.641 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA7F90> Expansion_C4_Explos at <14308.8, 316.65, 6607.75> EXPLOSION range 5 dropoff 2.5
+00:53:25.871 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA8920> Expansion_C4_Explos at <14308.8, 316.67, 6607.61> EXPLOSION range 5 dropoff 2.5
+00:53:26.074 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA1FF0> Expansion_C4_Explos at <14308.8, 316.65, 6607.72> EXPLOSION range 5 dropoff 2.5
+00:53:26.257 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA62E0> Expansion_C4_Explos at <14309.3, 316.7, 6607.6> EXPLOSION range 5 dropoff 2.5
+00:53:26.718 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA92B0> Expansion_C4_Explos at <14309.2, 316.69, 6607.57> EXPLOSION range 5 dropoff 2.5
+00:53:32.635 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA9C40> Expansion_C4_Explos at <14307, 317.54, 6600.1> EXPLOSION range 5 dropoff 2.5
+00:53:32.789 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FAA5D0> Expansion_C4_Explos at <14307, 317.54, 6600.1> EXPLOSION range 5 dropoff 2.5
+00:53:32.956 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA7600> Expansion_C4_Explos at <14307.2, 317.5, 6600.53> EXPLOSION range 5 dropoff 2.5
+00:53:33.148 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FA3CA0> Expansion_C4_Explos at <14307.1, 317.52, 6600.31> EXPLOSION range 5 dropoff 2.5
+00:53:33.296 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FAC280> Expansion_C4_Explos at <14307, 317.54, 6600.18> EXPLOSION range 5 dropoff 2.5
+00:53:33.482 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB0F00> Expansion_C4_Explos at <14307.2, 317.52, 6600.34> EXPLOSION range 5 dropoff 2.5
+00:53:33.852 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FAFBE0> Expansion_C4_Explos at <14307.1, 317.52, 6600.31> EXPLOSION range 5 dropoff 2.5
+00:53:34.039 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FAB8F0> Expansion_C4_Explos at <14307, 317.54, 6600.13> EXPLOSION range 5 dropoff 2.5
+00:53:34.229 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FADF30> Expansion_C4_Explos at <14307.1, 317.52, 6600.33> EXPLOSION range 5 dropoff 2.5
+00:53:34.419 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FAE8C0> Expansion_C4_Explos at <14307, 317.56, 6599.98> EXPLOSION range 5 dropoff 2.5
+00:53:34.617 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FACC10> Expansion_C4_Explos at <14307.1, 317.53, 6600.22> EXPLOSION range 5 dropoff 2.5
+00:53:34.814 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FAF250> Expansion_C4_Explos at <14307.3, 317.53, 6600.33> EXPLOSION range 5 dropoff 2.5
+00:53:35.007 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FAD5A0> Expansion_C4_Explos at <14307.3, 317.53, 6600.32> EXPLOSION range 5 dropoff 2.5
+00:53:35.220 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB0570> Expansion_C4_Explos at <14307.1, 317.53, 6600.2> EXPLOSION range 5 dropoff 2.5
+00:53:35.408 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB1890> Expansion_C4_Explos at <14307, 317.54, 6600.12> EXPLOSION range 5 dropoff 2.5
+00:53:35.561 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FAAF60> Expansion_C4_Explos at <14307.1, 317.54, 6600.19> EXPLOSION range 5 dropoff 2.5
+00:53:35.779 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB4860> Expansion_C4_Explos at <14307.2, 317.52, 6600.36> EXPLOSION range 5 dropoff 2.5
+00:53:35.970 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB8B50> Expansion_C4_Explos at <14307.2, 317.52, 6600.38> EXPLOSION range 5 dropoff 2.5
+00:53:36.178 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB6EA0> Expansion_C4_Explos at <14307, 317.54, 6600.13> EXPLOSION range 5 dropoff 2.5
+00:53:36.565 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB3ED0> Expansion_C4_Explos at <14307.1, 317.53, 6600.22> EXPLOSION range 5 dropoff 2.5
+00:53:36.766 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB51F0> Expansion_C4_Explos at <14307, 317.54, 6600.16> EXPLOSION range 5 dropoff 2.5
+00:53:37.193 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB3540> Expansion_C4_Explos at <14307, 317.57, 6599.92> EXPLOSION range 5 dropoff 2.5
+00:53:37.429 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB7830> Expansion_C4_Explos at <14307.1, 317.54, 6600.2> EXPLOSION range 5 dropoff 2.5
+00:53:37.590 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB6510> Expansion_C4_Explos at <14307, 317.55, 6600.07> EXPLOSION range 5 dropoff 2.5
+00:53:37.825 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB2220> Expansion_C4_Explos at <14307.4, 317.55, 6600.24> EXPLOSION range 5 dropoff 2.5
+00:53:38.004 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB81C0> Expansion_C4_Explos at <14307, 317.54, 6600.16> EXPLOSION range 5 dropoff 2.5
+00:53:59.023 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB94E0> Expansion_C4_Explos at <14306, 316.49, 6607.75> EXPLOSION range 5 dropoff 2.5
+00:54:03.378 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB2BB0> Expansion_C4_Explos at <14307.4, 317.62, 6599.76> EXPLOSION range 5 dropoff 2.5
+00:54:03.530 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148FB5B80> Expansion_C4_Explos at <14307.4, 317.62, 6599.76> EXPLOSION range 5 dropoff 2.5
+00:54:03.697 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F7C580> Expansion_C4_Explos at <14308.5, 317.74, 6599.33> EXPLOSION range 5 dropoff 2.5
+00:54:03.799 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F7BBF0> Expansion_C4_Explos at <14308.1, 317.65, 6599.82> EXPLOSION range 5 dropoff 2.5
+00:54:03.918 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F7E230> Expansion_C4_Explos at <14308.1, 317.73, 6599.22> EXPLOSION range 5 dropoff 2.5
+00:54:04.095 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F7B260> Expansion_C4_Explos at <14308.1, 317.73, 6599.21> EXPLOSION range 5 dropoff 2.5
+00:54:04.205 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F7FEE0> Expansion_C4_Explos at <14308.1, 317.72, 6599.31> EXPLOSION range 5 dropoff 2.5
+00:54:04.363 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F80870> Expansion_C4_Explos at <14308.1, 317.7, 6599.41> EXPLOSION range 5 dropoff 2.5
+00:54:04.471 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F7EBC0> Expansion_C4_Explos at <14308.1, 317.74, 6599.16> EXPLOSION range 5 dropoff 2.5
+00:54:04.626 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F7F550> Expansion_C4_Explos at <14308.3, 317.85, 6598.46> EXPLOSION range 5 dropoff 2.5
+00:54:04.727 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F7CF10> Expansion_C4_Explos at <14308.2, 317.81, 6598.68> EXPLOSION range 5 dropoff 2.5
+00:54:04.882 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F79F40> Expansion_C4_Explos at <14308.2, 317.83, 6598.58> EXPLOSION range 5 dropoff 2.5
+00:54:05.038 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F81200> Expansion_C4_Explos at <14308.1, 317.7, 6599.42> EXPLOSION range 5 dropoff 2.5
+00:54:05.163 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F7D8A0> Expansion_C4_Explos at <14308.1, 317.75, 6599.07> EXPLOSION range 5 dropoff 2.5
+00:54:05.293 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F7A8D0> Expansion_C4_Explos at <14308.1, 317.73, 6599.25> EXPLOSION range 5 dropoff 2.5
+00:54:05.467 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F82520> Expansion_C4_Explos at <14308, 317.69, 6599.5> EXPLOSION range 5 dropoff 2.5
+00:54:05.563 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F884C0> Expansion_C4_Explos at <14308.2, 317.8, 6598.77> EXPLOSION range 5 dropoff 2.5
+00:54:05.718 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F83840> Expansion_C4_Explos at <14308.3, 317.87, 6598.32> EXPLOSION range 5 dropoff 2.5
+00:54:05.818 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F81B90> Expansion_C4_Explos at <14308, 317.69, 6599.52> EXPLOSION range 5 dropoff 2.5
+00:54:05.981 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F82EB0> Expansion_C4_Explos at <14308.1, 317.72, 6599.27> EXPLOSION range 5 dropoff 2.5
+00:54:06.145 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F841D0> Expansion_C4_Explos at <14308.1, 317.75, 6599.1> EXPLOSION range 5 dropoff 2.5
+00:54:06.270 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F854F0> Expansion_C4_Explos at <14308, 317.63, 6599.86> EXPLOSION range 5 dropoff 2.5
+00:54:06.365 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B148F88E50> Expansion_C4_Explos at <14308.2, 317.78, 6598.89> EXPLOSION range 5 dropoff 2.5
+00:55:36.136 [VehicleLockPick] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14321, 318.5, 6599.69>) is attempting to pick lock on Jeep_GladiatorF9_BOSS_Red (id=DAF869C7DD4DC866DF457B9627AD7874 pos=<14322.5, 318.67, 6599.11>) with Lockpick
+00:56:14.742 [VehicleDeleted] ToyotaRunner_camowhite (id=C4E53D7D7A40286B542FAC9608EDDBB0 pos=<14348.4, 322.36, 6585.59> lifetime=-1)
+00:56:43.566 [ExplosionDamageSystem] About to explode ExpansionRocket_Ammo from Expansion_RPG_Explosion<0x000002B148F8C7B0> Expansion_RPG_Expl at <14246.9, 311.57, 6626.78> EXPLOSION range 12 dropoff 3
+00:57:03.466 [VehicleCarKey] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14320.4, 318.49, 6599.56>) used ExpansionCarKey to unlock Jeep_GladiatorF9_BOSS_Red (id=DAF869C7DD4DC866DF457B9627AD7874 pos=<14322.5, 318.67, 6599.11>)
+00:57:09.951 [VehicleEnter] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) entered vehicle Hessher's Jeep_GladiatorF9_Red (id=DAF869C7DD4DC866DF457B9627AD7874 pos=<14322.2, 319.08, 6599.32>) as driver
+00:57:28.261 [VehicleCarKey] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14321.8, 320.08, 6601.42>) used ExpansionCarKey to lock Jeep_GladiatorF9_BOSS_Red (id=DAF869C7DD4DC866DF457B9627AD7874 pos=<14322.1, 318.96, 6601.33>)
+00:57:32.118 [VehicleLeave] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) left vehicle Hessher's Jeep_GladiatorF9_Red (id=DAF869C7DD4DC866DF457B9627AD7874 pos=<14322.1, 318.96, 6601.33>) as driver
+00:58:34.622 [ExplosionDamageSystem] About to explode ExpansionRocket_Ammo from Expansion_RPG_Explosion<0x000002B148F9F9B0> Expansion_RPG_Expl at <14341, 322.31, 6585.39> EXPLOSION range 12 dropoff 3
+00:58:57.310 [Party] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) joined the party "Guardian Brave" (id=0 ownerUID= ownerName=)
+00:58:57.312 [Party] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) created a party named Guardian Brave (Guard)
+00:58:57.314 [Party] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) invited the player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=)to the party named Guardian Brave
+00:59:03.655 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle GAZ-2330 Tigr (id=6D330FDAD24862A8C884BE988A373AC5 pos=<14252.2, 314.6, 6598.36>) as driver
+00:59:06.335 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle GAZ-2330 Tigr (id=6D330FDAD24862A8C884BE988A373AC5 pos=<14252.2, 314.6, 6598.36>)
+01:00:17.411 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:17.411 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.5, 311.08, 6627.16>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:17.412 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:17.412 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 15000 to 14200
+01:00:17.412 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:19.893 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:19.894 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.5, 311.08, 6627.16>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:19.894 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:19.894 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 14200 to 13400
+01:00:19.894 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:20.202 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:20.202 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.5, 311.08, 6627.16>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:20.202 [BaseBuildingRaiding] They dealt 320 * 1 = 320 damage with Bullet_127x55 from KOD_VSSK
+01:00:20.202 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 13400 to 13080
+01:00:20.202 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:20.618 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:20.618 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.5, 311.08, 6627.16>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:20.619 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:20.619 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 13080 to 12280
+01:00:20.619 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:20.913 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:20.914 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.5, 311.08, 6627.16>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:20.914 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:20.914 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 12280 to 11480
+01:00:20.914 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:21.300 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:21.300 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.5, 311.08, 6627.16>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:21.300 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:21.300 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 11480 to 10680
+01:00:21.301 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:21.631 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:21.631 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.5, 311.08, 6627.16>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:21.632 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:21.632 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 10680 to 9880
+01:00:21.632 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:21.999 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:21.999 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.5, 311.08, 6627.16>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:21.999 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:22.000 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 9880 to 9080
+01:00:22.000 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:22.352 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:22.352 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.5, 311.08, 6627.16>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:22.352 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:22.353 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 9080 to 8280
+01:00:22.353 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:22.759 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:22.760 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.5, 311.08, 6627.16>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:22.760 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:22.760 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 8280 to 7480
+01:00:22.761 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:23.143 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:23.143 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.5, 311.08, 6627.16>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:23.143 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:23.144 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 7480 to 6680
+01:00:23.144 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:23.578 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:23.578 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.5, 311.08, 6627.16>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:23.578 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:23.579 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 6680 to 5880
+01:00:23.579 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:24.876 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle GAZ-2330 Tigr (id=6D330FDAD24862A8C884BE988A373AC5 pos=<14231.9, 310.74, 6624.99>)
+01:00:24.921 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle GAZ-2330 Tigr (id=6D330FDAD24862A8C884BE988A373AC5 pos=<14231.9, 310.74, 6625>) as driver
+01:00:27.329 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:27.329 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.5, 311.08, 6627.16>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:27.329 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:27.329 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 5880 to 5080
+01:00:27.329 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:28.516 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:28.516 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.7, 311, 6628.1>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:28.516 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:28.516 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 5080 to 4280
+01:00:28.517 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:28.938 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:28.938 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.4, 310.92, 6628.8>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:28.938 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:28.938 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 4280 to 3480
+01:00:28.938 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:29.317 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:29.317 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14238.2, 310.86, 6629.33>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:29.317 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:29.317 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 3480 to 2680
+01:00:29.318 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:29.747 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:29.748 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14237.7, 310.77, 6629.9>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:29.748 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:29.748 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 2680 to 1880
+01:00:29.748 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:30.075 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:30.075 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14237.1, 310.74, 6629.86>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:30.075 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:30.076 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 1880 to 1080
+01:00:30.076 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:30.436 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:30.436 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14236.5, 310.71, 6629.78>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:30.436 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:30.437 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 1080 to 280
+01:00:30.437 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:30.762 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:30.762 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14236, 310.69, 6629.6>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:30.762 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:30.762 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 280 to 0
+01:00:30.762 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:31.124 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:31.124 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14235.6, 310.71, 6629.18>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:31.124 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:31.124 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 0 to 0
+01:00:31.124 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:31.514 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:31.514 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14235.6, 310.78, 6628.46>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:31.514 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:31.515 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 0 to 0
+01:00:31.515 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:31.939 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:31.940 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14235.6, 310.84, 6627.72>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:31.940 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:31.940 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 0 to 0
+01:00:31.940 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:32.403 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:32.404 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14236.3, 310.93, 6627.29>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:32.404 [BaseBuildingRaiding] They dealt 800 * 1 = 800 damage with Bullet_127x55 from KOD_VSSK
+01:00:32.404 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 0 to 0
+01:00:32.404 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:38.463 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:38.463 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14236.7, 311.06, 6626.06>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:38.463 [BaseBuildingRaiding] They dealt 1600 * 1 = 1600 damage with KOD_Bullet_408 from KOD_M200_Black
+01:00:38.464 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 0 to 0
+01:00:38.464 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:00:51.537 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:00:51.537 [BaseBuildingRaiding] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= pos=<14235.6, 310.72, 6629.08>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:00:51.537 [BaseBuildingRaiding] They dealt 1600 * 1 = 1600 damage with KOD_Bullet_408 from KOD_M200_Black
+01:00:51.537 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 0 to 0
+01:00:51.537 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:02:25.095 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B14EB569F0> Expansion_C4_Explos at <14221.1, 308.51, 6641.67> EXPLOSION range 5 dropoff 2.5
+01:04:05.269 [BaseRaiding] ExpansionWall6x3 (<14233.460938, 309.513580, 6640.384766>) Code set by "player "Hessher" (ID = "MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=" at <14233.964844, 309.649536, 6639.565430>)" and the code is 3331
+01:04:07.126 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:04:07.127 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<14233, 309.3, 6642.72>) damaged ExpansionSafeMedium at <14237, 310.83, 6628.15>
+01:04:07.127 [BaseBuildingRaiding] They dealt 46.1215 * 1 = 46.1215 damage with Bullet_762x54 from KOD_PKP
+01:04:07.127 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 0 to 0
+01:04:07.127 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:05:03.597 [ExplosionDamageSystem] About to explode RGD5Grenade_Ammo from Expansion_M203_HE_Explosion<0x000002B14EB6E870> Expansion_M203 at <14236.3, 310.19, 6634.92> EXPLOSION range 12 dropoff 3
+01:05:03.600 [ExplosionDamageSystem] Queued Expansion_M203_HE_Explosion<0x000002B14EB6E870> Expansion_M203 RGD5Grenade_Ammo for ExpansionWallBase<0x000002B13DA106D0> ExpansionWall6x3:32773 - count: 1
+01:05:03.601 [ExplosionDamageSystem] Queued Expansion_M203_HE_Explosion<0x000002B14EB6E870> Expansion_M203 RGD5Grenade_Ammo for ExpansionSafeMedium<0x000002B0FF5E9550> ExpansionSafeMedium:32 - count: 1
+01:05:03.603 [ExplosionDamageSystem] Dequeued Expansion_M203_HE_Explosion<0x000002B14EB6E870> Expansion_M203 RGD5Grenade_Ammo for ExpansionWallBase<0x000002B13DA106D0> ExpansionWall6x3:32773 - count: 0
+01:05:03.604 [ExplosionDamageSystem] Dequeued Expansion_M203_HE_Explosion<0x000002B14EB6E870> Expansion_M203 RGD5Grenade_Ammo for ExpansionSafeMedium<0x000002B0FF5E9550> ExpansionSafeMedium:32 - count: 0
+01:05:06.198 [ExplosionDamageSystem] About to explode ExpansionRocket_Ammo from Expansion_RPG_Explosion<0x000002B14EB721D0> Expansion_RPG_Expl at <14236.3, 310.19, 6634.92> EXPLOSION range 12 dropoff 3
+01:05:06.199 [ExplosionDamageSystem] Queued Expansion_RPG_Explosion<0x000002B14EB721D0> Expansion_RPG_Expl ExpansionRocket_Ammo for ExpansionWallBase<0x000002B13DA106D0> ExpansionWall6x3:32773 - count: 1
+01:05:06.199 [ExplosionDamageSystem] Queued Expansion_RPG_Explosion<0x000002B14EB721D0> Expansion_RPG_Expl ExpansionRocket_Ammo for ExpansionSafeMedium<0x000002B0FF5E9550> ExpansionSafeMedium:32 - count: 1
+01:05:06.200 [ExplosionDamageSystem] Dequeued Expansion_RPG_Explosion<0x000002B14EB721D0> Expansion_RPG_Expl ExpansionRocket_Ammo for ExpansionWallBase<0x000002B13DA106D0> ExpansionWall6x3:32773 - count: 0
+01:05:06.200 [ExplosionDamageSystem] Dequeued Expansion_RPG_Explosion<0x000002B14EB721D0> Expansion_RPG_Expl ExpansionRocket_Ammo for ExpansionSafeMedium<0x000002B0FF5E9550> ExpansionSafeMedium:32 - count: 0
+01:05:15.562 [VehicleDestroyed] CrSk_GAZ_Tigr_M (id=6D330FDAD24862A8C884BE988A373AC5 pos=<14231.9, 310.72, 6625>)
+01:05:19.360 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B14EB70EB0> Expansion_C4_Explos at <14236.3, 310.19, 6634.92> EXPLOSION range 5 dropoff 2.5
+01:05:26.172 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B14EB72B60> Expansion_C4_Explos at <14233, 309.51, 6640.07> EXPLOSION range 5 dropoff 2.5
+01:05:26.174 [ExplosionDamageSystem] Queued Expansion_C4_Explosion<0x000002B14EB72B60> Expansion_C4_Explos ExpansionC4_Ammo for ExpansionWallBase<0x000002B13DA106D0> ExpansionWall6x3:32773 - count: 1
+01:05:26.174 [ExplosionDamageSystem] Dequeued Expansion_C4_Explosion<0x000002B14EB72B60> Expansion_C4_Explos ExpansionC4_Ammo for ExpansionWallBase<0x000002B13DA106D0> ExpansionWall6x3:32773 - count: 0
+01:05:26.175 [BaseBuildingRaiding] BaseRaiding: ExpansionWallBase<0x000002B13DA106D0> ExpansionWall6x3:32773 at <14233.460938, 309.513580, 6640.384766> has been hit by whitelisted explosive Expansion_C4_Explosion<0x000002B14EB72B60> Expansion_C4_Explos
+01:05:26.175 [ExplosionDamageSystem] Overriding Expansion_C4_Explosion<0x000002B14EB72B60> Expansion_C4_Explos damage dealt to ExpansionWallBase<0x000002B13DA106D0> ExpansionWall6x3:32773 at <14233.460938, 309.513580, 6640.384766> 485.265 -> 600
+01:05:26.177 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+01:05:26.177 [BaseBuildingRaiding] A player damaged ExpansionWall6x3 at <14233.5, 309.51, 6640.38>
+01:05:26.177 [BaseBuildingRaiding] They dealt 600 * 50 = 30000 damage with ExpansionC4_Ammo from Expansion_C4_Explosion
+01:05:26.177 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 30000 to 0
+01:05:26.178 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+01:05:26.387 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B14EB6C230> Expansion_C4_Explos at <14232.5, 309.29, 6642.17> EXPLOSION range 5 dropoff 2.5
+01:05:26.781 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B14EB734F0> Expansion_C4_Explos at <14232.5, 309.3, 6642.07> EXPLOSION range 5 dropoff 2.5
+01:05:26.963 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B14EB6CBC0> Expansion_C4_Explos at <14233.7, 309.82, 6637.19> EXPLOSION range 5 dropoff 2.5
+01:05:27.152 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x000002B14EB6D550> Expansion_C4_Explos at <14233.6, 309.77, 6637.71> EXPLOSION range 5 dropoff 2.5
+01:05:51.313 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Mh-6 Little Bird (id=14C88857AE422689D5B637BCAF006346 pos=<14225.7, 305.01, 6701.52>) as pilot
+01:05:53.829 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Mh-6 Little Bird (id=14C88857AE422689D5B637BCAF006346 pos=<14225.7, 305.01, 6701.51>) as pilot
+01:05:58.204 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Mh-6 Little Bird (id=14C88857AE422689D5B637BCAF006346 pos=<14225.7, 305.02, 6701.51>) as pilot
+01:06:01.613 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) started vehicle Mh-6 Little Bird (id=14C88857AE422689D5B637BCAF006346 pos=<14225.7, 305.02, 6701.5>)
+01:06:41.302 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Mh-6 Little Bird (id=14C88857AE422689D5B637BCAF006346 pos=<14221.1, 316.75, 6704.64>)
+01:06:41.303 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Mh-6 Little Bird (id=14C88857AE422689D5B637BCAF006346 pos=<14221.1, 316.75, 6704.64>) as pilot
+01:06:54.367 [VehicleDestroyed] ExpansionMh6 (id=14C88857AE422689D5B637BCAF006346 pos=<14219.9, 304.28, 6707.07>)
+01:07:22.540 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Mh-6 Little Bird (id=947D2AEAC541ED76161DF49D58597285 pos=<14183.4, 301.17, 6686.67>) as pilot
+01:07:23.861 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) started vehicle Mh-6 Little Bird (id=947D2AEAC541ED76161DF49D58597285 pos=<14183.4, 301.17, 6686.64>)
+01:08:58.703 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) stopped vehicle Mh-6 Little Bird (id=947D2AEAC541ED76161DF49D58597285 pos=<14336.9, 317.11, 6758.72>)
+01:08:58.703 [VehicleDestroyed] ExpansionMh6_Wasp (id=947D2AEAC541ED76161DF49D58597285 pos=<14336.9, 317.11, 6758.72>)
+01:09:15.619 [VehicleDeleted] CrSk_Toyota_Land_Cruiser_200_16_White (id=CF085DB35044CCDB61571D88DA250A8E pos=<14353.4, 323.52, 6580.61> lifetime=-1)
+01:09:17.151 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Mh-6 Little Bird (id=947D2AEAC541ED76161DF49D58597285 pos=<14263.5, 329.07, 6663.2>) as pilot
+01:09:38.372 [ExplosionDamageSystem] About to explode ExpansionRocket_Ammo from Expansion_RPG_Explosion<0x000002B149D6BD50> Expansion_RPG_Expl at <14263.5, 309.24, 6670.34> EXPLOSION range 12 dropoff 3
+01:10:09.475 [VehicleDeleted] CrSk_Insurgent_SUV (id=3CCE7326524189D36A016696C92515A0 pos=<14309.9, 316.76, 6607.97> lifetime=-1)
+01:10:22.402 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Merlin (id=9C9F30CA91441D4B02B9FA832C6F3944 pos=<14198.5, 303.49, 6675.01>) as pilot
+01:10:27.997 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) started vehicle Merlin (id=9C9F30CA91441D4B02B9FA832C6F3944 pos=<14198.5, 303.49, 6675.01>)
+01:11:00.577 [Killfeed] Kl9Usa умер разбился с высоты.
+01:11:15.678 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Merlin (id=9C9F30CA91441D4B02B9FA832C6F3944 pos=<14343.8, 323.61, 6617.37>)
+01:11:15.678 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Merlin (id=9C9F30CA91441D4B02B9FA832C6F3944 pos=<14343.8, 323.61, 6617.37>) as pilot
+01:11:29.211 [VehicleDestroyed] ExpansionMerlin_Ion (id=9C9F30CA91441D4B02B9FA832C6F3944 pos=<14343.9, 323.65, 6617.51>)
+01:13:45.226 [VehicleDeleted] CrSk_Toyota_Land_Cruiser_200_16_White (id=E0A33A5DAF46C8D3AC27C3A949F90C0C pos=<14341.8, 321.87, 6586.36> lifetime=-1)
+01:14:14.298 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Mh-6 Little Bird (id=AF8946A2F849CB4DA0E76B902AA36DAE pos=<14286.4, 309.61, 6698.2>) as pilot
+01:14:17.315 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) started vehicle Mh-6 Little Bird (id=AF8946A2F849CB4DA0E76B902AA36DAE pos=<14286.4, 309.61, 6698.14>)
+01:15:06.207 [VehicleDeleted] CrSk_GAZ_Tigr_M (id=6D330FDAD24862A8C884BE988A373AC5 pos=<14231.9, 310.72, 6625> lifetime=-1)
+01:15:06.209 [VehicleDeleted] ExpansionMh6 (id=14C88857AE422689D5B637BCAF006346 pos=<14220.4, 304.33, 6707.8> lifetime=-1)
+01:19:16.745 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) stopped vehicle Mh-6 Little Bird (id=AF8946A2F849CB4DA0E76B902AA36DAE pos=<14419.2, 881.88, 6558.63>)
+01:19:16.745 [VehicleDestroyed] ExpansionMh6_Elliptical (id=AF8946A2F849CB4DA0E76B902AA36DAE pos=<14419.2, 881.88, 6558.63>)
+01:20:23.679 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Mh-6 Little Bird (id=AF8946A2F849CB4DA0E76B902AA36DAE pos=<14339.2, 325.85, 6576.23>) as pilot
+01:20:50.912 [VehicleDestroyed] Jeep_GladiatorF9_BOSS_Red (id=DAF869C7DD4DC866DF457B9627AD7874 pos=<14322.1, 318.96, 6601.33>)
+01:21:10.556 [VehicleDestroyed] ExpansionMerlin_Ion (id=7BB4B640A94F988189402EAEA67386C0 pos=<14327.1, 315.21, 6634.48>)
+01:21:45.397 [VehicleDestroyed] ExpansionMh6_Digital (id=ED101A662E47713299E9E6B73C9607F9 pos=<14343.8, 315.93, 6642.82>)
+01:21:57.336 [VehicleDestroyed] Audi_RS6_ABT_MidNightBlue (id=F0C940EA184AAC989CFD11B2DF88F3E7 pos=<14339.7, 314.75, 6649.3>)
+01:22:33.319 [VehicleDestroyed] CrSk_Insurgent_SUV (id=8422E5670243F4BDE84673AB7E293555 pos=<14332.1, 320.05, 6594.41>)
+01:22:51.341 [VehicleDeleted] ExpansionMh6_Elliptical (id=AF8946A2F849CB4DA0E76B902AA36DAE pos=<0, 0, 0> lifetime=141.7)
+01:22:56.341 [VehicleDestroyed] CrSk_BTR_82A_Desert (id=B64F8AD786452EF6931CF0B5C46FAE74 pos=<14308.3, 318.08, 6596.91>)
+01:23:48.294 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle BTR-82A Desert (id=B64F8AD786452EF6931CF0B5C46FAE74 pos=<14307.4, 318.86, 6596.72>) as driver
+01:23:50.820 [Killfeed] Kl9Usa умер от [Guard] BugiMen из Снайпекс Аллигатор.  с расстояния 5 м.
+01:25:46.771 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle BTR-82A Black (id=553FE08A3C49F4AE9EC0D8A827A41F85 pos=<14312.9, 314.64, 6630.79>) as driver
+01:25:50.001 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle BTR-82A Black (id=553FE08A3C49F4AE9EC0D8A827A41F85 pos=<14312.9, 314.64, 6630.79>)
+01:26:18.468 [Killfeed] Kl9Usa умер от [Guard] BugiMen из CheyTac M200.  с расстояния 6 м.
+01:26:18.564 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) stopped vehicle BTR-82A Black (id=553FE08A3C49F4AE9EC0D8A827A41F85 pos=<14313, 315.14, 6624.6>)
+01:27:09.005 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle BTR-82A Black (id=553FE08A3C49F4AE9EC0D8A827A41F85 pos=<14313, 315.14, 6624.6>) as driver
+01:27:13.103 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle BTR-82A Black (id=553FE08A3C49F4AE9EC0D8A827A41F85 pos=<14313, 315.14, 6624.6>)
+01:27:50.581 [Killfeed] Kl9Usa умер от [Guard] BugiMen из Снайпекс Аллигатор.  с расстояния 9 м.
+01:27:50.635 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) stopped vehicle BTR-82A Black (id=553FE08A3C49F4AE9EC0D8A827A41F85 pos=<14310.5, 315.31, 6620.8>)
+01:28:11.145 [VehicleDeleted] Jeep_GladiatorF9_BOSS_Orange (id=46E503564B4CDB019012D8A2A276BAA9 pos=<7596.1, 241.49, 5292.47> lifetime=-1)
+01:29:31.782 [VehicleDeleted] ExpansionMerlin_Ion (id=7BB4B640A94F988189402EAEA67386C0 pos=<0, 0, 0> lifetime=-1)
+01:34:03.921 [VehicleDeleted] ExpansionMh6_Wasp (id=947D2AEAC541ED76161DF49D58597285 pos=<14261.6, 312.66, 6670.15> lifetime=-1)
+01:34:03.924 [VehicleDeleted] Jeep_GladiatorF9_BOSS_Red (id=DAF869C7DD4DC866DF457B9627AD7874 pos=<14322.1, 318.96, 6601.33> lifetime=-1)
+01:34:03.925 [VehicleDeleted] ExpansionMerlin_Ion (id=9C9F30CA91441D4B02B9FA832C6F3944 pos=<14341.3, 320.56, 6614.51> lifetime=-1)
+01:34:03.928 [VehicleDeleted] CrSk_Insurgent_SUV (id=A2F8798FBB4EB7D2D9C0A8A58E6A7F41 pos=<14337, 319.18, 6602.77> lifetime=-1)
+01:34:03.930 [VehicleDeleted] ExpansionMh6_Digital (id=ED101A662E47713299E9E6B73C9607F9 pos=<14343.8, 315.95, 6642.43> lifetime=-1)
+01:34:09.332 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Cator 2009 (id=DD3F21B69847C083200114AFDE95B16D pos=<7445.09, 227.77, 1489.44>) as driver
+01:34:15.552 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Cator 2009 (id=DD3F21B69847C083200114AFDE95B16D pos=<7445.09, 227.77, 1489.44>)
+01:34:34.414 [VehicleEnter] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) entered vehicle Cator 2009 (id=655C06AD1E482D986A021997415B9CB5 pos=<7449.73, 227.87, 1498.29>) as driver
+01:34:39.947 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Cator 2009 (id=AB35C0EA3C48DF9B262624AB2673A851 pos=<7447.16, 227.87, 1493.94>) as driver
+01:34:43.826 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) started vehicle Cator 2009 (id=AB35C0EA3C48DF9B262624AB2673A851 pos=<7447.16, 227.87, 1493.94>)
+01:34:47.876 [VehicleEngine] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) started vehicle Cator 2009 (id=655C06AD1E482D986A021997415B9CB5 pos=<7449.73, 227.87, 1498.29>)
+01:35:25.189 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Cator 2009 (id=DD3F21B69847C083200114AFDE95B16D pos=<7370.87, 216.92, 1373.59>)
+01:35:25.679 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Cator 2009 (id=DD3F21B69847C083200114AFDE95B16D pos=<7370.87, 216.92, 1373.59>) as driver
+01:35:27.747 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Cator 2009 (id=AB35C0EA3C48DF9B262624AB2673A851 pos=<7357.86, 215.99, 1373.97>)
+01:35:28.193 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Cator 2009 (id=AB35C0EA3C48DF9B262624AB2673A851 pos=<7357.86, 215.99, 1373.97>) as driver
+01:35:34.983 [VehicleEngine] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) stopped vehicle Cator 2009 (id=655C06AD1E482D986A021997415B9CB5 pos=<7362.34, 216.22, 1372.79>)
+01:35:39.074 [VehicleLeave] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) left vehicle Cator 2009 (id=655C06AD1E482D986A021997415B9CB5 pos=<7362.34, 216.22, 1372.79>) as driver
+01:35:51.797 [VehicleDeleted] Audi_RS6_ABT_MidNightBlue (id=F0C940EA184AAC989CFD11B2DF88F3E7 pos=<14339.7, 314.75, 6649.3> lifetime=-1)
+01:36:12.823 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Ford_Mustang_Shelby_GT500_Green (id=82A882A93444EFEE19786280CAF19AFE pos=<7436.1, 222.34, 1353.86>) as driver
+01:36:16.851 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Ford_Mustang_Shelby_GT500_Green (id=82A882A93444EFEE19786280CAF19AFE pos=<7436.1, 222.34, 1353.86>)
+01:36:57.424 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Крытый M3S (id=B80FE81AEA433228E187E3A8A0810BB3 pos=<7409.79, 219.57, 1351.98>) as driver
+01:36:58.952 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) started vehicle Крытый M3S (id=B80FE81AEA433228E187E3A8A0810BB3 pos=<7409.79, 219.56, 1351.94>)
+01:37:04.020 [VehicleEnter] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) entered vehicle Kawasaki Mule 4x4 (id=CCC740CC694F468A449B2083E3D10EEF pos=<7439.44, 222.66, 1354.35>) as driver
+01:37:07.353 [VehicleEngine] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) started vehicle Kawasaki Mule 4x4 (id=CCC740CC694F468A449B2083E3D10EEF pos=<7439.44, 222.66, 1354.35>)
+01:37:19.852 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Крытый M3S (id=B80FE81AEA433228E187E3A8A0810BB3 pos=<7409.75, 219.48, 1350.86>)
+01:37:20.252 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Крытый M3S (id=B80FE81AEA433228E187E3A8A0810BB3 pos=<7409.75, 219.48, 1350.86>) as driver
+01:37:39.915 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Ford_Mustang_Shelby_GT500_Green (id=82A882A93444EFEE19786280CAF19AFE pos=<7411.59, 220.29, 1358.41>)
+01:37:40.230 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Ford_Mustang_Shelby_GT500_Green (id=82A882A93444EFEE19786280CAF19AFE pos=<7411.59, 220.29, 1358.41>) as driver
+01:37:53.543 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Транзитный автобус (id=FEDD4CF97545DC771BEDD28E17FD7F92 pos=<7419.22, 220.74, 1352.46>) as passenger
+01:37:57.921 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Транзитный автобус (id=FEDD4CF97545DC771BEDD28E17FD7F92 pos=<7419.22, 220.74, 1352.46>) as passenger
+01:38:06.558 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Транзитный автобус (id=FEDD4CF97545DC771BEDD28E17FD7F92 pos=<7419.22, 220.74, 1352.46>) as driver
+01:38:10.076 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Транзитный автобус (id=FEDD4CF97545DC771BEDD28E17FD7F92 pos=<7419.22, 220.74, 1352.46>)
+01:38:18.526 [VehicleEngine] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) stopped vehicle Kawasaki Mule 4x4 (id=CCC740CC694F468A449B2083E3D10EEF pos=<7448.76, 223.64, 1361.49>)
+01:38:21.661 [VehicleLeave] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) left vehicle Kawasaki Mule 4x4 (id=CCC740CC694F468A449B2083E3D10EEF pos=<7448.76, 223.64, 1361.49>) as driver
+01:38:39.403 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Транзитный автобус (id=FEDD4CF97545DC771BEDD28E17FD7F92 pos=<7395.8, 219.73, 1379.48>)
+01:38:39.451 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Транзитный автобус (id=FEDD4CF97545DC771BEDD28E17FD7F92 pos=<7395.8, 219.73, 1379.48>) as driver
+01:38:53.166 [VehicleEnter] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) entered vehicle Mercedes-Benz G63 AMG 6x6 Black (id=BDA56F61C34B93F0B562A99FBCDC766A pos=<7447.42, 223.39, 1355.7>) as driver
+01:38:56.804 [VehicleEngine] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) started vehicle Mercedes-Benz G63 AMG 6x6 Black (id=BDA56F61C34B93F0B562A99FBCDC766A pos=<7447.42, 223.39, 1355.7>)
+01:39:24.708 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle AudiRS6 ABT MidNightBlue (id=8B6B12E75F49C4AA798B7B998D22C21D pos=<7423.31, 221.11, 1353.2>) as driver
+01:39:32.801 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle AudiRS6 ABT MidNightBlue (id=8B6B12E75F49C4AA798B7B998D22C21D pos=<7423.31, 221.11, 1353.2>)
+01:39:49.619 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle AudiRS6 ABT MidNightBlue (id=8B6B12E75F49C4AA798B7B998D22C21D pos=<7459.35, 224.5, 1363.46>)
+01:39:49.628 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle AudiRS6 ABT MidNightBlue (id=8B6B12E75F49C4AA798B7B998D22C21D pos=<7459.35, 224.5, 1363.46>) as driver
+01:40:03.376 [VehicleEngine] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) stopped vehicle Mercedes-Benz G63 AMG 6x6 Black (id=BDA56F61C34B93F0B562A99FBCDC766A pos=<7446.62, 223.51, 1367.14>)
+01:40:05.691 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle Mercedes-AMG GT 63 S (id=D679E020404EEB78E639538DC6EA6E12 pos=<7441.79, 222.88, 1354.25>) as driver
+01:40:08.200 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) started vehicle Mercedes-AMG GT 63 S (id=D679E020404EEB78E639538DC6EA6E12 pos=<7441.79, 222.88, 1354.25>)
+01:40:11.041 [VehicleLeave] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) left vehicle Mercedes-Benz G63 AMG 6x6 Black (id=BDA56F61C34B93F0B562A99FBCDC766A pos=<7437.06, 222.9, 1372.16>) as driver
+01:40:29.053 [VehicleEnter] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) entered vehicle Toyota Land Cruiser 200'16 White (id=2E615508094C7B028E0EDFAE828A6BBA pos=<7460.1, 224.64, 1356.29>) as driver
+01:40:35.651 [VehicleEngine] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) started vehicle Toyota Land Cruiser 200'16 White (id=2E615508094C7B028E0EDFAE828A6BBA pos=<7460.1, 224.64, 1356.29>)
+01:40:53.455 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Mercedes-Benz V250d Grey (id=8E457C8D0F43F974FD8F74A77C9054B7 pos=<7451.37, 223.8, 1354.36>) as driver
+01:40:55.927 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Mercedes-Benz V250d Grey (id=8E457C8D0F43F974FD8F74A77C9054B7 pos=<7451.37, 223.8, 1354.36>)
+01:41:07.802 [VehicleEngine] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) stopped vehicle Toyota Land Cruiser 200'16 White (id=2E615508094C7B028E0EDFAE828A6BBA pos=<7461.14, 224.72, 1372>)
+01:41:10.866 [VehicleLeave] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) left vehicle Toyota Land Cruiser 200'16 White (id=2E615508094C7B028E0EDFAE828A6BBA pos=<7461.14, 224.72, 1372>) as driver
+01:41:30.445 [VehicleEnter] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) entered vehicle Rolls-Royce Cullinan Black (id=60311BB6914707290177188A90DF8DA3 pos=<7456.93, 224.3, 1355.85>) as driver
+01:41:34.601 [VehicleEngine] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) started vehicle Rolls-Royce Cullinan Black (id=60311BB6914707290177188A90DF8DA3 pos=<7456.93, 224.3, 1355.85>)
+01:42:10.774 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Mercedes-Benz V250d Grey (id=8E457C8D0F43F974FD8F74A77C9054B7 pos=<7447.96, 223.48, 1354.98>)
+01:42:10.843 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Mercedes-Benz V250d Grey (id=8E457C8D0F43F974FD8F74A77C9054B7 pos=<7447.96, 223.48, 1354.98>) as driver
+01:42:17.551 [VehicleEngine] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) stopped vehicle Rolls-Royce Cullinan Black (id=60311BB6914707290177188A90DF8DA3 pos=<7399.97, 218.94, 1360.07>)
+01:42:22.642 [VehicleLeave] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) left vehicle Rolls-Royce Cullinan Black (id=60311BB6914707290177188A90DF8DA3 pos=<7399.97, 218.94, 1360.07>) as driver
+01:42:53.368 [VehicleEnter] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) entered vehicle Mercedes-Benz V250d Grey (id=8E457C8D0F43F974FD8F74A77C9054B7 pos=<7447.96, 223.48, 1354.98>) as driver
+01:42:56.801 [VehicleEngine] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) started vehicle Mercedes-Benz V250d Grey (id=8E457C8D0F43F974FD8F74A77C9054B7 pos=<7447.96, 223.48, 1354.98>)
+01:43:11.820 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Mercedes-Benz V250d Grey (id=8E457C8D0F43F974FD8F74A77C9054B7 pos=<7391.9, 216.21, 1334.61>)
+01:43:11.841 [VehicleLeave] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) left vehicle Mercedes-Benz V250d Grey (id=8E457C8D0F43F974FD8F74A77C9054B7 pos=<7391.9, 216.21, 1334.61>) as driver
+01:43:18.246 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle 2014 Chevy Tahoe Green (id=CD1049FC1C401A4B3A2A6690C3378AB3 pos=<7430.2, 211.91, 1197.88>) as driver
+01:43:22.450 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle 2014 Chevy Tahoe Green (id=CD1049FC1C401A4B3A2A6690C3378AB3 pos=<7430.2, 211.91, 1197.88>)
+01:43:31.091 [VehicleDeleted] CrSk_Insurgent_SUV (id=8422E5670243F4BDE84673AB7E293555 pos=<14332.1, 320.05, 6594.41> lifetime=-1)
+01:43:41.318 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle 2014 Chevy Tahoe Green (id=CD1049FC1C401A4B3A2A6690C3378AB3 pos=<7418.72, 221.06, 1359.51>)
+01:43:41.390 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle 2014 Chevy Tahoe Green (id=CD1049FC1C401A4B3A2A6690C3378AB3 pos=<7418.72, 221.06, 1359.51>) as driver
+01:43:46.445 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Ford_Mustang_Shelby_GT500_Green (id=82A882A93444EFEE19786280CAF19AFE pos=<7411.59, 220.29, 1358.41>) as driver
+01:43:49.603 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Ford_Mustang_Shelby_GT500_Green (id=82A882A93444EFEE19786280CAF19AFE pos=<7412.92, 220.53, 1359.63>)
+01:43:57.284 [VehicleEnter] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) entered vehicle DodgeRam_2021_TopoGraphic (id=363BAFD742479AAF34C84781108A3D05 pos=<7395.16, 217.84, 1352.32>) as driver
+01:44:01.626 [VehicleEngine] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) started vehicle DodgeRam_2021_TopoGraphic (id=363BAFD742479AAF34C84781108A3D05 pos=<7395.15, 217.84, 1352.2>)
+01:44:03.243 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Mercedes-AMG GT 63 S (id=D679E020404EEB78E639538DC6EA6E12 pos=<7399.94, 218.68, 1356.06>)
+01:44:03.244 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle Mercedes-AMG GT 63 S (id=D679E020404EEB78E639538DC6EA6E12 pos=<7399.94, 218.68, 1356.06>) as driver
+01:44:17.359 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Ford_Mustang_Shelby_GT500_Green (id=82A882A93444EFEE19786280CAF19AFE pos=<7380.09, 216.77, 1360.92>)
+01:44:17.634 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Ford_Mustang_Shelby_GT500_Green (id=82A882A93444EFEE19786280CAF19AFE pos=<7380.09, 216.77, 1360.92>) as driver
+01:44:25.482 [VehicleEnter] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) entered vehicle BMW M760Li DRUGOY MIR (id=04FD05274E4223B873CDF0ADF74FB1BA pos=<7361.93, 214.89, 1352.94>) as driver
+01:44:27.852 [VehicleEngine] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) started vehicle BMW M760Li DRUGOY MIR (id=04FD05274E4223B873CDF0ADF74FB1BA pos=<7361.93, 214.89, 1352.94>)
+01:44:49.114 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Oshkosh M-ATV (BLACK) (id=D768DE96DE4F43F66D168FB9ACDA7DDE pos=<7387.85, 210.51, 1268.83>) as driver
+01:44:51.527 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Oshkosh M-ATV (BLACK) (id=D768DE96DE4F43F66D168FB9ACDA7DDE pos=<7387.85, 210.51, 1268.83>)
+01:45:05.942 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle BMW M760Li DRUGOY MIR (id=04FD05274E4223B873CDF0ADF74FB1BA pos=<7261.92, 215.19, 1437.67>)
+01:45:05.991 [VehicleLeave] Player "Hessher" (id=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=) left vehicle BMW M760Li DRUGOY MIR (id=04FD05274E4223B873CDF0ADF74FB1BA pos=<7261.92, 215.19, 1437.67>) as driver
+01:45:29.810 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Oshkosh M-ATV (BLACK) (id=D768DE96DE4F43F66D168FB9ACDA7DDE pos=<7370.69, 216.97, 1374.42>)
+01:45:29.904 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Oshkosh M-ATV (BLACK) (id=D768DE96DE4F43F66D168FB9ACDA7DDE pos=<7370.69, 216.97, 1374.42>) as driver
+01:45:34.360 [Party] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) left the party "Guardian Brave" (id=0 ownerUID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= ownerName=BugiMen)
+01:45:34.378 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle DodgeRam_2021_TopoGraphic (id=363BAFD742479AAF34C84781108A3D05 pos=<7505.45, 228.46, 1403.45>)
+01:53:08.306 [Party] Player "BugiMen" (id=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY=) joined the party "Guardian Brave" (id=0 ownerUID=E8NUE864Ah88HeO756WaRkQGG6WE963kZ90uprHjMQY= ownerName=BugiMen)
+01:54:20.539 [VehicleDeleted] CrSk_BTR_82A_Desert (id=B64F8AD786452EF6931CF0B5C46FAE74 pos=<14307.2, 313.41, 6642.72> lifetime=-1)
+01:55:14.753 [VehicleDeleted] FC_Defender_Yellow (id=4128E42B3D4E527EBB1C138A8F0BDF58 pos=<14294.6, 315.6, 6611.11> lifetime=-1)
+01:56:54.421 [VehicleDestroyed] ExpansionMerlin_Dahoman (id=C75C22111A4424C3D78C21A233266565 pos=<7474.42, 225.61, 1360.88>)
+01:57:01.579 [VehicleDestroyed] ExpansionMh6_Green (id=B97B886217462D9C65C414A61FCCD544 pos=<7481.91, 226.27, 1361.34>)
+01:57:07.852 [VehicleDestroyed] ExpansionUh1h (id=532968490D44DD55157F939EF5D66D20 pos=<7486.89, 226.65, 1362.1>)
+01:58:24.487 [VehicleDeleted] CrSk_BTR_82A_Camo (id=D73FC793F344A773026E9F9FAC45EBAA pos=<7372.66, 215.49, 1351.18> lifetime=-1)
+01:58:24.488 [VehicleDeleted] CrSk_GAZ_Tigr_M_Black (id=F3FCE5A6054694E7A93F449E0B923263 pos=<7379.09, 215.79, 1350.18> lifetime=-1)
+01:58:24.489 [VehicleDeleted] CrSk_GAZ_Tigr_M_Skull (id=D9369DC95A4FF799208069BE6B8AE8D4 pos=<7376.16, 215.67, 1350.79> lifetime=-1)
+01:58:27.035 [MissionAirdrop] An airdrop is heading towards "Sliezska Osada" (pos=<2187.139893, 0.000000, 1967.319702> type=Random_slienzska) with a ExpansionAirdropContainer
+01:58:51.429 [VehicleDeleted] CrSk_BMW_M760Li_G12_20_DM (id=04FD05274E4223B873CDF0ADF74FB1BA pos=<7261.92, 215.19, 1437.67> lifetime=-1)
+01:58:51.431 [VehicleDeleted] savage_uaz2206_camo1 (id=2BD703E94846F281E418FBAD9037E659 pos=<7358.74, 214.65, 1353.7> lifetime=-1)
+01:58:51.431 [VehicleDeleted] savage_toyota_tacoma_orange (id=60DD0622A14A4A4060278E84824F48E6 pos=<7355.08, 214.62, 1354.55> lifetime=-1)
+01:58:51.432 [VehicleDeleted] CrSk_BMW_X5_E53 (id=753EFA0B034E7B9914DE7AAB295EEF21 pos=<7364.47, 215.04, 1351.56> lifetime=-1)
+01:58:51.433 [VehicleDeleted] CrSk_BMW_X5M_F95_Comp_Blue (id=4765FC418145A6536796D18CA80E9A09 pos=<7368, 215.22, 1351.55> lifetime=-1)
+01:59:18.351 [VehicleDeleted] savage_oshkosh_atv_black (id=D768DE96DE4F43F66D168FB9ACDA7DDE pos=<7370.69, 216.97, 1374.42> lifetime=-1)
+01:59:18.352 [VehicleDeleted] Kamaz_TyphoonK_Rusty (id=36EE73263743A3AB86438D8301C51899 pos=<7387.49, 216.06, 1338.94> lifetime=-1)
+01:59:18.353 [VehicleDeleted] savage_priora_2172_black (id=D52BDBB7854D45B8A2E703A85BA0057A pos=<7382.25, 216.31, 1351.93> lifetime=-1)
+01:59:18.354 [VehicleDeleted] fruck_Varta_dnr (id=5AF5868CAA4CEDFAA75ECCA672AC6DBB pos=<7390.68, 217.32, 1350.51> lifetime=-1)
+01:59:18.354 [VehicleDeleted] DodgeRam_3500_ScamTopia (id=B8F4EC0EB64865D2AD0127ACE91955C5 pos=<7392.83, 217.33, 1350.16> lifetime=-1)
+01:59:45.270 [VehicleDeleted] dodgechargerhellcat_pink (id=F903A83401460208F45586B590158F6B pos=<7397.59, 217.84, 1348.2> lifetime=-1)
+02:01:06.017 [VehicleDeleted] Ford_Mustang_Shelby_GT500_Green (id=82A882A93444EFEE19786280CAF19AFE pos=<7380.09, 216.77, 1360.92> lifetime=-1)
+02:01:32.925 [VehicleDeleted] CrSk_Pitbull_VX_Khaki (id=798CC453684D65DE42E21C9AF3665DA5 pos=<7419.41, 213.63, 1196.05> lifetime=-1)
+02:01:32.925 [VehicleDeleted] CrSk_Mercedes_V250d_19_Grey (id=8E457C8D0F43F974FD8F74A77C9054B7 pos=<7392.15, 216.16, 1333.53> lifetime=-1)
+02:03:47.454 [VehicleDeleted] ExpansionTractor_Blue (id=AB35C0EA3C48DF9B262624AB2673A851 pos=<7357.86, 215.99, 1373.97> lifetime=-1)
+02:03:47.455 [VehicleDeleted] ExpansionTractor_Blue (id=655C06AD1E482D986A021997415B9CB5 pos=<7362.34, 216.22, 1372.79> lifetime=-1)
+02:03:47.455 [VehicleDeleted] ExpansionTractor_Blue (id=DD3F21B69847C083200114AFDE95B16D pos=<7367.3, 216.59, 1372.83> lifetime=-1)
+02:20:16.283 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002B14EB6D550> ExplosionTest:36790 at <4870.16, 220.37, 7840.98> EXPLOSION range 4 dropoff 1
+02:28:55.583 [VehicleDeleted] CrSk_BTR_82A_Black (id=553FE08A3C49F4AE9EC0D8A827A41F85 pos=<14322.3, 315.05, 6633.43> lifetime=-1)

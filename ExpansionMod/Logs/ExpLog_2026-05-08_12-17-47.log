@@ -1,0 +1,42 @@
+12:24:04.104 [Expansion Quests] Initialize quest system on the connected client with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+12:24:04.118 [Expansion Quests] Loaded existing player quest data for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+12:24:04.119 [Expansion Quests] Check quest initialization for quest with ID=8 | State=STARTED | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+12:24:04.120 [Expansion Quests] Create new quest instance for quest with ID=8 | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+12:24:04.123 [Expansion Quests] Check quest initialization for quest with ID=9 | State=STARTED | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+12:24:04.123 [Expansion Quests] Create new quest instance for quest with ID=9 | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+12:24:04.124 [Expansion Quests] Check quest initialization for quest with ID=11 | State=STARTED | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+12:24:04.124 [Expansion Quests] Create new quest instance for quest with ID=11 | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+12:24:04.125 [Expansion Quests] Check quest initialization for quest with ID=14 | State=COMPLETED | Player UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+12:24:04.127 [Expansion Quests] Sending MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI= quest configs to client for player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+12:24:04.130 [Expansion Quests] Sending player quest data for 4 quests to player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=
+12:29:31.830 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x00000210240F8310> Expansion_C4_Explos at <3412.9, 211.47, 345.47> EXPLOSION range 5 dropoff 2.5
+12:29:31.835 [Killfeed] Hessher умер от взрыва Заряд взрывчатки.
+12:30:30.555 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x00000210240F5340> Expansion_C4_Explos at <4598.87, 187.04, 241.61> EXPLOSION range 5 dropoff 2.5
+12:30:31.561 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x00000210240F4020> Expansion_C4_Explos at <4598.87, 187.04, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:31.753 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x00000210241008F0> Expansion_C4_Explos at <4598.87, 187.06, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:31.988 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x00000210240FCF90> Expansion_C4_Explos at <4598.87, 187.08, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:32.185 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x0000021024101280> Expansion_C4_Explos at <4598.87, 187.09, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:32.343 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x00000210240FC600> Expansion_C4_Explos at <4598.87, 187.1, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:32.564 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x00000210240FD920> Expansion_C4_Explos at <4598.87, 187.11, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:32.733 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x00000210240FE2B0> Expansion_C4_Explos at <4598.87, 187.1, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:32.964 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x00000210240FEC40> Expansion_C4_Explos at <4598.87, 187.09, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:33.158 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x00000210240FB2E0> Expansion_C4_Explos at <4598.87, 187.08, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:33.397 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x00000210240FF5D0> Expansion_C4_Explos at <4598.87, 187.06, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:33.591 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x00000210240FFF60> Expansion_C4_Explos at <4598.87, 187.04, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:33.820 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x00000210240FBC70> Expansion_C4_Explos at <4598.87, 187.03, 241.63> EXPLOSION range 5 dropoff 2.5
+12:30:34.016 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x0000021024105F00> Expansion_C4_Explos at <4598.87, 187.02, 241.63> EXPLOSION range 5 dropoff 2.5
+12:30:34.208 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x0000021024104250> Expansion_C4_Explos at <4598.87, 187.02, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:34.405 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x0000021024104BE0> Expansion_C4_Explos at <4598.87, 187.02, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:34.665 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x0000021024105570> Expansion_C4_Explos at <4598.87, 187.04, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:34.792 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x0000021024106890> Expansion_C4_Explos at <4598.87, 187.05, 241.62> EXPLOSION range 5 dropoff 2.5
+12:30:34.968 [ExplosionDamageSystem] About to explode ExpansionC4_Ammo from Expansion_C4_Explosion<0x0000021024107220> Expansion_C4_Explos at <4598.87, 187.07, 241.62> EXPLOSION range 5 dropoff 2.5
+12:34:18.034 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002102410EE70> ExplosionTest:30826 at <6104.41, 213.55, 2028.35> EXPLOSION range 4 dropoff 1
+12:36:42.952 [VehicleDeleted] ExpansionMerlin_Dahoman (id=2E52E501E048082FB12582A28F4FA367 pos=<3341.02, 197.39, 190.68> lifetime=-1)
+12:38:58.870 [ExplosionDamageSystem] About to explode ExpansionRocket_Ammo from Expansion_LAW_Explosion<0x0000020F4D50F3C0> Expansion_LAW_Expl at <4621.22, 192.36, 348.47> EXPLOSION range 12 dropoff 3
+12:39:47.865 [ExplosionDamageSystem] About to explode ExpansionRocket_Ammo from Expansion_LAW_Explosion<0x0000020F4D511070> Expansion_LAW_Expl at <4668.7, 190.02, 353.55> EXPLOSION range 12 dropoff 3
+12:39:50.150 [ExplosionDamageSystem] About to explode ExpansionRocket_Ammo from Expansion_LAW_Explosion<0x0000020F4D50EA30> Expansion_LAW_Expl at <4634.59, 189.43, 353.28> EXPLOSION range 12 dropoff 3
+12:40:02.511 [ExplosionDamageSystem] About to explode ExpansionRocket_Ammo from Expansion_LAW_Explosion<0x0000020F4D512D20> Expansion_LAW_Expl at <4625.16, 190.41, 310.59> EXPLOSION range 12 dropoff 3
+12:40:02.513 [Killfeed] Hessher умер от взрыва M72 LAW.
+12:40:21.451 [Expansion Quests] Deleted quest with ID=8 is a of player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=.
+12:40:21.451 [Expansion Quests] Deleted quest with ID=9 is a of player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=.
+12:40:21.451 [Expansion Quests] Deleted quest with ID=11 is a of player with UID=MilAR913ecKsrHUOy0uV_fIY7CR0FzNOXUGd_pWZtgI=.

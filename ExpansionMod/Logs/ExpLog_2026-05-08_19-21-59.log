@@ -1,0 +1,842 @@
+19:25:08.348 [VehicleDeleted] ExpansionUh1h_Green (id=58F82BE91F40597DAF0551A676AD6586 pos=<6511.31, 224.84, 2329.83> lifetime=-1)
+19:42:34.271 [Expansion Quests] Initialize quest system on the connected client with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+19:42:34.286 [Expansion Quests] Loaded existing player quest data for player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+19:42:34.286 [Expansion Quests] Check quest initialization for quest with ID=8 | State=STARTED | Player UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+19:42:34.287 [Expansion Quests] Create new quest instance for quest with ID=8 | Player UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+19:42:34.289 [Expansion Quests] Check quest initialization for quest with ID=9 | State=STARTED | Player UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+19:42:34.289 [Expansion Quests] Create new quest instance for quest with ID=9 | Player UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+19:42:34.289 [Expansion Quests] Check quest initialization for quest with ID=11 | State=STARTED | Player UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+19:42:34.289 [Expansion Quests] Create new quest instance for quest with ID=11 | Player UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+19:42:34.290 [Expansion Quests] Check quest initialization for quest with ID=14 | State=COMPLETED | Player UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+19:42:34.291 [Expansion Quests] Sending 1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= quest configs to client for player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+19:42:34.293 [Expansion Quests] Sending player quest data for 4 quests to player with UID=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=
+19:44:43.044 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Merlin (id=E833924489444395C285B0B8A8CE6749 pos=<6504.03, 224.48, 2343.33>) as passenger
+19:44:59.778 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Merlin (id=E833924489444395C285B0B8A8CE6749 pos=<6504.03, 224.48, 2343.33>) as passenger
+19:45:02.402 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Merlin (id=E833924489444395C285B0B8A8CE6749 pos=<6504.03, 224.48, 2343.33>) as pilot
+19:45:04.373 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Merlin (id=E833924489444395C285B0B8A8CE6749 pos=<6504.03, 224.48, 2343.33>)
+19:45:36.434 [AI Object Patrol 00001] Spawning 1 West bots at <6101.240234, 205.139999, 1202.790039>
+19:45:36.561 [AI Object Patrol 00001] Global patrol count: 1
+19:45:36.562 [AI Object Patrol 00001] Global Expansion AI count: 2 alive, 0 deceased
+19:45:36.562 [AI Object Patrol 00001] MilitaryRoaming category patrol count: 1
+19:45:43.543 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Merlin (id=E833924489444395C285B0B8A8CE6749 pos=<6415.58, 362.14, 1814.11>)
+19:45:43.544 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Merlin (id=E833924489444395C285B0B8A8CE6749 pos=<6415.58, 362.14, 1814.11>) as pilot
+19:45:47.782 [VehicleDeleted] CrSk_Mercedes_G63_AMG_19 (id=0F82ACA94440426D8F403D8BB7170474 pos=<6494.87, 224.5, 2341.1> lifetime=-1)
+19:46:34.653 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Гирокоптер (id=0BC6D1E7024E3061C245609CD3F6A783 pos=<6487.45, 217.71, 1702.32>) as pilot
+19:46:36.314 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Гирокоптер (id=0BC6D1E7024E3061C245609CD3F6A783 pos=<6487.47, 217.7, 1702.32>)
+19:47:07.857 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) stopped vehicle Гирокоптер (id=0BC6D1E7024E3061C245609CD3F6A783 pos=<7076.33, 241.65, 1739.6>)
+19:47:25.728 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Гирокоптер (id=0BC6D1E7024E3061C245609CD3F6A783 pos=<7149.1, 206.61, 1763.22>) as pilot
+19:49:17.278 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7153.4, 205.62, 1737.33>) as driver
+19:49:19.652 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7153.4, 205.62, 1737.33>)
+19:49:28.884 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7137.13, 205.62, 1742.69>)
+19:49:28.907 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7137.13, 205.62, 1742.69>) as driver
+19:52:21.245 [VehicleCarKey] PPlayer "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<7140.97, 205.65, 1740.98>) paired ExpansionCarKey to CrSk_Insurgent_SUV (id=885110BDB64D5863C01D588776DAA000 pos=<7142.94, 205.7, 1740.53>)
+19:53:06.247 [VehicleCarKey] PPlayer "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<7137.77, 205.66, 1741.25>) paired ExpansionCarKey to CivilianSedan_Wine (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7137.13, 205.62, 1742.69>)
+19:53:10.597 [VehicleCarKey] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<7137.77, 205.66, 1741.25>) used ExpansionCarKey to lock CivilianSedan_Wine (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7137.13, 205.62, 1742.69>)
+19:53:59.506 [VehicleCarKey] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<7137.91, 205.66, 1741.47>) used ExpansionCarKey to lock CivilianSedan_Wine (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7137.13, 205.62, 1742.69>)
+19:54:13.094 [VehicleCarKey] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<7141.26, 205.65, 1741.08>) used ExpansionCarKey to lock CrSk_Insurgent_SUV (id=885110BDB64D5863C01D588776DAA000 pos=<7142.94, 205.7, 1740.53>)
+19:55:03.369 [VehicleCarKey] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<7140.22, 205.66, 1740.81>) used ExpansionCarKey to unlock CrSk_Insurgent_SUV (id=885110BDB64D5863C01D588776DAA000 pos=<7142.94, 205.7, 1740.53>)
+19:55:05.008 [VehicleCarKey] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<7140.22, 205.66, 1740.81>) used ExpansionCarKey to lock CrSk_Insurgent_SUV (id=885110BDB64D5863C01D588776DAA000 pos=<7142.94, 205.7, 1740.53>)
+19:55:06.241 [VehicleCarKey] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<7140.22, 205.66, 1740.81>) used ExpansionCarKey to unlock CrSk_Insurgent_SUV (id=885110BDB64D5863C01D588776DAA000 pos=<7142.94, 205.7, 1740.53>)
+19:56:29.102 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7137.13, 205.62, 1742.7>) as driver
+19:56:40.778 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7137.14, 205.62, 1742.71>) as driver
+19:56:49.634 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7137.14, 205.62, 1742.71>) as driver
+19:56:51.551 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7137.14, 205.62, 1742.72>)
+19:56:57.826 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) stopped vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7137.14, 205.62, 1742.73>)
+19:57:00.056 [VehicleCarKey] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<7137.26, 206.3, 1742.29>) used ExpansionCarKey to lock CivilianSedan_Wine (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7137.14, 205.62, 1742.73>)
+19:57:14.792 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7137.15, 205.62, 1742.75>) as driver
+19:57:26.358 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7137.15, 205.62, 1742.75>) as driver
+19:57:30.426 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7137.15, 205.62, 1742.76>)
+19:57:35.831 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7130.97, 205.62, 1738.96>)
+19:57:35.860 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7130.97, 205.62, 1738.96>) as driver
+19:57:43.592 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7130.97, 205.62, 1738.96>) as driver
+19:57:45.526 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7130.97, 205.62, 1738.96>)
+19:57:50.986 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7130.97, 205.62, 1738.97>)
+19:57:51.028 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7130.97, 205.62, 1738.97>) as driver
+19:57:56.793 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7130.97, 205.62, 1738.97>) as driver
+19:58:13.784 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7130.98, 205.62, 1738.99>) as driver
+19:58:20.877 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7130.98, 205.62, 1738.99>) as driver
+19:58:29.771 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7130.98, 205.62, 1739.01>) as driver
+19:58:35.840 [VehicleEnter] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) entered vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7130.98, 205.62, 1739.01>) as driver
+19:58:37.651 [VehicleEngine] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) started vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7130.98, 205.62, 1739.01>)
+19:58:55.062 [VehicleEngine] Player "NULL" (id=NULL) stopped vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7133.84, 205.62, 1743.06>)
+19:58:55.099 [VehicleLeave] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE=) left vehicle Olga 24 (id=A885972B0F4DD880C9311C8774D0AE79 pos=<7133.84, 205.62, 1743.06>) as driver
+19:59:54.602 [VehicleCarKey] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<7141.41, 205.65, 1740.97>) used ExpansionCarKey to lock CrSk_Insurgent_SUV (id=885110BDB64D5863C01D588776DAA000 pos=<7142.94, 205.7, 1740.53>)
+20:08:32.712 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x000002AD32ED6340> ExplosionTest:30995 at <6583.74, 206.1, 1551.4> EXPLOSION range 4 dropoff 1
+20:10:32.586 [VehicleDeleted] Ford_Mustang_Shelby_GT500_Red (id=665D6E036340CF208E2A13B45483AA4C pos=<7324.32, 216.85, 1426.94> lifetime=-1)
+20:14:08.275 [VehicleDeleted] ExpansionMerlin_President (id=E833924489444395C285B0B8A8CE6749 pos=<6628.02, 205.11, 1424.55> lifetime=-1)
+20:16:23.079 [VehicleDeleted] ExpansionGyrocopter (id=0BC6D1E7024E3061C245609CD3F6A783 pos=<7149.1, 206.61, 1763.22> lifetime=-1)
+20:18:02.813 [AI Object Patrol 00001] Despawning 1 West bots (spawn position <6101.240234, 205.139999, 1202.790039>, 0/1 deceased)
+20:18:02.813 [AI Object Patrol 00001] Global patrol count: 0
+20:18:02.813 [AI Object Patrol 00001] Global Expansion AI count: 1 alive, 0 deceased
+20:18:02.814 [AI Object Patrol 00001] MilitaryRoaming category patrol count: 0
+20:22:13.971 [VehicleDeleted] CrSk_Insurgent_SUV (id=885110BDB64D5863C01D588776DAA000 pos=<7142.94, 205.7, 1740.53> lifetime=-1)
+20:25:30.039 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:30.039 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:30.040 [BaseBuildingRaiding] They dealt 162.742 * 1 = 162.742 damage with Bullet_762x54 from KOD_PKP
+20:25:30.040 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 30000 to 29837.3
+20:25:30.040 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:30.050 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:30.050 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:30.050 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:30.050 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 29837.3 to 29674.5
+20:25:30.050 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:30.161 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:30.162 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:30.162 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:30.162 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 29674.5 to 29511.8
+20:25:30.162 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:30.214 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:30.214 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:30.215 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:30.215 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 29511.8 to 29349
+20:25:30.215 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:30.340 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:30.340 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:30.340 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:30.340 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 29349 to 29186.3
+20:25:30.340 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:30.422 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:30.423 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:30.423 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:30.423 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 29186.3 to 29023.6
+20:25:30.423 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:30.547 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:30.548 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:30.548 [BaseBuildingRaiding] They dealt 162.742 * 1 = 162.742 damage with Bullet_762x54 from KOD_PKP
+20:25:30.548 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 29023.6 to 28860.8
+20:25:30.548 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:30.616 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:30.616 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:30.617 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:30.617 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 28860.8 to 28698.1
+20:25:30.617 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:30.711 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:30.711 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:30.711 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:30.711 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 28698.1 to 28535.3
+20:25:30.711 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:30.828 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:30.828 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:30.828 [BaseBuildingRaiding] They dealt 162.742 * 1 = 162.742 damage with Bullet_762x54 from KOD_PKP
+20:25:30.828 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 28535.3 to 28372.6
+20:25:30.828 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:30.983 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:30.983 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:30.983 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:30.983 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 28372.6 to 28209.8
+20:25:30.983 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:31.012 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:31.012 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:31.012 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:31.012 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 28209.8 to 28047.1
+20:25:31.013 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:31.141 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:31.142 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:31.142 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:31.142 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 28047.1 to 27884.4
+20:25:31.142 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:31.285 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:31.285 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:31.285 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:31.286 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 27884.4 to 27721.6
+20:25:31.286 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:31.361 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:31.361 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:31.361 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:31.362 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 27721.6 to 27558.9
+20:25:31.362 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:31.423 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:31.424 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:31.424 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:31.424 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 27558.9 to 27396.1
+20:25:31.424 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:31.583 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:31.584 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:31.584 [BaseBuildingRaiding] They dealt 162.742 * 1 = 162.742 damage with Bullet_762x54 from KOD_PKP
+20:25:31.584 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 27396.1 to 27233.4
+20:25:31.584 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:31.638 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:31.639 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:31.639 [BaseBuildingRaiding] They dealt 162.742 * 1 = 162.742 damage with Bullet_762x54 from KOD_PKP
+20:25:31.639 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 27233.4 to 27070.7
+20:25:31.639 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:31.760 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:31.760 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:31.760 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:31.760 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 27070.7 to 26907.9
+20:25:31.760 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:31.885 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:31.885 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:31.885 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:31.886 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 26907.9 to 26745.2
+20:25:31.886 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:31.947 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:31.947 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.92, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:31.948 [BaseBuildingRaiding] They dealt 162.742 * 1 = 162.742 damage with Bullet_762x54 from KOD_PKP
+20:25:31.948 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 26745.2 to 26582.4
+20:25:31.948 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:32.013 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:32.014 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.91, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:32.014 [BaseBuildingRaiding] They dealt 162.742 * 1 = 162.742 damage with Bullet_762x54 from KOD_PKP
+20:25:32.014 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 26582.4 to 26419.7
+20:25:32.014 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:32.112 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:32.112 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.79, 469.38, 15004.6>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:32.112 [BaseBuildingRaiding] They dealt 162.936 * 1 = 162.936 damage with Bullet_762x54 from KOD_PKP
+20:25:32.112 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 26419.7 to 26256.7
+20:25:32.112 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:32.239 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:32.239 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.62, 469.38, 15004.7>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:32.239 [BaseBuildingRaiding] They dealt 163.149 * 1 = 163.149 damage with Bullet_762x54 from KOD_PKP
+20:25:32.240 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 26256.7 to 26093.6
+20:25:32.240 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:33.653 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:33.653 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.39, 469.38, 15004.8>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:33.653 [BaseBuildingRaiding] They dealt 162.37 * 1 = 162.37 damage with Bullet_762x54 from KOD_PKP
+20:25:33.653 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 26093.6 to 25931.2
+20:25:33.653 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:33.723 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:33.724 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.47, 469.38, 15004.7>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:33.724 [BaseBuildingRaiding] They dealt 162.37 * 1 = 162.37 damage with Bullet_762x54 from KOD_PKP
+20:25:33.724 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 25931.2 to 25768.9
+20:25:33.724 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:33.828 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:33.828 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.6>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:33.829 [BaseBuildingRaiding] They dealt 162.338 * 1 = 162.338 damage with Bullet_762x54 from KOD_PKP
+20:25:33.829 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 25768.9 to 25606.5
+20:25:33.829 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:33.945 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:33.946 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.69, 469.38, 15004.4>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:33.946 [BaseBuildingRaiding] They dealt 162.334 * 1 = 162.334 damage with Bullet_762x54 from KOD_PKP
+20:25:33.946 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 25606.5 to 25444.2
+20:25:33.946 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:34.055 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:34.055 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.75, 469.38, 15004.4>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:34.055 [BaseBuildingRaiding] They dealt 162.402 * 1 = 162.402 damage with Bullet_762x54 from KOD_PKP
+20:25:34.056 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 25444.2 to 25281.8
+20:25:34.056 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:34.123 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:34.123 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.76, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:34.123 [BaseBuildingRaiding] They dealt 162.628 * 1 = 162.628 damage with Bullet_762x54 from KOD_PKP
+20:25:34.123 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 25281.8 to 25119.2
+20:25:34.123 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:34.245 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:34.245 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:34.245 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:34.245 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 25119.2 to 24956.4
+20:25:34.245 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:34.390 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:34.390 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:34.390 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:34.390 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 24956.4 to 24793.7
+20:25:34.390 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:34.461 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:34.462 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:34.462 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:34.462 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 24793.7 to 24630.9
+20:25:34.462 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:34.547 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:34.547 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:34.547 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:34.548 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 24630.9 to 24468.2
+20:25:34.548 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:34.637 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:34.637 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:34.637 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:34.637 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 24468.2 to 24305.5
+20:25:34.637 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:34.751 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:34.751 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:34.751 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:34.751 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 24305.5 to 24142.7
+20:25:34.751 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:34.845 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:34.845 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:34.845 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:34.845 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 24142.7 to 23980
+20:25:34.845 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:34.945 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:34.945 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:34.945 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:34.945 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 23980 to 23817.2
+20:25:34.945 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:35.053 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:35.054 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:35.054 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:35.054 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 23817.2 to 23654.5
+20:25:35.054 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:35.114 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:35.114 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:35.115 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:35.115 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 23654.5 to 23491.8
+20:25:35.115 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:35.226 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:35.226 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:35.227 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:35.227 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 23491.8 to 23329
+20:25:35.227 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:35.330 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:35.331 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:35.331 [BaseBuildingRaiding] They dealt 162.74 * 1 = 162.74 damage with Bullet_762x54 from KOD_PKP
+20:25:35.331 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 23329 to 23166.3
+20:25:35.331 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:35.446 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:35.446 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:35.446 [BaseBuildingRaiding] They dealt 162.74 * 1 = 162.74 damage with Bullet_762x54 from KOD_PKP
+20:25:35.446 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 23166.3 to 23003.5
+20:25:35.446 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:35.557 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:35.558 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:35.558 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:35.558 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 23003.5 to 22840.8
+20:25:35.558 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:35.620 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:35.620 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:35.620 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:35.620 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 22840.8 to 22678.1
+20:25:35.620 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:35.747 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:35.747 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:35.747 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:35.747 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 22678.1 to 22515.3
+20:25:35.747 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:35.837 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:35.837 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:35.837 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:35.838 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 22515.3 to 22352.6
+20:25:35.838 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:35.947 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:35.948 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:35.948 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:35.948 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 22352.6 to 22189.8
+20:25:35.948 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:36.073 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:36.074 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:36.074 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:36.074 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 22189.8 to 22027.1
+20:25:36.074 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:36.165 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:36.166 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:36.166 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:36.166 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 22027.1 to 21864.3
+20:25:36.166 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:36.228 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:36.228 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:36.229 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:36.229 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 21864.3 to 21701.6
+20:25:36.229 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:36.341 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:36.342 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:36.342 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:36.342 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 21701.6 to 21538.9
+20:25:36.342 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:36.440 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:36.440 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:36.441 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:36.441 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 21538.9 to 21376.1
+20:25:36.441 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:36.555 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:36.556 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:36.556 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:36.556 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 21376.1 to 21213.4
+20:25:36.556 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:36.639 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:36.640 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:36.640 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:36.640 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 21213.4 to 21050.6
+20:25:36.640 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:36.751 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:36.751 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:36.751 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:36.751 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 21050.6 to 20887.9
+20:25:36.751 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:36.834 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:36.834 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:36.834 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:36.835 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 20887.9 to 20725.2
+20:25:36.835 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:36.934 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:36.934 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:36.934 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:36.934 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 20725.2 to 20562.4
+20:25:36.934 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:37.036 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:37.036 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:37.036 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:37.037 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 20562.4 to 20399.7
+20:25:37.037 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:37.133 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:37.133 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:37.133 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:37.133 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 20399.7 to 20236.9
+20:25:37.133 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:37.259 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:37.260 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:37.260 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:37.260 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 20236.9 to 20074.2
+20:25:37.260 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:37.324 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:37.324 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:37.325 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:37.325 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 20074.2 to 19911.5
+20:25:37.325 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:37.435 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:37.436 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:37.436 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:37.436 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 19911.5 to 19748.7
+20:25:37.436 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:37.556 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:37.556 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:37.556 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:37.557 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 19748.7 to 19586
+20:25:37.557 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:37.625 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:37.625 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:37.625 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:37.625 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 19586 to 19423.2
+20:25:37.625 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:37.722 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:37.722 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.77, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:37.722 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:37.722 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 19423.2 to 19260.5
+20:25:37.722 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:37.853 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:37.853 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.75, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:37.853 [BaseBuildingRaiding] They dealt 162.741 * 1 = 162.741 damage with Bullet_762x54 from KOD_PKP
+20:25:37.853 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 19260.5 to 19097.8
+20:25:37.854 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:43.726 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:43.726 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6195.8, 469.38, 15003.2>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:43.726 [BaseBuildingRaiding] They dealt 162.876 * 1 = 162.876 damage with Bullet_762x54 from KOD_PKP
+20:25:43.726 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 19097.8 to 18934.9
+20:25:43.726 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:43.844 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:43.844 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6195.97, 469.38, 15003.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:43.844 [BaseBuildingRaiding] They dealt 162.977 * 1 = 162.977 damage with Bullet_762x54 from KOD_PKP
+20:25:43.844 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 18934.9 to 18771.9
+20:25:43.844 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:43.944 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:43.944 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6196.14, 469.38, 15003.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:43.944 [BaseBuildingRaiding] They dealt 162.94 * 1 = 162.94 damage with Bullet_762x54 from KOD_PKP
+20:25:43.944 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 18771.9 to 18609
+20:25:43.945 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:44.072 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:44.072 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6196.37, 469.38, 15003.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:44.073 [BaseBuildingRaiding] They dealt 162.896 * 1 = 162.896 damage with Bullet_762x54 from KOD_PKP
+20:25:44.073 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 18609 to 18446.1
+20:25:44.073 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:44.126 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:44.126 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6196.48, 469.38, 15003.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:44.126 [BaseBuildingRaiding] They dealt 162.889 * 1 = 162.889 damage with Bullet_762x54 from KOD_PKP
+20:25:44.127 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 18446.1 to 18283.2
+20:25:44.127 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:44.127 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:44.127 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6196.48, 469.38, 15003.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:44.128 [BaseBuildingRaiding] They dealt 103.823 * 1 = 103.823 damage with Bullet_762x54 from KOD_PKP
+20:25:44.128 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 18283.2 to 18179.4
+20:25:44.128 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:44.230 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:44.230 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6196.66, 469.38, 15003.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:44.230 [BaseBuildingRaiding] They dealt 162.867 * 1 = 162.867 damage with Bullet_762x54 from KOD_PKP
+20:25:44.230 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 18179.4 to 18016.5
+20:25:44.230 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:44.356 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:44.356 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6196.88, 469.38, 15003.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:44.356 [BaseBuildingRaiding] They dealt 162.834 * 1 = 162.834 damage with Bullet_762x54 from KOD_PKP
+20:25:44.356 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 18016.5 to 17853.7
+20:25:44.356 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:44.418 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:44.418 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6196.99, 469.38, 15003.4>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:44.419 [BaseBuildingRaiding] They dealt 162.832 * 1 = 162.832 damage with Bullet_762x54 from KOD_PKP
+20:25:44.419 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 17853.7 to 17690.8
+20:25:44.419 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:44.524 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:44.524 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6197.14, 469.38, 15003.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:44.525 [BaseBuildingRaiding] They dealt 162.994 * 1 = 162.994 damage with Bullet_762x54 from KOD_PKP
+20:25:44.525 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 17690.8 to 17527.8
+20:25:44.525 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:44.653 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:44.653 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6197.22, 469.38, 15003.6>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:44.653 [BaseBuildingRaiding] They dealt 163.058 * 1 = 163.058 damage with Bullet_762x54 from KOD_PKP
+20:25:44.653 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 17527.8 to 17364.8
+20:25:44.653 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:44.747 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:44.747 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6197.42, 469.38, 15003.8>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:44.747 [BaseBuildingRaiding] They dealt 163.07 * 1 = 163.07 damage with Bullet_762x54 from KOD_PKP
+20:25:44.748 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 17364.8 to 17201.7
+20:25:44.748 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:44.822 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:44.823 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6197.52, 469.38, 15003.9>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:44.823 [BaseBuildingRaiding] They dealt 163.045 * 1 = 163.045 damage with Bullet_762x54 from KOD_PKP
+20:25:44.823 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 17201.7 to 17038.7
+20:25:44.823 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:45.075 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:45.076 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6197.89, 469.38, 15004.1>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:45.076 [BaseBuildingRaiding] They dealt 162.867 * 1 = 162.867 damage with Bullet_762x54 from KOD_PKP
+20:25:45.076 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 17038.7 to 16875.8
+20:25:45.076 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:45.137 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:45.137 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6197.94, 469.38, 15004.1>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:45.137 [BaseBuildingRaiding] They dealt 162.791 * 1 = 162.791 damage with Bullet_762x54 from KOD_PKP
+20:25:45.137 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 16875.8 to 16713
+20:25:45.138 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:45.169 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:45.169 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6197.99, 469.38, 15004.1>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:45.169 [BaseBuildingRaiding] They dealt 162.808 * 1 = 162.808 damage with Bullet_762x54 from KOD_PKP
+20:25:45.170 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 16713 to 16550.2
+20:25:45.170 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:45.229 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:45.229 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.09, 469.38, 15004.2>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:45.229 [BaseBuildingRaiding] They dealt 162.802 * 1 = 162.802 damage with Bullet_762x54 from KOD_PKP
+20:25:45.230 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 16550.2 to 16387.4
+20:25:45.230 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:45.323 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:45.323 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.24, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:45.323 [BaseBuildingRaiding] They dealt 162.817 * 1 = 162.817 damage with Bullet_762x54 from KOD_PKP
+20:25:45.323 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 16387.4 to 16224.6
+20:25:45.323 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:45.450 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:45.450 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.42, 469.38, 15004.4>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:45.450 [BaseBuildingRaiding] They dealt 162.82 * 1 = 162.82 damage with Bullet_762x54 from KOD_PKP
+20:25:45.450 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 16224.6 to 16061.7
+20:25:45.450 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:45.565 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:45.565 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.51, 469.38, 15004.4>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:45.565 [BaseBuildingRaiding] They dealt 162.778 * 1 = 162.778 damage with Bullet_762x54 from KOD_PKP
+20:25:45.565 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 16061.7 to 15899
+20:25:45.565 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:45.623 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:45.623 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:45.623 [BaseBuildingRaiding] They dealt 162.746 * 1 = 162.746 damage with Bullet_762x54 from KOD_PKP
+20:25:45.623 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 15899 to 15736.2
+20:25:45.624 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:45.719 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:45.719 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:45.720 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:45.720 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 15736.2 to 15573.5
+20:25:45.720 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:45.838 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:45.838 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:45.838 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:45.838 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 15573.5 to 15410.7
+20:25:45.838 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:45.955 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:45.955 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:45.955 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:45.955 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 15410.7 to 15248
+20:25:45.955 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:46.025 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:46.025 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:46.025 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:46.025 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 15248 to 15085.2
+20:25:46.025 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:46.145 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:46.146 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:46.146 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:46.146 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 15085.2 to 14922.5
+20:25:46.146 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:46.258 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:46.258 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:46.258 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:46.258 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 14922.5 to 14759.8
+20:25:46.259 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:46.328 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:46.329 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:46.329 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:46.329 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 14759.8 to 14597
+20:25:46.329 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:46.425 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:46.425 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:46.425 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:46.425 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 14597 to 14434.3
+20:25:46.425 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:46.546 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:46.547 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:46.547 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:46.547 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 14434.3 to 14271.5
+20:25:46.547 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:46.657 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:46.657 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:46.657 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:46.657 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 14271.5 to 14108.8
+20:25:46.658 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:46.721 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:46.721 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:46.722 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:46.722 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 14108.8 to 13946
+20:25:46.722 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:46.846 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:46.847 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:46.847 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:46.847 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 13946 to 13783.3
+20:25:46.847 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:46.916 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:46.916 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:46.916 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:46.916 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 13783.3 to 13620.5
+20:25:46.916 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:47.016 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:47.016 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:47.016 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:47.016 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 13620.5 to 13457.8
+20:25:47.017 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:47.136 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:47.136 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:47.136 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:47.136 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 13457.8 to 13295.1
+20:25:47.136 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:47.256 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:47.256 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:47.256 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:47.256 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 13295.1 to 13132.3
+20:25:47.256 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:47.318 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:47.319 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:47.319 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:47.319 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 13132.3 to 12969.6
+20:25:47.319 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:47.440 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:47.441 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:47.441 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:47.441 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 12969.6 to 12806.8
+20:25:47.441 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:47.563 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:47.563 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:47.563 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:47.563 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 12806.8 to 12644.1
+20:25:47.563 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:47.665 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:47.666 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:47.666 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:47.666 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 12644.1 to 12481.3
+20:25:47.666 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:47.728 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:47.728 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:47.728 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:47.728 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 12481.3 to 12318.6
+20:25:47.728 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:47.829 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:47.829 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:47.829 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:47.829 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 12318.6 to 12155.8
+20:25:47.829 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:48.030 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:48.030 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:48.030 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:48.030 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 12155.8 to 11993.1
+20:25:48.030 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:48.062 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:48.063 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:48.063 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:48.063 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 11993.1 to 11830.4
+20:25:48.063 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:48.127 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:48.128 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:48.128 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:48.128 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 11830.4 to 11667.6
+20:25:48.128 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:48.211 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:48.212 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:48.212 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:48.212 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 11667.6 to 11504.9
+20:25:48.212 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:48.328 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:48.329 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:48.329 [BaseBuildingRaiding] They dealt 162.744 * 1 = 162.744 damage with Bullet_762x54 from KOD_PKP
+20:25:48.329 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 11504.9 to 11342.1
+20:25:48.329 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:48.456 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:48.456 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:48.456 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:48.456 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 11342.1 to 11179.4
+20:25:48.457 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:48.532 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:48.532 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:48.532 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:48.533 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 11179.4 to 11016.6
+20:25:48.533 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:48.632 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:48.632 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:48.632 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:48.632 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 11016.6 to 10853.9
+20:25:48.632 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:48.728 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:48.728 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:48.728 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:48.728 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 10853.9 to 10691.1
+20:25:48.729 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:48.822 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:48.822 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:48.822 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:48.822 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 10691.1 to 10528.4
+20:25:48.822 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:48.942 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:48.942 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:48.942 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:48.942 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 10528.4 to 10365.7
+20:25:48.943 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:49.054 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:49.054 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:49.054 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:49.054 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 10365.7 to 10202.9
+20:25:49.055 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:49.115 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:49.116 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:49.116 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:49.116 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 10202.9 to 10040.2
+20:25:49.116 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:49.229 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:49.230 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:49.230 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:49.230 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 10040.2 to 9877.42
+20:25:49.230 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:49.356 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:49.356 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:49.356 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:49.356 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 9877.42 to 9714.67
+20:25:49.357 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:49.424 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:49.424 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:49.424 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:49.424 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 9714.67 to 9551.93
+20:25:49.424 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:49.536 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:49.536 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:49.536 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:49.536 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 9551.93 to 9389.18
+20:25:49.536 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:49.656 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:49.656 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:49.656 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:49.656 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 9389.18 to 9226.44
+20:25:49.656 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:49.733 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:49.733 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:49.733 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:49.733 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 9226.44 to 9063.69
+20:25:49.733 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:49.822 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:49.822 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:49.823 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:49.823 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 9063.69 to 8900.95
+20:25:49.823 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:49.914 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:49.914 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:49.914 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:49.915 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 8900.95 to 8738.2
+20:25:49.915 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:50.053 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:50.053 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:50.053 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:50.054 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 8738.2 to 8575.46
+20:25:50.054 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:50.110 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:50.111 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:50.111 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:50.111 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 8575.46 to 8412.71
+20:25:50.111 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:50.228 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:50.229 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:50.229 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:50.229 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 8412.71 to 8249.97
+20:25:50.229 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:50.340 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:50.340 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:50.340 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:50.340 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 8249.97 to 8087.22
+20:25:50.340 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:50.408 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:50.408 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:50.408 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:50.408 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 8087.22 to 7924.48
+20:25:50.409 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:50.522 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:50.522 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.52, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:50.523 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:50.523 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 7924.48 to 7761.73
+20:25:50.523 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:50.641 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:50.641 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.5, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:50.641 [BaseBuildingRaiding] They dealt 162.745 * 1 = 162.745 damage with Bullet_762x54 from KOD_PKP
+20:25:50.641 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 7761.73 to 7598.99
+20:25:50.641 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:50.778 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:50.778 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.38, 469.38, 15004.6>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:50.779 [BaseBuildingRaiding] They dealt 162.941 * 1 = 162.941 damage with Bullet_762x54 from KOD_PKP
+20:25:50.779 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 7598.99 to 7436.05
+20:25:50.779 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:52.390 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:52.391 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.34, 469.38, 15004.6>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:52.391 [BaseBuildingRaiding] They dealt 162.26 * 1 = 162.26 damage with Bullet_762x54 from KOD_PKP
+20:25:52.391 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 7436.05 to 7273.79
+20:25:52.391 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:52.456 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:52.457 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.46, 469.38, 15004.5>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:52.457 [BaseBuildingRaiding] They dealt 162.335 * 1 = 162.335 damage with Bullet_762x54 from KOD_PKP
+20:25:52.457 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 7273.79 to 7111.45
+20:25:52.457 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:52.585 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:52.586 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.62, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:52.586 [BaseBuildingRaiding] They dealt 162.343 * 1 = 162.343 damage with Bullet_762x54 from KOD_PKP
+20:25:52.586 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 7111.45 to 6949.11
+20:25:52.586 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:52.653 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:52.654 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.66, 469.38, 15004.3>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:52.654 [BaseBuildingRaiding] They dealt 162.342 * 1 = 162.342 damage with Bullet_762x54 from KOD_PKP
+20:25:52.654 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 6949.11 to 6786.77
+20:25:52.654 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:52.758 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:52.758 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.82, 469.38, 15004.1>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:52.758 [BaseBuildingRaiding] They dealt 162.335 * 1 = 162.335 damage with Bullet_762x54 from KOD_PKP
+20:25:52.758 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 6786.77 to 6624.43
+20:25:52.758 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:52.888 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:52.888 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6198.97, 469.38, 15003.9>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:52.888 [BaseBuildingRaiding] They dealt 162.333 * 1 = 162.333 damage with Bullet_762x54 from KOD_PKP
+20:25:52.888 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 6624.43 to 6462.1
+20:25:52.889 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:52.956 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:52.956 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6199.02, 469.38, 15003.9>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:52.956 [BaseBuildingRaiding] They dealt 162.39 * 1 = 162.39 damage with Bullet_762x54 from KOD_PKP
+20:25:52.956 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 6462.1 to 6299.71
+20:25:52.956 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:53.335 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:53.335 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6199.04, 469.38, 15003.8>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:53.336 [BaseBuildingRaiding] They dealt 162.6 * 1 = 162.6 damage with Bullet_762x54 from KOD_PKP
+20:25:53.336 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 6299.71 to 6137.11
+20:25:53.336 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:53.397 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:53.397 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6199.04, 469.38, 15003.8>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:53.398 [BaseBuildingRaiding] They dealt 162.731 * 1 = 162.731 damage with Bullet_762x54 from KOD_PKP
+20:25:53.398 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 6137.11 to 5974.38
+20:25:53.398 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:53.506 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:53.506 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6199.04, 469.38, 15003.8>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:53.506 [BaseBuildingRaiding] They dealt 162.731 * 1 = 162.731 damage with Bullet_762x54 from KOD_PKP
+20:25:53.506 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 5974.38 to 5811.65
+20:25:53.506 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:53.507 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:53.507 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6199.04, 469.38, 15003.8>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:53.507 [BaseBuildingRaiding] They dealt 162.731 * 1 = 162.731 damage with Bullet_762x54 from KOD_PKP
+20:25:53.508 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 5811.65 to 5648.92
+20:25:53.508 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:53.519 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:53.519 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6199.04, 469.38, 15003.8>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:53.519 [BaseBuildingRaiding] They dealt 162.731 * 1 = 162.731 damage with Bullet_762x54 from KOD_PKP
+20:25:53.519 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 5648.92 to 5486.19
+20:25:53.519 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:53.572 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:53.573 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6199.04, 469.38, 15003.8>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:53.573 [BaseBuildingRaiding] They dealt 162.731 * 1 = 162.731 damage with Bullet_762x54 from KOD_PKP
+20:25:53.573 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 5486.19 to 5323.45
+20:25:53.573 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:53.691 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:53.691 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6199.04, 469.38, 15003.8>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:53.691 [BaseBuildingRaiding] They dealt 162.731 * 1 = 162.731 damage with Bullet_762x54 from KOD_PKP
+20:25:53.692 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 5323.45 to 5160.72
+20:25:53.692 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------
+20:25:53.756 [BaseBuildingRaiding] ------------------------- Expansion Base Raiding Damage Report -------------------------
+20:25:53.756 [BaseBuildingRaiding] Player "Kl9Usa" (id=1wpk7PmmT2A4WpWCdcLXyoG1rjwkTNDgqfRSKboRIAE= pos=<6199.04, 469.38, 15003.8>) damaged ExpansionWall6x3 at <6197.44, 469.36, 15006.2>
+20:25:53.756 [BaseBuildingRaiding] They dealt 162.731 * 1 = 162.731 damage with Bullet_762x54 from KOD_PKP
+20:25:53.756 [BaseBuildingRaiding] GlobalHealth hitpoints decreased from 5160.72 to 4997.99
+20:25:53.757 [BaseBuildingRaiding] ----------------------------------------------------------------------------------------

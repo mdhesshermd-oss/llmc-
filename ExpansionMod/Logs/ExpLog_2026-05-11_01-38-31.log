@@ -1,0 +1,64 @@
+01:39:38.659 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81FAA970> ExplosionTest:8011 at <12050, 55.35, 9132.09> EXPLOSION range 4 dropoff 1
+01:39:38.673 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81FA36B0> ExplosionTest:8010 at <13069.7, 6.41, 10029.9> EXPLOSION range 4 dropoff 1
+01:39:38.682 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81FA9FE0> ExplosionTest:8009 at <10419.4, 6.3, 2370.58> EXPLOSION range 4 dropoff 1
+01:39:38.686 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81FA4040> ExplosionTest:8008 at <6474.69, 10.29, 2627.77> EXPLOSION range 4 dropoff 1
+01:39:38.690 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81FA9650> ExplosionTest:8007 at <10053.5, 10.86, 1929.16> EXPLOSION range 4 dropoff 1
+01:39:38.698 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81FA8CC0> ExplosionTest:8006 at <12033.5, 54.23, 9090.7> EXPLOSION range 4 dropoff 1
+01:39:38.699 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81FA8330> ExplosionTest:8005 at <6425.67, 10.53, 2667.99> EXPLOSION range 4 dropoff 1
+01:39:38.699 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81FA79A0> ExplosionTest:8004 at <12086, 6.07, 3614.87> EXPLOSION range 4 dropoff 1
+01:39:38.699 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81FA7010> ExplosionTest:8003 at <13565.5, 6.43, 13789.9> EXPLOSION range 4 dropoff 1
+01:39:38.710 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F9C3F0> ExplosionTest:8002 at <6417.42, 10.4, 2632.89> EXPLOSION range 4 dropoff 1
+01:39:38.711 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81FA1070> ExplosionTest:8001 at <6452.68, 7.14, 2297.87> EXPLOSION range 4 dropoff 1
+01:39:38.714 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F9FD50> ExplosionTest:8000 at <11911.8, 140.99, 12470.5> EXPLOSION range 4 dropoff 1
+01:39:38.718 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F9D710> ExplosionTest:7999 at <10029.6, 15.46, 1889.14> EXPLOSION range 4 dropoff 1
+01:39:38.722 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81FA06E0> ExplosionTest:7998 at <12087.5, 54.71, 9111.81> EXPLOSION range 4 dropoff 1
+01:39:38.723 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F9F3C0> ExplosionTest:7997 at <10513.5, 10.78, 2377.87> EXPLOSION range 4 dropoff 1
+01:39:38.727 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81FA2390> ExplosionTest:7996 at <12909.2, 6.95, 10110.7> EXPLOSION range 4 dropoff 1
+01:39:38.728 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F9E0A0> ExplosionTest:7995 at <6540.35, 6.4, 2541.26> EXPLOSION range 4 dropoff 1
+01:39:38.745 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F9EA30> ExplosionTest:7994 at <13929.9, 20.24, 13296.1> EXPLOSION range 4 dropoff 1
+01:39:38.751 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81FA1A00> ExplosionTest:7993 at <6464.32, 10.14, 2654.87> EXPLOSION range 4 dropoff 1
+01:39:38.751 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81FA2D20> ExplosionTest:7992 at <10506, 6.12, 2348.08> EXPLOSION range 4 dropoff 1
+01:39:38.758 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F9CD80> ExplosionTest:7991 at <13923, 19.18, 13297.6> EXPLOSION range 4 dropoff 1
+01:39:38.758 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F95130> ExplosionTest:7990 at <5861.01, 9.3, 2210.47> EXPLOSION range 4 dropoff 1
+01:39:38.759 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F98100> ExplosionTest:7989 at <12881.9, 6.37, 10071.8> EXPLOSION range 4 dropoff 1
+01:39:38.759 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F9BA60> ExplosionTest:7988 at <13144.1, 6.22, 10372.6> EXPLOSION range 4 dropoff 1
+01:39:38.760 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F96DE0> ExplosionTest:7987 at <5478.41, 63.74, 2611.44> EXPLOSION range 4 dropoff 1
+01:39:38.764 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F9B0D0> ExplosionTest:7986 at <13825.4, 20.99, 13269.2> EXPLOSION range 4 dropoff 1
+01:39:38.765 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F947A0> ExplosionTest:7985 at <10025.8, 6.44, 1889.26> EXPLOSION range 4 dropoff 1
+01:39:38.765 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F98A90> ExplosionTest:7984 at <6385.94, 9.32, 2593.57> EXPLOSION range 4 dropoff 1
+01:39:38.772 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F9A740> ExplosionTest:7983 at <12162.1, 15.78, 9602.5> EXPLOSION range 4 dropoff 1
+01:39:38.774 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F99DB0> ExplosionTest:7982 at <6327.22, 9.65, 2640.47> EXPLOSION range 4 dropoff 1
+01:39:38.784 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F93E10> ExplosionTest:7981 at <6070.66, 53.08, 3414.13> EXPLOSION range 4 dropoff 1
+01:39:38.788 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F99420> ExplosionTest:7980 at <11231.8, 76.62, 6595.67> EXPLOSION range 4 dropoff 1
+01:39:38.795 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F97770> ExplosionTest:7979 at <6341.49, 9.79, 2469.52> EXPLOSION range 4 dropoff 1
+01:39:38.799 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F96450> ExplosionTest:7978 at <12837.7, 15.03, 10077.9> EXPLOSION range 4 dropoff 1
+01:39:38.807 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F93480> ExplosionTest:7977 at <10101.1, 7.18, 1949.82> EXPLOSION range 4 dropoff 1
+01:39:38.807 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F95AC0> ExplosionTest:7976 at <12833.1, 7.43, 10052.7> EXPLOSION range 4 dropoff 1
+01:39:38.808 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F92AF0> ExplosionTest:7975 at <13946.5, 19.84, 13291> EXPLOSION range 4 dropoff 1
+01:39:38.808 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F92160> ExplosionTest:7974 at <6426.72, 10.77, 2675.11> EXPLOSION range 4 dropoff 1
+01:39:38.809 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F917D0> ExplosionTest:7973 at <12020.5, 7.47, 3506.31> EXPLOSION range 4 dropoff 1
+01:39:38.810 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F8A510> ExplosionTest:7972 at <6427.51, 8.46, 2424.91> EXPLOSION range 4 dropoff 1
+01:39:38.815 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F90E40> ExplosionTest:7971 at <10391.4, 11.11, 2313.85> EXPLOSION range 4 dropoff 1
+01:39:38.816 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F904B0> ExplosionTest:7970 at <6468.84, 6.42, 2513.93> EXPLOSION range 4 dropoff 1
+01:39:38.816 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F8AEA0> ExplosionTest:7969 at <6555.18, 6.56, 2287.73> EXPLOSION range 4 dropoff 1
+01:39:38.817 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F891F0> ExplosionTest:7968 at <10538, 7.13, 2378.11> EXPLOSION range 4 dropoff 1
+01:39:38.820 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F8FB20> ExplosionTest:7967 at <6059.13, 26.84, 2839.32> EXPLOSION range 4 dropoff 1
+01:39:38.825 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F8B830> ExplosionTest:7966 at <12319.9, 12.36, 9714.43> EXPLOSION range 4 dropoff 1
+01:39:38.826 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F8F190> ExplosionTest:7965 at <12006.6, 55.42, 9105.99> EXPLOSION range 4 dropoff 1
+01:39:38.826 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F87ED0> ExplosionTest:7964 at <10028.8, 7.21, 1942.92> EXPLOSION range 4 dropoff 1
+01:39:38.828 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F8E800> ExplosionTest:7963 at <13918.7, 20.52, 13308.6> EXPLOSION range 4 dropoff 1
+01:39:38.829 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F8DE70> ExplosionTest:7962 at <11526.2, 69.66, 6611.89> EXPLOSION range 4 dropoff 1
+01:39:38.829 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F8CB50> ExplosionTest:7961 at <10066.3, 6.95, 1858.61> EXPLOSION range 4 dropoff 1
+01:39:38.833 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F88860> ExplosionTest:7960 at <6441.52, 17.42, 2619.57> EXPLOSION range 4 dropoff 1
+01:39:38.833 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F8D4E0> ExplosionTest:7959 at <6518.19, 62.62, 3628.93> EXPLOSION range 4 dropoff 1
+01:39:38.833 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F85890> ExplosionTest:7958 at <10446.1, 10.48, 2208> EXPLOSION range 4 dropoff 1
+01:39:38.837 [ExplosionDamageSystem] About to explode Explosion_NonLethal from ExplosionTest<0x0000023E81F89B80> ExplosionTest:7957 at <13947.5, 20.34, 13163.5> EXPLOSION range 4 dropoff 1
+01:42:22.918 [AI Object Patrol 00007] Spawning 2 West bots at <4128.503906, 338.472229, 11013.765625>
+01:42:22.999 [AI Object Patrol 00007] Global patrol count: 1
+01:42:23.000 [AI Object Patrol 00007] Global Expansion AI count: 2 alive, 0 deceased
+01:42:23.000 [AI Object Patrol 00007] ContaminatedArea category patrol count: 1
+01:44:40.930 [MissionAirdrop] An airdrop is heading towards "Ruskovce" (pos=<1450.307129, 0.000000, 4046.354736> type=Random_Ruskovce) with a ExpansionAirdropContainer_Medical
+01:54:11.229 [AI Object Patrol 00007] Despawning 2 West bots (spawn position <4128.503906, 338.472229, 11013.765625>, 0/2 deceased)
+01:54:11.230 [AI Object Patrol 00007] Global patrol count: 0
+01:54:11.230 [AI Object Patrol 00007] Global Expansion AI count: 1 alive, 0 deceased
+01:54:11.230 [AI Object Patrol 00007] ContaminatedArea category patrol count: 0
