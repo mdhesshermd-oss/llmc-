@@ -7,6 +7,101 @@
     "InitStockPercent": 75.0,
     "Items": [
         {
+            "ClassName": "Audi_RS6_ABT_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Audi_RS6_ABT_Wheel",
+                "Audi_RS6_ABT_Hood_Black",
+                "Audi_RS6_ABT_Trunk_Black",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Audi_RS6_ABT_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Audi_RS6_ABT_Wheel",
+                "Audi_RS6_ABT_Hood_Blue",
+                "Audi_RS6_ABT_Trunk_Blue",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Audi_RS6_ABT_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Audi_RS6_ABT_Wheel",
+                "Audi_RS6_ABT_Hood_Green",
+                "Audi_RS6_ABT_Trunk_Green",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Audi_RS6_ABT_MidNightBlue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Audi_RS6_ABT_Wheel",
+                "Audi_RS6_ABT_Hood_MidNightBlue",
+                "Audi_RS6_ABT_Trunk_MidNightBlue",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Audi_RS6_ABT_Pink",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Audi_RS6_ABT_Wheel",
+                "Audi_RS6_ABT_Hood_Pink",
+                "Audi_RS6_ABT_Trunk_Pink",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
             "ClassName": "Audi_RS6_ABT_Red",
             "MaxPriceThreshold": 50000,
             "MinPriceThreshold": 50000,
@@ -14,17 +109,73 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "Audi_RS6_ABT_Blue",
-                "Audi_RS6_ABT_Pink",
-                "Audi_RS6_ABT_Teal",
-                "Audi_RS6_ABT_White",
-                "Audi_RS6_ABT_Green",
-                "Audi_RS6_ABT_Black",
-                "Audi_RS6_ABT_Yellow",
-                "Audi_RS6_ABT_MidNightBlue"
-            ]
+            "SpawnAttachments": [
+                "Audi_RS6_ABT_Wheel",
+                "Audi_RS6_ABT_Hood_Red",
+                "Audi_RS6_ABT_Trunk_Red",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Audi_RS6_ABT_Teal",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Audi_RS6_ABT_Wheel",
+                "Audi_RS6_ABT_Hood_Teal",
+                "Audi_RS6_ABT_Trunk_Teal",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Audi_RS6_ABT_White",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Audi_RS6_ABT_Wheel",
+                "Audi_RS6_ABT_Hood",
+                "Audi_RS6_ABT_Trunk",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Audi_RS6_ABT_Yellow",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Audi_RS6_ABT_Wheel",
+                "Audi_RS6_ABT_Hood_Yellow",
+                "Audi_RS6_ABT_Trunk_Yellow",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "CivilianSedan",
@@ -34,14 +185,93 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "CivilianSedan_Wine",
-                "CivilianSedan_Lime",
-                "CivilianSedan_Black",
-                "CivilianSedan_White",
-                "CivilianSedan_Police"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CivilianSedan_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CivilianSedan_Lime",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CivilianSedan_Police",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CivilianSedan_White",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CivilianSedan_Wine",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "CrSk_BMW_M760Li_G12_20",
@@ -51,12 +281,45 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "CrSk_BMW_M760Li_G12_20_Grey",
-                "CrSk_BMW_M760Li_G12_20_Blue",
-                "CrSk_BMW_M760Li_G12_20_Black"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_BMW_M760Li_G12_20_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_BMW_M760Li_G12_20_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "CrSk_BMW_M760Li_G12_20_Blue2",
@@ -66,7 +329,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -77,7 +345,28 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_BMW_M760Li_G12_20_Grey",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -88,7 +377,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -99,12 +393,61 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "CrSk_BMW_X5M_F95_Comp_Grey",
-                "CrSk_BMW_X5M_F95_Comp_Blue",
-                "CrSk_BMW_X5M_F95_Comp_Black"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_BMW_X5M_F95_Comp_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_BMW_X5M_F95_Comp_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_BMW_X5M_F95_Comp_Grey",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "CrSk_BMW_X5_E53",
@@ -114,26 +457,29 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "CrSk_BMW_X5_E53_Blue"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
-            "ClassName": "CrSk_BTR_82A",
+            "ClassName": "CrSk_BMW_X5_E53_Blue",
             "MaxPriceThreshold": 50000,
             "MinPriceThreshold": 50000,
             "SellPricePercent": -1,
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "CrSk_BTR_82A_Camo",
-                "CrSk_BTR_82A_Black",
-                "CrSk_BTR_82A_Desert",
-                "CrSk_BTR_82A_Winter"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "CrSk_GAZ_Tigr_M",
@@ -143,15 +489,45 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "CrSk_GAZ_Tigr_M_Tan",
-                "CrSk_GAZ_Tigr_M_Camo",
-                "CrSk_GAZ_Tigr_M_Rofl",
-                "CrSk_GAZ_Tigr_M_Black",
-                "CrSk_GAZ_Tigr_M_Skull",
-                "CrSk_GAZ_Tigr_M_Winter"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_GAZ_Tigr_M_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_GAZ_Tigr_M_Camo",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "CrSk_GAZ_Tigr_M_CamoBlack",
@@ -161,7 +537,76 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_GAZ_Tigr_M_Rofl",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_GAZ_Tigr_M_Skull",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_GAZ_Tigr_M_Tan",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_GAZ_Tigr_M_Winter",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -172,11 +617,45 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "CrSk_HMMWV_M1151A1_Camo",
-                "CrSk_HMMWV_M1151A1_Desert"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_HMMWV_M1151A1_Camo",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_HMMWV_M1151A1_Desert",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "CrSk_Insurgent_SUV",
@@ -186,12 +665,61 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "CrSk_Insurgent_SUV_Tan",
-                "CrSk_Insurgent_SUV_Black",
-                "CrSk_Insurgent_SUV_Winter"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_Insurgent_SUV_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_Insurgent_SUV_Tan",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_Insurgent_SUV_Winter",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "CrSk_Kawasaki_Mule_SX_4x4",
@@ -201,7 +729,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -212,7 +745,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -223,10 +761,29 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "CrSk_Mercedes_AMG_GT63S_Blue"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_Mercedes_AMG_GT63S_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "CrSk_Mercedes_G63_AMG_19",
@@ -236,7 +793,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -247,7 +809,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -258,7 +825,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -269,11 +841,45 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "CrSk_Mercedes_V250d_19_Grey",
-                "CrSk_Mercedes_V250d_19_Black"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_Mercedes_V250d_19_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_Mercedes_V250d_19_Grey",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "CrSk_Pitbull_VX",
@@ -283,14 +889,93 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "CrSk_Pitbull_VX_Tan",
-                "CrSk_Pitbull_VX_Grey",
-                "CrSk_Pitbull_VX_Meow",
-                "CrSk_Pitbull_VX_Khaki",
-                "CrSk_Pitbull_VX_Atakama"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_Pitbull_VX_Atakama",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_Pitbull_VX_Grey",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_Pitbull_VX_Khaki",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_Pitbull_VX_Meow",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_Pitbull_VX_Tan",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "CrSk_Rolls_Royce_Cullinan",
@@ -300,7 +985,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -311,7 +1001,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -322,7 +1017,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -333,12 +1033,93 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "CrSk_Typhoon_K_53949_Tan",
-                "CrSk_Typhoon_K_53949_Grey",
-                "CrSk_Typhoon_K_53949_khaki"
-            ]
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_Typhoon_K_53949_Grey",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_Typhoon_K_53949_Tan",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "CrSk_Typhoon_K_53949_khaki",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500Rollbar_AJ45",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500Rollbar_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "DodgeRam_3500Rollbar_Cyan",
@@ -348,7 +1129,108 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500Rollbar_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500Rollbar_Grey",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500Rollbar_KBTGR",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500Rollbar_M81",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500Rollbar_Orange",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500Rollbar_Purple",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -359,19 +1241,102 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "DodgeRam_3500Rollbar_M81",
-                "DodgeRam_3500Rollbar_Grey",
-                "DodgeRam_3500Rollbar_AJ45",
-                "DodgeRam_3500Rollbar_White",
-                "DodgeRam_3500Rollbar_Green",
-                "DodgeRam_3500Rollbar_Black",
-                "DodgeRam_3500Rollbar_KBTGR",
-                "DodgeRam_3500Rollbar_Orange",
-                "DodgeRam_3500Rollbar_Purple",
-                "DodgeRam_3500Rollbar_Yellow"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500Rollbar_White",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500Rollbar_Yellow",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500_AJ45",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood_AJ45",
+                "DodgeRam_3500_Trunk_AJ45",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood_Black",
+                "DodgeRam_3500_Trunk_Black",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500_BlueTiger",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood_BlueTiger",
+                "DodgeRam_3500_Trunk_BlueTiger",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "DodgeRam_3500_Cyan",
@@ -381,7 +1346,145 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood_Green",
+                "DodgeRam_3500_Trunk_Green",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500_Grey",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood_Grey",
+                "DodgeRam_3500_Trunk_Grey",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500_KBTGR",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood_KBTGR",
+                "DodgeRam_3500_Trunk_KBTGR",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500_M81",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood_M81",
+                "DodgeRam_3500_Trunk_M81",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500_Orange",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood_Orange",
+                "DodgeRam_3500_Trunk_Orange",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500_Purple",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood_Purple",
+                "DodgeRam_3500_Trunk_Purple",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500_RealTree",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood_RealTree",
+                "DodgeRam_3500_Trunk_RealTree",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -392,22 +1495,54 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "DodgeRam_3500_M81",
-                "DodgeRam_3500_Grey",
-                "DodgeRam_3500_AJ45",
-                "DodgeRam_3500_White",
-                "DodgeRam_3500_Green",
-                "DodgeRam_3500_Black",
-                "DodgeRam_3500_KBTGR",
-                "DodgeRam_3500_Orange",
-                "DodgeRam_3500_Purple",
-                "DodgeRam_3500_Yellow",
-                "DodgeRam_3500_RealTree",
-                "DodgeRam_3500_RedTiger",
-                "DodgeRam_3500_BlueTiger"
-            ]
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood_Red",
+                "DodgeRam_3500_Trunk_Red",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500_Red",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood_Red",
+                "DodgeRam_3500_Trunk_Red",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500_RedTiger",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood_RedTiger",
+                "DodgeRam_3500_Trunk_RedTiger",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "DodgeRam_3500_ScamTopia",
@@ -417,7 +1552,114 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500_White",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood",
+                "DodgeRam_3500_Trunk",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_3500_Yellow",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "DodgeRam_3500_Wheel",
+                "DodgeRam_3500_Hood_Yellow",
+                "DodgeRam_3500_Trunk_Yellow",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_BlueTiger",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_ChinaLake",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -428,7 +1670,60 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_Cyan",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_DUDB",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -439,7 +1734,28 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_Mocha",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -450,7 +1766,44 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_Orange",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_Pink",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -461,22 +1814,77 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "DodgeRam_BOSS_Pink",
-                "DodgeRam_BOSS_Blue",
-                "DodgeRam_BOSS_DUDB",
-                "DodgeRam_BOSS_Rust",
-                "DodgeRam_BOSS_White",
-                "DodgeRam_BOSS_Green",
-                "DodgeRam_BOSS_Black",
-                "DodgeRam_BOSS_Orange",
-                "DodgeRam_BOSS_Skulls",
-                "DodgeRam_BOSS_RedTiger",
-                "DodgeRam_BOSS_TopoTrip",
-                "DodgeRam_BOSS_ChinaLake",
-                "DodgeRam_BOSS_BlueTiger"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_Red",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_RedTiger",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_Rust",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_Skulls",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "DodgeRam_BOSS_TopoGraphic",
@@ -486,7 +1894,28 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_TopoTrip",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -497,7 +1926,28 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "DodgeRam_BOSS_White",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -508,7 +1958,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -519,18 +1974,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": []
-        },
-        {
-            "ClassName": "ExpansionBigGyrocopter",
-            "MaxPriceThreshold": 50000,
-            "MinPriceThreshold": 50000,
-            "SellPricePercent": -1,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -541,11 +1990,45 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "ExpansionBus_Red",
-                "ExpansionBus_Blue"
-            ]
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionBus_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionBus_Red",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "ExpansionBus_Weeb",
@@ -555,106 +2038,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": []
-        },
-        {
-            "ClassName": "ExpansionGyrocopter",
-            "MaxPriceThreshold": 50000,
-            "MinPriceThreshold": 50000,
-            "SellPricePercent": -1,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": []
-        },
-        {
-            "ClassName": "ExpansionHatchBird",
-            "MaxPriceThreshold": 50000,
-            "MinPriceThreshold": 50000,
-            "SellPricePercent": -1,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": []
-        },
-        {
-            "ClassName": "ExpansionLHD",
-            "MaxPriceThreshold": 50000,
-            "MinPriceThreshold": 50000,
-            "SellPricePercent": -1,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": []
-        },
-        {
-            "ClassName": "ExpansionMerlin",
-            "MaxPriceThreshold": 50000,
-            "MinPriceThreshold": 50000,
-            "SellPricePercent": -1,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "ExpansionMerlin_Ion",
-                "ExpansionMerlin_Wave",
-                "ExpansionMerlin_Green",
-                "ExpansionMerlin_Vrana",
-                "ExpansionMerlin_Dahoman"
-            ]
-        },
-        {
-            "ClassName": "ExpansionMerlin_President",
-            "MaxPriceThreshold": 50000,
-            "MinPriceThreshold": 50000,
-            "SellPricePercent": -1,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": []
-        },
-        {
-            "ClassName": "ExpansionMh6",
-            "MaxPriceThreshold": 50000,
-            "MinPriceThreshold": 50000,
-            "SellPricePercent": -1,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "ExpansionMh6_Wasp",
-                "ExpansionMh6_Wave",
-                "ExpansionMh6_Green",
-                "ExpansionMh6_Jeans",
-                "ExpansionMh6_Vrana",
-                "ExpansionMh6_Black",
-                "ExpansionMh6_Shadow",
-                "ExpansionMh6_Speedy",
-                "ExpansionMh6_Sunset",
-                "ExpansionMh6_Digital",
-                "ExpansionMh6_Furious",
-                "ExpansionMh6_Sheriff",
-                "ExpansionMh6_Blueline",
-                "ExpansionMh6_Elliptical",
-                "ExpansionMh6_Resistance"
-            ]
-        },
-        {
-            "ClassName": "ExpansionMh6_GrayWatcher",
-            "MaxPriceThreshold": 50000,
-            "MinPriceThreshold": 50000,
-            "SellPricePercent": -1,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -665,12 +2054,61 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "ExpansionTractor_Red",
-                "ExpansionTractor_Blue",
-                "ExpansionTractor_Green"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionTractor_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionTractor_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionTractor_Red",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "ExpansionUAZ",
@@ -680,11 +2118,13 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "ExpansionUAZ_Green",
-                "ExpansionUAZ_Black"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "ExpansionUAZCargo",
@@ -694,11 +2134,13 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "ExpansionUAZCargo_Green",
-                "ExpansionUAZCargo_Black"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "ExpansionUAZCargoRoofless",
@@ -708,7 +2150,44 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionUAZCargo_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionUAZCargo_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -719,7 +2198,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -730,11 +2214,77 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "ExpansionUAZRoofless_Green",
-                "ExpansionUAZRoofless_Black"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionUAZRoofless_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionUAZRoofless_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionUAZ_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionUAZ_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "ExpansionUAZ_LightGreen",
@@ -744,39 +2294,13 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
-        },
-        {
-            "ClassName": "ExpansionUh1h",
-            "MaxPriceThreshold": 50000,
-            "MinPriceThreshold": 50000,
-            "SellPricePercent": -1,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "ExpansionUh1h_Uber",
-                "ExpansionUh1h_Green",
-                "ExpansionUh1h_Medical",
-                "ExpansionUh1h_Civilian",
-                "ExpansionUh1h_Resistance"
-            ]
-        },
-        {
-            "ClassName": "ExpansionUtilityBoat",
-            "MaxPriceThreshold": 50000,
-            "MinPriceThreshold": 50000,
-            "SellPricePercent": -1,
-            "MaxStockThreshold": 5,
-            "MinStockThreshold": 1,
-            "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "ExpansionUtilityBoat_Black",
-                "ExpansionUtilityBoat_Green"
-            ]
         },
         {
             "ClassName": "ExpansionVodnik",
@@ -786,10 +2310,29 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "ExpansionVodnik_Camo"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionVodnik_Camo",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "ExpansionVodnik_CamoMedical",
@@ -799,7 +2342,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -810,12 +2358,61 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "ExpansionZodiacBoat_Black",
-                "ExpansionZodiacBoat_Green",
-                "ExpansionZodiacBoat_Orange"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionZodiacBoat_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionZodiacBoat_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "ExpansionZodiacBoat_Orange",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "Expansion_Landrover",
@@ -825,15 +2422,258 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "Expansion_Landrover_Red",
-                "Expansion_Landrover_Grey",
-                "Expansion_Landrover_Blue",
-                "Expansion_Landrover_Green",
-                "Expansion_Landrover_Yellow",
-                "Expansion_Landrover_Orange"
-            ]
+            "SpawnAttachments": [
+                "Expansion_Landrover_Wheel",
+                "Expansion_Landrover_Hood",
+                "Expansion_Landrover_Trunk",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Expansion_Landrover_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Expansion_Landrover_Wheel_Blue",
+                "Expansion_Landrover_Hood_Blue",
+                "Expansion_Landrover_Trunk_Blue",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Expansion_Landrover_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Expansion_Landrover_Wheel_Green",
+                "Expansion_Landrover_Hood_Green",
+                "Expansion_Landrover_Trunk_Green",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Expansion_Landrover_Grey",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Expansion_Landrover_Wheel_Grey",
+                "Expansion_Landrover_Hood_Grey",
+                "Expansion_Landrover_Trunk_Grey",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Expansion_Landrover_Orange",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Expansion_Landrover_Wheel_Orange",
+                "Expansion_Landrover_Hood_Orange",
+                "Expansion_Landrover_Trunk_Orange",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Expansion_Landrover_Red",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Expansion_Landrover_Wheel_Red",
+                "Expansion_Landrover_Hood_Red",
+                "Expansion_Landrover_Trunk_Red",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Expansion_Landrover_Yellow",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Expansion_Landrover_Wheel_Yellow",
+                "Expansion_Landrover_Hood_Yellow",
+                "Expansion_Landrover_Trunk_Yellow",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1NoAttach_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1NoAttach_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1NoAttach_Camo1",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1NoAttach_Camo2",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1NoAttach_Camo3",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1NoAttach_Camo4",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1NoAttach_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1NoAttach_Grey",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "FC_ATV_1NoAttach_Red",
@@ -843,18 +2683,173 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "FC_ATV_1NoAttach_Blue",
-                "FC_ATV_1NoAttach_Grey",
-                "FC_ATV_1NoAttach_Green",
-                "FC_ATV_1NoAttach_Black",
-                "FC_ATV_1NoAttach_Camo1",
-                "FC_ATV_1NoAttach_Camo2",
-                "FC_ATV_1NoAttach_Camo3",
-                "FC_ATV_1NoAttach_Camo4",
-                "FC_ATV_1NoAttach_Yellow"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1NoAttach_Yellow",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_ATV_1_Wheel",
+                "FC_ATV_1_Door_Driver",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_ATV_1_Wheel",
+                "FC_ATV_1_Door_Driver",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1_Camo1",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_ATV_1_Wheel",
+                "FC_ATV_1_Door_Driver",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1_Camo2",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_ATV_1_Wheel",
+                "FC_ATV_1_Door_Driver",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1_Camo3",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_ATV_1_Wheel",
+                "FC_ATV_1_Door_Driver",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1_Camo4",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_ATV_1_Wheel",
+                "FC_ATV_1_Door_Driver",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_ATV_1_Wheel",
+                "FC_ATV_1_Door_Driver",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1_Grey",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_ATV_1_Wheel",
+                "FC_ATV_1_Door_Driver",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "FC_ATV_1_Red",
@@ -864,18 +2859,75 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "FC_ATV_1_Blue",
-                "FC_ATV_1_Grey",
-                "FC_ATV_1_Green",
-                "FC_ATV_1_Black",
-                "FC_ATV_1_Camo1",
-                "FC_ATV_1_Camo2",
-                "FC_ATV_1_Camo3",
-                "FC_ATV_1_Camo4",
-                "FC_ATV_1_Yellow"
-            ]
+            "SpawnAttachments": [
+                "FC_ATV_1_Wheel",
+                "FC_ATV_1_Door_Driver",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_ATV_1_Yellow",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_ATV_1_Wheel",
+                "FC_ATV_1_Door_Driver",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Defender_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Defender_Wheel_Blue",
+                "FC_Defender_Door_CoDriver_Blue",
+                "FC_Defender_Door_Driver_Blue",
+                "FC_Defender_Door_Hood_Blue",
+                "FC_Defender_Door_Trunk_Blue",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Defender_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Defender_Wheel_Destroy_Green",
+                "FC_Defender_Door_CoDriver_Green",
+                "FC_Defender_Door_Driver_Green",
+                "FC_Defender_Door_Hood_Green",
+                "FC_Defender_Door_Trunk_Green",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "FC_Defender_Red",
@@ -885,12 +2937,123 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "FC_Defender_Blue",
-                "FC_Defender_Green",
-                "FC_Defender_Yellow"
-            ]
+            "SpawnAttachments": [
+                "FC_Defender_Wheel_Destroy_Red",
+                "FC_Defender_Door_CoDriver_Red",
+                "FC_Defender_Door_Driver_Red",
+                "FC_Defender_Door_Hood_Red",
+                "FC_Defender_Door_Trunk_Red",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Defender_Yellow",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Defender_Wheel_Destroy_Yellow",
+                "FC_Defender_Door_CoDriver_Yellow",
+                "FC_Defender_Door_Driver_Yellow",
+                "FC_Defender_Door_Hood_Yellow",
+                "FC_Defender_Door_Trunk_Yellow",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Niva_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Niva_Wheel",
+                "FC_Niva_Door_CoDriver_Black",
+                "FC_Niva_Door_Driver_Black",
+                "FC_Niva_Door_Hood_Black",
+                "FC_Niva_Door_Trunk_Black",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Niva_BlackR",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Niva_Wheel",
+                "FC_Niva_Door_CoDriver_BlackR",
+                "FC_Niva_Door_Driver_BlackR",
+                "FC_Niva_Door_Hood_BlackR",
+                "FC_Niva_Door_Trunk_BlackR",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Niva_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Niva_Wheel",
+                "FC_Niva_Door_CoDriver_Green",
+                "FC_Niva_Door_Driver_Green",
+                "FC_Niva_Door_Hood_Green",
+                "FC_Niva_Door_Trunk_Green",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Niva_GreenR",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Niva_Wheel",
+                "FC_Niva_Door_CoDriver_GreenR",
+                "FC_Niva_Door_Driver_GreenR",
+                "FC_Niva_Door_Hood_GreenR",
+                "FC_Niva_Door_Trunk_GreenR",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "FC_Niva_Grey",
@@ -900,16 +3063,173 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "FC_Niva_Black",
-                "FC_Niva_Green",
-                "FC_Niva_GreyR",
-                "FC_Niva_White",
-                "FC_Niva_BlackR",
-                "FC_Niva_GreenR",
-                "FC_Niva_WhiteR"
-            ]
+            "SpawnAttachments": [
+                "FC_Niva_Wheel",
+                "FC_Niva_Door_CoDriver_Grey",
+                "FC_Niva_Door_Driver_Grey",
+                "FC_Niva_Door_Hood_Grey",
+                "FC_Niva_Door_Trunk_Grey",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Niva_GreyR",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Niva_Wheel",
+                "FC_Niva_Door_CoDriver_GreyR",
+                "FC_Niva_Door_Driver_GreyR",
+                "FC_Niva_Door_Hood_GreyR",
+                "FC_Niva_Door_Trunk_GreyR",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Niva_White",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Niva_Wheel",
+                "FC_Niva_Door_CoDriver_White",
+                "FC_Niva_Door_Driver_White",
+                "FC_Niva_Door_Hood_White",
+                "FC_Niva_Door_Trunk_White",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Niva_WhiteR",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Niva_Wheel",
+                "FC_Niva_Door_CoDriver_WhiteR",
+                "FC_Niva_Door_Driver_WhiteR",
+                "FC_Niva_Door_Hood_WhiteR",
+                "FC_Niva_Door_Trunk_WhiteR",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Uaz_2206_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Uaz_2206_Wheel",
+                "FC_Uaz_2206_Door_Cargo1_Black",
+                "FC_Uaz_2206_Door_Cargo2_Black",
+                "FC_Uaz_2206_Door_Cargo3_Black",
+                "FC_Uaz_2206_Door_CoDriver_Black",
+                "FC_Uaz_2206_Door_Driver_Black",
+                "FC_Uaz_2206_Door_Hood",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Uaz_2206_BlackR",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Uaz_2206_Wheel",
+                "FC_Uaz_2206_Door_Cargo1_BlackR",
+                "FC_Uaz_2206_Door_Cargo2_BlackR",
+                "FC_Uaz_2206_Door_Cargo3_BlackR",
+                "FC_Uaz_2206_Door_CoDriver_BlackR",
+                "FC_Uaz_2206_Door_Driver_BlackR",
+                "FC_Uaz_2206_Door_Hood",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Uaz_2206_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Uaz_2206_Wheel",
+                "FC_Uaz_2206_Door_Cargo1_Green",
+                "FC_Uaz_2206_Door_Cargo2_Green",
+                "FC_Uaz_2206_Door_Cargo3_Green",
+                "FC_Uaz_2206_Door_CoDriver_Green",
+                "FC_Uaz_2206_Door_Driver_Green",
+                "FC_Uaz_2206_Door_Hood",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Uaz_2206_GreenR",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Uaz_2206_Wheel",
+                "FC_Uaz_2206_Door_Cargo1_GreenR",
+                "FC_Uaz_2206_Door_Cargo2_GreenR",
+                "FC_Uaz_2206_Door_Cargo3_GreenR",
+                "FC_Uaz_2206_Door_CoDriver_GreenR",
+                "FC_Uaz_2206_Door_Driver_GreenR",
+                "FC_Uaz_2206_Door_Hood",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "FC_Uaz_2206_Grey",
@@ -919,16 +3239,89 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "FC_Uaz_2206_Black",
-                "FC_Uaz_2206_Green",
-                "FC_Uaz_2206_GreyR",
-                "FC_Uaz_2206_White",
-                "FC_Uaz_2206_BlackR",
-                "FC_Uaz_2206_GreenR",
-                "FC_Uaz_2206_WhiteR"
-            ]
+            "SpawnAttachments": [
+                "FC_Uaz_2206_Wheel",
+                "FC_Uaz_2206_Door_Cargo1_Grey",
+                "FC_Uaz_2206_Door_Cargo2_Grey",
+                "FC_Uaz_2206_Door_Cargo3_Grey",
+                "FC_Uaz_2206_Door_CoDriver_Grey",
+                "FC_Uaz_2206_Door_Driver_Grey",
+                "FC_Uaz_2206_Door_Hood",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Uaz_2206_GreyR",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Uaz_2206_Wheel",
+                "FC_Uaz_2206_Door_Cargo1_GreyR",
+                "FC_Uaz_2206_Door_Cargo2_GreyR",
+                "FC_Uaz_2206_Door_Cargo3_GreyR",
+                "FC_Uaz_2206_Door_CoDriver_GreyR",
+                "FC_Uaz_2206_Door_Driver_GreyR",
+                "FC_Uaz_2206_Door_Hood",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Uaz_2206_White",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Uaz_2206_Wheel",
+                "FC_Uaz_2206_Door_Cargo1_White",
+                "FC_Uaz_2206_Door_Cargo2_White",
+                "FC_Uaz_2206_Door_Cargo3_White",
+                "FC_Uaz_2206_Door_CoDriver_White",
+                "FC_Uaz_2206_Door_Driver_White",
+                "FC_Uaz_2206_Door_Hood",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "FC_Uaz_2206_WhiteR",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "FC_Uaz_2206_Wheel",
+                "FC_Uaz_2206_Door_Cargo1_WhiteR",
+                "FC_Uaz_2206_Door_Cargo2_WhiteR",
+                "FC_Uaz_2206_Door_Cargo3_WhiteR",
+                "FC_Uaz_2206_Door_CoDriver_WhiteR",
+                "FC_Uaz_2206_Door_Driver_WhiteR",
+                "FC_Uaz_2206_Door_Hood",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "Hatchback_02",
@@ -938,16 +3331,213 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "Hatchback_02_Red",
-                "Hatchback_02_Blue",
-                "Hatchback_02_Black",
-                "Hatchback_02_RedRust",
-                "Hatchback_02_BlueRust",
-                "Hatchback_02_BlackRust",
-                "Hatchback_02_BanditKitty"
-            ]
+            "SpawnAttachments": [
+                "Hatchback_02_Wheel",
+                "Hatchback_02_Door_1_1",
+                "Hatchback_02_Door_1_2",
+                "Hatchback_02_Door_2_1",
+                "Hatchback_02_Door_2_2",
+                "Hatchback_02_Hood",
+                "Hatchback_02_Trunk",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Hatchback_02_BanditKitty",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Hatchback_02_Wheel",
+                "Hatchback_02_Door_1_1",
+                "Hatchback_02_Door_1_2",
+                "Hatchback_02_Door_2_1",
+                "Hatchback_02_Door_2_2",
+                "Hatchback_02_Hood_BanditKitty",
+                "Hatchback_02_Trunk_BanditKitty",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Hatchback_02_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Hatchback_02_Wheel",
+                "Hatchback_02_Door_1_1_Black",
+                "Hatchback_02_Door_1_2_Black",
+                "Hatchback_02_Door_2_1_Black",
+                "Hatchback_02_Door_2_2_Black",
+                "Hatchback_02_Hood_Black",
+                "Hatchback_02_Trunk_Black",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Hatchback_02_BlackRust",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Hatchback_02_Wheel",
+                "Hatchback_02_Door_1_1_BlackRust",
+                "Hatchback_02_Door_1_2_BlackRust",
+                "Hatchback_02_Door_2_1_BlackRust",
+                "Hatchback_02_Door_2_2_BlackRust",
+                "Hatchback_02_Hood_BlackRust",
+                "Hatchback_02_Trunk_BlackRust",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Hatchback_02_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Hatchback_02_Wheel",
+                "Hatchback_02_Door_1_1_Blue",
+                "Hatchback_02_Door_1_2_Blue",
+                "Hatchback_02_Door_2_1_Blue",
+                "Hatchback_02_Door_2_2_Blue",
+                "Hatchback_02_Hood_Blue",
+                "Hatchback_02_Trunk_Blue",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Hatchback_02_BlueRust",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Hatchback_02_Wheel",
+                "Hatchback_02_Door_1_1_BlueRust",
+                "Hatchback_02_Door_1_2_BlueRust",
+                "Hatchback_02_Door_2_1_BlueRust",
+                "Hatchback_02_Door_2_2_BlueRust",
+                "Hatchback_02_Hood_BlueRust",
+                "Hatchback_02_Trunk_BlueRust",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Hatchback_02_Red",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Hatchback_02_Wheel",
+                "Hatchback_02_Door_1_1_Red",
+                "Hatchback_02_Door_1_2_Red",
+                "Hatchback_02_Door_2_1_Red",
+                "Hatchback_02_Door_2_2_Red",
+                "Hatchback_02_Hood_Red",
+                "Hatchback_02_Trunk_Red",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Hatchback_02_RedRust",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Hatchback_02_Wheel",
+                "Hatchback_02_Door_1_1_RedRust",
+                "Hatchback_02_Door_1_2_RedRust",
+                "Hatchback_02_Door_2_1_RedRust",
+                "Hatchback_02_Door_2_2_RedRust",
+                "Hatchback_02_Hood_RedRust",
+                "Hatchback_02_Trunk_RedRust",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Jeep_GladiatorF9_BOSS_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Jeep_GladiatorF9_BOSS_Brown",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "Jeep_GladiatorF9_BOSS_Cyan",
@@ -957,7 +3547,60 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Jeep_GladiatorF9_BOSS_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Jeep_GladiatorF9_BOSS_Orange",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Jeep_GladiatorF9_BOSS_Pink",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -968,15 +3611,29 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "Jeep_GladiatorF9_BOSS_Pink",
-                "Jeep_GladiatorF9_BOSS_White",
-                "Jeep_GladiatorF9_BOSS_Black",
-                "Jeep_GladiatorF9_BOSS_Brown",
-                "Jeep_GladiatorF9_BOSS_Green",
-                "Jeep_GladiatorF9_BOSS_Orange"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Jeep_GladiatorF9_BOSS_White",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "Kamaz_TyphoonK_CamoGreen",
@@ -986,7 +3643,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -997,7 +3659,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1008,7 +3675,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1019,11 +3691,15 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "Kamaz_TyphoonK_White",
-                "Kamaz_TyphoonK_Black"
-            ]
+            "SpawnAttachments": [
+                "Kamaz_TyphoonK_Wheel",
+                "Kamaz_TyphoonK_Trunk_CamoGreen",
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "Kamaz_TyphoonK_RedCamo",
@@ -1033,7 +3709,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1044,7 +3725,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1055,16 +3741,125 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "OffroadHatchback_Blue",
-                "OffroadHatchback_White",
-                "OffroadHatchback_Green",
-                "OffroadHatchback_Police",
-                "OffroadHatchback_BlueRust",
-                "OffroadHatchback_GreenRust",
-                "OffroadHatchback_WhiteRust"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "OffroadHatchback_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "OffroadHatchback_BlueRust",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "OffroadHatchback_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "OffroadHatchback_GreenRust",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "OffroadHatchback_Police",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "OffroadHatchback_White",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "OffroadHatchback_WhiteRust",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "Offroad_02",
@@ -1074,7 +3869,19 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "Offroad_02_Wheel",
+                "Offroad_02_Door_1_1",
+                "Offroad_02_Door_1_2",
+                "Offroad_02_Door_2_1",
+                "Offroad_02_Door_2_2",
+                "Offroad_02_Hood",
+                "Offroad_02_Trunk",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1085,18 +3892,204 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "Sedan_02_Red",
-                "Sedan_02_Grey",
-                "Sedan_02_Blue",
-                "Sedan_02_Yellow",
-                "Sedan_02_RedRust",
-                "Sedan_02_GreyRust",
-                "Sedan_02_BlueRust",
-                "Sedan_02_YellowRust",
-                "Sedan_02_YellowBright"
-            ]
+            "SpawnAttachments": [
+                "Sedan_02_Wheel",
+                "Sedan_02_Door_1_1",
+                "Sedan_02_Door_1_2",
+                "Sedan_02_Door_2_1",
+                "Sedan_02_Door_2_2",
+                "Sedan_02_Hood",
+                "Sedan_02_Trunk",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Sedan_02_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Sedan_02_Wheel",
+                "Sedan_02_Door_1_1_Blue",
+                "Sedan_02_Door_1_2_Blue",
+                "Sedan_02_Door_2_1_Blue",
+                "Sedan_02_Door_2_2_Blue",
+                "Sedan_02_Hood_Blue",
+                "Sedan_02_Trunk_Blue",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Sedan_02_BlueRust",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Sedan_02_Wheel",
+                "Sedan_02_Door_1_1_BlueRust",
+                "Sedan_02_Door_1_2_BlueRust",
+                "Sedan_02_Door_2_1_BlueRust",
+                "Sedan_02_Door_2_2_BlueRust",
+                "Sedan_02_Hood_BlueRust",
+                "Sedan_02_Trunk_BlueRust",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Sedan_02_Grey",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Sedan_02_Wheel",
+                "Sedan_02_Door_1_1_Grey",
+                "Sedan_02_Door_1_2_Grey",
+                "Sedan_02_Door_2_1_Grey",
+                "Sedan_02_Door_2_2_Grey",
+                "Sedan_02_Hood_Grey",
+                "Sedan_02_Trunk_Grey",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Sedan_02_GreyRust",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Sedan_02_Wheel",
+                "Sedan_02_Door_1_1_GreyRust",
+                "Sedan_02_Door_1_2_GreyRust",
+                "Sedan_02_Door_2_1_GreyRust",
+                "Sedan_02_Door_2_2_GreyRust",
+                "Sedan_02_Hood_GreyRust",
+                "Sedan_02_Trunk_GreyRust",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Sedan_02_Red",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Sedan_02_Wheel",
+                "Sedan_02_Door_1_1_Red",
+                "Sedan_02_Door_1_2_Red",
+                "Sedan_02_Door_2_1_Red",
+                "Sedan_02_Door_2_2_Red",
+                "Sedan_02_Hood_Red",
+                "Sedan_02_Trunk_Red",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Sedan_02_RedRust",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Sedan_02_Wheel",
+                "Sedan_02_Door_1_1_RedRust",
+                "Sedan_02_Door_1_2_RedRust",
+                "Sedan_02_Door_2_1_RedRust",
+                "Sedan_02_Door_2_2_RedRust",
+                "Sedan_02_Hood_RedRust",
+                "Sedan_02_Trunk_RedRust",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Sedan_02_Yellow",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Sedan_02_Wheel",
+                "Sedan_02_Door_1_1_Yellow",
+                "Sedan_02_Door_1_2_Yellow",
+                "Sedan_02_Door_2_1_Yellow",
+                "Sedan_02_Door_2_2_Yellow",
+                "Sedan_02_Hood_Yellow",
+                "Sedan_02_Trunk_Yellow",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Sedan_02_YellowBright",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Sedan_02_Wheel",
+                "Sedan_02_Door_1_1_YellowBright",
+                "Sedan_02_Door_1_2_YellowBright",
+                "Sedan_02_Door_2_1_YellowBright",
+                "Sedan_02_Door_2_2_YellowBright",
+                "Sedan_02_Hood_YellowBright",
+                "Sedan_02_Trunk_YellowBright",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "Sedan_02_YellowBrightRust",
@@ -1106,7 +4099,154 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "Sedan_02_Wheel",
+                "Sedan_02_Door_1_1",
+                "Sedan_02_Door_1_2",
+                "Sedan_02_Door_2_1",
+                "Sedan_02_Door_2_2",
+                "Sedan_02_Hood_YellowBrightRust",
+                "Sedan_02_Trunk_YellowBrightRust",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Sedan_02_YellowRust",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "Sedan_02_Wheel",
+                "Sedan_02_Door_1_1_YellowRust",
+                "Sedan_02_Door_1_2_YellowRust",
+                "Sedan_02_Door_2_1_YellowRust",
+                "Sedan_02_Door_2_2_YellowRust",
+                "Sedan_02_Hood_YellowRust",
+                "Sedan_02_Trunk_YellowRust",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Tahoe_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Tahoe_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Tahoe_Brown",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Tahoe_DarkBlue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Tahoe_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Tahoe_LightBlue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Tahoe_Pink",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1117,17 +4257,29 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "Tahoe_Blue",
-                "Tahoe_Pink",
-                "Tahoe_White",
-                "Tahoe_Black",
-                "Tahoe_Brown",
-                "Tahoe_Green",
-                "Tahoe_DarkBlue",
-                "Tahoe_LightBlue"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Tahoe_White",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "ToyotaRunner_BOSS",
@@ -1137,7 +4289,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1148,7 +4305,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1159,7 +4321,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1170,7 +4337,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1181,7 +4353,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1192,7 +4369,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1203,7 +4385,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1214,7 +4401,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1225,14 +4417,13 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "ToyotaRunner_blue",
-                "ToyotaRunner_pink",
-                "ToyotaRunner_Black",
-                "ToyotaRunner_white",
-                "ToyotaRunner_yellow"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "Truck_01_Covered",
@@ -1242,18 +4433,221 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "Truck_01_Covered_Red",
-                "Truck_01_Covered_Blue",
-                "Truck_01_Covered_Wine",
-                "Truck_01_Covered_Lime",
-                "Truck_01_Covered_Green",
-                "Truck_01_Covered_White",
-                "Truck_01_Covered_Black",
-                "Truck_01_Covered_Orange",
-                "Truck_01_Covered_Yellow"
-            ]
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Truck_01_Covered_Black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Truck_01_Covered_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Truck_01_Covered_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Truck_01_Covered_Lime",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Truck_01_Covered_Orange",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Truck_01_Covered_Red",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Truck_01_Covered_White",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Truck_01_Covered_Wine",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "Truck_01_Covered_Yellow",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "dodgechargerhellcat_black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "dodgechargerhellcat_blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "dodgechargerhellcat_green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "dodgechargerhellcat_pink",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "dodgechargerhellcat_red",
@@ -1263,14 +4657,29 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "dodgechargerhellcat_blue",
-                "dodgechargerhellcat_pink",
-                "dodgechargerhellcat_black",
-                "dodgechargerhellcat_green",
-                "dodgechargerhellcat_white"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "dodgechargerhellcat_white",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "fruck_Varta",
@@ -1280,10 +4689,14 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "fruck_Varta_police"
-            ]
+            "SpawnAttachments": [
+                "fruck_Varta_DoorTrunk",
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "fruck_Varta_dnr",
@@ -1293,7 +4706,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1304,7 +4722,131 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "fruck_Varta_police",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "fruck_Varta_DoorTrunk_police",
+                "TruckBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "jmc_atv_Aqua",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "jmc_atv_Wheel",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "jmc_atv_Blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "jmc_atv_Wheel",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "jmc_atv_Green",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "jmc_atv_Wheel",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "jmc_atv_Grey",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "jmc_atv_Wheel",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "jmc_atv_Pink",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "jmc_atv_Wheel",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "jmc_atv_Purple",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "jmc_atv_Wheel",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1315,15 +4857,14 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "jmc_atv_Blue",
-                "jmc_atv_Aqua",
-                "jmc_atv_Grey",
-                "jmc_atv_Pink",
-                "jmc_atv_Green",
-                "jmc_atv_Purple"
-            ]
+            "SpawnAttachments": [
+                "jmc_atv_Wheel",
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "jmc_atv_STAG_Red",
@@ -1333,11 +4874,13 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "jmc_atv_STAG_White",
-                "jmc_atv_STAG_Black"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "savage_gaz2330",
@@ -1347,11 +4890,45 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "savage_gaz2330_camo",
-                "savage_gaz2330_black"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_gaz2330_black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_gaz2330_camo",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "savage_gaz66",
@@ -1361,10 +4938,13 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "savage_gaz66_white"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "savage_gaz66_gruzovoi",
@@ -1374,7 +4954,28 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_gaz66_white",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1385,12 +4986,61 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "savage_oshkosh_atv_camo",
-                "savage_oshkosh_atv_black",
-                "savage_oshkosh_atv_desert"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_oshkosh_atv_black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_oshkosh_atv_camo",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_oshkosh_atv_desert",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "savage_priora_2172",
@@ -1400,13 +5050,77 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "savage_priora_2172_grey",
-                "savage_priora_2172_blue",
-                "savage_priora_2172_black",
-                "savage_priora_2172_purple"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_priora_2172_black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_priora_2172_blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_priora_2172_grey",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_priora_2172_purple",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "savage_toyota_tacoma",
@@ -1416,13 +5130,61 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "savage_toyota_tacoma_blue",
-                "savage_toyota_tacoma_camo",
-                "savage_toyota_tacoma_black",
-                "savage_toyota_tacoma_orange"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_toyota_tacoma_black",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_toyota_tacoma_blue",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_toyota_tacoma_camo",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "savage_toyota_tacoma_denso",
@@ -1432,7 +5194,28 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_toyota_tacoma_orange",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         },
         {
@@ -1443,13 +5226,77 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
-            "Variants": [
-                "savage_uaz2206_med",
-                "savage_uaz2206_CSO",
-                "savage_uaz2206_polic",
-                "savage_uaz2206_camo1"
-            ]
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_uaz2206_CSO",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_uaz2206_camo1",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_uaz2206_med",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
+        },
+        {
+            "ClassName": "savage_uaz2206_polic",
+            "MaxPriceThreshold": 50000,
+            "MinPriceThreshold": 50000,
+            "SellPricePercent": -1,
+            "MaxStockThreshold": 5,
+            "MinStockThreshold": 1,
+            "QuantityConfig": 0,
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
+            "Variants": []
         },
         {
             "ClassName": "savage_uaz2206_wintercamo",
@@ -1459,7 +5306,12 @@
             "MaxStockThreshold": 5,
             "MinStockThreshold": 1,
             "QuantityConfig": 0,
-            "SpawnAttachments": [],
+            "SpawnAttachments": [
+                "CarBattery",
+                "SparkPlug",
+                "CarRadiator",
+                "HeadlightH7"
+            ],
             "Variants": []
         }
     ]
